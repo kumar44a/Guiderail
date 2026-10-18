@@ -1,0 +1,673 @@
+{
+  "corpus": "real",
+  "generator": "llm",
+  "index_sha256": "0682c9a68340eb12a1d9fa4184d8c44e832ec857a80389a93a47a407de373420",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3
+    },
+    "chunks": 1484,
+    "documents": 3,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "For measles, healthcare personnel should use respiratory protection at least as protective as a fit-tested, NIOSH-certified N95 respirator upon entry into the patient's room or care area, regardless of presumptive evidence of immunity. For SARS, Airborne Precautions include the use of fit-tested NIOSH-approved N95 or higher level respirators, plus eye protection. For measles and varicella-zoster viruses, however, there are no data upon which to base a recommendation for respiratory protection to protect susceptible personnel.",
+      "citations": [
+        "cdc-isolation-precautions-2007#recommendations-for-measles-in-healthcare-settings-p-108-0",
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-8",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-38"
+      ],
+      "cited": true,
+      "confidence": 0.758,
+      "correct": true,
+      "generator_error": null,
+      "id": "R01",
+      "kind": "in_corpus",
+      "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.758,
+        "coverage": 0.942,
+        "question_support": 0.609,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "approv",
+          "however"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The two tiers of HICPAC/CDC precautions to prevent transmission of infectious agents are Standard Precautions and Transmission-Based Precautions. Standard Precautions are intended to be applied to the care of all patients in all healthcare settings, regardless of the suspected or confirmed presence of an infectious agent, and constitute the primary strategy for the prevention of healthcare-associated transmission. One or more Transmission-Based Precautions are recommended in addition to Standard Precautions based on evidence demonstrating a real or potential risk for person-to-person transmission in healthcare settings.",
+      "citations": [
+        "cdc-isolation-precautions-2007#part-iii-precautions-to-prevent-transmission-of-infectious-p-69-0",
+        "cdc-isolation-precautions-2007#infectious-agents-in-healthcare-settings-p-10-9"
+      ],
+      "cited": true,
+      "confidence": 0.921,
+      "correct": true,
+      "generator_error": null,
+      "id": "R03",
+      "kind": "in_corpus",
+      "question": "What are the two tiers of precautions used to prevent transmission of infectious agents?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.921,
+        "coverage": 1.0,
+        "question_support": 0.841,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When gloves are worn in combination with other PPE, they are put on last. Gowns are usually the first piece of PPE to be donned. Gloves that fit snugly around the wrist are preferred with an isolation gown because they will cover the gown cuff and provide a more reliable continuous barrier for the arms, wrists, and hands.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-9",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-13"
+      ],
+      "cited": true,
+      "confidence": 0.907,
+      "correct": true,
+      "generator_error": null,
+      "id": "R05",
+      "kind": "in_corpus",
+      "question": "When gloves are worn with other protective equipment, in what order are they put on?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.907,
+        "coverage": 1.0,
+        "question_support": 0.815,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (for example, primary family members of critically or terminally ill patients), the symptomatic visitor must wear a mask while in the healthcare facility and remain in the patient's room. They should avoid exposure to others, especially in public waiting areas and the cafeteria.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-15"
+      ],
+      "cited": true,
+      "confidence": 0.547,
+      "correct": true,
+      "generator_error": null,
+      "id": "R07",
+      "kind": "in_corpus",
+      "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.547,
+        "coverage": 0.968,
+        "question_support": 0.603,
+        "reasons": [
+          "weak relevance to the question (0.56)"
+        ],
+        "retrieval_relevance": 0.527,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "exampl"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R09",
+      "kind": "in_corpus",
+      "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccine storage refrigerators must maintain temperatures between 2°C and 8°C (36°F and 46°F) at all times. Always review the manufacturer's package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that the correct temperature range is maintained.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-may-differ-p-13-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T01",
+      "kind": "in_corpus",
+      "question": "What temperature range must vaccine refrigerators maintain?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Calibration testing should be performed every 2 to 3 years, or according to the manufacturer's recommended schedule. If a TMD is dropped, hit against the side of a storage unit, or potentially damaged in any way, its accuracy should be checked against another calibrated TMD, and if there is any question about accuracy, the device should be replaced or sent for calibration testing.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-0",
+        "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-1"
+      ],
+      "cited": true,
+      "confidence": 0.904,
+      "correct": true,
+      "generator_error": null,
+      "id": "T03",
+      "kind": "in_corpus",
+      "question": "How often should temperature monitoring devices be calibration tested?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.904,
+        "coverage": 1.0,
+        "question_support": 0.808,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Label exposed vaccines \"DO NOT USE—TEMPERATURE EXCURSION\", move them to the correct storage conditions, and place them in a separate container apart from other vaccines in the unit, without discarding them. Keep them separated and marked \"DO NOT USE—TEMPERATURE EXCURSION\" until a decision can be made about whether the vaccines can still be used.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-1",
+        "cdc-vaccine-storage-toolkit-2026#the-packing-vaccines-for-transport-during-p-37-1"
+      ],
+      "cited": true,
+      "confidence": 0.366,
+      "correct": true,
+      "generator_error": null,
+      "id": "T05",
+      "kind": "in_corpus",
+      "question": "What label should be put on vaccines after a temperature excursion?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.366,
+        "coverage": 0.459,
+        "question_support": 0.595,
+        "reasons": [
+          "negation not found in evidence: without",
+          "low evidence coverage (0.46); unsupported terms: without, keep"
+        ],
+        "retrieval_relevance": 1.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "without",
+          "keep"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The backup (alternate) vaccine coordinator will act in the absence of the primary coordinator and, like the primary coordinator, should be an expert on the facility's storage and handling SOPs. The coordinator's responsibilities may be completed by the coordinator or delegated to appropriately trained staff. Staff members who might accept vaccine deliveries should be trained to immediately notify the primary or backup vaccine coordinator when deliveries arrive.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#staff-roles-and-responsibilities-p-9-0",
+        "cdc-vaccine-storage-toolkit-2026#scheduling-and-receiving-deliveries-p-22-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T07",
+      "kind": "in_corpus",
+      "question": "What does the backup vaccine coordinator do?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO1",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended dose of amoxicillin for otitis media?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO3",
+      "kind": "out_of_corpus",
+      "question": "How many hours of sleep should night shift nurses get?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.8889,
+    "capped_precision@10": 0.9556,
+    "capped_precision@5": 0.9333,
+    "hit@1": 0.6667,
+    "hit@10": 0.8889,
+    "hit@5": 0.8889,
+    "mrr": 0.7593,
+    "n": 9,
+    "precision@1": 0.8889,
+    "precision@10": 0.9556,
+    "precision@5": 0.9333,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the two tiers of precautions used to prevent transmission of infectious agents?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "When gloves are worn with other protective equipment, in what order are they put on?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R07",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What temperature range must vaccine refrigerators maintain?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How often should temperature monitoring devices be calibration tested?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What label should be put on vaccines after a temperature excursion?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T07",
+        "precision@1": 0.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "What does the backup vaccine coordinator do?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (for example, primary family members of critically or terminally ill patients), the symptomatic visitor must wear a mask while in the healthcare facility and",
+      "confidence": 0.547,
+      "id": "R07",
+      "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.56)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R09",
+      "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Label exposed vaccines \"DO NOT USE—TEMPERATURE EXCURSION\", move them to the correct storage conditions, and place them in a separate container apart from other vaccines in the unit, without discarding them. Keep them separated and marked \"D",
+      "confidence": 0.366,
+      "id": "T05",
+      "question": "What label should be put on vaccines after a temperature excursion?",
+      "reason": "correct answer withheld",
+      "validator_notes": "negation not found in evidence: without; low evidence coverage (0.46); unsupported terms: without, keep"
+    }
+  ],
+  "split": "dev",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 1.0,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8889,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 1.0,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8889,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.125,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7778,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.125,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7778,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.125,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7778,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.25,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.25,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.25,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.25,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.25,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.375,
+      "decision_accuracy": 0.7273,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5556,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.375,
+      "decision_accuracy": 0.7273,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5556,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.375,
+      "decision_accuracy": 0.7273,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5556,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.8182,
+    "in_corpus": {
+      "answer_correct_rate": 0.8889,
+      "correct_but_flagged_rate": 0.25,
+      "mean_confidence": 0.7114,
+      "n": 9,
+      "pass_rate": 0.6667,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.0,
+      "n": 2,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

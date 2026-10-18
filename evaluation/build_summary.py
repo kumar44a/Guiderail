@@ -33,6 +33,11 @@ def ci(k: int, n: int) -> str:
     return "n/a" if w is None else f"{100 * k / n:.0f}% ({100 * w[0]:.0f}–{100 * w[1]:.0f})"
 
 
+def real_agencies() -> str:
+    sources = json.loads((CORPORA["real"]["dir"] / "sources.json").read_text(encoding="utf-8"))
+    return " and ".join(sorted({d["agency"] for d in sources["documents"]}))
+
+
 def counts(report: dict, threshold: float = 0.6) -> dict:
     recs = report["records"]
     inc = [r for r in recs if r["kind"] == "in_corpus"]
@@ -66,10 +71,12 @@ def build_report() -> str:
     sizes = [r["validation"]["in_corpus"]["n"] for c in ("synthetic", "real") for s in ("dev", "test")
              for r in [load(c, s, "extractive", "final")]]
     out += ["## 1. What was measured and how", "",
-            f"- Two corpora: {n_syn['documents']} synthetic guidelines ({n_syn['chunks']} chunks) and {n_real['documents']} real CDC PDFs "
+            f"- Two corpora: {n_syn['documents']} synthetic guidelines ({n_syn['chunks']} chunks) and {n_real['documents']} real PDFs from {real_agencies()} "
             f"({n_real['chunks']} chunks).",
-            "- Labeled queries per corpus, split into **dev** (used to choose changes) and **test** (held out; run once, after the "
-            f"configuration was frozen; {len(test_runs)} runs are recorded in `evaluation/reports/test_split_runs.log`).",
+            "- Labeled queries per corpus, split into **dev** (used to choose changes) and **test** (held out; run after the "
+            f"configuration was frozen; {len(test_runs)} runs are recorded in `evaluation/reports/test_split_runs.log`). The real corpus was "
+            "evaluated twice: first on 3 documents, then on 5 after the WHO hand hygiene documents were added (section 9). The tables below "
+            "are the 5-document run.",
             "- An in-corpus answer is **correct** when it contains every expected fact (stem-aware match) and no value from a superseded version.",
             "- Out-of-corpus queries should be sent to review; an out-of-corpus query that is validated is a **false accept**.",
             "- Two generators: **extractive** (no model, default) and **LLM** (Claude, evidence-only prompt). Both use the same retriever and the same validator.",
@@ -87,7 +94,8 @@ def build_report() -> str:
             "| Deterministic indexing, no API dependency | reproducible | identical index hashes across builds and across processes (tested) | yes |",
             f"| Precision@5, document level (synthetic) | ≥ 65% | {pct(syn['retrieval']['precision@5'])} raw; {pct(syn['retrieval']['capped_precision@5'])} capped | "
             f"{'yes' if syn['retrieval']['precision@5'] >= .65 else 'no (raw); yes (capped)'} |",
-            f"| Precision@5, document level (real) | ≥ 65% | {pct(real['retrieval']['precision@5'])} (only 3 documents, so near-trivial) | yes, weak evidence |"]
+            f"| Precision@5, document level (real) | ≥ 65% | {pct(real['retrieval']['precision@5'])} (only {n_real['documents']} documents, so weak evidence) | "
+            f"{'yes, weak evidence' if real['retrieval']['precision@5'] >= .65 else 'no'} |"]
     for label, rep in (("extractive, synthetic", syn), ("LLM, synthetic", syn_llm), ("extractive, real", real), ("LLM, real", real_llm)):
         c = counts(rescored(rep))
         rate = c["validated"] / c["n_in"]
@@ -126,12 +134,10 @@ def build_report() -> str:
 
     # --- sweeps (test, final config)
     out += ["", "## 5. Threshold sweep (test split)", "",
-            "Pass rate, validated precision and out-of-corpus false accepts as the threshold moves. Observations, not decisions: on the "
-            "real corpus the extractive generator does better at higher thresholds (fewer wrong answers and fewer out-of-corpus accepts, "
-            "at the cost of a lower pass rate), while the LLM generator validates more correct answers at lower thresholds with no loss "
-            "of precision. The default was fixed at the brief's value from the dev split and is deliberately **not** moved on the strength "
-            "of the test split, which would be tuning on held-out data. With samples this small these are hypotheses to confirm on fresh "
-            "queries, and a deployment could reasonably use a stricter threshold for the extractive mode on real documents.", ""]
+            "Pass rate, validated precision and out-of-corpus false accepts as the threshold moves. These are observations, not decisions. "
+            "The default was fixed at the brief's value from the dev split and is deliberately **not** moved on the strength of the test "
+            "split, which would be tuning on held-out data. With samples this small, read any apparent best threshold as a hypothesis to "
+            "confirm on fresh queries.", ""]
     for c in ("synthetic", "real"):
         for gen in ("extractive", "llm"):
             rep = rescored(load(c, "test", gen, "final"))
@@ -166,15 +172,69 @@ def build_report() -> str:
             "wrongly flagged.",
             "- **Near-domain out-of-scope questions.** The extractive path can answer a question about, say, radioactive waste with on-topic "
             "sentences about ordinary waste and validate it. The LLM path abstains far more reliably.",
-            "- **Real documents.** With extracted PDF text, the extractive generator is much less reliable than on the synthetic corpus. Use the LLM "
-            "generator for real documents.",
+            "- **Real documents.** With extracted PDF text, the extractive generator is much less reliable than on the synthetic corpus: "
+            "many of its validated answers are wrong. The LLM generator is more precise and abstains on out-of-scope questions, but at 0.6 it "
+            "withholds a large share of correct answers (see the pass and correct-but-flagged columns in section 4).",
+            "- **PDF extraction noise.** Reference-list pages become noise chunks. Text inside figures (for example the handrub duration "
+            "diagram) is jumbled. Some pages are image-only and yield no text. These were reported, not fixed, in the 5-document run.",
             f"- **Small samples.** The splits have {min(sizes)} to {max(sizes)} in-corpus queries each. Differences of one or two queries are noise.",
-            "- **Dev reuse.** Dev queries chose the changes, so dev numbers are optimistic. The test split was run once after freezing.",
+            "- **Dev reuse and test exposure.** Dev queries chose the changes, so dev numbers are optimistic. The synthetic test split was run "
+            "once after freezing. The original real test queries were run twice (3-document corpus, then 5-document corpus); the new "
+            "in-corpus real test queries were run once. The new queries were written by the same author who read the PDF text.",
+            "- **Mixed causes in the 3-to-5 document change.** The 5-document run adds documents and also includes two PDF-loader fixes made "
+            "before any query was run (section 9). Their effects cannot be separated without another run.",
             "- **Prior exposure.** A handful of ad hoc questions were tried on the synthetic corpus before the labeled sets were written, and the "
             "validator stress set uses the facts (not the wording) of a few test-split queries to place the true evidence.",
             "- **LLM variance.** Live LLM runs are not deterministic; two dev runs with identical settings differed by a query or two.",
             "- **Scorer.** Correctness is a fact-string check, a proxy for a clinician's judgement.", ""]
+    out += section_before_after()
     return "\n".join(out)
+
+
+def section_before_after() -> list[str]:
+    out = ["## 9. Real corpus: 3 documents versus 5", "",
+           "The same frozen configuration, run on the 3-document corpus (tag `final_3doc`) and on the 5-document corpus after adding the WHO "
+           "hand hygiene summary (2009) and the WHO IPC newsletter (2026). \"Original queries\" are the 21 queries that existed before; \"new "
+           "queries\" were written for the added documents. Counts are queries.", "",
+           "| Split / generator | Subset | In-corpus n | Pass | Answer correct | Validated precision | Correct but flagged | OOC falsely validated |",
+           "|---|---|---|---|---|---|---|---|"]
+    for split in ("dev", "test"):
+        for gen in ("extractive", "llm"):
+            old = load("real", split, gen, "final_3doc")
+            new = load("real", split, gen, "final")
+            if old is None or new is None:
+                continue
+            old, new = rescored(old), rescored(new)
+            oldids = {r["id"] for r in old["records"]}
+            sub = lambda rp, keep: {**rp, "records": [r for r in rp["records"] if keep(r["id"])]}
+            for name, rp in (("3 docs, original queries", old), ("5 docs, original queries", sub(new, lambda i: i in oldids)),
+                             ("5 docs, new queries", sub(new, lambda i: i not in oldids)), ("5 docs, all queries", new)):
+                k = counts(rp)
+                out.append(f"| {split} / {gen} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                           f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['correct_flagged']} of {k['correct']} | "
+                           f"{k['ooc_accepted']} of {k['n_ooc']} |")
+    out += ["", "Retrieval on the same splits:", "", "| Split | Corpus | n | Hit@5 | MRR | Precision@5 |", "|---|---|---|---|---|---|"]
+    for split in ("dev", "test"):
+        for tag, label in (("final_3doc", "3 docs"), ("final", "5 docs")):
+            rp = load("real", split, "extractive", tag)
+            if rp:
+                r = rp["retrieval"]
+                out.append(f"| {split} | {label} | {r['n']} | {pct(r['hit@5'])} | {r['mrr']:.3f} | {pct(r['precision@5'])} |")
+    fx = REPORTS / "loader_fix_effect.json"
+    if fx.exists():
+        data = json.loads(fx.read_text(encoding="utf-8"))
+        out += ["", "PDF-loader fixes made before any query was run on the 5-document corpus (ligature and glyph-placeholder cleaning; a line "
+                "followed by a lowercase line is not a heading). Chunks per document with the fixes off and on "
+                "(`evaluation/loader_fix_effect.py`):", "",
+                "| Document | Chunks before | Chunks after | Identical text |", "|---|---|---|---|"]
+        for r in data["rows"]:
+            out.append(f"| {r['doc_id']} | {r['chunks_before']} | {r['chunks_after']} | {'yes' if r['unchanged'] else 'no'} |")
+        out.append(f"| total | {data['total_before']} | {data['total_after']} | |")
+    out += ["", "Rules fixed before the 5-document run (`evaluation/reports/rerun_5doc_rules.txt`, committed before any run):", "", "```"]
+    rules = REPORTS / "rerun_5doc_rules.txt"
+    out += (rules.read_text(encoding="utf-8").strip().splitlines() if rules.exists() else [])
+    out += ["```", ""]
+    return out
 
 
 # ---------------------------------------------------------------------- log
@@ -188,6 +248,8 @@ STEPS = [
     ("rr_oov", "extractive", "  tried: scale relevance by unknown question words", "Penalise questions containing words that appear nowhere in the corpus.", "REJECTED: fixed one out-of-corpus case but collapsed decision accuracy and flagged many good answers."),
     ("llm_v1", "llm", "LLM generator, first prompt", "Claude, evidence-only prompt, same retriever and validator.", "baseline for the LLM mode"),
     ("llm_v2", "llm", "LLM generator, tightened prompt", "Plain text, no commentary or markdown, reuse the guideline's wording.", "ACCEPTED: fewer correct answers withheld, validated precision held."),
+    ("final", "extractive", "Frozen configuration, extractive (real corpus = 5 documents)", "No change in configuration; real corpus now 5 documents and 17 more queries.", "Reported as is."),
+    ("final", "llm", "Frozen configuration, LLM (real corpus = 5 documents)", "Same, live LLM.", "Reported as is."),
 ]
 
 
@@ -196,7 +258,9 @@ def build_log() -> str:
            "_Generated by `evaluation/build_summary.py` from the tagged dev reports. Do not edit by hand._", "",
            "How changes were chosen: each candidate change was measured on the **dev** split only. A change was kept if it improved the target "
            "metric on both corpora without hurting validated precision or out-of-corpus false accepts; otherwise it was reverted. Acceptance rules were "
-           "fixed before looking at each run's results. All rows below are re-scored with the *current* answer-matching rules so they are comparable.", "",
+           "fixed before looking at each run's results. All rows below are re-scored with the *current* answer-matching rules so they are comparable. "
+           "**Real-corpus rows up to the tightened LLM prompt describe the 3-document corpus; the last two steps use the 5-document corpus "
+           "and a larger dev set, so they are not directly comparable with the earlier real rows.**", "",
            "| Step | Corpus | Hit@5 | MRR | Answer correct | Validated precision | OOC false accept | Decision accuracy |", "|---|---|---|---|---|---|---|---|"]
     notes = []
     for tag, gen, name, what, verdict in STEPS:

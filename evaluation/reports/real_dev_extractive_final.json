@@ -1,13 +1,14 @@
 {
   "corpus": "real",
   "generator": "extractive",
-  "index_sha256": "0682c9a68340eb12a1d9fa4184d8c44e832ec857a80389a93a47a407de373420",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
   "manifest_counts": {
     "agencies": {
-      "CDC": 3
+      "CDC": 3,
+      "WHO": 2
     },
-    "chunks": 1484,
-    "documents": 3,
+    "chunks": 1938,
+    "documents": 5,
     "superseded_documents": 0
   },
   "records": [
@@ -30,7 +31,7 @@
       "validation": {
         "confidence": 0.933,
         "coverage": 1.0,
-        "question_support": 0.865,
+        "question_support": 0.867,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -72,7 +73,7 @@
         "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-13"
       ],
       "cited": true,
-      "confidence": 0.907,
+      "confidence": 0.91,
       "correct": true,
       "generator_error": null,
       "id": "R05",
@@ -80,9 +81,9 @@
       "question": "When gloves are worn with other protective equipment, in what order are they put on?",
       "split": "dev",
       "validation": {
-        "confidence": 0.907,
+        "confidence": 0.91,
         "coverage": 1.0,
-        "question_support": 0.815,
+        "question_support": 0.819,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -97,7 +98,7 @@
         "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-15"
       ],
       "cited": true,
-      "confidence": 0.565,
+      "confidence": 0.571,
       "correct": true,
       "generator_error": null,
       "id": "R07",
@@ -105,11 +106,11 @@
       "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
       "split": "dev",
       "validation": {
-        "confidence": 0.565,
+        "confidence": 0.571,
         "coverage": 1.0,
-        "question_support": 0.603,
+        "question_support": 0.615,
         "reasons": [
-          "weak relevance to the question (0.56)"
+          "weak relevance to the question (0.57)"
         ],
         "retrieval_relevance": 0.527,
         "status": "needs_review",
@@ -119,13 +120,13 @@
     },
     {
       "abstained": false,
-      "answer": "The transmission of SARS-CoV in emergency departments by patients and their family members during the widespread SARS outbreaks in 2003 highlighted the need for vigilance and prompt implementation of infection control measures at the first point of encounter within a healthcare setting (e.g., reception and triage areas in emergency departments, outpatient clinics, and physician offices)21, 254, 897. Category IB If it becomes necessary to place patients who require Droplet Precautions in a room with a patient who does not have the same infection:  * V.C.2.a.iii. Avoid placing patients on Droplet Precautions in the same room with patients who have conditions that may increase the risk of adverse outcome from infection or that may facilitate transmission (e.g., those who are immunocompromised, have or have anticipated prolonged lengths of stay).",
+      "answer": "Category IB If it becomes necessary to place patients who require Droplet Precautions in a room with a patient who does not have the same infection:  * V.C.2.a.iii. Avoid placing patients on Droplet Precautions in the same room with patients who have conditions that may increase the risk of adverse outcome from infection or that may facilitate transmission (e.g., those who are immunocompromised, have or have anticipated prolonged lengths of stay). In acute care hospitals, place patients who require Droplet Precautions in a single-patient room when available Category II When single-patient rooms are in short supply, apply the following principles for making decisions on patient placement:  * V.C.2.a.i.",
       "citations": [
-        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-7",
-        "cdc-isolation-precautions-2007#v-c-droplet-precautions-p-89-2"
+        "cdc-isolation-precautions-2007#v-c-droplet-precautions-p-89-2",
+        "cdc-isolation-precautions-2007#v-c-droplet-precautions-p-89-1"
       ],
       "cited": true,
-      "confidence": 1.0,
+      "confidence": 0.728,
       "correct": false,
       "generator_error": null,
       "id": "R09",
@@ -133,9 +134,9 @@
       "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
       "split": "dev",
       "validation": {
-        "confidence": 1.0,
+        "confidence": 0.728,
         "coverage": 1.0,
-        "question_support": 1.0,
+        "question_support": 0.457,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -179,7 +180,7 @@
         "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-0"
       ],
       "cited": true,
-      "confidence": 0.904,
+      "confidence": 0.905,
       "correct": false,
       "generator_error": null,
       "id": "T03",
@@ -187,9 +188,9 @@
       "question": "How often should temperature monitoring devices be calibration tested?",
       "split": "dev",
       "validation": {
-        "confidence": 0.904,
+        "confidence": 0.905,
         "coverage": 1.0,
-        "question_support": 0.808,
+        "question_support": 0.811,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -205,7 +206,7 @@
         "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-0"
       ],
       "cited": true,
-      "confidence": 0.798,
+      "confidence": 0.802,
       "correct": true,
       "generator_error": null,
       "id": "T05",
@@ -213,9 +214,9 @@
       "question": "What label should be put on vaccines after a temperature excursion?",
       "split": "dev",
       "validation": {
-        "confidence": 0.798,
+        "confidence": 0.802,
         "coverage": 1.0,
-        "question_support": 0.595,
+        "question_support": 0.604,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -252,13 +253,13 @@
     },
     {
       "abstained": false,
-      "answer": "Store predrawn syringes at manufacturer-recommended temperatures. Discard any doses that were stored improperly. Description (e.g., Freezer #1) Vaccine Manufacturer Lot Number(s) Expiration Date(s) Number of Doses (actual doses, not vials) Funding Source (Public/VFC or Private)",
+      "answer": "Store predrawn syringes at manufacturer-recommended temperatures. Discard any doses that were stored improperly. Description (e.g., Freezer #1) Vaccine Manufacturer Lot Number(s) Expiration Date(s) Number of Doses (actual doses, not vials) Funding Source (Public/VFC or Private) Monitor patient flow to avoid drawing up unnecessary doses.",
       "citations": [
         "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-4",
         "cdc-vaccine-storage-toolkit-resources-2026#storage-unit-p-12-0"
       ],
       "cited": true,
-      "confidence": 0.529,
+      "confidence": 0.532,
       "correct": null,
       "generator_error": null,
       "id": "RO1",
@@ -266,9 +267,9 @@
       "question": "What is the recommended dose of amoxicillin for otitis media?",
       "split": "dev",
       "validation": {
-        "confidence": 0.529,
+        "confidence": 0.532,
         "coverage": 1.0,
-        "question_support": 0.267,
+        "question_support": 0.273,
         "reasons": [
           "weak relevance to the question (0.53)"
         ],
@@ -279,11 +280,13 @@
       }
     },
     {
-      "abstained": true,
-      "answer": "No supported answer was found in the indexed guidelines.",
-      "citations": [],
-      "cited": false,
-      "confidence": 0.0,
+      "abstained": false,
+      "answer": "Hand hygiene performance varies according to work intensity and several other factors; in observational studies conducted in hospitals, HCWs cleaned their hands on average from 5 to as many as 42 times per shift and 1.7–15.2 times per hour.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#2-2-hand-hygiene-compliance-among-hcws-p-15-1"
+      ],
+      "cited": true,
+      "confidence": 0.493,
       "correct": null,
       "generator_error": null,
       "id": "RO3",
@@ -291,14 +294,225 @@
       "question": "How many hours of sleep should night shift nurses get?",
       "split": "dev",
       "validation": {
-        "confidence": 0.0,
-        "coverage": 0.0,
-        "question_support": 0.0,
+        "confidence": 0.493,
+        "coverage": 1.0,
+        "question_support": 0.369,
         "reasons": [
-          "abstained: no supported answer"
+          "weak relevance to the question (0.49)"
         ],
-        "retrieval_relevance": 0.0,
+        "retrieval_relevance": 0.618,
         "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "difficile-associated disease rates began to rise in the USA long before the widespread use of alcohol-based handrubs. alcohol-based handrub, if available) be easily accessible and as close as possible – within arm’s reach of where patient care or treatment is taking place. 3.4 Alcohol-based handrubs and C.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-12",
+        "who-hand-hygiene-guidelines-summary-2009#appendices-p-55-5",
+        "who-hand-hygiene-guidelines-summary-2009#3-3-adverse-events-related-to-the-use-of-alcohol-based-handrubs-p-7-0"
+      ],
+      "cited": true,
+      "confidence": 0.65,
+      "correct": false,
+      "generator_error": null,
+      "id": "R18",
+      "kind": "in_corpus",
+      "question": "How long should the entire alcohol handrub procedure take?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.65,
+        "coverage": 1.0,
+        "question_support": 0.626,
+        "reasons": [],
+        "retrieval_relevance": 0.674,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use towel to turn off faucet; Use an alcohol-based handrub as the preferred means for routine hand antisepsis in all other clinical situations described in items D(a) to D(f) listed below if hands are not visibly soiled (IA).75, 82, 94, 95, 145-149 If alcohol-based handrub is not obtainable, wash hands with soap and water (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-ii-2-p-24-1",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2"
+      ],
+      "cited": true,
+      "confidence": 0.8,
+      "correct": true,
+      "generator_error": null,
+      "id": "R20",
+      "kind": "in_corpus",
+      "question": "What should staff use to turn off the tap after washing their hands?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.8,
+        "coverage": 1.0,
+        "question_support": 0.6,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use an alcohol-based handrub as the preferred means for routine hand antisepsis in all other clinical situations described in items D(a) to D(f) listed below if hands are not visibly soiled (IA).75, 82, 94, 95, 145-149 If alcohol-based handrub is not obtainable, wash hands with soap and water (IB). In the absence of visible soiling of hands, approved alcohol-based products for hand disinfection are preferred over antimicrobial or plain soap and water because of their superior microbiocidal activity, reduced drying of the skin, and convenience559. difficileassociated outbreaks, in particular glove use (as part of contact precautions) and handwashing with a plain or antimicrobial soap and water following glove removal after caring for patients with diarrhoea.359, 360 Alcohol-based handrubs can then be used exceptionally after handwashing in these instances, after making sure that hands are perfectly dry.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-1",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-13"
+      ],
+      "cited": true,
+      "confidence": 0.952,
+      "correct": true,
+      "generator_error": null,
+      "id": "R22",
+      "kind": "in_corpus",
+      "question": "For which outbreak pathogens is washing with soap and water preferred over alcohol handrub?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.952,
+        "coverage": 1.0,
+        "question_support": 0.904,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Sinks should be located the closest possible to the point of care and, according to the WHO minimum requirements, the overall sink-to-patient bed ratio should be of 1:10.303 Placement of hand hygiene products (soap and handrubs) should be aligned with promoting hand hygiene in accordance with the concept of the “My five moments for hand hygiene”.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-2"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R24",
+      "kind": "in_corpus",
+      "question": "What is the minimum sink-to-patient bed ratio according to WHO?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When performing surgical hand antisepsis using an antimicrobial soap, scrub hands and forearms for the length of time recommended by the manufacturer, typically 2–5 minutes. Surgical hand antisepsis should be performed using either a suitable antimicrobial soap or suitable alcohol-based handrub, preferably with a product ensuring sustained activity, before donning sterile gloves (IB). After application of the alcohol-based handrub as recommended, allow hands and forearms to dry thoroughly before donning sterile gloves (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-0",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-3"
+      ],
+      "cited": true,
+      "confidence": 0.75,
+      "correct": true,
+      "generator_error": null,
+      "id": "R26",
+      "kind": "in_corpus",
+      "question": "How long should hands and forearms be scrubbed with antimicrobial soap before surgery?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.75,
+        "coverage": 1.0,
+        "question_support": 0.568,
+        "reasons": [],
+        "retrieval_relevance": 0.932,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The WHO Multimodal Hand Hygiene Improvement Strategy, the “My five moments for hand hygiene” and the five-step approaches are depicted in Figure III.1. These concepts are discussed more extensively in Part I.21 of the WHO Guidelines on Hand Hygiene in Health Care 2009. The multimodal strategy consists of five components to be implemented in parallel; the implementation strategy itself is designed to be adaptable without jeopardizing its fidelity and is intended therefore for use not only in sites where hand hygiene promotion has to be initiated but also within facilities where there is existing action on hand hygiene. Guide to Implementation of the WHO Multimodal Hand Hygiene Improvement Strategy",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#4-reminders-in-the-workplace-prompting-and-reminding-p-36-10",
+        "who-hand-hygiene-guidelines-summary-2009#guideline-implementation-p-35-2",
+        "who-hand-hygiene-guidelines-summary-2009#hand-hygiene-implementation-toolkit-p-59-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R28",
+      "kind": "in_corpus",
+      "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "✓ A WHO indicator to be met by all countries is, hand hygiene compliance monitoring and feedback to be established in all reference hospitals at least, by 2026.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-2-3"
+      ],
+      "cited": true,
+      "confidence": 0.936,
+      "correct": true,
+      "generator_error": null,
+      "id": "R30",
+      "kind": "in_corpus",
+      "question": "By which year should hand hygiene compliance monitoring and feedback be established in all reference hospitals?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.936,
+        "coverage": 1.0,
+        "question_support": 0.872,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Storage unit temperatures may need to be adjusted over time. Digital data logger (DDL) An electronic device that records data digitally over time or in relation to location either with a built-in or external instrument or sensor. These containers are “qualified” through laboratory testing under controlled conditions to ensure they achieve and maintain desired temperatures for a set amount of time.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#adjusting-storage-unit-temperatures-p-20-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-6",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-11"
+      ],
+      "cited": true,
+      "confidence": 0.609,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO5",
+      "kind": "out_of_corpus",
+      "question": "What steam temperature and exposure time are needed to autoclave surgical instruments?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.609,
+        "coverage": 1.0,
+        "question_support": 0.408,
+        "reasons": [],
+        "retrieval_relevance": 0.81,
+        "status": "validated",
         "unsupported_numbers": [],
         "unsupported_terms": []
       }
@@ -306,17 +520,17 @@
   ],
   "rerank_weight": 0.5,
   "retrieval": {
-    "capped_precision@1": 0.8889,
-    "capped_precision@10": 0.9556,
-    "capped_precision@5": 0.9333,
-    "hit@1": 0.6667,
-    "hit@10": 0.8889,
-    "hit@5": 0.8889,
-    "mrr": 0.7593,
-    "n": 9,
-    "precision@1": 0.8889,
-    "precision@10": 0.9556,
-    "precision@5": 0.9333,
+    "capped_precision@1": 0.9375,
+    "capped_precision@10": 0.8438,
+    "capped_precision@5": 0.85,
+    "hit@1": 0.6875,
+    "hit@10": 0.875,
+    "hit@5": 0.8125,
+    "mrr": 0.7465,
+    "n": 16,
+    "precision@1": 0.9375,
+    "precision@10": 0.8438,
+    "precision@5": 0.85,
     "rows": [
       {
         "capped_precision@1": 1.0,
@@ -400,7 +614,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 1.0,
+        "capped_precision@10": 0.9,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": null,
         "hit@1": false,
@@ -408,7 +622,7 @@
         "hit@5": false,
         "id": "R09",
         "precision@1": 1.0,
-        "precision@10": 1.0,
+        "precision@10": 0.9,
         "precision@5": 1.0,
         "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
         "rr": 0.0,
@@ -497,21 +711,161 @@
           "cdc-vaccine-storage-toolkit-2026",
           "cdc-vaccine-storage-toolkit-2026"
         ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R18",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How long should the entire alcohol handrub procedure take?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R20",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What should staff use to turn off the tap after washing their hands?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R22",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.6,
+        "question": "For which outbreak pathogens is washing with soap and water preferred over alcohol handrub?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R24",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "What is the minimum sink-to-patient bed ratio according to WHO?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R26",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "How long should hands and forearms be scrubbed with antimicrobial soap before surgery?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 9,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "R28",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+        "rr": 0.1111111111111111,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.1,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R30",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "By which year should hand hygiene compliance monitoring and feedback be established in all reference hospitals?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
       }
     ]
   },
   "review": [
     {
       "answer": "If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), then the symptomatic visitor must wear a mask while in the healthcare facility and r",
-      "confidence": 0.565,
+      "confidence": 0.571,
       "id": "R07",
       "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
       "reason": "correct answer withheld",
-      "validator_notes": "weak relevance to the question (0.56)"
+      "validator_notes": "weak relevance to the question (0.57)"
     },
     {
-      "answer": "The transmission of SARS-CoV in emergency departments by patients and their family members during the widespread SARS outbreaks in 2003 highlighted the need for vigilance and prompt implementation of infection control measures at the first ",
-      "confidence": 1.0,
+      "answer": "Category IB If it becomes necessary to place patients who require Droplet Precautions in a room with a patient who does not have the same infection:  * V.C.2.a.iii. Avoid placing patients on Droplet Precautions in the same room with patien",
+      "confidence": 0.728,
       "id": "R09",
       "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
       "reason": "VALIDATED BUT WRONG",
@@ -519,10 +873,34 @@
     },
     {
       "answer": "TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate ",
-      "confidence": 0.904,
+      "confidence": 0.905,
       "id": "T03",
       "question": "How often should temperature monitoring devices be calibration tested?",
       "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "difficile-associated disease rates began to rise in the USA long before the widespread use of alcohol-based handrubs. alcohol-based handrub, if available) be easily accessible and as close as possible – within arm’s reach of where patient c",
+      "confidence": 0.65,
+      "id": "R18",
+      "question": "How long should the entire alcohol handrub procedure take?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "The WHO Multimodal Hand Hygiene Improvement Strategy, the “My five moments for hand hygiene” and the five-step approaches are depicted in Figure III.1. These concepts are discussed more extensively in Part I.21 of the WHO Guidelines on Hand",
+      "confidence": 1.0,
+      "id": "R28",
+      "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Storage unit temperatures may need to be adjusted over time. Digital data logger (DDL) An electronic device that records data digitally over time or in relation to location either with a built-in or external instrument or sensor. These cont",
+      "confidence": 0.609,
+      "id": "RO5",
+      "question": "What steam temperature and exposure time are needed to autoclave surgical instruments?",
+      "reason": "VALIDATED BUT OUT OF CORPUS",
       "validator_notes": ""
     }
   ],
@@ -530,139 +908,139 @@
   "sweep": [
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.5,
+      "decision_accuracy": 0.6316,
+      "ooc_false_accept_rate": 1.0,
       "pass_rate": 1.0,
       "threshold": 0.3,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.5,
+      "decision_accuracy": 0.6316,
+      "ooc_false_accept_rate": 1.0,
       "pass_rate": 1.0,
       "threshold": 0.35,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.5,
+      "decision_accuracy": 0.6316,
+      "ooc_false_accept_rate": 1.0,
       "pass_rate": 1.0,
       "threshold": 0.4,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.5,
+      "decision_accuracy": 0.6316,
+      "ooc_false_accept_rate": 1.0,
       "pass_rate": 1.0,
       "threshold": 0.45,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.5,
+      "decision_accuracy": 0.6842,
+      "ooc_false_accept_rate": 0.6667,
       "pass_rate": 1.0,
       "threshold": 0.5,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
       "correct_but_flagged_rate": 0.0,
-      "decision_accuracy": 0.8182,
-      "ooc_false_accept_rate": 0.0,
+      "decision_accuracy": 0.7368,
+      "ooc_false_accept_rate": 0.3333,
       "pass_rate": 1.0,
       "threshold": 0.55,
-      "validated_but_wrong_rate": 0.2222,
-      "validated_precision": 0.7778
+      "validated_but_wrong_rate": 0.25,
+      "validated_precision": 0.75
     },
     {
-      "correct_but_flagged_rate": 0.1429,
-      "decision_accuracy": 0.7273,
-      "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.8889,
+      "correct_but_flagged_rate": 0.0833,
+      "decision_accuracy": 0.6842,
+      "ooc_false_accept_rate": 0.3333,
+      "pass_rate": 0.9375,
       "threshold": 0.6,
-      "validated_but_wrong_rate": 0.25,
-      "validated_precision": 0.75
+      "validated_but_wrong_rate": 0.2667,
+      "validated_precision": 0.7333
     },
     {
-      "correct_but_flagged_rate": 0.1429,
-      "decision_accuracy": 0.7273,
+      "correct_but_flagged_rate": 0.0833,
+      "decision_accuracy": 0.7368,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.8889,
+      "pass_rate": 0.9375,
       "threshold": 0.65,
-      "validated_but_wrong_rate": 0.25,
-      "validated_precision": 0.75
+      "validated_but_wrong_rate": 0.2667,
+      "validated_precision": 0.7333
     },
     {
-      "correct_but_flagged_rate": 0.1429,
-      "decision_accuracy": 0.7273,
+      "correct_but_flagged_rate": 0.0833,
+      "decision_accuracy": 0.7895,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.8889,
+      "pass_rate": 0.875,
       "threshold": 0.7,
-      "validated_but_wrong_rate": 0.25,
-      "validated_precision": 0.75
+      "validated_but_wrong_rate": 0.2143,
+      "validated_precision": 0.7857
     },
     {
-      "correct_but_flagged_rate": 0.1429,
-      "decision_accuracy": 0.7273,
+      "correct_but_flagged_rate": 0.0833,
+      "decision_accuracy": 0.8421,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.8889,
+      "pass_rate": 0.8125,
       "threshold": 0.75,
-      "validated_but_wrong_rate": 0.25,
-      "validated_precision": 0.75
+      "validated_but_wrong_rate": 0.1538,
+      "validated_precision": 0.8462
     },
     {
-      "correct_but_flagged_rate": 0.2857,
-      "decision_accuracy": 0.6364,
+      "correct_but_flagged_rate": 0.1667,
+      "decision_accuracy": 0.7895,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.7778,
+      "pass_rate": 0.75,
       "threshold": 0.8,
-      "validated_but_wrong_rate": 0.2857,
-      "validated_precision": 0.7143
+      "validated_but_wrong_rate": 0.1667,
+      "validated_precision": 0.8333
     },
     {
-      "correct_but_flagged_rate": 0.2857,
-      "decision_accuracy": 0.6364,
+      "correct_but_flagged_rate": 0.3333,
+      "decision_accuracy": 0.6842,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.7778,
+      "pass_rate": 0.625,
       "threshold": 0.85,
-      "validated_but_wrong_rate": 0.2857,
-      "validated_precision": 0.7143
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
     },
     {
-      "correct_but_flagged_rate": 0.2857,
-      "decision_accuracy": 0.6364,
+      "correct_but_flagged_rate": 0.3333,
+      "decision_accuracy": 0.6842,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.7778,
+      "pass_rate": 0.625,
       "threshold": 0.9,
-      "validated_but_wrong_rate": 0.2857,
-      "validated_precision": 0.7143
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
     }
   ],
   "threshold": 0.6,
   "validation": {
-    "decision_accuracy": 0.7273,
+    "decision_accuracy": 0.6842,
     "in_corpus": {
-      "answer_correct_rate": 0.7778,
-      "correct_but_flagged_rate": 0.1429,
-      "mean_confidence": 0.9008,
-      "n": 9,
-      "pass_rate": 0.8889,
-      "validated_but_wrong_rate": 0.25,
-      "validated_precision": 0.75
+      "answer_correct_rate": 0.75,
+      "correct_but_flagged_rate": 0.0833,
+      "mean_confidence": 0.8711,
+      "n": 16,
+      "pass_rate": 0.9375,
+      "validated_but_wrong_rate": 0.2667,
+      "validated_precision": 0.7333
     },
     "out_of_corpus": {
-      "false_accept_rate": 0.0,
-      "mean_confidence": 0.2645,
-      "n": 2,
-      "needs_review_rate": 1.0
+      "false_accept_rate": 0.3333,
+      "mean_confidence": 0.5447,
+      "n": 3,
+      "needs_review_rate": 0.6667
     },
     "threshold": 0.6
   }
