@@ -46,7 +46,9 @@ def test_splits_are_balanced_and_disjoint():
         for kind in ("in_corpus", "out_of_corpus"):
             dev = [x for x in queries if x.kind == kind and x.split == "dev"]
             test = [x for x in queries if x.kind == kind and x.split == "test"]
-            assert abs(len(dev) - len(test)) <= 1 and dev and test
+            assert dev and test
+            if name == "queries_synthetic.jsonl":      # the real corpus gained a larger dev set and a separate sealed set
+                assert abs(len(dev) - len(test)) <= 1
         assert len({x.question for x in queries}) == len(queries)
 
 
@@ -174,3 +176,14 @@ def test_wilson_interval_behaves_sensibly():
     assert lo < 0.5 < hi and hi - lo < 0.21
     lo, hi = wilson(0, 20)
     assert lo == 0.0 and 0.1 < hi < 0.2
+
+
+def test_sealed_queries_are_excluded_from_all_and_only_returned_by_name(tmp_path):
+    import json
+    rows = [{"id": f"X{i}", "question": "q", "kind": "in_corpus", "split": s} for i, s in enumerate(["dev", "test", "sealed"])]
+    path = tmp_path / "q.jsonl"
+    path.write_text("\n".join(json.dumps(r) for r in rows), encoding="utf-8")
+    from guiderail.evalkit import load_queries
+    assert [q.split for q in load_queries(path, "all")] == ["dev", "test"]
+    assert [q.split for q in load_queries(path, "sealed")] == ["sealed"]
+    assert len(load_queries(path)) == 3        # label validation sees everything

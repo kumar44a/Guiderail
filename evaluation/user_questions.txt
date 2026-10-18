@@ -1,0 +1,25 @@
+# YOUR QUESTIONS FOR THE SEALED TEST SET  (about 30)
+#
+# Why: the system must be judged on questions it was not built around. Yours are the best evidence there is.
+#
+# How to write them (please do this from the documents, NOT by trying them on the app first):
+#   1. Open the PDFs in data/real/ (isolation guideline, vaccine storage toolkit, toolkit resources list,
+#      WHO hand hygiene summary, WHO 2026 newsletter).
+#   2. Pick a fact. Ask about it the way a nurse, coordinator or manager would actually ask, in your own words.
+#      Don't copy the document's wording. Typos, short fragments and informal phrasing are all welcome.
+#   3. Mix the documents (aim for a few from each) and mix question types: how long / how many / what / when /
+#      where / yes-no / "what should I do if...".
+#   4. Include about 5 questions the documents do NOT answer (write NONE as the expected answer).
+#   5. Do not look at how the system answers a question before writing it down here. Questions you have already tried
+#      in the app are fine to list, but mark them with the word TRIED at the end of the line.
+#
+# FORMAT, one question per line, three parts separated by " | ":
+#   question | expected answer: the key words or numbers that must appear (or NONE) | document and page (a rough pointer is fine)
+#
+# Examples (delete or replace; lines starting with # are ignored):
+#   how many days before the fridge temp is stable after install | 2 to 7 days | vaccine storage toolkit, about p.20
+#   can i store lunch in the vaccine fridge | no, never store food and beverages | vaccine storage toolkit
+#   what is the best treatment for malaria | NONE |
+#
+# WRITE YOUR QUESTIONS BELOW THIS LINE
+

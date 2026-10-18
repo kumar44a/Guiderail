@@ -16,7 +16,7 @@ from guiderail.retriever import Retriever
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     ap.add_argument("--corpus", choices=sorted(CORPORA), required=True)
-    ap.add_argument("--split", choices=["dev", "test", "all"], default="dev")
+    ap.add_argument("--split", choices=["dev", "test", "all", "sealed"], default="dev")
     args = ap.parse_args()
 
     loaded = fresh_index(args.corpus)

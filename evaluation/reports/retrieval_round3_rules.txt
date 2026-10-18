@@ -1,0 +1,50 @@
+Retrieval round (round 3). Written and committed BEFORE any retrieval change and before any baseline run.
+
+Why: natural questions on real PDFs often find nothing although the PDF has the answer. Diagnosed causes (from the owner's own
+questions and earlier evaluation misses): (1) the document writes "handrub", the user writes "hand rub" or "hand-rub"; (2) vocabulary
+gaps (benefit/advantage, how long/duration, outpatient/ambulatory); (3) the re-ranker only reorders the FAISS top 30, so a passage outside
+that pool can never be found; (4) reference-list pages produce noise chunks that outrank real passages.
+
+Allowed techniques (owner's decision): deterministic and offline only. FAISS and the 256-D hashed embeddings stay. No new model, no API.
+
+Changes, applied and judged cumulatively in this order:
+  A  Compound normalisation. Applied to documents AND questions before tokenising (so the index changes):
+       hand rub | hand-rub | handrub -> handrub          hand wash | hand-wash | handwash -> handwash
+       hand washing | hand-washing | handwashing -> handwashing     health care | health-care | healthcare -> healthcare
+  B  Hybrid retrieval. BM25 over the whole vocabulary (k1=1.5, b=0.75, the textbook defaults, not tuned) beside the FAISS search. Take
+     the top 50 from each, merge by reciprocal rank fusion (k=60, equal weights), apply the existing version filter and the existing
+     lexical re-ranker (weight 0.5, pool 30) unchanged. Hit.score stays the cosine similarity.
+  C  Query-side expansion (added to the QUESTION only, never to documents; each added term counts half an original term in BM25 and is
+     appended once to the text embedded for FAISS):
+       benefit, benefits <-> advantage, advantages            "how long" -> duration, time
+       "how often" -> frequency, every                         "how soon" -> within
+       "where" -> location, placed, position                   outpatient <-> ambulatory
+       fridge <-> refrigerator                                  sanitiser, sanitizer -> handrub, alcohol-based
+       thermometer -> temperature, monitoring, device          settle -> stabilize
+       fake <-> artificial                                      kid, kids -> child, children;  paediatric <-> pediatric
+       dosage <-> dose                                          "cracked skin", "dry skin" -> dermatitis, irritation
+     The table was derived from failures already seen, so dev questions that use these words flatter it. The sealed set is the test of
+     whether it generalises.
+  D  Reference-list removal in the PDF loader. A line is a citation line if it matches "et al", or a year followed by volume/page
+     ("1997, 35:3163"), or starts with a number then "Surname Initials". A section is dropped when it has at least 4 non-empty lines and
+     at least half of them are citation lines.
+
+Data:
+  Dev (judging): real queries N01-N26, NO1-NO3 (natural wording, written before any run), plus all earlier real dev queries.
+  Two of the dev queries (N17, N18) are the owner's own tried questions, so they are exposed; they carry no extra weight.
+  Sealed (final judgement, run ONCE): N31-N42, NO4-NO5 written by me, plus about 30 questions written by the owner in
+  evaluation/user_questions.txt. The sealed set is excluded from `--split all` and every run on it is logged.
+  Earlier test splits are exposed and are not used for any decision.
+
+Metrics. Primary: real-dev retrieval Hit@5 (a chunk containing the expected fact is in the top 5) and MRR.
+Guards, which must hold for a change to be kept:
+  G1  synthetic dev Hit@5 does not fall and MRR does not fall by more than 0.01;
+  G2  real-dev Hit@5 on the earlier dev queries does not fall;
+  G3  with the extractive generator, dev wrong-but-validated answers and out-of-scope accepts do not rise on either corpus;
+  G4  the validator stress set is not worse;
+  G5  two index builds are byte-identical.
+Keep rule for each change: real-dev Hit@5 rises by at least one query or MRR rises by at least 0.02, with no fall in Hit@5, and G1-G5 hold.
+Otherwise the change is reverted, the failure reported, and later changes are judged without it.
+
+After the last kept change the configuration is frozen. Then, once: dev end-to-end for both generators, and the sealed set once per
+generator. Everything is reported as found, including any criterion still not met. Nothing is tuned on the sealed set.
