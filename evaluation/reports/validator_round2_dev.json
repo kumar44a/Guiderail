@@ -1,0 +1,149 @@
+{
+  "reports": {
+    "synthetic_dev_extractive_final": {
+      "before": {
+        "validated_wrong": [
+          "S23"
+        ],
+        "ooc_accepted": [
+          "S45",
+          "S47"
+        ]
+      },
+      "after": {
+        "validated_wrong": [
+          "S23"
+        ],
+        "ooc_accepted": [
+          "S45",
+          "S47"
+        ]
+      },
+      "released_correct": [],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    },
+    "synthetic_dev_llm_final": {
+      "before": {
+        "validated_wrong": [],
+        "ooc_accepted": []
+      },
+      "after": {
+        "validated_wrong": [],
+        "ooc_accepted": []
+      },
+      "released_correct": [],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    },
+    "real_dev_extractive_final": {
+      "before": {
+        "validated_wrong": [
+          "R09",
+          "R18",
+          "R28",
+          "T03"
+        ],
+        "ooc_accepted": [
+          "RO5"
+        ]
+      },
+      "after": {
+        "validated_wrong": [
+          "R09",
+          "R18",
+          "R28",
+          "T03"
+        ],
+        "ooc_accepted": [
+          "RO5"
+        ]
+      },
+      "released_correct": [],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    },
+    "real_dev_llm_final": {
+      "before": {
+        "validated_wrong": [],
+        "ooc_accepted": []
+      },
+      "after": {
+        "validated_wrong": [],
+        "ooc_accepted": []
+      },
+      "released_correct": [],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    },
+    "real_dev_extractive_r2base": {
+      "before": {
+        "validated_wrong": [
+          "R09",
+          "R18",
+          "R28",
+          "R36",
+          "T03"
+        ],
+        "ooc_accepted": [
+          "RO5",
+          "RO7"
+        ]
+      },
+      "after": {
+        "validated_wrong": [
+          "R09",
+          "R18",
+          "R28",
+          "R36",
+          "T03"
+        ],
+        "ooc_accepted": [
+          "RO5",
+          "RO7"
+        ]
+      },
+      "released_correct": [],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    },
+    "real_dev_llm_r2base": {
+      "before": {
+        "validated_wrong": [
+          "R36"
+        ],
+        "ooc_accepted": []
+      },
+      "after": {
+        "validated_wrong": [
+          "R36"
+        ],
+        "ooc_accepted": []
+      },
+      "released_correct": [
+        "R33",
+        "R34",
+        "R35",
+        "R37"
+      ],
+      "newly_withheld": [],
+      "rule_A_violated": false
+    }
+  },
+  "stress": {
+    "bad_flagged_before": 0.8889,
+    "bad_flagged_after": 0.8889,
+    "good_accepted_before": 0.7647,
+    "good_accepted_after": 0.8235,
+    "broke": [],
+    "fixed": [
+      "V42"
+    ]
+  },
+  "verdict": {
+    "A": true,
+    "B": true,
+    "C": true
+  },
+  "accepted": true
+}

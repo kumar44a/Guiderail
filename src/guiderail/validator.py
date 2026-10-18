@@ -41,6 +41,10 @@ RELEVANCE_CEIL = 0.30      # cosine at or above this counts as full retrieval re
 PENALTY = 0.5              # multiplier on coverage for unsupported numbers / negations
 NEGATIONS = frozenset({"not", "no", "never", "without"})
 _NUMBER_RE = re.compile(r"\d+(?:\.\d+)?")
+# "No, brushes are not recommended": a leading yes/no answers the question's form and is not a claim about the
+# evidence, so it is not scored as a content term or an unsupported negation. Requires punctuation after it, so a
+# determiner ("No further action is needed") is left alone.
+_RESPONSE_MARKER = re.compile(r"^\s*(?:yes|no)\s*[,.:;\u2014-]\s*", re.IGNORECASE)
 # A number together with the word right after it, e.g. "10 days", "5 years", "0.5 percent".
 _QUANTITY_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:°\s*)?([a-zA-Z%]+)")
 
@@ -86,7 +90,7 @@ def validate(
     evidence_text = "\n".join(c.text for c in evidence)
     metadata_text = " ".join(f"{c.agency} {c.title} {c.section}" for c in evidence)
     evidence_tokens = set(tokenize(evidence_text)) | set(tokenize(metadata_text))
-    answer_tokens = list(dict.fromkeys(tokenize(answer)))   # unique, order kept
+    answer_tokens = list(dict.fromkeys(tokenize(_RESPONSE_MARKER.sub("", answer, count=1))))   # unique, order kept
     if not answer_tokens:
         return Validation(0.0, "needs_review", 0.0, 0.0, 0.0, reasons=["answer has no content terms"])
 

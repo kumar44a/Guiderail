@@ -36,3 +36,8 @@ Accept rules for F1 (all must hold, on dev material):
 
 Expectation, stated in advance: F1 should release the "No," answers. It is not expected to bring the real-corpus LLM pass rate to 80%,
 because most of the other withheld answers have different causes.
+
+ADDENDUM (written before F1 was measured)
+Implementation detail fixed while writing the code, before any result with F1 was seen: the yes/no marker is only recognised when
+punctuation (, . : ; or a dash) follows it, so a determiner ("No further action is needed") is not treated as a marker. This is a
+narrower reading of "the first word is yes or no"; it can only make F1 release fewer answers, never more.

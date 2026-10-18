@@ -111,3 +111,47 @@ def test_threshold_controls_status(evidence):
 def test_confidence_is_bounded(evidence):
     for answer in ("Store refrigerated vaccines between 2 and 8 degrees Celsius.", "zzz qqq 99", "x"):
         assert 0.0 <= _check(evidence, answer).confidence <= 1.0
+
+
+# ---------- yes/no response marker (validator round 2) ----------
+
+def _plain(text):
+    return Chunk("t#a-0", "t", "WHO", "T", 2024, 1, "t", "A", 0, text, True)
+
+
+def _yn(answer, evidence_text="Brushes are not recommended for surgical hand preparation. Use a nail cleaner."):
+    from guiderail.lexicon import Lexicon as L
+    chunks = [_plain(evidence_text)]
+    return validate("Are brushes recommended for surgical hand preparation?", answer, chunks, 0.4, L(chunks))
+
+
+def test_leading_no_is_not_scored_as_an_unsupported_negation():
+    with_marker = _yn("No, brushes are not recommended for surgical hand preparation.")
+    without = _yn("Brushes are not recommended for surgical hand preparation.")
+    assert with_marker.confidence == without.confidence
+    assert "no" not in with_marker.unsupported_terms and not any("negation" in r for r in with_marker.reasons)
+
+
+def test_leading_yes_is_not_scored_as_an_unsupported_term():
+    v = _yn("Yes. Use a nail cleaner.")
+    assert "yes" not in v.unsupported_terms and v.coverage == 1.0
+
+
+def test_no_as_a_determiner_is_still_scored():
+    v = _yn("No further brushes are recommended for surgical hand preparation.")
+    assert "no" in v.unsupported_terms and any("negation" in r for r in v.reasons)
+
+
+def test_a_bare_yes_or_no_is_not_an_answer():
+    v = _yn("No.")
+    assert v.status == "needs_review" and v.confidence == 0.0
+
+
+def test_marker_does_not_hide_a_fabricated_number():
+    v = _yn("No, scrub for at least 15 minutes.")
+    assert v.status == "needs_review" and "15" in v.unsupported_numbers
+
+
+def test_negation_later_in_the_answer_is_still_checked():
+    v = _yn("No, brushes are never allowed.")
+    assert "never" in v.unsupported_terms and any("negation" in r for r in v.reasons)
