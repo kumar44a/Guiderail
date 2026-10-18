@@ -1,0 +1,27 @@
+Retrieval round 4. Written and committed BEFORE any round-4 change or measurement. It continues round 3 (retrieval_round3_rules.txt).
+
+Round 3 outcome (see retrieval_round3_*.json): only B (hybrid BM25 + FAISS fusion) was kept. A (compound replacement) lowered synthetic MRR
+and did nothing for real dev; C (query expansion) and D (per-section reference removal) produced no measurable gain alone.
+The owner's four tried questions (hand rub duration, benefits of hand rub, where to find hand rub) still fail under B.
+
+Why these are retried: round 3 judged each change alone against a baseline that had none of the others. The failing questions need
+several things at once. Example: "how long should i rub my hands with sanitiser" must reach a chunk that says "How to handrub ...
+Duration of the entire procedure: 20-30 seconds". That needs handrub ~ hand rub (A), long ~ duration (C) and sanitiser ~ handrub (C).
+So the changes are tried again in a different form, on top of B, in this order, each against the previous kept state.
+This is a second look at the same dev set, which raises the risk of fitting it. The sealed set remains the arbiter.
+
+Changes:
+  A2  Compound handling that KEEPS both spellings instead of replacing one. Applied to documents and questions before tokenising.
+      The pattern  hand[ -]*(rub|wash)(suffix)  is rewritten to emit both forms side by side, for example
+        "hand rub"  -> "handrub hand rub"       "handrubbing" -> "handrubbing hand rubbing"       "hand-washing" -> "handwashing hand washing"
+      and  health[ -]*care -> "healthcare health care".  A document that says "handrub" thus also contains hand and rub, and a
+      question that says "hand rub" also contains handrub; the two-word pair (bigram) survives for texts that use it.
+  C   The same query-side expansion table as in round 3, unchanged (see retrieval_round3_rules.txt), with the same weights.
+  D2  Reference-list removal by RUNS. A section is citation-like when it has at least 2 non-empty rows (its title counts) and at least half
+      of them are citation lines (same citation-line definition as round 3). Maximal runs of 3 or more consecutive citation-like sections
+      are dropped. Isolated citation-like sections stay.
+
+Data, metrics, guards G1-G5 and the keep rule are exactly those of round 3, evaluated on the same real-dev and synthetic-dev material,
+using the extractive generator, against the previous kept state (round 3's B for A2).
+After the last kept change: freeze, run dev end to end for both generators, then the sealed set once per generator, together with the
+questions the owner writes in evaluation/user_questions.txt. Everything is reported as found. Nothing is tuned on the sealed set.
