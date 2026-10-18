@@ -1,0 +1,17 @@
+Rules for re-running the Phase 3 real-corpus evaluation after adding the two WHO hand hygiene documents.
+Written and committed BEFORE any query was run on the five-document corpus.
+
+Why: the real corpus grew from 3 to 5 documents (adds the 2009 WHO hand hygiene summary and the 2026 WHO IPC newsletter).
+The earlier real-corpus numbers (tag final_3doc) describe the 3-document corpus only.
+
+1. Frozen configuration. No change to retriever weights, validator, generator code, prompt or threshold (0.6) in this run.
+2. One loader fix is included, made before any query was run: ligature characters (fi, fl, ffi) and "/gNNN" glyph placeholders
+   in extracted PDF text are normalised. They occur only in the hand hygiene PDF; the other PDFs contain none, so their chunks must
+   be unchanged (checked before the run).
+3. 17 new queries (15 in-corpus, 2 out-of-corpus) were written from the PDF text before any run. Existing queries are untouched.
+   New dev = R18 R20 R22 R24 R26 R28 R30 RO5; new test = R19 R21 R23 R25 R27 R29 R31 R32 RO6.
+4. Order: dev (both generators) first, then test once per generator. Every test run is logged in test_split_runs.log. The 10
+   original real test queries are being run a second time; the report shows them separately from the new ones.
+5. Nothing is tuned from these results. Problems found (for example reference-list noise chunks) are reported as limitations,
+   not fixed in this run; a fix would need a new accept rule and fresh queries.
+6. Results are reported whatever they are, including any criterion that was met before and is not met now.

@@ -3,7 +3,8 @@ format the synthetic corpus uses, so chunking, embedding and indexing are unchan
 
 Real PDFs have no front matter, so metadata comes from a `sources.json` file next to
 them. Cleaning steps (all heuristic, all counted in `LoadStats`):
-  1. extract text per page with pypdf
+  1. extract text per page with pypdf, expanding typographic ligatures (\ufb01 -> fi) and
+     removing unmapped-glyph placeholders such as "/g131" that some fonts leave behind
   2. drop page numbers and lines that repeat on many pages (running headers/footers)
   3. join hyphenated line breaks and reflow wrapped lines into paragraphs
   4. detect headings (numbered, ALL CAPS, short Title Case) and make them `## ` sections,
@@ -39,6 +40,8 @@ _TERMINAL_PUNCT = (".", ",", ";", ":", "?", "!")
 _FUNCTION_WORDS = frozenset(
     "the of in and to for a an with by on or as at from is are that which than into".split())
 _PAIRS = {"(": ")", "[": "]", "“": "”", '"': '"'}
+_LIGATURES = {"\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl", "\ufb03": "ffi", "\ufb04": "ffl", "\ufb05": "st", "\ufb06": "st"}
+_GLYPH_PLACEHOLDER = re.compile(r"/g\d+")   # e.g. a bullet whose font has no unicode mapping
 
 
 @dataclass
@@ -62,7 +65,14 @@ def extract_pages(path: Path) -> list[str]:
 
     logging.getLogger("pypdf").setLevel(logging.ERROR)   # silences benign "wrong pointing object" noise
     reader = PdfReader(str(path))
-    return [(page.extract_text() or "") for page in reader.pages]
+    return [clean_glyphs(page.extract_text() or "") for page in reader.pages]
+
+
+def clean_glyphs(text: str) -> str:
+    """Expand ligature characters (so "\ufb01ve" is "five") and drop "/gNNN" glyph placeholders."""
+    for lig, plain in _LIGATURES.items():
+        text = text.replace(lig, plain)
+    return _GLYPH_PLACEHOLDER.sub("", text)
 
 
 def _normalise_for_repeat(line: str) -> str:

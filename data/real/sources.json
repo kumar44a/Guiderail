@@ -43,16 +43,23 @@
       "topic": "hand_hygiene",
       "source_url": null,
       "note": "64-page English summary edition, downloaded by the user. The URL was not recorded; the user's intended link (who.int item 9789241597906) is the full guideline, so this file is the summary of it, not the full text. Some pages are image-only and yield no text."
+    },
+    {
+      "file": "ipc_newsletter_29-april-2026_final.pdf",
+      "doc_id": "who-ipc-newsletter-2026-04",
+      "agency": "WHO",
+      "title": "WHO Infection Prevention and Control Global Newsletter, 29 April 2026: World Hand Hygiene Day 2026",
+      "year": 2026,
+      "version": 1,
+      "topic": "hand_hygiene",
+      "source_url": null,
+      "note": "3-page English news bulletin supplied by the user as the 2026 hand hygiene document. Campaign logistics plus a few key messages; not a guideline, so it is a short, recent, low-guidance document. It does not supersede the 2009 summary. Its French and Spanish apology footer is kept as-is."
     }
   ],
   "excluded": [
     {
       "file": "fr-mgmt-7-facilitating-hand-hygiene-2.pdf",
       "reason": "French-language CDC Ebola IPC document. The embedder, stemmer and stopword list are English-only. Superseded by hand-hygiene-who.pdf."
-    },
-    {
-      "file": "ipc_newsletter_29-april-2026_final.pdf",
-      "reason": "3-page WHO IPC newsletter (news and links for World Hand Hygiene Day), not guideline text."
     }
   ]
 }

@@ -207,3 +207,18 @@ def test_supersedes_works_for_pdf_documents(tmp_path):
                                             supersedes="cdc-test-2020")])
     docs = {d.doc_id: d for d in PdfLoader(tmp_path).load()}
     assert docs["cdc-test-2020"].superseded_by == "cdc-test-2024"
+
+
+# ---------- glyph cleaning ----------
+
+def test_ligature_characters_are_expanded():
+    from guiderail.loaders.pdf_loader import clean_glyphs
+    assert clean_glyphs("the ﬁve moments, body ﬂuids, signiﬁcant, eﬃcient") == \
+        "the five moments, body fluids, significant, efficient"
+
+
+def test_unmapped_glyph_placeholders_are_removed_but_plain_slashes_survive():
+    from guiderail.loaders.pdf_loader import clean_glyphs
+    assert clean_glyphs("/g131/g3 access to soap") == " access to soap"
+    assert clean_glyphs("tap/faucet and 20/30 seconds and and/or") == "tap/faucet and 20/30 seconds and and/or"
+
