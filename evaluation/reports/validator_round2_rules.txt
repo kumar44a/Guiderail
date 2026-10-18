@@ -1,0 +1,38 @@
+Validator fix round (round 2). Written and committed BEFORE any code change and before any query below was run.
+
+Why: the analysis of the real-corpus results found that the validator withheld correct LLM answers for mechanical reasons.
+Three answers began "No," and were penalised because the word "no" is not in the evidence, although the evidence says "not".
+
+Scope: the validator only, and exactly one change.
+  F1  If the first word of the answer is "yes" or "no", treat it as a response marker: leave it out of the answer's content terms and out
+      of the unsupported-negation check. Nothing else changes (weights, floors, penalties, threshold, retrieval, generators, prompt).
+Considered and NOT done:
+  - Ratio/footnote numbers ("1:10.303" in the evidence read as 10.303). Only one such instance exists in the real PDFs searched, so a fix
+    would be fitted to a single case and cannot be evaluated on fresh data.
+  - Low question-support scores (two withheld answers), and unsupported connective words such as "instead". Not mechanical.
+  - The extractive generator's wrong-but-validated answers (the validator checks support, not correctness). Not addressed by this round.
+
+Data (new, written from the PDF text before any run; existing queries untouched):
+  Dev : R33-R40 and RO7-RO8.  Test: R41-R48 and RO9-RO10.
+  Thirteen of the sixteen in-corpus queries are yes/no in form ON PURPOSE, because that is the failure mode; R40, R47 and R48 are
+  controls. So these samples are enriched for the case F1 targets, and results must not be read as typical.
+  Four validator stress cases (V41-V44, real corpus, yes/no lead-ins, two good and two bad) were added to the stress set.
+
+Procedure:
+  1. Commit these rules, the queries and the stress cases.
+  2. Build evaluation/revalidate.py, which re-runs the validator on saved answers (no API calls). Check that under the CURRENT validator it
+     reproduces every stored confidence exactly. If it does not, stop and fix the tool before anything else.
+  3. Run the new dev queries with both generators under the current validator (baseline).
+  4. Implement F1 with unit tests.
+  5. Judge F1 on DEV material only: saved dev reports (synthetic and real, extractive and LLM, tag final), the new dev baseline, and the stress set.
+  6. If, and only if, F1 is accepted, run the new test queries once per generator (logged) and report them whatever they show.
+  7. Older test-split answers (R08, R27, R29 and others) are re-validated for description only; they are exposed and carry no weight.
+
+Accept rules for F1 (all must hold, on dev material):
+  A  In no (corpus, generator) cell does the number of wrong-but-validated answers or out-of-scope false accepts go up.
+  B  No stress case that was decided correctly before is decided wrongly after, and the share of bad answers sent to review does not fall.
+  C  At least one correct answer that was withheld before is validated after.
+  If any rule fails, F1 is reverted, the failure is reported, and no further validator change is made in this round.
+
+Expectation, stated in advance: F1 should release the "No," answers. It is not expected to bring the real-corpus LLM pass rate to 80%,
+because most of the other withheld answers have different causes.
