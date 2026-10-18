@@ -222,3 +222,13 @@ def test_unmapped_glyph_placeholders_are_removed_but_plain_slashes_survive():
     assert clean_glyphs("/g131/g3 access to soap") == " access to soap"
     assert clean_glyphs("tap/faucet and 20/30 seconds and and/or") == "tap/faucet and 20/30 seconds and and/or"
 
+
+
+def test_wrapped_lettered_sentence_is_not_a_heading_but_a_real_heading_is():
+    page = ["INTRODUCTION", "Hand hygiene matters.",
+            "A. The use of gloves does not replace the need for hand", "hygiene by either handrubbing or handwashing.",
+            "3.2 Skin reactions related to hand hygiene", "Irritant contact dermatitis is common among staff."]
+    body = pages_to_markdown(["\n".join(page)] * 3).body
+    assert "## A. The use" not in body
+    assert "does not replace the need for hand hygiene by either handrubbing" in body
+    assert "## 3.2 Skin reactions related to hand hygiene (p. 1)" in body

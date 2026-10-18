@@ -15,3 +15,13 @@ The earlier real-corpus numbers (tag final_3doc) describe the 3-document corpus 
 5. Nothing is tuned from these results. Problems found (for example reference-list noise chunks) are reported as limitations,
    not fixed in this run; a fix would need a new accept rule and fresh queries.
 6. Results are reported whatever they are, including any criterion that was met before and is not met now.
+
+ADDENDUM (still before any query was run on the five-document corpus)
+The label check (check_labels.py) rejected R28 and R29: their expected phrases were in section titles, not chunk text. Cause: the
+PDF heading detector took wrapped lettered recommendations ("A. The use of gloves does not replace the need for hand / hygiene by...")
+as headings. Fix: a line followed by a lowercase-initial line is a wrapped sentence, not a heading. This is a loader defect fix,
+not a tuning step; it was found by the label check, not by a result. It also moves a few chunks in the three original PDFs, so
+rule 2's expectation that they are unchanged no longer holds for them. The per-document effect is measured by
+evaluation/loader_fix_effect.py and saved in reports/loader_fix_effect.json. Consequence for reading the results: the change from
+the 3-document to the 5-document real results mixes two causes (added documents, loader fixes); it cannot be separated without a
+third run, and that run is not done.

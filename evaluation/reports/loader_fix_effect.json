@@ -1,0 +1,37 @@
+{
+  "description": "PDF loader fixes off vs on",
+  "rows": [
+    {
+      "doc_id": "cdc-isolation-precautions-2007",
+      "chunks_before": 1223,
+      "chunks_after": 1221,
+      "unchanged": false
+    },
+    {
+      "doc_id": "cdc-vaccine-storage-toolkit-2026",
+      "chunks_before": 223,
+      "chunks_after": 222,
+      "unchanged": false
+    },
+    {
+      "doc_id": "cdc-vaccine-storage-toolkit-resources-2026",
+      "chunks_before": 38,
+      "chunks_after": 40,
+      "unchanged": false
+    },
+    {
+      "doc_id": "who-hand-hygiene-guidelines-summary-2009",
+      "chunks_before": 453,
+      "chunks_after": 442,
+      "unchanged": false
+    },
+    {
+      "doc_id": "who-ipc-newsletter-2026-04",
+      "chunks_before": 13,
+      "chunks_after": 13,
+      "unchanged": true
+    }
+  ],
+  "total_before": 1950,
+  "total_after": 1938
+}

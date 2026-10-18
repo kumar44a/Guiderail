@@ -8,7 +8,8 @@ them. Cleaning steps (all heuristic, all counted in `LoadStats`):
   2. drop page numbers and lines that repeat on many pages (running headers/footers)
   3. join hyphenated line breaks and reflow wrapped lines into paragraphs
   4. detect headings (numbered, ALL CAPS, short Title Case) and make them `## ` sections,
-     labelled with the page they start on so citations can point at a page
+     labelled with the page they start on so citations can point at a page; a line followed by
+     a lowercase-initial line is a wrapped sentence, not a heading
   5. fall back to one section per page when a document yields almost no headings
 """
 
@@ -133,6 +134,13 @@ def is_heading(line: str) -> bool:
             and all(w[0].isupper() for w in significant) and not line.islower())
 
 
+def _wraps_onto_lowercase(next_line: str) -> bool:
+    """A real heading is not followed by a line that starts in lowercase: that is a wrapped sentence,
+    e.g. a lettered recommendation "A. The use of gloves does not replace the need for hand / hygiene by ..."."""
+    stripped = next_line.lstrip()
+    return bool(stripped) and stripped[0].isalpha() and stripped[0].islower()
+
+
 def _reflow(lines: list[str]) -> str:
     """Join wrapped lines into paragraphs; keep bullets as separate '- ' lines."""
     out: list[str] = []
@@ -165,8 +173,8 @@ def pages_to_markdown(pages: list[str]) -> PdfResult:
     open_section("Front matter", first_page_no)
     headings = 0
     for page_no, lines in enumerate(cleaned, start=1):
-        for line in lines:
-            if is_heading(line):
+        for i, line in enumerate(lines):
+            if is_heading(line) and not _wraps_onto_lowercase(lines[i + 1] if i + 1 < len(lines) else ""):
                 headings += 1
                 open_section(line.rstrip(":"), page_no)
             else:
