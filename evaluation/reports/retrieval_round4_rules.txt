@@ -25,3 +25,16 @@ Data, metrics, guards G1-G5 and the keep rule are exactly those of round 3, eval
 using the extractive generator, against the previous kept state (round 3's B for A2).
 After the last kept change: freeze, run dev end to end for both generators, then the sealed set once per generator, together with the
 questions the owner writes in evaluation/user_questions.txt. Everything is reported as found. Nothing is tuned on the sealed set.
+
+ADDENDUM 1 (written after A2 was measured and rejected, and after D2 was implemented but BEFORE any retrieval measurement of D)
+A2 failed every guard and is reverted. C is unchanged from round 3 (A2 was its only new context), so its round-3 verdict stands: revert.
+D2 as written cannot work: it drops only runs of 3+ fragmented sections, but the WHO reference list is mostly a few very long
+sections (one heading, many entries), and each entry spans several lines of which only about a third match a citation pattern.
+This was found by reading the documents and my own test fixture, not from any retrieval number. D2 is replaced by D3 before measuring:
+  D3  A section is dropped when either
+        (a) it has at least 6 non-empty rows (title counts) and at least 30% of them are citation lines, or
+        (b) it belongs to a maximal run of 3 or more consecutive sections that each have at least 2 rows with at least 30% citation lines.
+      The citation-line definition is unchanged.
+Calibration, on document content only (no retrieval result used): list every dropped section's title and page for all five real PDFs and
+check by eye that each is reference or author-list material and that nothing from the body of a guideline is dropped.
+The retrieval measurement of D3 then follows the usual keep rule against the round-3 kept state.

@@ -32,10 +32,16 @@ REPEAT_FRACTION = 0.3        # a line on >= 30% of pages is a running header/foo
 MIN_PAGES_FOR_REPEATS = 5
 MIN_HEADINGS = 3             # fewer detected headings than this -> one section per page
 MIN_SECTION_CHARS = 40
+CITATION_FRACTION = 0.3      # share of a section's rows (title counts) that must look like citations
+CITATION_MIN_ROWS_LONG = 6   # a single section with at least this many rows is dropped on its own ...
+CITATION_MIN_ROWS = 2        # ... shorter ones only count as "citation-like" and are dropped as part of a run
+REFERENCE_RUN = 3            # runs of at least this many consecutive citation-like sections are reference lists and are dropped
 
 _PAGE_NUMBER = re.compile(r"^(page\s+)?\d{1,4}(\s*(of|/)\s*\d{1,4})?$", re.IGNORECASE)
 _BULLET = re.compile(r"^\s*([•●▪◦·*\-–—])\s+")
 _NUMBERED_HEADING = re.compile(r"^(\d+(\.\d+){0,3}\.?|[IVX]{1,5}\.|[A-Z]\.)\s+[A-Z][^.]*$")
+_CITATION_YEAR_VOLUME = re.compile(r"\b(?:19|20)\d{2}\s*[,;:.]?\s*\d+\s*[:(]\s*\d")   # "1997, 35:3163", "2003;24:362"
+_CITATION_NUMBER_AUTHOR = re.compile(r"^\d{1,3}\.?\s+[A-Z][A-Za-z'\-]+\s+[A-Z]{1,3}\b")                  # "186. Hoffman PN"
 _TERMINAL_PUNCT = (".", ",", ";", ":", "?", "!")
 # A line ending in one of these is a wrapped sentence, not a heading.
 _FUNCTION_WORDS = frozenset(
@@ -52,6 +58,7 @@ class LoadStats:
     repeated_lines_removed: int = 0
     headings_detected: int = 0
     page_fallback: bool = False
+    reference_sections_dropped: int = 0
     sections: int = 0
 
 
@@ -134,6 +141,43 @@ def is_heading(line: str) -> bool:
             and all(w[0].isupper() for w in significant) and not line.islower())
 
 
+def is_citation_line(line: str) -> bool:
+    return bool(re.search(r"\bet al\b", line) or _CITATION_YEAR_VOLUME.search(line) or _CITATION_NUMBER_AUTHOR.match(line))
+
+
+def citation_share(title: str, lines: list[str]) -> tuple[int, float]:
+    rows = [x for x in [title, *lines] if x.strip()]
+    return len(rows), (sum(is_citation_line(x) for x in rows) / len(rows) if rows else 0.0)
+
+
+def is_citation_like(title: str, lines: list[str]) -> bool:
+    n, share = citation_share(title, lines)
+    return n >= CITATION_MIN_ROWS and share >= CITATION_FRACTION
+
+
+def reference_sections(sections: list[tuple[str, list[str]]]) -> set[int]:
+    """Indexes of sections that are reference lists: long and citation-heavy on their own, or part of a run of citation-like sections."""
+    strip_label = lambda t: re.sub(r" \(p\. \d+\)( \[\d+\])?$", "", t)
+    long_ones = {i for i, (t, ls) in enumerate(sections)
+                 if citation_share(strip_label(t), ls)[0] >= CITATION_MIN_ROWS_LONG and citation_share(strip_label(t), ls)[1] >= CITATION_FRACTION}
+    runs = reference_runs([is_citation_like(strip_label(t), ls) for t, ls in sections])
+    return long_ones | runs
+
+
+def reference_runs(flags: list[bool]) -> set[int]:
+    """Indexes belonging to a maximal run of at least REFERENCE_RUN consecutive True flags."""
+    drop: set[int] = set()
+    start = None
+    for i, flag in enumerate([*flags, False]):
+        if flag and start is None:
+            start = i
+        elif not flag and start is not None:
+            if i - start >= REFERENCE_RUN:
+                drop.update(range(start, i))
+            start = None
+    return drop
+
+
 def _wraps_onto_lowercase(next_line: str) -> bool:
     """A real heading is not followed by a line that starts in lowercase: that is a wrapped sentence,
     e.g. a lettered recommendation "A. The use of gloves does not replace the need for hand / hygiene by ..."."""
@@ -185,8 +229,12 @@ def pages_to_markdown(pages: list[str]) -> PdfResult:
         stats.page_fallback = True
         sections = [(f"Page {n}", lines) for n, lines in enumerate(cleaned, start=1)]
 
+    dropped = reference_sections(sections)
+    stats.reference_sections_dropped = len(dropped)
     parts = []
-    for title, lines in sections:
+    for index, (title, lines) in enumerate(sections):
+        if index in dropped:
+            continue
         text = _reflow(lines).strip()
         if len(text) >= MIN_SECTION_CHARS:
             parts.append(f"## {title}\n{text}")
