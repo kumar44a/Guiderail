@@ -1,0 +1,3 @@
+id,reason,confidence,question,answer,validator_notes
+R07,correct answer withheld,0.565,What must a symptomatic visitor do if they are allowed to stay with a patient?,"If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), then the symptomatic visitor must wear a mask while in the healthcare facility and r",weak relevance to the question (0.56)
+R09,flagged: low confidence,0.0,Where should patients needing droplet precautions be placed in an outpatient setting?,No supported answer was found in the indexed guidelines.,abstained: no supported answer

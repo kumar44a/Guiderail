@@ -1,0 +1,10 @@
+[project]
+name = "guiderail"
+version = "0.1.0"
+description = "Citation-first healthcare guidelines RAG assistant with evidence validation"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = ["live_llm: calls the real Anthropic API; skipped unless ANTHROPIC_API_KEY is set"]

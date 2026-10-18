@@ -1,0 +1,58 @@
+{
+  "documents": [
+    {
+      "file": "Guideline-Isolation-H.pdf",
+      "doc_id": "cdc-isolation-precautions-2007",
+      "agency": "CDC",
+      "title": "2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings",
+      "year": 2007,
+      "version": 1,
+      "topic": "isolation_precautions",
+      "source_url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-Isolation-H.pdf",
+      "note": "Last updated September 2024 per the document's cover page; year is the guideline's publication year."
+    },
+    {
+      "file": "storage-handling-toolkit.pdf",
+      "doc_id": "cdc-vaccine-storage-toolkit-2026",
+      "agency": "CDC",
+      "title": "Vaccine Storage and Handling Toolkit",
+      "year": 2026,
+      "version": 1,
+      "topic": "vaccination_cold_chain",
+      "source_url": "https://www.cdc.gov/vaccines/hcp/downloads/storage-handling-toolkit.pdf",
+      "note": "41-page main toolkit (July 2026), English prose. Overlaps topically with the synthetic cold-chain guideline."
+    },
+    {
+      "file": "storage-handling-toolkit-resources.pdf",
+      "doc_id": "cdc-vaccine-storage-toolkit-resources-2026",
+      "agency": "CDC",
+      "title": "Vaccine Storage and Handling Toolkit: Key Resources",
+      "year": 2026,
+      "version": 1,
+      "topic": "vaccination_cold_chain",
+      "source_url": "https://stacks.cdc.gov/view/cdc/258327",
+      "note": "12-page resource list (4% text overlap with the main toolkit); little guidance text, kept as a noisy-document test."
+    },
+    {
+      "file": "hand-hygiene-who.pdf",
+      "doc_id": "who-hand-hygiene-guidelines-summary-2009",
+      "agency": "WHO",
+      "title": "WHO Guidelines on Hand Hygiene in Health Care: a Summary",
+      "year": 2009,
+      "version": 1,
+      "topic": "hand_hygiene",
+      "source_url": null,
+      "note": "64-page English summary edition, downloaded by the user. The URL was not recorded; the user's intended link (who.int item 9789241597906) is the full guideline, so this file is the summary of it, not the full text. Some pages are image-only and yield no text."
+    }
+  ],
+  "excluded": [
+    {
+      "file": "fr-mgmt-7-facilitating-hand-hygiene-2.pdf",
+      "reason": "French-language CDC Ebola IPC document. The embedder, stemmer and stopword list are English-only. Superseded by hand-hygiene-who.pdf."
+    },
+    {
+      "file": "ipc_newsletter_29-april-2026_final.pdf",
+      "reason": "3-page WHO IPC newsletter (news and links for World Hand Hygiene Day), not guideline text."
+    }
+  ]
+}

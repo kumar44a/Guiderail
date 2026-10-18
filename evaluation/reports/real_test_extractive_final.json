@@ -1,0 +1,634 @@
+{
+  "corpus": "real",
+  "generator": "extractive",
+  "index_sha256": "0682c9a68340eb12a1d9fa4184d8c44e832ec857a80389a93a47a407de373420",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3
+    },
+    "chunks": 1484,
+    "documents": 3,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Incubation Period 7 to 19 days (mean 12 days) Clinical Features Fever, malaise, backache, headache, and often vomiting for 2-3 days; then generalized papular or maculopapular rash (more on face and extremities), which becomes vesicular (on day 4 or 5) and then pustular; lesions all in same stage. During outbreaks, healthcare personnel may be assigned to a cohort of patients to further limit opportunities for transmission (cohorting staff). Assigning or cohorting healthcare personnel to care only for patients infected or colonized with a single target pathogen limits further transmission of the target pathogen to uninfected patients740, 819 but is difficult to achieve in the face of current staffing shortages in hospitals583 and residential healthcare sites820-822.",
+      "citations": [
+        "cdc-isolation-precautions-2007#transmission-mode-p-128-0",
+        "cdc-isolation-precautions-2007#hand-hygiene-p-133-8",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-11"
+      ],
+      "cited": true,
+      "confidence": 0.711,
+      "correct": false,
+      "generator_error": null,
+      "id": "R02",
+      "kind": "in_corpus",
+      "question": "What does cohorting mean?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.711,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.421,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "maximum distance for droplet transmission is currently unresolved, although pathogens transmitted by the droplet route have not been transmitted through the air over long distances, in contrast to the airborne pathogens discussed below. Historically, the area of defined risk has been a distance of ≤3 feet around the patient and is based on epidemiologic and simulated studies of selected infections103, 104. Using this distance for donning masks has been effective in preventing transmission of infectious agents via the droplet route. experimental conditions. Such transmission has occurred over distances longer than 3 feet but within a defined airspace (e.g., patient room), suggesting that it is unlikely that these agents remain viable on air currents that travel long distances. AIIRs are not required routinely to prevent transmission of these agents. Additional issues concerning examples of small particle aerosol transmission of agents that are most frequently transmitted by the droplet route are discussed below. I.B.3.d. Emerging issues concerning airborne transmission of infectious agents.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-21",
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-31"
+      ],
+      "cited": true,
+      "confidence": 0.921,
+      "correct": true,
+      "generator_error": null,
+      "id": "R04",
+      "kind": "in_corpus",
+      "question": "Within what distance of the patient has the droplet risk area historically been defined?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.921,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.842,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Patients on Droplet Precautions who must be transported outside of the room should wear a mask if tolerated and follow Respiratory Hygiene/Cough Etiquette. For patients who require both a PE and Airborne Infection Isolation, use an anteroom to ensure proper air balance relationships and provide independent exhaust of contaminated air to the outside or place a HEPA filter in the exhaust duct. If an anteroom is not available, place patient in an AIIR and use portable ventilation units, industrial-grade HEPA filters to enhance filtration of spores. Patients suspected of having such an infection can wear a surgical mask for source containment, if tolerated, and should be placed in an examination room, preferably an AIIR, as soon as possible.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-8",
+        "cdc-isolation-precautions-2007#iii-engineering-p-130-3",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-18"
+      ],
+      "cited": true,
+      "confidence": 0.914,
+      "correct": true,
+      "generator_error": null,
+      "id": "R06",
+      "kind": "in_corpus",
+      "question": "What should patients wear when they must be moved outside an airborne infection isolation room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.914,
+        "coverage": 1.0,
+        "question_support": 0.828,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Healthcare personnel transporting patients who are on Airborne Precautions do not need to wear a mask or respirator during transport if the patient is wearing a mask and infectious skin lesions are covered. Patients on Droplet Precautions who must be transported outside of the room should wear a mask if tolerated and follow Respiratory Hygiene/Cough Etiquette. Healthcare personnel caring for patients on Airborne Precautions wear a mask or respirator, depending on the disease-specific recommendations (Respiratory Protection II.E.4, Table 2, and Appendix A), that is donned prior to room entry.",
+      "citations": [
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-0",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-8",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-13"
+      ],
+      "cited": true,
+      "confidence": 0.928,
+      "correct": true,
+      "generator_error": null,
+      "id": "R08",
+      "kind": "in_corpus",
+      "question": "Do staff transporting a patient on airborne precautions need to wear a mask?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.928,
+        "coverage": 1.0,
+        "question_support": 0.856,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Interim Measles Infection Control [July 2019] See Interim Infection Prevention and Control Recommendations for Measles in Healthcare Settings (h ttps://www.cdc.gov/infection -control/hcp/measles/ The preferred placement for patients who require Airborne Precautions is in an airborne infection isolation room (AIIR). In the event of an outbreak or exposure involving large numbers of patients who require Airborne Precautions:  Consult infection control professionals before patient placement to determine the safety of alternative room that do not meet engineering requirements for an AIIR. For patients who require both a PE and Airborne Infection Isolation, use an anteroom to ensure proper air balance relationships and provide independent exhaust of contaminated air to the outside or place a HEPA filter in the exhaust duct. If an anteroom is not available, place patient in an AIIR and use portable ventilation units, industrial-grade HEPA filters to enhance filtration of spores.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-9",
+        "cdc-isolation-precautions-2007#ia-ic-p-91-2",
+        "cdc-isolation-precautions-2007#iii-engineering-p-130-3"
+      ],
+      "cited": true,
+      "confidence": 0.874,
+      "correct": false,
+      "generator_error": null,
+      "id": "R10",
+      "kind": "in_corpus",
+      "question": "Which infections are examples that require an airborne infection isolation room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.874,
+        "coverage": 1.0,
+        "question_support": 0.748,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Between -90°C and -60°C (-130°F and -76°F) for an ultra-cold freezer. 6. If appropriate for the unit, consider adding extra water bottles to improve temperature stability. Never leave vaccines in a storage unit that does not maintain temperatures within the recommended range. If the unit is unable to stabilize the temperature within the required range, or if temperatures in the unit consistently fall at the extreme high or low end of the range, the vaccine supply is at high risk The freezer of a household-grade unit may be used for non-vaccine medical storage, so long as the use does not compromise the temperature range within the refrigerator compartment. Immediately upon arrival at the destination, unpack the vaccines and place them in a freezer at a temperature range between -50°C and -15°C (-58°F and +5°F) or -90°C and -60°C (-130°F and -76°F) for ultra-cold freezer storage. Any stand-a lone freezer that maintains these temperatures is acceptable.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#5-repeat-these-steps-as-needed-until-the-temperature-has-stabilized-p-21-1",
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-5",
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T02",
+      "kind": "in_corpus",
+      "question": "What temperature range is required for vaccine freezers?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use a transport temperature monitoring log to document temperatures and how long the vaccine is in the portable storage container. use the impacted vaccines. Be prepared to provide documentation of the event (e.g., temperature log data) for the best guidance. 6. Complete documentation of the event, including a. Action taken Temperatures should be monitored and documented in temperature logs when storing vaccines during an emergency.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-transport-p-31-2-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-5",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-0"
+      ],
+      "cited": true,
+      "confidence": 0.617,
+      "correct": false,
+      "generator_error": null,
+      "id": "T04",
+      "kind": "in_corpus",
+      "question": "How long should temperature logs be kept?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.617,
+        "coverage": 1.0,
+        "question_support": 0.66,
+        "reasons": [],
+        "retrieval_relevance": 0.575,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations. Avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Never store food and beverages in the unit with vaccines. Frequent opening of the refrigerator door to retrieve food items can adversely affect the internal temperature of the unit and potentially damage the vaccines. Never use dormitory- or bar-style combined refrigerator/freezer units for vaccine storage. These units have a single exterior door and an evaporator plate/cooling coil, usually located in an icemaker/freezer compartment.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0",
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-3",
+        "cdc-vaccine-storage-toolkit-2026#dormitory-style-combined-units-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T06",
+      "kind": "in_corpus",
+      "question": "What should never be stored in the unit with vaccines?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "While vials are not usually considered hazardous or pharmaceutical waste, an empty rotavirus dispensing tube or oral applicator is considered medical waste and should be disposed of in a medical waste container. Administration of vaccines necessarily results in waste (e.g., empty vials), and despite best efforts, sometimes unused vaccines must be disposed of. The management of solid waste emanating from the healthcare environment is subject to federal and state regulations for medical and non-medical waste860, 861.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-disposal-p-24-1",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-disposal-p-24-0",
+        "cdc-isolation-precautions-2007#ii-l-solid-waste-p-65-0"
+      ],
+      "cited": true,
+      "confidence": 0.678,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO2",
+      "kind": "out_of_corpus",
+      "question": "How should radioactive waste be disposed of?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.678,
+        "coverage": 1.0,
+        "question_support": 0.579,
+        "reasons": [],
+        "retrieval_relevance": 0.777,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Nosocomial pertussis in healthcare workers from a pediatric emergency unit in France.",
+      "citations": [
+        "cdc-isolation-precautions-2007#implementation-in-health-care-facilities-p-191-13"
+      ],
+      "cited": true,
+      "confidence": 0.541,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO4",
+      "kind": "out_of_corpus",
+      "question": "What is the capital of France?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.541,
+        "coverage": 1.0,
+        "question_support": 0.478,
+        "reasons": [
+          "weak relevance to the question (0.54)"
+        ],
+        "retrieval_relevance": 0.603,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 1.0,
+    "capped_precision@10": 0.925,
+    "capped_precision@5": 1.0,
+    "hit@1": 0.375,
+    "hit@10": 1.0,
+    "hit@5": 1.0,
+    "mrr": 0.5708,
+    "n": 8,
+    "precision@1": 1.0,
+    "precision@10": 0.925,
+    "precision@5": 1.0,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R02",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What does cohorting mean?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R04",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Within what distance of the patient has the droplet risk area historically been defined?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R06",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What should patients wear when they must be moved outside an airborne infection isolation room?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Do staff transporting a patient on airborne precautions need to wear a mask?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R10",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Which infections are examples that require an airborne infection isolation room?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T02",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What temperature range is required for vaccine freezers?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T04",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "How long should temperature logs be kept?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T06",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What should never be stored in the unit with vaccines?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Incubation Period 7 to 19 days (mean 12 days) Clinical Features Fever, malaise, backache, headache, and often vomiting for 2-3 days; then generalized papular or maculopapular rash (more on face and extremities), which becomes vesicular (on ",
+      "confidence": 0.711,
+      "id": "R02",
+      "question": "What does cohorting mean?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Interim Measles Infection Control [July 2019] See Interim Infection Prevention and Control Recommendations for Measles in Healthcare Settings (h ttps://www.cdc.gov/infection -control/hcp/measles/ The preferred placement for patients who req",
+      "confidence": 0.874,
+      "id": "R10",
+      "question": "Which infections are examples that require an airborne infection isolation room?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Use a transport temperature monitoring log to document temperatures and how long the vaccine is in the portable storage container. use the impacted vaccines. Be prepared to provide documentation of the event (e.g., temperature log data) for",
+      "confidence": 0.617,
+      "id": "T04",
+      "question": "How long should temperature logs be kept?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "While vials are not usually considered hazardous or pharmaceutical waste, an empty rotavirus dispensing tube or oral applicator is considered medical waste and should be disposed of in a medical waste container. Administration of vaccines n",
+      "confidence": 0.678,
+      "id": "RO2",
+      "question": "How should radioactive waste be disposed of?",
+      "reason": "VALIDATED BUT OUT OF CORPUS",
+      "validator_notes": ""
+    }
+  ],
+  "split": "test",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 1.0,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 1.0,
+      "pass_rate": 1.0,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 1.0,
+      "pass_rate": 1.0,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 1.0,
+      "pass_rate": 1.0,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 1.0,
+      "pass_rate": 1.0,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 1.0,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 1.0,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.875,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.2857,
+      "validated_precision": 0.7143
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.875,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.2857,
+      "validated_precision": 0.7143
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.75,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.1667,
+      "validated_precision": 0.8333
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.75,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.1667,
+      "validated_precision": 0.8333
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.75,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.1667,
+      "validated_precision": 0.8333
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 1.0,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.625,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.6,
+    "in_corpus": {
+      "answer_correct_rate": 0.625,
+      "correct_but_flagged_rate": 0.0,
+      "mean_confidence": 0.8706,
+      "n": 8,
+      "pass_rate": 1.0,
+      "validated_but_wrong_rate": 0.375,
+      "validated_precision": 0.625
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.5,
+      "mean_confidence": 0.6095,
+      "n": 2,
+      "needs_review_rate": 0.5
+    },
+    "threshold": 0.6
+  }
+}

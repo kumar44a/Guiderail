@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+index/
+.ipynb_checkpoints/
+index_real/
+data/real/*.pdf
+
+.DS_Store
+.pytest_cache/
+__pycache__/
