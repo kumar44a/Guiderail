@@ -46,7 +46,8 @@ def test_out_of_corpus_question_shows_needs_review(routed):
     at = run_question("How do I bake a chocolate cake?")
     assert not at.exception
     assert any(w.value == "needs_review" for w in at.warning)
-    assert any("not validated" in i.value for i in at.info)
+    assert any("No supporting passage was found" in i.value for i in at.info)
+    assert not any("check the cited sources" in i.value for i in at.info)
 
 
 def test_blank_question_is_rejected_before_calling_the_api(routed):
@@ -63,3 +64,16 @@ def test_unreachable_api_is_reported_not_raised(monkeypatch):
     at = run_question("anything")
     assert not at.exception
     assert any("not reachable" in e.value or "Could not reach" in e.value for e in at.error)
+
+
+def test_unvalidated_answer_with_citations_points_to_the_cited_sources(monkeypatch):
+    reply = {"answer": "Some answer.", "confidence": 0.3, "status": "needs_review",
+             "citations": [{"chunk_id": "a#b-0", "doc_id": "a", "title": "T", "agency": "WHO", "year": 2024, "version": 1,
+                            "section": "S", "score": 0.4}]}
+    health = {"documents": 1, "chunks": 1, "generator": "extractive", "threshold": 0.6, "index_sha256": "x" * 64}
+    monkeypatch.setattr(httpx, "get", lambda url, **kw: httpx.Response(200, json=health, request=httpx.Request("GET", url)))
+    monkeypatch.setattr(httpx, "post", lambda url, **kw: httpx.Response(200, json=reply, request=httpx.Request("POST", url)))
+    at = run_question("anything")
+    assert not at.exception
+    assert any("check the cited sources" in i.value for i in at.info)
+    assert not any("No supporting passage" in i.value for i in at.info)

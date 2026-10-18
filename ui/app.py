@@ -79,7 +79,12 @@ if st.button("Ask", type="primary"):
                 st.subheader("Answer")
                 st.write(result["answer"])
                 if result["status"] == "needs_review":
-                    st.info("This answer was not validated. Treat it as unconfirmed and check the cited sources.")
+                    if result["citations"]:
+                        st.info("This answer was not validated. Treat it as unconfirmed and check the cited sources.")
+                    else:
+                        st.info("No supporting passage was found, so there is nothing to cite. The guidelines may not cover this, "
+                                "or the search may have missed the passage that does. Try rewording the question, "
+                                "or check the source documents directly.")
             st.subheader("Citations")
             if result["citations"]:
                 st.dataframe(
