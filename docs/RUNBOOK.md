@@ -155,6 +155,7 @@ Rules that keep the pipeline correct:
 python evaluation/check_labels.py                                  # every expected fact must exist in the relevant documents
 python evaluation/run_eval.py --corpus synthetic --split dev       # --corpus real, --generator llm, --tag NAME, --threshold X
 python evaluation/eval_validator_stress.py                         # answers the generator did not produce
+python evaluation/revalidate.py --verify real_dev_llm_final        # re-run the validator on saved answers (no API calls); --compare, --write TAG
 python evaluation/build_summary.py                                 # regenerate docs/EVALUATION_*.md
 python scripts/check_docs_sync.py                                  # fail if README or reports are stale
 ```
@@ -166,6 +167,7 @@ Discipline that the results depend on:
   `evaluation/reports/test_split_runs.log`; do not tune on a test split that has already been looked at. Write new queries instead.
 - State the accept/reject rule for a change before looking at its result, and commit the rule first.
 - Use `--tag` to keep each run's report; the log is built from tagged dev reports.
+- A validator change can be judged on saved answers with `revalidate.py` (no API calls). Prove the tool first: `--verify` must reproduce the stored confidences before the change. Commit the accept/reject rules before writing the change (see `evaluation/reports/validator_round2_rules.txt` for an example).
 - Adding a document to a corpus changes every number for that corpus. Re-run and keep the old reports under a tag (as `final_3doc`).
 
 ## 7. Docker

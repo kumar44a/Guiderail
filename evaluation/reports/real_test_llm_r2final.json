@@ -1,0 +1,1493 @@
+{
+  "corpus": "real",
+  "generator": "llm",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Cohorting staff means that during outbreaks, healthcare personnel may be assigned to a cohort of patients to further limit opportunities for transmission. This involves assigning or cohorting healthcare personnel to care only for patients infected or colonized with a single target pathogen, which limits further transmission of the target pathogen to uninfected patients. When continued transmission is occurring after implementing routine infection control measures and creating patient cohorts, cohorting of healthcare personnel may be beneficial.",
+      "citations": [
+        "cdc-isolation-precautions-2007#hand-hygiene-p-133-8",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-11"
+      ],
+      "cited": true,
+      "confidence": 0.683,
+      "correct": false,
+      "generator_error": null,
+      "id": "R02",
+      "kind": "in_corpus",
+      "question": "What does cohorting mean?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.683,
+        "coverage": 0.962,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.421,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "involv"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Historically, the area of defined risk for droplet transmission has been a distance of ≤3 feet around the patient, based on epidemiologic and simulated studies of selected infections. However, experimental studies with smallpox and investigations during the global SARS outbreaks of 2003 suggest that droplets from patients with these two infections could reach persons located 6 feet or more from their source.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-21",
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-22"
+      ],
+      "cited": true,
+      "confidence": 0.406,
+      "correct": true,
+      "generator_error": null,
+      "id": "R04",
+      "kind": "in_corpus",
+      "question": "Within what distance of the patient has the droplet risk area historically been defined?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.406,
+        "coverage": 0.472,
+        "question_support": 0.882,
+        "reasons": [
+          "number(s) not found in evidence: 2003",
+          "low evidence coverage (0.47); unsupported terms: smallpox, 2003"
+        ],
+        "retrieval_relevance": 0.842,
+        "status": "needs_review",
+        "unsupported_numbers": [
+          "2003"
+        ],
+        "unsupported_terms": [
+          "smallpox",
+          "2003"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R06",
+      "kind": "in_corpus",
+      "question": "What should patients wear when they must be moved outside an airborne infection isolation room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, healthcare personnel transporting patients who are on Airborne Precautions do not need to wear a mask or respirator during transport if the patient is wearing a mask and infectious skin lesions are covered. If transport or movement outside an AIIR is necessary, instruct patients to wear a surgical mask, if possible.",
+      "citations": [
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-0",
+        "cdc-isolation-precautions-2007#recommendations-for-measles-in-healthcare-settings-p-93-2-1"
+      ],
+      "cited": true,
+      "confidence": 0.929,
+      "correct": true,
+      "generator_error": null,
+      "id": "R08",
+      "kind": "in_corpus",
+      "question": "Do staff transporting a patient on airborne precautions need to wear a mask?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.929,
+        "coverage": 1.0,
+        "question_support": 0.858,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Infections transmitted via the airborne route, for example M tuberculosis, measles and chickenpox, require additional precautions, and patients suspected of having them should be placed in an examination room, preferably an AIIR, as soon as possible. The preferred placement for patients who require Airborne Precautions, which applies to infections including tuberculosis and possibly SARS-CoV, is an airborne infection isolation room (AIIR).",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-18",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-9"
+      ],
+      "cited": true,
+      "confidence": 0.875,
+      "correct": true,
+      "generator_error": null,
+      "id": "R10",
+      "kind": "in_corpus",
+      "question": "Which infections are examples that require an airborne infection isolation room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.875,
+        "coverage": 0.875,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "exampl",
+          "them",
+          "apply",
+          "includ"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Frozen vaccines should be placed in a freezer at a temperature range between -50°C and -15°C (-58°F and +5°F), or between -90°C and -60°C (-130°F and -76°F) for ultra-cold freezer storage. The ultra-cold freezer range of between -90°C and -60°C (-130°F and -76°F) is also stated in the steps for stabilizing temperature, and vaccines should never be left in a storage unit that does not maintain temperatures within the recommended range.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-1",
+        "cdc-vaccine-storage-toolkit-2026#5-repeat-these-steps-as-needed-until-the-temperature-has-stabilized-p-21-1"
+      ],
+      "cited": true,
+      "confidence": 0.814,
+      "correct": true,
+      "generator_error": null,
+      "id": "T02",
+      "kind": "in_corpus",
+      "question": "What temperature range is required for vaccine freezers?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.814,
+        "coverage": 0.9,
+        "question_support": 0.809,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also",
+          "stat",
+          "left"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep temperature logs for 3 years to track trends and recurring issues. VFC providers and others who administer vaccines purchased with public funds should contact their immunization program for state-specific requirements related to record keeping.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-temperature-monitoring-p-17-1"
+      ],
+      "cited": true,
+      "confidence": 0.522,
+      "correct": true,
+      "generator_error": null,
+      "id": "T04",
+      "kind": "in_corpus",
+      "question": "How long should temperature logs be kept?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.522,
+        "coverage": 1.0,
+        "question_support": 0.469,
+        "reasons": [
+          "weak relevance to the question (0.52)"
+        ],
+        "retrieval_relevance": 0.575,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never store food and beverages in the unit with vaccines, and avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Also never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-3",
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T06",
+      "kind": "in_corpus",
+      "question": "What should never be stored in the unit with vaccines?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO2",
+      "kind": "out_of_corpus",
+      "question": "How should radioactive waste be disposed of?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO4",
+      "kind": "out_of_corpus",
+      "question": "What is the capital of France?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R19",
+      "kind": "in_corpus",
+      "question": "How long does the full procedure of washing hands with soap and water take?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When hands are visibly soiled with blood or other body fluids, wash hands with soap and water. The soap may be either a nonantimicrobial soap and water or an antimicrobial soap and water. Soap and alcohol-based handrub should not be used concomitantly.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1",
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-9",
+        "cdc-isolation-precautions-2007#iv-a-hand-hygiene-p-80-0"
+      ],
+      "cited": true,
+      "confidence": 0.907,
+      "correct": true,
+      "generator_error": null,
+      "id": "R21",
+      "kind": "in_corpus",
+      "question": "What should staff do when their hands are visibly soiled with blood?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.907,
+        "coverage": 1.0,
+        "question_support": 0.814,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R23",
+      "kind": "in_corpus",
+      "question": "What alcohol concentrations do the WHO-recommended handrub formulations contain?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep natural nails short, with tips less than 0.5 cm long or approximately ¼ inch. Do not wear artificial fingernails or extenders when having direct contact with patients.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-2"
+      ],
+      "cited": true,
+      "confidence": 0.932,
+      "correct": true,
+      "generator_error": null,
+      "id": "R25",
+      "kind": "in_corpus",
+      "question": "How long may natural nails be for staff who have direct contact with patients?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.932,
+        "coverage": 1.0,
+        "question_support": 0.863,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, brushes are not recommended for surgical hand preparation (IB). Instead, remove debris from underneath fingernails using a nail cleaner, preferably under running water (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-0"
+      ],
+      "cited": true,
+      "confidence": 0.938,
+      "correct": true,
+      "generator_error": null,
+      "id": "R27",
+      "kind": "in_corpus",
+      "question": "Are brushes recommended for surgical hand preparation?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.938,
+        "coverage": 0.938,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "instead"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, the use of gloves does not replace the need for hand hygiene by either handrubbing or handwashing (IB). Wear gloves when it can be reasonably anticipated that contact with blood or other potentially infectious materials, mucous membranes or non-intact skin will occur, and remove gloves after caring for a patient. Beliefs that glove use obviates the need for hand hygiene are a self-reported factor for poor adherence with hand hygiene.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-0",
+        "who-hand-hygiene-guidelines-summary-2009#b-self-reported-factors-for-poor-adherence-with-hand-hygiene-p-16-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R29",
+      "kind": "in_corpus",
+      "question": "Does wearing gloves replace the need for hand hygiene?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "World Hand Hygiene Day 2026 is on 5 May 2026, with the theme \"Action saves lives\".",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-1-0"
+      ],
+      "cited": true,
+      "confidence": 0.9,
+      "correct": true,
+      "generator_error": null,
+      "id": "R31",
+      "kind": "in_corpus",
+      "question": "On what date is World Hand Hygiene Day in 2026?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.9,
+        "coverage": 1.0,
+        "question_support": 0.8,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R32",
+      "kind": "in_corpus",
+      "question": "At which moments are health-care workers asked to clean their hands?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO6",
+      "kind": "out_of_corpus",
+      "question": "What dose of ivermectin is used to treat scabies?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, the WHO guideline says \"Do not wear artificial fingernails or extenders when having direct contact with patients (IA)\". The CDC guideline says \"Do not wear artificial fingernails or extenders if duties include direct contact with patients at high risk for infection and associated adverse outcomes (e.g., those in ICUs or operating rooms)\" (Category IA). For other personnel with direct patient contact, CDC says to \"develop an organizational policy on the wearing of non-natural nails\" (Category II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-2",
+        "cdc-isolation-precautions-2007#iv-a-hand-hygiene-p-80-5"
+      ],
+      "cited": true,
+      "confidence": 0.797,
+      "correct": true,
+      "generator_error": null,
+      "id": "R41",
+      "kind": "in_corpus",
+      "question": "Should artificial fingernails be worn by staff who have direct contact with patients?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.797,
+        "coverage": 0.943,
+        "question_support": 0.689,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "say"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, long scrub times (e.g. 10 minutes) are not necessary (IB). When performing surgical hand antisepsis using an antimicrobial soap, scrub hands and forearms for the length of time recommended by the manufacturer, typically 2–5 minutes.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R42",
+      "kind": "in_corpus",
+      "question": "Is a long surgical scrub of 10 minutes necessary?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, household-grade units may be used as a last option, but only for refrigerated vaccines. Never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations, and if the facility stocks frozen vaccine, a separate stand-alone freezer unit is necessary.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 0.821,
+      "correct": true,
+      "generator_error": null,
+      "id": "R43",
+      "kind": "in_corpus",
+      "question": "Are household-grade units the first choice for storing vaccines?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.821,
+        "coverage": 1.0,
+        "question_support": 0.642,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccines stored at inappropriate temperatures should not be administered unless the manufacturer provides guidance that vaccine safety and effectiveness have not been compromised. Another passage states they should not be administered unless public health authorities or the manufacturer confirm they are safe and effective based on stability data. Vaccine appearance is not a reliable indicator that vaccines have been stored in appropriate conditions.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#organizing-and-storing-vaccines-p-17-2",
+        "cdc-vaccine-storage-toolkit-2026#why-the-cold-chain-matters-p-7-1"
+      ],
+      "cited": true,
+      "confidence": 0.906,
+      "correct": true,
+      "generator_error": null,
+      "id": "R44",
+      "kind": "in_corpus",
+      "question": "Should vaccines that were stored at inappropriate temperatures be administered?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.906,
+        "coverage": 0.906,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "another",
+          "passag"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, because these pathogens do not remain infectious over long distances in a healthcare facility, special air handling and ventilation are not required to prevent droplet transmission. Pathogens transmitted by the droplet route have not been transmitted through the air over long distances, in contrast to airborne pathogens. A single patient room is preferred for patients who require Droplet Precautions.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-6",
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-21"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R45",
+      "kind": "in_corpus",
+      "question": "Are special air handling and ventilation required to prevent droplet transmission?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes. The guidance is to provide HCWs with hand lotions or creams to minimize the occurrence of irritant contact dermatitis associated with hand antisepsis or handwashing (IA). It also advises including information on hand-care practices designed to reduce the risk of irritant contact dermatitis and other skin damage in education programmes for HCWs (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-8",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-7"
+      ],
+      "cited": true,
+      "confidence": 0.77,
+      "correct": true,
+      "generator_error": null,
+      "id": "R46",
+      "kind": "in_corpus",
+      "question": "Are hand lotions or creams recommended for healthcare workers to reduce dermatitis?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.77,
+        "coverage": 0.885,
+        "question_support": 0.741,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "guidanc",
+          "also",
+          "advis"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In general, position the storage unit in a well-ventilated room, leaving 1 to 2 inches (2.5 to 5 cm) of clearance from any adjacent walls and at least 2 inches (5 cm) from the ceiling. Always refer to the manufacturer-supplied owner's manual for storage unit placement.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#storage-unit-placement-p-12-0"
+      ],
+      "cited": true,
+      "confidence": 0.738,
+      "correct": true,
+      "generator_error": null,
+      "id": "R47",
+      "kind": "in_corpus",
+      "question": "How much clearance should a vaccine storage unit have from adjacent walls?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.738,
+        "coverage": 0.819,
+        "question_support": 0.802,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "well",
+          "ventilat",
+          "manufacturer",
+          "suppli"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R48",
+      "kind": "in_corpus",
+      "question": "What is the typical concentration of chlorhexidine used for hand antisepsis?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO9",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended HEPA filter replacement schedule for an airborne infection isolation room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO10",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended dose of insulin for diabetic ketoacidosis?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.9583,
+    "capped_precision@10": 0.8167,
+    "capped_precision@5": 0.9,
+    "hit@1": 0.625,
+    "hit@10": 0.8333,
+    "hit@5": 0.8333,
+    "mrr": 0.6993,
+    "n": 24,
+    "precision@1": 0.9583,
+    "precision@10": 0.8167,
+    "precision@5": 0.9,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R02",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "What does cohorting mean?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R04",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "Within what distance of the patient has the droplet risk area historically been defined?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R06",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What should patients wear when they must be moved outside an airborne infection isolation room?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Do staff transporting a patient on airborne precautions need to wear a mask?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R10",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Which infections are examples that require an airborne infection isolation room?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T02",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What temperature range is required for vaccine freezers?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T04",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "How long should temperature logs be kept?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T06",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "What should never be stored in the unit with vaccines?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R19",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "How long does the full procedure of washing hands with soap and water take?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R21",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "What should staff do when their hands are visibly soiled with blood?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R23",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What alcohol concentrations do the WHO-recommended handrub formulations contain?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R25",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "How long may natural nails be for staff who have direct contact with patients?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R27",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Are brushes recommended for surgical hand preparation?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R29",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Does wearing gloves replace the need for hand hygiene?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R31",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "On what date is World Hand Hygiene Day in 2026?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R32",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "At which moments are health-care workers asked to clean their hands?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R41",
+        "precision@1": 0.0,
+        "precision@10": 0.4,
+        "precision@5": 0.4,
+        "question": "Should artificial fingernails be worn by staff who have direct contact with patients?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R42",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Is a long surgical scrub of 10 minutes necessary?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R43",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Are household-grade units the first choice for storing vaccines?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R44",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Should vaccines that were stored at inappropriate temperatures be administered?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R45",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Are special air handling and ventilation required to prevent droplet transmission?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R46",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Are hand lotions or creams recommended for healthcare workers to reduce dermatitis?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R47",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "How much clearance should a vaccine storage unit have from adjacent walls?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R48",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What is the typical concentration of chlorhexidine used for hand antisepsis?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Cohorting staff means that during outbreaks, healthcare personnel may be assigned to a cohort of patients to further limit opportunities for transmission. This involves assigning or cohorting healthcare personnel to care only for patients i",
+      "confidence": 0.683,
+      "id": "R02",
+      "question": "What does cohorting mean?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Historically, the area of defined risk for droplet transmission has been a distance of ≤3 feet around the patient, based on epidemiologic and simulated studies of selected infections. However, experimental studies with smallpox and investig",
+      "confidence": 0.406,
+      "id": "R04",
+      "question": "Within what distance of the patient has the droplet risk area historically been defined?",
+      "reason": "correct answer withheld",
+      "validator_notes": "number(s) not found in evidence: 2003; low evidence coverage (0.47); unsupported terms: smallpox, 2003"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R06",
+      "question": "What should patients wear when they must be moved outside an airborne infection isolation room?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Keep temperature logs for 3 years to track trends and recurring issues. VFC providers and others who administer vaccines purchased with public funds should contact their immunization program for state-specific requirements related to record",
+      "confidence": 0.522,
+      "id": "T04",
+      "question": "How long should temperature logs be kept?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.52)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R19",
+      "question": "How long does the full procedure of washing hands with soap and water take?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R23",
+      "question": "What alcohol concentrations do the WHO-recommended handrub formulations contain?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R32",
+      "question": "At which moments are health-care workers asked to clean their hands?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R48",
+      "question": "What is the typical concentration of chlorhexidine used for hand antisepsis?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    }
+  ],
+  "split": "test",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9655,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7917,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.0526,
+      "validated_precision": 0.9474
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9655,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7917,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.0526,
+      "validated_precision": 0.9474
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9655,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7917,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.0526,
+      "validated_precision": 0.9474
+    },
+    {
+      "correct_but_flagged_rate": 0.0556,
+      "decision_accuracy": 0.931,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.75,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.0556,
+      "validated_precision": 0.9444
+    },
+    {
+      "correct_but_flagged_rate": 0.0556,
+      "decision_accuracy": 0.931,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.75,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.0556,
+      "validated_precision": 0.9444
+    },
+    {
+      "correct_but_flagged_rate": 0.1111,
+      "decision_accuracy": 0.8966,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7083,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    {
+      "correct_but_flagged_rate": 0.1111,
+      "decision_accuracy": 0.8966,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7083,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    {
+      "correct_but_flagged_rate": 0.1111,
+      "decision_accuracy": 0.8966,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7083,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    {
+      "correct_but_flagged_rate": 0.1111,
+      "decision_accuracy": 0.931,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6667,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.1667,
+      "decision_accuracy": 0.8966,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.625,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.2778,
+      "decision_accuracy": 0.8276,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5417,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.3889,
+      "decision_accuracy": 0.7586,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.4583,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.4444,
+      "decision_accuracy": 0.7241,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.4167,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.8966,
+    "in_corpus": {
+      "answer_correct_rate": 0.75,
+      "correct_but_flagged_rate": 0.1111,
+      "mean_confidence": 0.6641,
+      "n": 24,
+      "pass_rate": 0.7083,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.0,
+      "n": 5,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

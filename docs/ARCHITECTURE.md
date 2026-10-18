@@ -48,7 +48,7 @@ EVALUATION  evaluation/  labeled queries (dev/test) -> retrieval metrics, answer
 | `retriever.py` | Search with a version filter (superseded chunks excluded unless asked), optional lexical re-ranker over the top candidates, and a controlled neighbour fallback: if one of the best few hits is very short, its neighbouring chunk is added once and marked `via="neighbor"`. |
 | `generators/extractive.py` | Default, no model. Scores single lines by idf-weighted question overlap plus credit for title and section context, keeps the top lines within a relative cutoff, and follows list lead-ins ("...:") and anaphoric continuations ("This..."). |
 | `generators/llm.py` | Optional. Claude answers from the retrieved passages only, cites chunk ids, and replies `NOT_IN_EVIDENCE` when the answer is absent. The prompt is `prompts/answer_style.txt`. Request id, model and usage are recorded. The SDK import is lazy. Failures raise `GenerationError`, which the service turns into an abstention. |
-| `validator.py` | **v2.** `confidence = coverage x relevance`, independent of the generator. *Coverage*: idf-weighted share of the answer's content words found in the evidence or its source metadata, halved when the answer contains a number-with-unit or a negation that the evidence does not. *Relevance*: half the rescaled top retrieval score plus half the share of question terms that the **answer** addresses. `validated` requires confidence at or above the threshold (default 0.6) **and** a citation. |
+| `validator.py` | **v2.** `confidence = coverage x relevance`, independent of the generator. *Coverage*: idf-weighted share of the answer's content words found in the evidence or its source metadata, halved when the answer contains a number-with-unit or a negation that the evidence does not. *Relevance*: half the rescaled top retrieval score plus half the share of question terms that the **answer** addresses. `validated` requires confidence at or above the threshold (default 0.6) **and** a citation. A leading "Yes," or "No," is a response marker and is not scored as a content term or a negation claim (round 2). |
 | `service.py` | `QAService.ask()` wires retrieval, generation and validation; it is the only place that does. |
 | `api.py` | FastAPI app. Index loaded in the lifespan handler; `.env` read at start-up. Pydantic validates input. |
 | `evalkit.py` | Metrics (document-level and capped Precision@K, Hit@K, MRR), answer-correctness matching, threshold sweep, review list, Wilson intervals, label validation, validator stress harness. |
@@ -96,7 +96,7 @@ failure is also an abstention, so the endpoint does not return 5xx for a model o
 ## 7. Decisions and rejected experiments
 
 Accepted (each measured on dev first): context-aware sentence scoring, validator v2, list-continuation rules, lexical re-ranker
-(weights 0.5 and 1.0 performed alike, the smaller was kept), a tightened LLM prompt.
+(weights 0.5 and 1.0 performed alike, the smaller was kept), a tightened LLM prompt, and the yes/no response marker in the validator (judged on dev material by rules committed beforehand; evaluation report, section 10).
 
 Rejected and reverted, with the evidence in [EVALUATION_LOG.md](EVALUATION_LOG.md):
 

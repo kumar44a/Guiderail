@@ -1,0 +1,64 @@
+{
+  "synthetic_test_extractive_final": {
+    "flips": [],
+    "validated_before": 18,
+    "validated_after": 18,
+    "wrong_validated_after": 2,
+    "ooc_accepted_before": 0,
+    "ooc_accepted_after": 0
+  },
+  "synthetic_test_llm_final": {
+    "flips": [
+      {
+        "id": "S04",
+        "kind": "in_corpus",
+        "correct": true,
+        "before": false,
+        "after": true
+      }
+    ],
+    "validated_before": 16,
+    "validated_after": 17,
+    "wrong_validated_after": 0,
+    "ooc_accepted_before": 0,
+    "ooc_accepted_after": 0
+  },
+  "real_test_extractive_final": {
+    "flips": [],
+    "validated_before": 15,
+    "validated_after": 15,
+    "wrong_validated_after": 5,
+    "ooc_accepted_before": 2,
+    "ooc_accepted_after": 2
+  },
+  "real_test_llm_final": {
+    "flips": [
+      {
+        "id": "R08",
+        "kind": "in_corpus",
+        "correct": true,
+        "before": false,
+        "after": true
+      },
+      {
+        "id": "R27",
+        "kind": "in_corpus",
+        "correct": true,
+        "before": false,
+        "after": true
+      },
+      {
+        "id": "R29",
+        "kind": "in_corpus",
+        "correct": true,
+        "before": false,
+        "after": true
+      }
+    ],
+    "validated_before": 7,
+    "validated_after": 10,
+    "wrong_validated_after": 1,
+    "ooc_accepted_before": 0,
+    "ooc_accepted_after": 0
+  }
+}

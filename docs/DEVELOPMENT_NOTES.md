@@ -32,6 +32,7 @@ except where stated.
 | Every expected fact in the labeled queries exists in the relevant documents | label checker; it caught two label problems that were really loader defects | `python evaluation/check_labels.py` |
 | Reported metrics match the runs | docs are generated from `evaluation/reports/*.json`; a check script fails if any doc differs from its generator | `python scripts/check_docs_sync.py` |
 | The validator is not trivially permissive | a stress set of hand-written faithful and unfaithful answers, with the true evidence guaranteed present | `python evaluation/eval_validator_stress.py` |
+| A validator change did what it claims | rules committed before the change; `revalidate.py` first proved it reproduces stored confidences exactly; `judge_round2.py` applies the rules mechanically to dev material | `python evaluation/judge_round2.py` |
 | Test-split results were not tuned on | rules committed before runs; every test-split run logged with timestamp and index hash | `evaluation/reports/test_split_runs.log`, `evaluation/reports/rerun_5doc_rules.txt`, `git log` |
 | The LLM path really works | a logged live run with model, request ids and token usage; later live runs inside the evaluation reports | `evaluation/logs/live_llm_run.json`, `evaluation/reports/*_llm_*.json` |
 | Real PDFs load | the PDF loader was run on actual WHO and CDC documents and chunk output inspected | `python scripts/pipeline.py --real` |
@@ -69,6 +70,7 @@ Limits of these checks:
   turned out to be wrong; the report keeps both statements.
 - `.env` was read only when the LLM client looked up its key, so a generator or threshold set in `.env` would have been ignored by the
   API. Found while writing the RUNBOOK; fixed and tested.
+- Validator round 2: a candidate fix for ratio numbers was dropped because only one instance existed, so it could only have been fitted to that case. One expected-fact list (R36) omitted a passive phrasing and counts two substantively right answers as wrong; it was left unedited and disclosed. A shell edit (`sed -i` on macOS) failed and silently skipped the regeneration of the documents; the output showed old numbers and it was redone.
 - The project lived in a cloud-synced folder whose eviction made imports hang and files unreadable. It was moved out, and the RUNBOOK
   warns about it.
 
