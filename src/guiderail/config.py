@@ -44,6 +44,11 @@ def rerank_weight() -> float:
     return value
 
 
+def hybrid() -> bool:
+    """Hybrid retrieval (FAISS + BM25 fused). GUIDERAIL_HYBRID=0 falls back to FAISS alone."""
+    return os.environ.get("GUIDERAIL_HYBRID", "1").lower() not in {"0", "false", "no", "off"}
+
+
 def generator_name() -> str:
     name = os.environ.get("GUIDERAIL_GENERATOR", "extractive").lower()
     if name not in {"extractive", "llm"}:

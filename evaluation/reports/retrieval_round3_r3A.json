@@ -1,0 +1,70 @@
+{
+  "step": "r3A",
+  "against": "r3base",
+  "real_dev": {
+    "n": 50,
+    "hit5_before": 39,
+    "hit5_after": 38,
+    "mrr_before": 0.6429,
+    "mrr_after": 0.6422
+  },
+  "synthetic_dev": {
+    "hit5": [
+      20,
+      20,
+      20
+    ],
+    "mrr": [
+      0.825,
+      0.7667
+    ]
+  },
+  "real_dev_old_queries_hit5": [
+    21,
+    21,
+    24
+  ],
+  "errors_before": {
+    "real": {
+      "wrong_validated": 12,
+      "ooc_accepted": 3,
+      "correct_validated": 30
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 18
+    }
+  },
+  "errors_after": {
+    "real": {
+      "wrong_validated": 13,
+      "ooc_accepted": 3,
+      "correct_validated": 29
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 17
+    }
+  },
+  "stress": {
+    "bad_flagged": [
+      0.8889,
+      0.8889
+    ],
+    "good_accepted": [
+      0.8235,
+      0.8235
+    ]
+  },
+  "rules": {
+    "gain": false,
+    "G1": false,
+    "G2": true,
+    "G3": false,
+    "G4": true,
+    "G5": true
+  },
+  "keep": false
+}

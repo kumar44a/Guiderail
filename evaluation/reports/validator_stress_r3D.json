@@ -1,0 +1,1016 @@
+{
+  "bad_answers_flagged_rate": 0.8889,
+  "by_kind": {
+    "contradiction": {
+      "correct_decisions": 1,
+      "n": 1,
+      "rate": 1.0
+    },
+    "fabricated_number": {
+      "correct_decisions": 10,
+      "n": 10,
+      "rate": 1.0
+    },
+    "faithful": {
+      "correct_decisions": 14,
+      "n": 16,
+      "rate": 0.875
+    },
+    "off_corpus_fabrication": {
+      "correct_decisions": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "outdated_value": {
+      "correct_decisions": 0,
+      "n": 1,
+      "rate": 0.0
+    },
+    "paraphrase": {
+      "correct_decisions": 0,
+      "n": 1,
+      "rate": 0.0
+    },
+    "unrelated": {
+      "correct_decisions": 4,
+      "n": 4,
+      "rate": 1.0
+    },
+    "unsupported_addition": {
+      "correct_decisions": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "wrong_claim": {
+      "correct_decisions": 3,
+      "n": 5,
+      "rate": 0.6
+    }
+  },
+  "good_answers_accepted_rate": 0.8235,
+  "n": 44,
+  "rows": [
+    {
+      "answer": "Use an alcohol-based hand rub for 20 to 30 seconds when hands are not visibly soiled.",
+      "caught": true,
+      "confidence": 0.698,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-hand-hygiene-2023",
+        "cdc-hand-hygiene-2021"
+      ],
+      "gold_phrases": [
+        "20 to 30 seconds",
+        "about 20 seconds"
+      ],
+      "id": "V01",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "reasons": [],
+      "source_query": "S01",
+      "status": "validated"
+    },
+    {
+      "answer": "Use an alcohol-based hand rub for 5 to 10 seconds when hands are not visibly soiled.",
+      "caught": true,
+      "confidence": 0.279,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-hand-hygiene-2023",
+        "cdc-hand-hygiene-2021"
+      ],
+      "gold_phrases": [
+        "20 to 30 seconds",
+        "about 20 seconds"
+      ],
+      "id": "V02",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "reasons": [
+        "number(s) not found in evidence: 5, 10",
+        "low evidence coverage (0.40); unsupported terms: 5, 10"
+      ],
+      "source_query": "S01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Store refrigerated vaccines between 2 and 8 degrees Celsius.",
+      "caught": true,
+      "confidence": 0.0,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-hand-hygiene-2023",
+        "cdc-hand-hygiene-2021"
+      ],
+      "gold_phrases": [
+        "20 to 30 seconds",
+        "about 20 seconds"
+      ],
+      "id": "V03",
+      "kind": "unrelated",
+      "label": "bad",
+      "note": "",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "reasons": [
+        "number(s) not found in evidence: 2, 8",
+        "low evidence coverage (0.00); unsupported terms: stor, refrigerat, vaccin, between, 2, 8, degr, celsiu",
+        "weak relevance to the question (0.54)"
+      ],
+      "source_query": "S01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Rub with an alcohol-based product for around twenty to thirty seconds if your hands look clean.",
+      "caught": false,
+      "confidence": 0.302,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-hand-hygiene-2023",
+        "cdc-hand-hygiene-2021"
+      ],
+      "gold_phrases": [
+        "20 to 30 seconds",
+        "about 20 seconds"
+      ],
+      "id": "V04",
+      "kind": "paraphrase",
+      "label": "good",
+      "note": "honest paraphrase; token overlap is expected to reject it (documented limitation)",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "reasons": [
+        "low evidence coverage (0.43); unsupported terms: product, around, twenty, thirty, look"
+      ],
+      "source_query": "S01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Hand rub is never recommended and hands must always be washed with soap and water for 20 seconds.",
+      "caught": true,
+      "confidence": 0.224,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-hand-hygiene-2023",
+        "cdc-hand-hygiene-2021"
+      ],
+      "gold_phrases": [
+        "20 to 30 seconds",
+        "about 20 seconds"
+      ],
+      "id": "V05",
+      "kind": "contradiction",
+      "label": "bad",
+      "note": "",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "reasons": [
+        "negation not found in evidence: never",
+        "low evidence coverage (0.38); unsupported terms: never, alway",
+        "weak relevance to the question (0.59)"
+      ],
+      "source_query": "S01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Staff may return to work 5 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication and symptoms are improving.",
+      "caught": true,
+      "confidence": 0.737,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-isolation-return-to-work-2023"
+      ],
+      "gold_phrases": [
+        "5 days"
+      ],
+      "id": "V06",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How many days after symptoms can staff go back to work?",
+      "reasons": [],
+      "source_query": "S17",
+      "status": "validated"
+    },
+    {
+      "answer": "Staff may return to work 3 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication and symptoms are improving.",
+      "caught": true,
+      "confidence": 0.336,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-isolation-return-to-work-2023"
+      ],
+      "gold_phrases": [
+        "5 days"
+      ],
+      "id": "V07",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "How many days after symptoms can staff go back to work?",
+      "reasons": [
+        "number(s) not found in evidence: 3",
+        "low evidence coverage (0.46); unsupported terms: 3"
+      ],
+      "source_query": "S17",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Staff may return to work 10 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication.",
+      "caught": false,
+      "confidence": 0.737,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-isolation-return-to-work-2023"
+      ],
+      "gold_phrases": [
+        "5 days"
+      ],
+      "id": "V08",
+      "kind": "outdated_value",
+      "label": "bad",
+      "note": "superseded value; '10' appears elsewhere in the evidence so a token check is expected to MISS this",
+      "question": "How many days after symptoms can staff go back to work?",
+      "reasons": [],
+      "source_query": "S17",
+      "status": "validated"
+    },
+    {
+      "answer": "Fit-test every respirator user at first use and then once a year.",
+      "caught": true,
+      "confidence": 0.705,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-ppe-2024",
+        "cdc-ppe-2022"
+      ],
+      "gold_phrases": [
+        "once a year",
+        "annual"
+      ],
+      "id": "V09",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How frequently does a respirator wearer need to be fit-tested?",
+      "reasons": [],
+      "source_query": "S08",
+      "status": "validated"
+    },
+    {
+      "answer": "Fit-test respirator users every 5 years.",
+      "caught": true,
+      "confidence": 0.352,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-ppe-2024",
+        "cdc-ppe-2022"
+      ],
+      "gold_phrases": [
+        "once a year",
+        "annual"
+      ],
+      "id": "V10",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "How frequently does a respirator wearer need to be fit-tested?",
+      "reasons": [
+        "number(s) not found in evidence: 5 years",
+        "low evidence coverage (0.50); unsupported terms: "
+      ],
+      "source_query": "S08",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Place sharps in a puncture-resistant container at the point of use.",
+      "caught": true,
+      "confidence": 0.177,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-ppe-2024",
+        "cdc-ppe-2022"
+      ],
+      "gold_phrases": [
+        "once a year",
+        "annual"
+      ],
+      "id": "V11",
+      "kind": "unrelated",
+      "label": "bad",
+      "note": "",
+      "question": "How frequently does a respirator wearer need to be fit-tested?",
+      "reasons": [
+        "low evidence coverage (0.35); unsupported terms: sharp, punctur, resistant, container",
+        "weak relevance to the question (0.50)"
+      ],
+      "source_query": "S08",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Store frozen vaccines between minus 50 and minus 15 degrees Celsius.",
+      "caught": true,
+      "confidence": 0.728,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-vaccination-cold-chain-2024"
+      ],
+      "gold_phrases": [
+        "minus 50 and minus 15"
+      ],
+      "id": "V12",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "What temperature should frozen vaccines be kept at?",
+      "reasons": [],
+      "source_query": "S25",
+      "status": "validated"
+    },
+    {
+      "answer": "Store frozen vaccines between minus 20 and minus 10 degrees Celsius.",
+      "caught": true,
+      "confidence": 0.291,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-vaccination-cold-chain-2024"
+      ],
+      "gold_phrases": [
+        "minus 50 and minus 15"
+      ],
+      "id": "V13",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "What temperature should frozen vaccines be kept at?",
+      "reasons": [
+        "number(s) not found in evidence: 20, 10",
+        "low evidence coverage (0.40); unsupported terms: 20, 10"
+      ],
+      "source_query": "S25",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Report any serious adverse event within 24 hours of becoming aware of it.",
+      "caught": true,
+      "confidence": 0.0,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-vaccination-cold-chain-2024"
+      ],
+      "gold_phrases": [
+        "minus 50 and minus 15"
+      ],
+      "id": "V14",
+      "kind": "unrelated",
+      "label": "bad",
+      "note": "",
+      "question": "What temperature should frozen vaccines be kept at?",
+      "reasons": [
+        "number(s) not found in evidence: 24",
+        "low evidence coverage (0.00); unsupported terms: report, seriou, advers, event, within, 24, hour, becom",
+        "weak relevance to the question (0.59)"
+      ],
+      "source_query": "S25",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Store frozen vaccines between minus 50 and minus 15 degrees Celsius and discard them after one week.",
+      "caught": true,
+      "confidence": 0.548,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-vaccination-cold-chain-2024"
+      ],
+      "gold_phrases": [
+        "minus 50 and minus 15"
+      ],
+      "id": "V15",
+      "kind": "unsupported_addition",
+      "label": "bad",
+      "note": "",
+      "question": "What temperature should frozen vaccines be kept at?",
+      "reasons": [
+        "low evidence coverage (0.75); unsupported terms: discard, one, week"
+      ],
+      "source_query": "S25",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Place sharps in a puncture-resistant container at the point of use and replace the container when it is three quarters full.",
+      "caught": true,
+      "confidence": 0.682,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-sharps-injury-2022"
+      ],
+      "gold_phrases": [
+        "three quarters full"
+      ],
+      "id": "V16",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "When should a sharps container be swapped for a new one?",
+      "reasons": [],
+      "source_query": "S33",
+      "status": "validated"
+    },
+    {
+      "answer": "Place sharps in a puncture-resistant container at the point of use and replace the container only when it is completely full.",
+      "caught": true,
+      "confidence": 0.527,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-sharps-injury-2022"
+      ],
+      "gold_phrases": [
+        "three quarters full"
+      ],
+      "id": "V17",
+      "kind": "wrong_claim",
+      "label": "bad",
+      "note": "",
+      "question": "When should a sharps container be swapped for a new one?",
+      "reasons": [
+        "low evidence coverage (0.77); unsupported terms: only, completely"
+      ],
+      "source_query": "S33",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Wash with soap and water for 40 to 60 seconds.",
+      "caught": true,
+      "confidence": 0.137,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-sharps-injury-2022"
+      ],
+      "gold_phrases": [
+        "three quarters full"
+      ],
+      "id": "V18",
+      "kind": "unrelated",
+      "label": "bad",
+      "note": "",
+      "question": "When should a sharps container be swapped for a new one?",
+      "reasons": [
+        "number(s) not found in evidence: 40, 60",
+        "low evidence coverage (0.23); unsupported terms: 40, 60, second",
+        "weak relevance to the question (0.59)"
+      ],
+      "source_query": "S33",
+      "status": "needs_review"
+    },
+    {
+      "answer": "High-touch surfaces include bed rails, door handles, call buttons, light switches, tray tables and toilet flush handles. Clean them at least twice a day.",
+      "caught": true,
+      "confidence": 0.776,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-environmental-cleaning-2022"
+      ],
+      "gold_phrases": [
+        "twice a day"
+      ],
+      "id": "V19",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How many times per day should high-touch surfaces be cleaned?",
+      "reasons": [],
+      "source_query": "S10",
+      "status": "validated"
+    },
+    {
+      "answer": "High-touch surfaces include bed rails, door handles, call buttons, light switches, tray tables and toilet flush handles. Clean them once a week.",
+      "caught": false,
+      "confidence": 0.682,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-environmental-cleaning-2022"
+      ],
+      "gold_phrases": [
+        "twice a day"
+      ],
+      "id": "V20",
+      "kind": "wrong_claim",
+      "label": "bad",
+      "note": "",
+      "question": "How many times per day should high-touch surfaces be cleaned?",
+      "reasons": [],
+      "source_query": "S10",
+      "status": "validated"
+    },
+    {
+      "answer": "Clean high-touch surfaces at least twice a day using an ultraviolet light robot.",
+      "caught": true,
+      "confidence": 0.588,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-environmental-cleaning-2022"
+      ],
+      "gold_phrases": [
+        "twice a day"
+      ],
+      "id": "V21",
+      "kind": "unsupported_addition",
+      "label": "bad",
+      "note": "",
+      "question": "How many times per day should high-touch surfaces be cleaned?",
+      "reasons": [
+        "low evidence coverage (0.76); unsupported terms: ultraviolet, robot"
+      ],
+      "source_query": "S10",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 24 hours of becoming aware of it.",
+      "caught": true,
+      "confidence": 0.782,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "nih-vaccine-safety-monitoring-2023"
+      ],
+      "gold_phrases": [
+        "24 hours"
+      ],
+      "id": "V22",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "Within what time frame should serious adverse reactions to a vaccine be reported?",
+      "reasons": [],
+      "source_query": "S30",
+      "status": "validated"
+    },
+    {
+      "answer": "Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 7 days.",
+      "caught": false,
+      "confidence": 0.782,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "nih-vaccine-safety-monitoring-2023"
+      ],
+      "gold_phrases": [
+        "24 hours"
+      ],
+      "id": "V23",
+      "kind": "wrong_claim",
+      "label": "bad",
+      "note": "'7 days' is in the evidence for non-serious events; expected to be MISSED by token overlap",
+      "question": "Within what time frame should serious adverse reactions to a vaccine be reported?",
+      "reasons": [],
+      "source_query": "S30",
+      "status": "validated"
+    },
+    {
+      "answer": "Offer influenza vaccination to all staff by the end of October and track uptake by unit.",
+      "caught": true,
+      "confidence": 0.648,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-respiratory-seasons-2023"
+      ],
+      "gold_phrases": [
+        "end of october"
+      ],
+      "id": "V24",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "By when should staff be offered the flu vaccine?",
+      "reasons": [],
+      "source_query": "S15",
+      "status": "validated"
+    },
+    {
+      "answer": "Offer influenza vaccination to all staff by the end of March and track uptake by unit.",
+      "caught": true,
+      "confidence": 0.565,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "cdc-respiratory-seasons-2023"
+      ],
+      "gold_phrases": [
+        "end of october"
+      ],
+      "id": "V25",
+      "kind": "wrong_claim",
+      "label": "bad",
+      "note": "",
+      "question": "By when should staff be offered the flu vaccine?",
+      "reasons": [],
+      "source_query": "S15",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Wash at 70 degrees Celsius for 25 minutes, or at 40 degrees Celsius with 0.05 percent chlorine.",
+      "caught": true,
+      "confidence": 0.846,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-linen-laundry-2022"
+      ],
+      "gold_phrases": [
+        "70 degrees"
+      ],
+      "id": "V26",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "At what temperature should soiled linen be washed?",
+      "reasons": [],
+      "source_query": "S39",
+      "status": "validated"
+    },
+    {
+      "answer": "Wash at 90 degrees Celsius for 25 minutes.",
+      "caught": true,
+      "confidence": 0.337,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "who-linen-laundry-2022"
+      ],
+      "gold_phrases": [
+        "70 degrees"
+      ],
+      "id": "V27",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "At what temperature should soiled linen be washed?",
+      "reasons": [
+        "number(s) not found in evidence: 90",
+        "low evidence coverage (0.40); unsupported terms: 90"
+      ],
+      "source_query": "S39",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Hold an antibiotic time-out at 48 to 72 hours to review the culture results and decide whether to continue, narrow or stop treatment.",
+      "caught": false,
+      "confidence": 0.269,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "nih-antimicrobial-stewardship-2022"
+      ],
+      "gold_phrases": [
+        "48 to 72 hours"
+      ],
+      "id": "V28",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "At what point should a hospitalised patient's antibiotics be re-evaluated?",
+      "reasons": [
+        "weak relevance to the question (0.27)"
+      ],
+      "source_query": "S34",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Hold an antibiotic time-out at 5 to 7 days to review the culture results and decide whether to continue, narrow or stop treatment.",
+      "caught": true,
+      "confidence": 0.125,
+      "corpus": "synthetic",
+      "gold_docs": [
+        "nih-antimicrobial-stewardship-2022"
+      ],
+      "gold_phrases": [
+        "48 to 72 hours"
+      ],
+      "id": "V29",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "At what point should a hospitalised patient's antibiotics be re-evaluated?",
+      "reasons": [
+        "number(s) not found in evidence: 7",
+        "low evidence coverage (0.47); unsupported terms: 7",
+        "weak relevance to the question (0.27)"
+      ],
+      "source_query": "S34",
+      "status": "needs_review"
+    },
+    {
+      "answer": "The recommended amoxicillin dose for otitis media is 80 to 90 milligrams per kilogram per day.",
+      "caught": true,
+      "confidence": 0.049,
+      "corpus": "synthetic",
+      "gold_docs": [],
+      "gold_phrases": [],
+      "id": "V30",
+      "kind": "off_corpus_fabrication",
+      "label": "bad",
+      "note": "",
+      "question": "What is the recommended dose of amoxicillin for otitis media?",
+      "reasons": [
+        "number(s) not found in evidence: 80, 90",
+        "low evidence coverage (0.08); unsupported terms: amoxicillin, otiti, media, 80, 90, milligram, per, kilogram"
+      ],
+      "source_query": "S43",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Patients with measles should be placed in a negative pressure room for four days after the rash appears.",
+      "caught": true,
+      "confidence": 0.103,
+      "corpus": "synthetic",
+      "gold_docs": [],
+      "gold_phrases": [],
+      "id": "V31",
+      "kind": "off_corpus_fabrication",
+      "label": "bad",
+      "note": "",
+      "question": "What isolation does a patient with measles need?",
+      "reasons": [
+        "low evidence coverage (0.28); unsupported terms: measl, plac, pressur, room, four, rash, appear",
+        "weak relevance to the question (0.37)"
+      ],
+      "source_query": "S44",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Storage units must maintain the following temperature ranges at all times: Refrigerators between 2°C and 8°C (36°F and 46°F).",
+      "caught": true,
+      "confidence": 1.0,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-vaccine-storage-toolkit-2026"
+      ],
+      "gold_phrases": [
+        "2°c and 8°c"
+      ],
+      "id": "V32",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "What temperature range must vaccine refrigerators maintain?",
+      "reasons": [],
+      "source_query": "T01",
+      "status": "validated"
+    },
+    {
+      "answer": "Storage units must maintain the following temperature ranges at all times: Refrigerators between 0°C and 4°C (32°F and 39°F).",
+      "caught": true,
+      "confidence": 0.356,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-vaccine-storage-toolkit-2026"
+      ],
+      "gold_phrases": [
+        "2°c and 8°c"
+      ],
+      "id": "V33",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "What temperature range must vaccine refrigerators maintain?",
+      "reasons": [
+        "number(s) not found in evidence: 0, 4, 32, 39",
+        "low evidence coverage (0.36); unsupported terms: 0, 4, 32, 39"
+      ],
+      "source_query": "T01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Calibration testing should be performed every 2 to 3 years, or according to the manufacturer’s recommended schedule.",
+      "caught": true,
+      "confidence": 0.906,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-vaccine-storage-toolkit-2026"
+      ],
+      "gold_phrases": [
+        "every 2 to 3 years"
+      ],
+      "id": "V34",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How often should temperature monitoring devices be calibration tested?",
+      "reasons": [],
+      "source_query": "T03",
+      "status": "validated"
+    },
+    {
+      "answer": "Calibration testing should be performed every 10 years.",
+      "caught": true,
+      "confidence": 0.387,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-vaccine-storage-toolkit-2026"
+      ],
+      "gold_phrases": [
+        "every 2 to 3 years"
+      ],
+      "id": "V35",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "How often should temperature monitoring devices be calibration tested?",
+      "reasons": [
+        "number(s) not found in evidence: 10",
+        "low evidence coverage (0.43); unsupported terms: 10"
+      ],
+      "source_query": "T03",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Respiratory protection with NIOSH certified N95 or higher level respirator is recommended for healthcare personnel entering the AIIR.",
+      "caught": true,
+      "confidence": 0.729,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-isolation-precautions-2007"
+      ],
+      "gold_phrases": [
+        "n95"
+      ],
+      "id": "V36",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+      "reasons": [],
+      "source_query": "R01",
+      "status": "validated"
+    },
+    {
+      "answer": "A cloth face covering is sufficient for healthcare personnel entering the AIIR.",
+      "caught": true,
+      "confidence": 0.44,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-isolation-precautions-2007"
+      ],
+      "gold_phrases": [
+        "n95"
+      ],
+      "id": "V37",
+      "kind": "wrong_claim",
+      "label": "bad",
+      "note": "",
+      "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+      "reasons": [
+        "low evidence coverage (0.71); unsupported terms: cover, sufficient"
+      ],
+      "source_query": "R01",
+      "status": "needs_review"
+    },
+    {
+      "answer": "Historically, the area of defined risk has been a distance of 3 feet around the patient.",
+      "caught": true,
+      "confidence": 0.72,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-isolation-precautions-2007"
+      ],
+      "gold_phrases": [
+        "3 feet"
+      ],
+      "id": "V38",
+      "kind": "faithful",
+      "label": "good",
+      "note": "",
+      "question": "How close to the patient is the droplet transmission risk zone defined as?",
+      "reasons": [],
+      "source_query": "R04",
+      "status": "validated"
+    },
+    {
+      "answer": "Historically, the area of defined risk has been a distance of 30 feet around the patient.",
+      "caught": true,
+      "confidence": 0.32,
+      "corpus": "real",
+      "gold_docs": [
+        "cdc-isolation-precautions-2007"
+      ],
+      "gold_phrases": [
+        "3 feet"
+      ],
+      "id": "V39",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "",
+      "question": "How close to the patient is the droplet transmission risk zone defined as?",
+      "reasons": [
+        "number(s) not found in evidence: 30",
+        "low evidence coverage (0.44); unsupported terms: 30"
+      ],
+      "source_query": "R04",
+      "status": "needs_review"
+    },
+    {
+      "answer": "The recommended amoxicillin dose for otitis media is 80 to 90 milligrams per kilogram per day.",
+      "caught": true,
+      "confidence": 0.081,
+      "corpus": "real",
+      "gold_docs": [],
+      "gold_phrases": [],
+      "id": "V40",
+      "kind": "off_corpus_fabrication",
+      "label": "bad",
+      "note": "",
+      "question": "What is the recommended dose of amoxicillin for otitis media?",
+      "reasons": [
+        "number(s) not found in evidence: 80, 90",
+        "low evidence coverage (0.09); unsupported terms: amoxicillin, otiti, media, 80, 90, milligram, per, kilogram"
+      ],
+      "source_query": "RO1",
+      "status": "needs_review"
+    },
+    {
+      "answer": "No, brushes are not recommended for surgical hand preparation.",
+      "caught": false,
+      "confidence": 0.343,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "not recommended"
+      ],
+      "id": "V41",
+      "kind": "faithful",
+      "label": "good",
+      "note": "yes/no lead-in",
+      "question": "Is it acceptable to use a brush when scrubbing before an operation?",
+      "reasons": [
+        "weak relevance to the question (0.34)"
+      ],
+      "source_query": null,
+      "status": "needs_review"
+    },
+    {
+      "answer": "Yes, dry hands thoroughly with a single-use towel.",
+      "caught": true,
+      "confidence": 0.69,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "single-use towel"
+      ],
+      "id": "V42",
+      "kind": "faithful",
+      "label": "good",
+      "note": "yes/no lead-in",
+      "question": "Should the towel used to dry hands after washing be used only once?",
+      "reasons": [],
+      "source_query": null,
+      "status": "validated"
+    },
+    {
+      "answer": "No, scrub hands and forearms for at least 15 minutes every time.",
+      "caught": true,
+      "confidence": 0.149,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "2–5 minutes",
+        "2-5 minutes"
+      ],
+      "id": "V43",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "yes/no lead-in with a made-up number",
+      "question": "Is there a minimum scrub time with antimicrobial soap before surgery?",
+      "reasons": [
+        "number(s) not found in evidence: 15",
+        "low evidence coverage (0.31); unsupported terms: least, 15, every",
+        "weak relevance to the question (0.48)"
+      ],
+      "source_query": null,
+      "status": "needs_review"
+    },
+    {
+      "answer": "Yes, alcohol-based handrub reliably kills spores of C. difficile within seconds.",
+      "caught": true,
+      "confidence": 0.557,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "spore"
+      ],
+      "id": "V44",
+      "kind": "unsupported_addition",
+      "label": "bad",
+      "note": "yes/no lead-in with an unsupported claim",
+      "question": "Does alcohol-based handrub kill bacterial spores?",
+      "reasons": [
+        "low evidence coverage (0.61); unsupported terms: reliably, kill, within"
+      ],
+      "source_query": null,
+      "status": "needs_review"
+    }
+  ],
+  "threshold": 0.6
+}

@@ -4,6 +4,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+import numpy as np
+
+from .bm25 import Bm25, reciprocal_rank_fusion
 from .embeddings import embed
 from .index import LoadedIndex
 from .lexicon import Lexicon
@@ -13,6 +16,7 @@ from .text import tokenize
 RERANK_POOL = 30         # FAISS candidates considered when re-ranking
 SPARSE_WORDS = 25        # a retrieved chunk shorter than this is "sparse"
 SPARSE_TOP_N = 3         # only the best few hits may pull in a neighbour
+FUSION_POOL = 50         # candidates taken from each of FAISS and BM25 before fusion
 
 
 @dataclass
@@ -23,11 +27,13 @@ class Hit:
 
 
 class Retriever:
-    def __init__(self, loaded: LoadedIndex, lexicon: Lexicon | None = None, rerank_weight: float = 0.0):
+    def __init__(self, loaded: LoadedIndex, lexicon: Lexicon | None = None, rerank_weight: float = 0.0, hybrid: bool = False):
         self.index = loaded.index
         self.chunks = loaded.chunks
         self.lexicon = lexicon or Lexicon(self.chunks)
         self.rerank_weight = rerank_weight
+        self.hybrid = hybrid
+        self._bm25 = Bm25(self.chunks) if hybrid else None
         self._unit_tokens: dict[str, list[set[str]]] = {}
         self._by_position = {(c.doc_id, c.position): c for c in self.chunks}
 
@@ -44,6 +50,8 @@ class Retriever:
         query = embed(question)
         if not query.any():
             return []
+        if self.hybrid:
+            return self._search_hybrid(question, query, top_k, include_superseded)
         fetch = min(total, max(top_k * 4, 20, RERANK_POOL if self.rerank_weight else 0))
         while True:
             scores, ids = self.index.search(query.reshape(1, -1), fetch)
@@ -57,6 +65,24 @@ class Retriever:
                     hits = self._rerank(question, hits)
                 return hits[:top_k]
             fetch = min(total, fetch * 2)
+
+    def _search_hybrid(self, question: str, query: np.ndarray, top_k: int, include_superseded: bool) -> list[Hit]:
+        """FAISS and BM25 each propose candidates; reciprocal rank fusion decides which enter the re-ranking pool."""
+        total = self.index.ntotal
+        allowed = (lambda i: True) if include_superseded else (lambda i: self.chunks[i].is_latest)
+        fetch = min(total, FUSION_POOL * 4)
+        while True:
+            scores, ids = self.index.search(query.reshape(1, -1), fetch)
+            dense = [int(i) for i in ids[0] if i >= 0 and allowed(int(i))][:FUSION_POOL]
+            if len(dense) >= min(FUSION_POOL, top_k) or fetch >= total:
+                break
+            fetch = min(total, fetch * 2)
+        sparse = [i for i, _ in self._bm25.rank(tokenize(question), FUSION_POOL, allowed)]
+        pool = reciprocal_rank_fusion([dense, sparse])[:max(RERANK_POOL, top_k)]
+        hits = [Hit(self.chunks[i], float(np.dot(query, self.index.reconstruct(i)))) for i in pool]
+        if self.rerank_weight:
+            hits = self._rerank(question, hits)
+        return hits[:top_k]
 
     def _lexical_score(self, q_tokens: set[str], q_weight: float, chunk: Chunk) -> float:
         """Best single-sentence idf-weighted coverage of the question, plus a title/section bonus."""

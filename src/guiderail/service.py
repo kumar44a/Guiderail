@@ -38,7 +38,8 @@ class QAService:
                  threshold: float = DEFAULT_THRESHOLD, rerank_weight: float | None = None):
         self.loaded = loaded
         self.lexicon = Lexicon(loaded.chunks)
-        self.retriever = Retriever(loaded, self.lexicon, config.rerank_weight() if rerank_weight is None else rerank_weight)
+        self.retriever = Retriever(loaded, self.lexicon, config.rerank_weight() if rerank_weight is None else rerank_weight,
+                                   hybrid=config.hybrid())
         self.generator = generator or ExtractiveGenerator(self.lexicon)
         self.threshold = threshold
 
