@@ -1,7 +1,7 @@
 """LlmGenerator against a fake client. No network, no API key.
 
 The live path is covered by the `live_llm` test at the bottom, which only runs when
-ANTHROPIC_API_KEY is set. Until that has been run and logged, the live call is
+ANTHROPIC_API_KEY is set and GUIDERAIL_RUN_LIVE=1 (importing the API loads .env, so the key alone is not an opt-in). Until that has been run and logged, the live call is
 unverified; these tests only prove request shape and response handling.
 """
 
@@ -112,7 +112,8 @@ def test_thinking_and_non_text_blocks_are_ignored(hits):
 
 
 @pytest.mark.live_llm
-@pytest.mark.skipif(not os.environ.get("ANTHROPIC_API_KEY"), reason="needs ANTHROPIC_API_KEY")
+@pytest.mark.skipif(not (os.environ.get("ANTHROPIC_API_KEY") and os.environ.get("GUIDERAIL_RUN_LIVE")),
+                    reason="paid API call: needs ANTHROPIC_API_KEY and GUIDERAIL_RUN_LIVE=1")
 def test_live_answer_is_grounded_and_cited(hits):
     generator = LlmGenerator()
     generated = generator.generate(QUESTION, hits)

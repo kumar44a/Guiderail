@@ -65,6 +65,7 @@ def _build_generator() -> Generator | None:
 
 
 def create_app(index_dir=None, generator: Generator | None = None, threshold: float | None = None) -> FastAPI:
+    config.load_env_file()     # .env supplies defaults; real environment variables win
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         loaded = load_index(index_dir or config.index_dir())

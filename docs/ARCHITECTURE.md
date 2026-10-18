@@ -1,120 +1,135 @@
 # GuideRail: Architecture
 
-Healthcare Guidelines RAG Assistant: rapid query and validation.
-Status: **draft for owner review (Phase 0)**. Nothing below is implemented yet.
+Healthcare Guidelines RAG Assistant: rapid query and validation, built for Spinnaker Analytics.
+Status: **implemented through Phase 4**; Phase 5 (final review and submission) remains.
+Measured results are not repeated here. They are generated into [EVALUATION_REPORT.md](EVALUATION_REPORT.md) and
+[the README](../README.md), so this document cannot drift from the reports.
 
 ## 1. Goals and success criteria (from the Spinnaker brief)
 
-| Criterion | Target | Measured by |
-|---|---|---|
-| Deterministic indexing, no API dependency | 100% reproducible | identical index hash across builds (`index/manifest.json`) |
-| Retrieval quality | Precision@5 >= 0.65 | `evaluation/eval_retrieval.py` |
-| Validation pass rate at threshold 0.6 | >= 80% (on in-corpus queries) | `evaluation/eval_validation.py` |
-| API | stable REST, structured JSON | schema tests + OpenAPI |
+| Criterion | Target | Measured by | Where to read the outcome |
+|---|---|---|---|
+| Deterministic indexing, no API dependency | 100% reproducible | identical hashes across builds and across processes (`index/manifest.json`, `tests/test_index.py`, `scripts/pipeline.py --check-determinism`) | evaluation report, section 2 |
+| Retrieval quality | Precision@5 >= 0.65 | `evaluation/run_eval.py` (document-level, plus a capped variant and Hit@K, MRR) | evaluation report, sections 2 and 3 |
+| Validation pass rate at threshold 0.6 | >= 80% on in-corpus queries | `evaluation/run_eval.py` | evaluation report, sections 2 and 4 |
+| API | stable REST, structured JSON | `tests/test_api.py` | evaluation report, section 2 |
+
+The report also gives *validated precision* (how many validated answers are correct) and out-of-scope false accepts, because a pass
+rate alone is easy to inflate with an extractive generator.
 
 ## 2. System overview
 
 ```
-OFFLINE: scripts/pipeline.py (deterministic)
- data/guidelines/*.md -> Loader -> Chunker -> Embedder (256-D) -> FAISS IndexFlatIP
-   (+ front-matter:       BaseLoader  heading-     hashed n-grams,    + chunks.jsonl
-    agency, year,         interface   aware,       md5-seeded,        + manifest.json
-    version, supersedes)              deduped      L2-normalized      (counts, hashes)
+OFFLINE  scripts/pipeline.py  (deterministic: no network, no randomness)
+ data/guidelines/*.md  --MarkdownLoader--\
+ data/real/*.pdf + sources.json --PdfLoader--> Documents (front matter / sources.json metadata, versions resolved)
+   -> Chunker (heading-aware, <= 80 words, oversized units hard-split, dupes dropped within a document)
+   -> Embedder (256-D hashed unigram+bigram, md5 buckets and signs, sublinear TF, L2-normalised)
+   -> FAISS IndexFlatIP  +  chunks.jsonl  +  manifest.json (SHA-256 of corpus, chunks, vectors, index)
 
-ONLINE: FastAPI
- POST /qa {question, top_k}
-   -> embed query -> FAISS top-k -> version filter -> Generator -> Validator -> response
-                                    (latest wins,     extractive     independent    {answer, citations[],
-                                     dupes collapsed) (or LLM, opt.) coverage +     confidence, status}
-                                                                      retrieval score
-EVALUATION: evaluation/
- labeled queries (in-corpus + out-of-corpus) -> P@1/5/10 -> threshold sweep -> validator stress test
-   -> reports/*.json + summary.md + low_confidence.csv
+ONLINE   FastAPI  POST /qa {question, top_k}
+ embed query -> FAISS top-k pool -> drop superseded versions -> lexical re-rank (cosine stays the reported score)
+   -> neighbour fallback for sparse top chunks -> Generator (extractive | LLM) -> Validator -> {answer, citations, confidence, status}
+
+EVALUATION  evaluation/  labeled queries (dev/test) -> retrieval metrics, answer correctness, threshold sweep,
+ review list, validator stress test -> reports/*.json -> build_summary.py -> docs/EVALUATION_*.md
 ```
 
 ## 3. Components
 
 | Module | Responsibility |
 |---|---|
-| `loaders/` | `BaseLoader` interface; `MarkdownLoader` (corpus), `PdfLoader` (real documents). The corpus connector is the one swap point for a secure gateway. |
-| `chunker.py` | Split by heading, then by sentence window; carry metadata (doc id, agency, year, version, section). Drop near-duplicate chunks. |
-| `embeddings.py` | The only place text becomes vectors. Hashed unigram + bigram features into 256-D, md5-based signs and buckets, L2-normalized. |
-| `index.py` | Build, save, load FAISS `IndexFlatIP`. Writes `manifest.json` (doc/chunk counts, SHA-256 of index and chunks). |
-| `retriever.py` | Embed query, search, apply version policy (prefer latest non-superseded), return scored chunks. |
-| `generator.py` | `ExtractiveGenerator` (default): pick best-matching sentences, cite each. `LlmGenerator` (optional): Claude answers from the evidence only. Both return answer plus the sentences they used. |
-| `validator.py` | Scores support independently of the generator: stemmed, stopword-filtered token coverage of the answer against **all retrieved evidence**, combined with retrieval score. Maps to `validated` or `needs_review` at the threshold (default 0.6). |
-| `api.py` | FastAPI app: `POST /qa`, `GET /health` (index hash, counts). Pydantic schemas. |
-| `ui/app.py` | Streamlit client over `/qa`. No logic. |
+| `loaders/` | `BaseLoader` (one method, `load() -> list[Document]`) is the swap point for a real repository. `MarkdownLoader` reads the synthetic corpus. `PdfLoader` reads real PDFs described in `sources.json` (see the RUNBOOK for its cleaning steps and limits). `resolve_versions` turns `supersedes` into `superseded_by` and rejects bad pointers at load time. |
+| `chunker.py` | Split by `##` heading, pack bullets and sentences to a word budget, hard-split oversized units, drop duplicates within a document only (near-duplicates *across* agencies are kept on purpose). |
+| `text.py` | Tokeniser, light English stemmer and stopword list. Negations are kept because they change meaning. |
+| `embeddings.py` | The only place text becomes vectors. Lexical by design: it matches shared words, not meaning. Method string `hash-ngram-md5-v1` is recorded in the manifest. |
+| `index.py` | Build, save and load the FAISS `IndexFlatIP` over unit vectors (cosine), with the manifest. |
+| `lexicon.py` | Corpus document-frequency and idf weights used by the re-ranker, the extractive generator and the validator. |
+| `retriever.py` | Search with a version filter (superseded chunks excluded unless asked), optional lexical re-ranker over the top candidates, and a controlled neighbour fallback: if one of the best few hits is very short, its neighbouring chunk is added once and marked `via="neighbor"`. |
+| `generators/extractive.py` | Default, no model. Scores single lines by idf-weighted question overlap plus credit for title and section context, keeps the top lines within a relative cutoff, and follows list lead-ins ("...:") and anaphoric continuations ("This..."). |
+| `generators/llm.py` | Optional. Claude answers from the retrieved passages only, cites chunk ids, and replies `NOT_IN_EVIDENCE` when the answer is absent. The prompt is `prompts/answer_style.txt`. Request id, model and usage are recorded. The SDK import is lazy. Failures raise `GenerationError`, which the service turns into an abstention. |
+| `validator.py` | **v2.** `confidence = coverage x relevance`, independent of the generator. *Coverage*: idf-weighted share of the answer's content words found in the evidence or its source metadata, halved when the answer contains a number-with-unit or a negation that the evidence does not. *Relevance*: half the rescaled top retrieval score plus half the share of question terms that the **answer** addresses. `validated` requires confidence at or above the threshold (default 0.6) **and** a citation. |
+| `service.py` | `QAService.ask()` wires retrieval, generation and validation; it is the only place that does. |
+| `api.py` | FastAPI app. Index loaded in the lifespan handler; `.env` read at start-up. Pydantic validates input. |
+| `evalkit.py` | Metrics (document-level and capped Precision@K, Hit@K, MRR), answer-correctness matching, threshold sweep, review list, Wilson intervals, label validation, validator stress harness. |
+| `ui/app.py` | Streamlit client over `/qa` and `/health`. Display only. |
 
 ## 4. API contract
 
 ```
-POST /qa
-  request : { "question": str, "top_k": int = 5 }     (top_k validated 1..20)
+POST /qa[?debug=true]
+  request : { "question": str (1..1000 chars), "top_k": int = 5 (1..20) }
   response: { "answer": str,
-              "citations": [ { "doc_id", "title", "agency", "year", "version", "section", "score" } ],
-              "confidence": float,                     (0..1)
-              "status": "validated" | "needs_review" }
-GET /health -> { "status": "ok", "index_sha256": str, "documents": int, "chunks": int }
+              "citations": [ { "chunk_id", "doc_id", "title", "agency", "year", "version", "section", "score" } ],
+              "confidence": float (0..1),
+              "status": "validated" | "needs_review",
+              "debug": {...}  (only with ?debug=true) }
+GET /health -> { "status": "ok", "version", "index_sha256", "documents", "chunks", "generator", "threshold" }
 ```
-Abstention returns an empty or hedged answer with `needs_review`, never a guess.
 
-## 5. Corpus (we write our own)
+Invalid input is HTTP 422. Abstention is a normal 200 response with `needs_review` and no citations, never a guess. A generator
+failure is also an abstention, so the endpoint does not return 5xx for a model outage.
 
-- Roughly 20 to 25 distinct synthetic documents across WHO, NIH, CDC style, with real-looking
-  clinical specifics: hand hygiene, PPE, isolation and return-to-work, vaccination cold
-  chain, environmental cleaning, respiratory etiquette, evidence grading, shared decision
-  making.
-- Front-matter on every file: `agency`, `year`, `version`, `supersedes`, `topic`.
-- Deliberate hard cases: a superseded version with a changed recommendation (tests version
-  policy), near-duplicate wording across agencies, and sections with very little text.
-- A small real-document set (public WHO/CDC PDFs, supplied or downloaded by the owner)
-  exercises the PDF loader on noisy text. These are listed in the RUNBOOK with source URLs.
+## 5. Corpora
+
+- **Synthetic** (`data/guidelines/`): written for this project in WHO, CDC and NIH style. Every file has front matter (`doc_id`, `agency`,
+  `title`, `year`, `version`, `topic`, `supersedes`, `synthetic`). Hard cases are deliberate: superseded versions with a changed
+  recommendation, WHO and CDC near-duplicates, different terminology for the same idea, and a document with a single short chunk.
+  The text is invented and **not clinically reviewed**; it must never be used for care decisions.
+- **Real** (`data/real/`): public WHO and CDC PDFs registered in `sources.json` (the PDFs are not committed). They exercise the PDF
+  loader on genuinely noisy text and are where the system is weakest. One file was excluded because it was not English.
 
 ## 6. Evaluation design
 
-- **Retrieval:** labeled at document and section level (not topic family). P@1/5/10 reported.
-- **Validation pass rate:** in-corpus queries only. Out-of-corpus queries are reported
-  separately and are expected to abstain.
-- **Validator stress test:** fabricated, paraphrased, partly supported and off-topic answers
-  must score low. This is how a high pass rate is earned. Without it the metric is
-  trivially near 1.0 for an extractive generator, and the report says so.
-- **Threshold sweep:** 0.3 to 0.9. Shows validated vs abstained, and pass rate on correct vs
-  out-of-corpus queries, to justify the chosen threshold.
-- **Low-confidence list:** `needs_review` queries with reasons, for analyst review.
-- **Live LLM run:** if the LLM generator ships, a logged real run is required (see section 8).
+- Labeled queries per corpus: in-corpus (with expected facts, optional forbidden values, relevant documents) and out-of-corpus
+  (should abstain). Split into **dev** (used to choose changes) and **test** (held out, run after the configuration is frozen, every
+  run logged). `evaluation/check_labels.py` verifies each expected fact exists in the relevant documents.
+- **Retrieval:** document-level Precision@K as the brief defines it, a capped variant (divided by the best attainable score, since most
+  synthetic documents have only a few chunks), Hit@K (does a chunk containing the fact appear) and MRR.
+- **Answers:** correct = every expected fact present (stem-aware) and no forbidden value. *Validated precision* and out-of-scope false
+  accepts are the meaningful validation metrics.
+- **Validator stress test** (`evaluation/validator_stress.jsonl`): hand-written faithful and unfaithful answers, with the true evidence
+  guaranteed present, so the validator is scored on answers its own generator did not produce.
+- **Threshold sweep** and a **low-confidence review list** (CSV per run) for analysts.
+- **Discipline:** accept/reject rules fixed before each run, tagged reports for every experiment, test-split runs logged.
 
-## 7. Traceability to the Equifile review
+## 7. Decisions and rejected experiments
 
-| Review point | Where addressed |
-|---|---|
-| Numbers must reconcile with artifacts | `check_docs_sync.py`, manifest, generated README stats |
-| Only 3 synthetic docs, no real data | Own richer corpus plus real-document set |
-| PDF loader only a future swap | `PdfLoader` exercised on real documents, outputs shown |
-| Groundedness trivially 1.0 | Independent validator, stress test, honest note in report |
-| Short sections gave thin results | Controlled neighbor-chunk fallback, deduped, cited |
-| Live model path never run | `LlmGenerator` with logged live run (blocked on API key) |
-| Separate AI-assisted from verified | `DEVELOPMENT_NOTES.md` |
-| Modular, tested per stage, honest limitations | One module per stage, tests mirror modules, limitations section |
+Accepted (each measured on dev first): context-aware sentence scoring, validator v2, list-continuation rules, lexical re-ranker
+(weights 0.5 and 1.0 performed alike, the smaller was kept), a tightened LLM prompt.
 
-## 8. Open items and risks
+Rejected and reverted, with the evidence in [EVALUATION_LOG.md](EVALUATION_LOG.md):
 
-- **API key:** the live LLM generator needs `ANTHROPIC_API_KEY`. Owner to provide before Phase 2,
-  otherwise the live run is reported as not done.
-- **Real documents:** owner to supply or approve a short list of public PDFs.
-- **Spinnaker questions:** whether versioned and duplicate files are intentional in their kit,
-  and how "latest" should be defined in their gateway.
-- **Hash embeddings are lexical.** They match on shared words, not meaning, so paraphrased
-  queries can miss. This is a documented limitation of the no-API requirement.
-- **Docker:** needs a Dockerfile and compose. Not testable on this machine unless Docker is installed.
+- **idf-weighted embeddings** (two variants): failed the pre-set rule, because ranking quality dropped on both corpora.
+- **Scaling relevance by unknown question words:** fixed one out-of-scope case but flagged many correct answers.
+
+Decisions worth knowing:
+
+- Embeddings are hashed n-grams because the brief requires deterministic, API-free indexing. Paraphrases and synonyms are the cost.
+- The default threshold is the brief's 0.6 and was **not** moved on test-split evidence.
+- The re-ranker changes order only; `Hit.score` stays the cosine so the validator's relevance input is unchanged.
+- Superseded versions are excluded by default because answering from a withdrawn recommendation is the worse error.
+- A relevance term in the validator is measured against the answer, not the evidence set, so an on-topic sentence does not validate an
+  unrelated question.
+- PDF-loader fixes (ligatures, glyph placeholders, wrapped lettered recommendations taken as headings) were made after the label check
+  caught them, before any query was run on the five-document corpus; see the evaluation report, section 9.
+
+## 8. Known limitations
+
+- Lexical matching: paraphrases, synonyms and swapped plausible values can slip through the validator or be wrongly flagged.
+- Near-domain out-of-scope questions can be answered with on-topic sentences by the extractive path and validated.
+- Real PDFs: reference lists become noise chunks, figure text is jumbled, image-only pages give no text, no OCR.
+- The LLM generator is nondeterministic and withholds many correct answers on real documents at the default threshold.
+- Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
+- Docker files and the Windows setup instructions were written but not run on a machine of that kind.
 
 ## 9. Phases
 
-| Phase | Output | Exit check |
+| Phase | Output | Status |
 |---|---|---|
-| 0 Foundations | structure, CLAUDE.md, pinned deps, this document | owner approves |
-| 1 Corpus and index | corpus, loaders, chunker, embedder, FAISS, manifest | two builds give identical hashes |
-| 2 RAG service | retriever, generators, validator, `/qa`, `/health` | schema and abstention tests pass |
-| 3 Evaluation | labeled sets, P@K, sweep, stress test, reports | reports generated from runs |
-| 4 Packaging | README (generated stats), RUNBOOK, Docker, Streamlit, DEVELOPMENT_NOTES | setup works from docs alone |
-| 5 Submission | executed notebook or logs, metrics, technical summary, limitations | docs-sync and pytest green |
+| 0 Foundations | structure, CLAUDE.md, pinned dependencies, this document | done |
+| 1 Corpus and index | corpus, loaders, chunker, embedder, FAISS, manifest | done |
+| 2 RAG service | retriever, generators, validator, `/qa`, `/health` | done |
+| 3 Evaluation | labeled sets, metrics, sweep, stress test, reports (re-run on the five-document real corpus) | done |
+| 4 Packaging | README with generated stats, RUNBOOK, Docker, Streamlit, DEVELOPMENT_NOTES, docs-sync check | done (Docker unrun) |
+| 5 Submission | executed logs, technical summary, metrics, limitations | pending |

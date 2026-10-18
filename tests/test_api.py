@@ -78,3 +78,19 @@ def test_missing_index_fails_fast_with_a_clear_message(tmp_path):
     with pytest.raises(FileNotFoundError, match="pipeline.py"):
         with TestClient(create_app(index_dir=tmp_path)):
             pass
+
+
+def test_dotenv_file_supplies_settings_and_real_environment_wins(index_path, tmp_path, monkeypatch):
+    import os
+
+    from guiderail import config
+
+    (tmp_path / ".env").write_text("GUIDERAIL_THRESHOLD=0.9\nGUIDERAIL_RERANK_WEIGHT=0.25\n", encoding="utf-8")
+    monkeypatch.setattr(config, "ROOT", tmp_path)
+    monkeypatch.setattr(os, "environ", {k: v for k, v in os.environ.items() if not k.startswith("GUIDERAIL_")})
+    with TestClient(create_app(index_dir=index_path)) as c:
+        assert c.get("/health").json()["threshold"] == 0.9
+
+    monkeypatch.setattr(os, "environ", {"GUIDERAIL_THRESHOLD": "0.7"})
+    with TestClient(create_app(index_dir=index_path)) as c:
+        assert c.get("/health").json()["threshold"] == 0.7

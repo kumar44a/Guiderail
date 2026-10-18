@@ -1,0 +1,14 @@
+.git
+.venv
+.env
+index
+index_real
+data/real
+evaluation
+tests
+notebooks
+docs
+__pycache__
+*.pyc
+.pytest_cache
+.DS_Store

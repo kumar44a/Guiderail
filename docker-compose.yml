@@ -1,0 +1,28 @@
+# docker compose up --build        -> API on http://localhost:9070, UI on http://localhost:8501
+# Not run on the machine this was written on (Docker was not installed there): see docs/RUNBOOK.md.
+services:
+  api:
+    build: .
+    ports:
+      - "9070:9070"
+    environment:
+      # Defaults to the offline extractive generator. To use Claude, put ANTHROPIC_API_KEY in a .env file
+      # next to this file and set GUIDERAIL_GENERATOR=llm there as well.
+      GUIDERAIL_GENERATOR: ${GUIDERAIL_GENERATOR:-extractive}
+      GUIDERAIL_THRESHOLD: ${GUIDERAIL_THRESHOLD:-0.6}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    restart: unless-stopped
+
+  ui:
+    build: .
+    command: ["streamlit", "run", "ui/app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]
+    ports:
+      - "8501:8501"
+    environment:
+      GUIDERAIL_API_URL: http://api:9070
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      disable: true
+    restart: unless-stopped
