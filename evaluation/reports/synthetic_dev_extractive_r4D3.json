@@ -1,0 +1,1263 @@
+{
+  "corpus": "synthetic",
+  "generator": "extractive",
+  "index_sha256": "45c3d9422161bc9750864850b8285b1feced930110530c2741ec0b9dd986cef8",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 9,
+      "NIH": 5,
+      "WHO": 8
+    },
+    "chunks": 79,
+    "documents": 22,
+    "superseded_documents": 2
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Alcohol-based hand rub is preferred in most clinical situations. Rub until hands are dry, which usually takes about 20 seconds. Use an alcohol-based hand rub for 20 to 30 seconds when hands are not visibly soiled.",
+      "citations": [
+        "cdc-hand-hygiene-2021#recommendations-0",
+        "who-hand-hygiene-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.698,
+      "correct": true,
+      "generator_error": null,
+      "id": "S01",
+      "kind": "in_corpus",
+      "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.698,
+        "coverage": 1.0,
+        "question_support": 0.397,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Perform hand hygiene at five moments: before touching a patient, before a clean or aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching patient surroundings. This guideline applies to all health workers who provide direct patient care in hospitals, clinics and long-term care facilities. It replaces the 2019 edition. Use soap and water when hands are visibly dirty, and after caring for a patient with Clostridioides difficile or norovirus, because alcohol is less effective against spores and non-enveloped viruses.",
+      "citations": [
+        "who-hand-hygiene-2023#recommendations-0",
+        "who-hand-hygiene-2023#scope-0",
+        "cdc-hand-hygiene-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.924,
+      "correct": true,
+      "generator_error": null,
+      "id": "S03",
+      "kind": "in_corpus",
+      "question": "At what moments should healthcare workers clean their hands during patient care?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.924,
+        "coverage": 1.0,
+        "question_support": 0.847,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use soap and water when hands are visibly dirty, and after caring for a patient with Clostridioides difficile or norovirus, because alcohol is less effective against spores and non-enveloped viruses. Wash with soap and water for 40 to 60 seconds when hands are visibly soiled or contaminated with blood or body fluids. The duration for washing with soap and water increased from 30 seconds to 40 to 60 seconds.",
+      "citations": [
+        "cdc-hand-hygiene-2021#recommendations-0",
+        "who-hand-hygiene-2023#recommendations-0",
+        "who-hand-hygiene-2023#changes-from-the-2019-edition-0"
+      ],
+      "cited": true,
+      "confidence": 0.626,
+      "correct": true,
+      "generator_error": null,
+      "id": "S05",
+      "kind": "in_corpus",
+      "question": "Which infections require soap and water instead of hand rub?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.626,
+        "coverage": 1.0,
+        "question_support": 0.382,
+        "reasons": [],
+        "retrieval_relevance": 0.87,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guideline sets out how health workers should select, put on, take off and dispose of personal protective equipment (PPE). Put on PPE in this order: gown, mask or respirator, eye protection, gloves.",
+      "citations": [
+        "who-ppe-2024#scope-0",
+        "who-ppe-2024#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.868,
+      "correct": true,
+      "generator_error": null,
+      "id": "S07",
+      "kind": "in_corpus",
+      "question": "What order should I put on protective equipment?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.868,
+        "coverage": 1.0,
+        "question_support": 0.735,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not wear the same gown between patients, even for extended use, unless the patients are cohorted for the same infection.",
+      "citations": [
+        "cdc-ppe-2022#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.708,
+      "correct": true,
+      "generator_error": null,
+      "id": "S09",
+      "kind": "in_corpus",
+      "question": "Can one gown be worn between different patients?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.708,
+        "coverage": 1.0,
+        "question_support": 0.415,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills. Rate the strength of evidence as high, moderate, low or insufficient. Panels should record a recommendation as supported only when strength of evidence is at least moderate. Otherwise record it as a consensus statement.",
+      "citations": [
+        "who-environmental-cleaning-2022#recommendations-1",
+        "nih-grading-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.578,
+      "correct": true,
+      "generator_error": null,
+      "id": "S11",
+      "kind": "in_corpus",
+      "question": "What bleach strength is used for blood spills?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.578,
+        "coverage": 1.0,
+        "question_support": 0.545,
+        "reasons": [
+          "weak relevance to the question (0.58)"
+        ],
+        "retrieval_relevance": 0.611,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Cover the mouth and nose with a tissue when coughing or sneezing. If no tissue is available, cough into the upper sleeve or elbow, not the hands.",
+      "citations": [
+        "who-respiratory-etiquette-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.806,
+      "correct": true,
+      "generator_error": null,
+      "id": "S13",
+      "kind": "in_corpus",
+      "question": "How should someone cough when no tissue is available?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.806,
+        "coverage": 1.0,
+        "question_support": 0.747,
+        "reasons": [],
+        "retrieval_relevance": 0.866,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Offer influenza vaccination to all staff by the end of October and track uptake by unit. Keep epinephrine and trained staff available wherever vaccines are given. Confirm documented immunity to measles, mumps and rubella and to varicella, and give vaccine to staff without evidence of immunity.",
+      "citations": [
+        "cdc-respiratory-seasons-2023#recommendations-0",
+        "cdc-vaccination-adult-schedule-2024#implementation-0",
+        "cdc-vaccination-adult-schedule-2024#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.746,
+      "correct": true,
+      "generator_error": null,
+      "id": "S15",
+      "kind": "in_corpus",
+      "question": "By when should staff be offered the flu vaccine?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.746,
+        "coverage": 1.0,
+        "question_support": 0.647,
+        "reasons": [],
+        "retrieval_relevance": 0.844,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Staff may return to work 5 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication and symptoms are improving. Staff must wear a well-fitting mask in all patient care areas through day 10 after symptom onset. Staff with symptoms must stay away from work and must not provide patient care.",
+      "citations": [
+        "cdc-isolation-return-to-work-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.737,
+      "correct": true,
+      "generator_error": null,
+      "id": "S17",
+      "kind": "in_corpus",
+      "question": "How many days after symptoms can staff go back to work?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.737,
+        "coverage": 1.0,
+        "question_support": 0.474,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Evidence from randomised trials starts as high certainty. Evidence from observational studies starts as low certainty.",
+      "citations": [
+        "who-grading-2020#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.832,
+      "correct": true,
+      "generator_error": null,
+      "id": "S19",
+      "kind": "in_corpus",
+      "question": "What certainty level do observational studies start at under WHO grading?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.832,
+        "coverage": 1.0,
+        "question_support": 0.665,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This document explains how WHO guideline groups rate the certainty of evidence and the strength of recommendations. State the certainty rating next to every recommendation so readers can see how firm the evidence is. Rate the certainty of evidence as high, moderate, low or very low.",
+      "citations": [
+        "who-grading-2020#scope-0",
+        "who-grading-2020#notes-0",
+        "who-grading-2020#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.791,
+      "correct": true,
+      "generator_error": null,
+      "id": "S21",
+      "kind": "in_corpus",
+      "question": "What are the levels of certainty of evidence?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.791,
+        "coverage": 1.0,
+        "question_support": 0.582,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This document defines shared decision making and describes how clinicians should apply it when more than one reasonable option exists. Shared decision making is most useful when evidence is uncertain or when options carry different trade-offs. It is not required for emergency care where the patient cannot take part. Shared decision making is a process in which clinicians and patients work together to choose tests, treatments or care plans, based on clinical evidence and on the patient's values and preferences.",
+      "citations": [
+        "nih-shared-decision-making-2023#scope-0",
+        "nih-shared-decision-making-2023#notes-0",
+        "nih-shared-decision-making-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.859,
+      "correct": false,
+      "generator_error": null,
+      "id": "S23",
+      "kind": "in_corpus",
+      "question": "What are the steps of shared decision making?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.859,
+        "coverage": 1.0,
+        "question_support": 0.719,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Store refrigerated vaccines between 2 and 8 degrees Celsius. Store frozen vaccines between minus 50 and minus 15 degrees Celsius. After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-0",
+        "cdc-vaccination-cold-chain-2024#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.84,
+      "correct": true,
+      "generator_error": null,
+      "id": "S25",
+      "kind": "in_corpus",
+      "question": "What temperature should frozen vaccines be kept at?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.84,
+        "coverage": 1.0,
+        "question_support": 0.68,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep temperature logs for at least three years. After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#implementation-0",
+        "cdc-vaccination-cold-chain-2024#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.773,
+      "correct": true,
+      "generator_error": null,
+      "id": "S27",
+      "kind": "in_corpus",
+      "question": "How long are vaccine temperature logs retained?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.773,
+        "coverage": 1.0,
+        "question_support": 0.547,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Give one dose of Tdap, then a Td or Tdap booster every 10 years. Give influenza vaccine every year to all healthcare personnel. Record the vaccine product, lot number, date, site of administration and onset time for every report.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#recommendations-0",
+        "nih-vaccine-safety-monitoring-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.603,
+      "correct": true,
+      "generator_error": null,
+      "id": "S29",
+      "kind": "in_corpus",
+      "question": "Which vaccine needs a booster every ten years?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.603,
+        "coverage": 1.0,
+        "question_support": 0.567,
+        "reasons": [],
+        "retrieval_relevance": 0.639,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Follow up serious events for at least 30 days or until they resolve. This document describes how clinics should detect, report and follow up adverse events after immunisation. Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 24 hours of becoming aware of it.",
+      "citations": [
+        "nih-vaccine-safety-monitoring-2023#recommendations-0",
+        "nih-vaccine-safety-monitoring-2023#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.924,
+      "correct": true,
+      "generator_error": null,
+      "id": "S31",
+      "kind": "in_corpus",
+      "question": "For how long are serious adverse events followed up?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.924,
+        "coverage": 1.0,
+        "question_support": 0.847,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Place sharps in a puncture-resistant container at the point of use and replace the container when it is three quarters full. Segregate waste at the point of generation into colour-coded containers: yellow for infectious waste, red for sharps in puncture-proof containers, and black for general waste. Provide training on safe use of devices to every new employee and when a new device is introduced.",
+      "citations": [
+        "cdc-sharps-injury-2022#recommendations-0",
+        "who-waste-management-2021#recommendations-0",
+        "cdc-sharps-injury-2022#implementation-0"
+      ],
+      "cited": true,
+      "confidence": 0.785,
+      "correct": true,
+      "generator_error": null,
+      "id": "S33",
+      "kind": "in_corpus",
+      "question": "When should a sharps container be swapped for a new one?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.785,
+        "coverage": 1.0,
+        "question_support": 0.57,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Segregate waste at the point of generation into colour-coded containers: yellow for infectious waste, red for sharps in puncture-proof containers, and black for general waste. Do not mix infectious waste with general waste.",
+      "citations": [
+        "who-waste-management-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.786,
+      "correct": true,
+      "generator_error": null,
+      "id": "S35",
+      "kind": "in_corpus",
+      "question": "Which colour bag is used for infectious waste?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.786,
+        "coverage": 1.0,
+        "question_support": 0.583,
+        "reasons": [],
+        "retrieval_relevance": 0.99,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Treat two or more epidemiologically linked cases of the same infection within 14 days as a possible cluster and investigate. Notify the infection prevention team within 24 hours of identifying a possible cluster. This guidance describes how facilities should recognise a possible outbreak and report it.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#recommendations-0",
+        "cdc-outbreak-reporting-2022#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.86,
+      "correct": true,
+      "generator_error": null,
+      "id": "S37",
+      "kind": "in_corpus",
+      "question": "What counts as a possible outbreak cluster?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.86,
+        "coverage": 1.0,
+        "question_support": 0.72,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Handle soiled linen with minimum agitation and bag it at the point of use. Wash at 70 degrees Celsius for 25 minutes, or at 40 degrees Celsius with 0.05 percent chlorine.",
+      "citations": [
+        "who-linen-laundry-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.846,
+      "correct": true,
+      "generator_error": null,
+      "id": "S39",
+      "kind": "in_corpus",
+      "question": "At what temperature should soiled linen be washed?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.846,
+        "coverage": 1.0,
+        "question_support": 0.759,
+        "reasons": [],
+        "retrieval_relevance": 0.933,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "S41",
+      "kind": "out_of_corpus",
+      "question": "How do I bake a chocolate cake?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guidance sets out vaccines recommended for healthcare personnel and the practice steps for giving them. The recommended duration for hand rub increased from 15 to 20 seconds to 20 to 30 seconds. Give one dose of Tdap, then a Td or Tdap booster every 10 years.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#scope-0",
+        "who-hand-hygiene-2023#changes-from-the-2019-edition-0",
+        "cdc-vaccination-adult-schedule-2024#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.323,
+      "correct": null,
+      "generator_error": null,
+      "id": "S43",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended dose of amoxicillin for otitis media?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.323,
+        "coverage": 1.0,
+        "question_support": 0.333,
+        "reasons": [
+          "weak relevance to the question (0.32)"
+        ],
+        "retrieval_relevance": 0.314,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Dispose of used tissues in a waste bin immediately and clean hands afterwards. Segregate waste at the point of generation into colour-coded containers: yellow for infectious waste, red for sharps in puncture-proof containers, and black for general waste. Do not mix infectious waste with general waste.",
+      "citations": [
+        "who-respiratory-etiquette-2021#recommendations-0",
+        "who-waste-management-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.745,
+      "correct": null,
+      "generator_error": null,
+      "id": "S45",
+      "kind": "out_of_corpus",
+      "question": "How should radioactive waste be disposed of?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.745,
+        "coverage": 1.0,
+        "question_support": 0.594,
+        "reasons": [],
+        "retrieval_relevance": 0.896,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Declare the outbreak over after two maximum incubation periods have passed without a new case.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.837,
+      "correct": null,
+      "generator_error": null,
+      "id": "S47",
+      "kind": "out_of_corpus",
+      "question": "What is the incubation period of influenza?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.837,
+        "coverage": 1.0,
+        "question_support": 0.685,
+        "reasons": [],
+        "retrieval_relevance": 0.989,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guidance sets out vaccines recommended for healthcare personnel and the practice steps for giving them. Name a primary and a backup vaccine coordinator. This guidance covers storage, monitoring and transport of vaccines in clinics, pharmacies and hospitals.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#scope-0",
+        "cdc-vaccination-cold-chain-2024#implementation-0",
+        "cdc-vaccination-cold-chain-2024#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.511,
+      "correct": null,
+      "generator_error": null,
+      "id": "S49",
+      "kind": "out_of_corpus",
+      "question": "Which vaccine is recommended for travellers to Brazil?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.511,
+        "coverage": 1.0,
+        "question_support": 0.403,
+        "reasons": [
+          "weak relevance to the question (0.51)"
+        ],
+        "retrieval_relevance": 0.618,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.95,
+    "capped_precision@10": 0.7839,
+    "capped_precision@5": 0.7433,
+    "hit@1": 0.7,
+    "hit@10": 1.0,
+    "hit@5": 1.0,
+    "mrr": 0.825,
+    "n": 20,
+    "precision@1": 0.95,
+    "precision@10": 0.305,
+    "precision@5": 0.55,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7777777777777778,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S01",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-hand-hygiene-2021",
+          "who-hand-hygiene-2023",
+          "nih-grading-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S03",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "At what moments should healthcare workers clean their hands during patient care?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-2023",
+          "who-hand-hygiene-2023",
+          "cdc-hand-hygiene-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S05",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "Which infections require soap and water instead of hand rub?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-hand-hygiene-2021",
+          "who-hand-hygiene-2023",
+          "who-hand-hygiene-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S07",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What order should I put on protective equipment?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-ppe-2024",
+          "who-ppe-2024",
+          "who-ppe-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S09",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "Can one gown be worn between different patients?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-ppe-2022",
+          "who-respiratory-etiquette-2021",
+          "cdc-outbreak-reporting-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S11",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "What bleach strength is used for blood spills?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "nih-grading-2021",
+          "who-grading-2020"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.6666666666666666,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S13",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "How should someone cough when no tissue is available?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-respiratory-etiquette-2021",
+          "who-respiratory-etiquette-2021",
+          "who-ppe-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S15",
+        "precision@1": 0.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "By when should staff be offered the flu vaccine?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-return-to-work-2023",
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-respiratory-seasons-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S17",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "How many days after symptoms can staff go back to work?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S19",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What certainty level do observational studies start at under WHO grading?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-grading-2020",
+          "nih-evidence-hierarchy-2022",
+          "who-grading-2020"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S21",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What are the levels of certainty of evidence?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-grading-2020",
+          "who-grading-2020",
+          "who-grading-2020"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S23",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What are the steps of shared decision making?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S25",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What temperature should frozen vaccines be kept at?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S27",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "How long are vaccine temperature logs retained?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S29",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "Which vaccine needs a booster every ten years?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "nih-vaccine-safety-monitoring-2023",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S31",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "For how long are serious adverse events followed up?",
+        "rr": 0.5,
+        "top_docs": [
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.75,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S33",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "When should a sharps container be swapped for a new one?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-sharps-injury-2022",
+          "cdc-sharps-injury-2022",
+          "cdc-sharps-injury-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S35",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "Which colour bag is used for infectious waste?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-waste-management-2021",
+          "who-waste-management-2021",
+          "cdc-ppe-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S37",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What counts as a possible outbreak cluster?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S39",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "At what temperature should soiled linen be washed?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-linen-laundry-2022",
+          "who-hand-hygiene-2023",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills. Rate the strength of evidence as high, moderate, low or insufficient. Panels should record a recommendation as supported only when",
+      "confidence": 0.578,
+      "id": "S11",
+      "question": "What bleach strength is used for blood spills?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.58)"
+    },
+    {
+      "answer": "This document defines shared decision making and describes how clinicians should apply it when more than one reasonable option exists. Shared decision making is most useful when evidence is uncertain or when options carry different trade-of",
+      "confidence": 0.859,
+      "id": "S23",
+      "question": "What are the steps of shared decision making?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Dispose of used tissues in a waste bin immediately and clean hands afterwards. Segregate waste at the point of generation into colour-coded containers: yellow for infectious waste, red for sharps in puncture-proof containers, and black for ",
+      "confidence": 0.745,
+      "id": "S45",
+      "question": "How should radioactive waste be disposed of?",
+      "reason": "VALIDATED BUT OUT OF CORPUS",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Declare the outbreak over after two maximum incubation periods have passed without a new case.",
+      "confidence": 0.837,
+      "id": "S47",
+      "question": "What is the incubation period of influenza?",
+      "reason": "VALIDATED BUT OUT OF CORPUS",
+      "validator_notes": ""
+    }
+  ],
+  "split": "dev",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.8,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.6,
+      "pass_rate": 1.0,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.6,
+      "pass_rate": 1.0,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.6,
+      "pass_rate": 1.0,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.6,
+      "pass_rate": 1.0,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.88,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 1.0,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.05,
+      "validated_precision": 0.95
+    },
+    {
+      "correct_but_flagged_rate": 0.0526,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 0.95,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.0526,
+      "validated_precision": 0.9474
+    },
+    {
+      "correct_but_flagged_rate": 0.1579,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 0.85,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    {
+      "correct_but_flagged_rate": 0.2105,
+      "decision_accuracy": 0.72,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 0.8,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.0625,
+      "validated_precision": 0.9375
+    },
+    {
+      "correct_but_flagged_rate": 0.3684,
+      "decision_accuracy": 0.64,
+      "ooc_false_accept_rate": 0.2,
+      "pass_rate": 0.65,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0769,
+      "validated_precision": 0.9231
+    },
+    {
+      "correct_but_flagged_rate": 0.5789,
+      "decision_accuracy": 0.48,
+      "ooc_false_accept_rate": 0.2,
+      "pass_rate": 0.45,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    {
+      "correct_but_flagged_rate": 0.7895,
+      "decision_accuracy": 0.36,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.25,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
+    },
+    {
+      "correct_but_flagged_rate": 0.8947,
+      "decision_accuracy": 0.32,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.1,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.84,
+    "in_corpus": {
+      "answer_correct_rate": 0.95,
+      "correct_but_flagged_rate": 0.0526,
+      "mean_confidence": 0.7795,
+      "n": 20,
+      "pass_rate": 0.95,
+      "validated_but_wrong_rate": 0.0526,
+      "validated_precision": 0.9474
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.4,
+      "mean_confidence": 0.4832,
+      "n": 5,
+      "needs_review_rate": 0.6
+    },
+    "threshold": 0.6
+  }
+}

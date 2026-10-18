@@ -38,3 +38,12 @@ This was found by reading the documents and my own test fixture, not from any re
 Calibration, on document content only (no retrieval result used): list every dropped section's title and page for all five real PDFs and
 check by eye that each is reference or author-list material and that nothing from the body of a guideline is dropped.
 The retrieval measurement of D3 then follows the usual keep rule against the round-3 kept state.
+
+ADDENDUM 2 (outcome, written after all measurements)
+  A2  REVERTED. Every guard failed (judge output: retrieval_round3_r4A2.json).
+  C   REVERTED. Unchanged from round 3 because A2 was rejected (judge output: retrieval_round3_r3C.json).
+  D3  REVERTED. The content audit showed it removed the reference lists of the isolation guideline and the WHO summary (plus one table of studies
+      on page 18 of the WHO summary, a false positive), and nothing from the toolkits or the newsletter. It changed no dev retrieval number at all
+      (judge output: retrieval_round3_r4D3.json). Neutral, so the keep rule (a gain is required) reverts it. The detector code is in git history
+      (commit "Retrieval round 4: A2 rejected and reverted; D3 reference removal registered and implemented before measurement").
+Net result of rounds 3 and 4 on offline lexical techniques: only B (hybrid BM25 + FAISS) was kept.
