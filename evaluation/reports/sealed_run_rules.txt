@@ -1,0 +1,13 @@
+Sealed run. Written and committed BEFORE the sealed set was run on the system.
+
+Set: real corpus, split "sealed". Mine (written earlier, N31-N42 and NO4-NO5) plus nine of the owner's ten questions (U01-U09).
+The owner wrote ten questions, without expected answers or document pointers. The assistant labelled them from the PDF text before running anything
+(table in the assistant's message and notes on each record). U10 ("Can we eat by hand after using hand rub?") is NOT scored: the documents say only that hands are
+safe once dry, which is too indirect to count as answered or unanswered. It is run afterwards and shown separately.
+U01 had been tried in the app before (exposed). The owner's questions were not tuned on.
+The labels are the assistant's judgement and the owner is asked to check them; any label the owner corrects will be reported as a correction, with the
+original result kept.
+
+Configuration: frozen (hybrid retrieval, validator rounds 2 and 3, chunks of 80 words, question rewriting off). Run once with the extractive generator and once
+with the Claude generator. Both runs are logged in test_split_runs.log. Nothing is changed afterwards on the strength of these results.
+Everything is reported as found, including any criterion not met.
