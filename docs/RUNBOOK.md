@@ -66,6 +66,8 @@ Settings can also be put in a `.env` file in the project root (never committed);
 Endpoints: `POST /qa`, `GET /health`, and interactive docs at `/docs`. Invalid input returns HTTP 422. If the generator fails (for
 example an API error), the request still returns `needs_review` with an abstaining answer, not a server error.
 
+**Which generator for which documents.** The offline extractive generator is fine for the synthetic corpus but, on real PDFs, it can validate wrong answers (figure captions, reference citations) and questions the documents cannot answer. For real documents use `GUIDERAIL_GENERATOR=llm`. Even then, a question worded very differently from the document may return no answer; reword it using the document's own terms. See sections 11 to 13 of the evaluation report.
+
 The UI is a thin client: `streamlit run ui/app.py` (set `GUIDERAIL_API_URL` if the API is not on `localhost:9070`).
 
 ## 4. The LLM generator (optional)

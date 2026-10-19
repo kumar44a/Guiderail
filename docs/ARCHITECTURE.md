@@ -127,6 +127,7 @@ Decisions worth knowing:
 - Lexical matching: paraphrases, synonyms and swapped plausible values can slip through the validator or be wrongly flagged.
 - Near-domain out-of-scope questions can be answered with on-topic sentences by the extractive path and validated.
 - Real PDFs: reference lists become noise chunks, figure text is jumbled, image-only pages give no text, no OCR.
+- On an independent sealed question set (evaluation report, section 13) the system was far weaker than on its development questions; the development figures are optimistic.
 - Natural questions worded differently from the document often miss the passage that answers them on real PDFs, because matching is lexical. Offline fixes were tried and mostly failed; closing the gap needs semantic matching, which conflicts with the deterministic, API-free design unless a local model is accepted.
 - The LLM generator is nondeterministic and still withholds a share of correct answers on real documents at the default threshold.
 - Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
