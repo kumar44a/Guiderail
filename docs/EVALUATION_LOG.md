@@ -26,10 +26,10 @@ How changes were chosen: each candidate change was measured on the **dev** split
 | Frozen configuration, extractive (real corpus = 5 documents) | real | 81.2% | 0.747 | 75.0% | 73.3% | 33.3% | 68.4% |
 | Frozen configuration, LLM (real corpus = 5 documents) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 92.0% |
 | Frozen configuration, LLM (real corpus = 5 documents) | real | 81.2% | 0.747 | 81.2% | 100.0% | 0.0% | 89.5% |
-| + validator F1: leading yes/no is a response marker (extractive) | synthetic | 100.0% | 0.825 | 95.0% | 94.7% | 40.0% | 84.0% |
-| + validator F1: leading yes/no is a response marker (extractive) | real | 87.5% | 0.779 | 79.2% | 77.3% | 40.0% | 69.0% |
-| + validator F1 (LLM) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 92.0% |
-| + validator F1 (LLM) | real | 87.5% | 0.779 | 83.3% | 94.4% | 0.0% | 86.2% |
+| Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3 | synthetic | 100.0% | 0.825 | 95.0% | 94.7% | 40.0% | 84.0% |
+| Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3 | real | 82.0% | 0.657 | 72.0% | 74.4% | 37.5% | 69.0% |
+| Shipped configuration (LLM) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 100.0% |
+| Shipped configuration (LLM) | real | 82.0% | 0.657 | 78.0% | 94.4% | 0.0% | 87.9% |
 
 ## What each step was and what was decided
 
@@ -43,8 +43,8 @@ How changes were chosen: each candidate change was measured on the **dev** split
 - **LLM generator, tightened prompt**: Plain text, no commentary or markdown, reuse the guideline's wording. ACCEPTED: fewer correct answers withheld, validated precision held.
 - **Frozen configuration, extractive (real corpus = 5 documents)**: No change in configuration; real corpus now 5 documents and 17 more queries. Reported as is.
 - **Frozen configuration, LLM (real corpus = 5 documents)**: Same, live LLM. Reported as is.
-- **+ validator F1: leading yes/no is a response marker (extractive)**: Re-scored saved answers; real dev now includes the new round-2 dev queries. ACCEPTED under rules committed first: no new wrong or out-of-scope accepts, stress set not worse, correct answers released (section 10 of the report).
-- **+ validator F1 (LLM)**: Same. ACCEPTED (same rules).
+- **Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3**: Fresh runs of the final settings; real dev now includes all later dev queries. Reported as is; see sections 10 to 12 of the report for how each part was judged.
+- **Shipped configuration (LLM)**: Same, live Claude runs. Reported as is.
 
 ## Experiments not reproducible from the repository
 

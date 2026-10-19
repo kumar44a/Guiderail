@@ -12,7 +12,6 @@
     "documents": 22,
     "superseded_documents": 2
   },
-  "note": "answers are the stored ones; confidences recomputed with the current validator",
   "records": [
     {
       "abstained": false,
@@ -1086,7 +1085,6 @@
       }
     ]
   },
-  "revalidated_from": "synthetic_test_extractive_final",
   "review": [
     {
       "answer": "Use soap and water when hands are visibly dirty, and after caring for a patient with Clostridioides difficile or norovirus, because alcohol is less effective against spores and non-enveloped viruses. Wash with soap and water for 40 to 60 se",
@@ -1121,6 +1119,7 @@
       "validator_notes": "weak relevance to the question (0.47)"
     }
   ],
+  "rewrite": false,
   "split": "test",
   "sweep": [
     {

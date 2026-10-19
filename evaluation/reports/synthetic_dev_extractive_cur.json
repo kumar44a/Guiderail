@@ -12,7 +12,6 @@
     "documents": 22,
     "superseded_documents": 2
   },
-  "note": "answers are the stored ones; confidences recomputed with the current validator",
   "records": [
     {
       "abstained": false,
@@ -76,7 +75,7 @@
         "who-hand-hygiene-2023#changes-from-the-2019-edition-0"
       ],
       "cited": true,
-      "confidence": 0.626,
+      "confidence": 0.689,
       "correct": true,
       "generator_error": null,
       "id": "S05",
@@ -84,9 +83,9 @@
       "question": "Which infections require soap and water instead of hand rub?",
       "split": "dev",
       "validation": {
-        "confidence": 0.626,
+        "confidence": 0.689,
         "coverage": 1.0,
-        "question_support": 0.382,
+        "question_support": 0.507,
         "reasons": [],
         "retrieval_relevance": 0.87,
         "status": "validated",
@@ -311,7 +310,7 @@
         "nih-shared-decision-making-2023#recommendations-0"
       ],
       "cited": true,
-      "confidence": 0.859,
+      "confidence": 1.0,
       "correct": false,
       "generator_error": null,
       "id": "S23",
@@ -319,9 +318,9 @@
       "question": "What are the steps of shared decision making?",
       "split": "dev",
       "validation": {
-        "confidence": 0.859,
+        "confidence": 1.0,
         "coverage": 1.0,
-        "question_support": 0.719,
+        "question_support": 1.0,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -442,7 +441,7 @@
         "cdc-sharps-injury-2022#implementation-0"
       ],
       "cited": true,
-      "confidence": 0.785,
+      "confidence": 0.871,
       "correct": true,
       "generator_error": null,
       "id": "S33",
@@ -450,9 +449,9 @@
       "question": "When should a sharps container be swapped for a new one?",
       "split": "dev",
       "validation": {
-        "confidence": 0.785,
+        "confidence": 0.871,
         "coverage": 1.0,
-        "question_support": 0.57,
+        "question_support": 0.742,
         "reasons": [],
         "retrieval_relevance": 1.0,
         "status": "validated",
@@ -1087,7 +1086,6 @@
       }
     ]
   },
-  "revalidated_from": "synthetic_dev_extractive_final",
   "review": [
     {
       "answer": "Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills. Rate the strength of evidence as high, moderate, low or insufficient. Panels should record a recommendation as supported only when",
@@ -1099,7 +1097,7 @@
     },
     {
       "answer": "This document defines shared decision making and describes how clinicians should apply it when more than one reasonable option exists. Shared decision making is most useful when evidence is uncertain or when options carry different trade-of",
-      "confidence": 0.859,
+      "confidence": 1.0,
       "id": "S23",
       "question": "What are the steps of shared decision making?",
       "reason": "VALIDATED BUT WRONG",
@@ -1122,6 +1120,7 @@
       "validator_notes": ""
     }
   ],
+  "rewrite": false,
   "split": "dev",
   "sweep": [
     {
@@ -1188,13 +1187,13 @@
       "validated_precision": 0.9474
     },
     {
-      "correct_but_flagged_rate": 0.1579,
-      "decision_accuracy": 0.76,
+      "correct_but_flagged_rate": 0.1053,
+      "decision_accuracy": 0.8,
       "ooc_false_accept_rate": 0.4,
-      "pass_rate": 0.85,
+      "pass_rate": 0.9,
       "threshold": 0.65,
-      "validated_but_wrong_rate": 0.0588,
-      "validated_precision": 0.9412
+      "validated_but_wrong_rate": 0.0556,
+      "validated_precision": 0.9444
     },
     {
       "correct_but_flagged_rate": 0.2105,
@@ -1215,31 +1214,31 @@
       "validated_precision": 0.9231
     },
     {
-      "correct_but_flagged_rate": 0.5789,
-      "decision_accuracy": 0.48,
+      "correct_but_flagged_rate": 0.5263,
+      "decision_accuracy": 0.52,
       "ooc_false_accept_rate": 0.2,
-      "pass_rate": 0.45,
+      "pass_rate": 0.5,
       "threshold": 0.8,
-      "validated_but_wrong_rate": 0.1111,
-      "validated_precision": 0.8889
+      "validated_but_wrong_rate": 0.1,
+      "validated_precision": 0.9
     },
     {
-      "correct_but_flagged_rate": 0.7895,
-      "decision_accuracy": 0.36,
+      "correct_but_flagged_rate": 0.7368,
+      "decision_accuracy": 0.4,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.25,
+      "pass_rate": 0.3,
       "threshold": 0.85,
-      "validated_but_wrong_rate": 0.2,
-      "validated_precision": 0.8
+      "validated_but_wrong_rate": 0.1667,
+      "validated_precision": 0.8333
     },
     {
       "correct_but_flagged_rate": 0.8947,
-      "decision_accuracy": 0.32,
+      "decision_accuracy": 0.28,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.1,
+      "pass_rate": 0.15,
       "threshold": 0.9,
-      "validated_but_wrong_rate": 0.0,
-      "validated_precision": 1.0
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
     }
   ],
   "threshold": 0.6,
@@ -1248,7 +1247,7 @@
     "in_corpus": {
       "answer_correct_rate": 0.95,
       "correct_but_flagged_rate": 0.0526,
-      "mean_confidence": 0.7795,
+      "mean_confidence": 0.794,
       "n": 20,
       "pass_rate": 0.95,
       "validated_but_wrong_rate": 0.0526,

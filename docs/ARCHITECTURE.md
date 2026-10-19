@@ -1,7 +1,7 @@
 # GuideRail: Architecture
 
 Healthcare Guidelines RAG Assistant: rapid query and validation, built for Spinnaker Analytics.
-Status: **implemented through Phase 4**; Phase 5 (final review and submission) remains.
+Status: **implemented through Phase 4, plus the retrieval and validator improvement rounds described in section 7**; Phase 5 (final review and submission) remains.
 Measured results are not repeated here. They are generated into [EVALUATION_REPORT.md](EVALUATION_REPORT.md) and
 [the README](../README.md), so this document cannot drift from the reports.
 
@@ -28,7 +28,9 @@ OFFLINE  scripts/pipeline.py  (deterministic: no network, no randomness)
    -> FAISS IndexFlatIP  +  chunks.jsonl  +  manifest.json (SHA-256 of corpus, chunks, vectors, index)
 
 ONLINE   FastAPI  POST /qa {question, top_k}
- embed query -> FAISS top-k pool -> drop superseded versions -> lexical re-rank (cosine stays the reported score)
+ [Claude mode, optional] rewrite the question into search keywords
+ embed query -> FAISS top 50  +  BM25 top 50 -> reciprocal rank fusion -> drop superseded versions
+   -> lexical re-rank of the top 30 (cosine to the ORIGINAL question stays the reported score)
    -> neighbour fallback for sparse top chunks -> Generator (extractive | LLM) -> Validator -> {answer, citations, confidence, status}
 
 EVALUATION  evaluation/  labeled queries (dev/test) -> retrieval metrics, answer correctness, threshold sweep,
@@ -45,10 +47,12 @@ EVALUATION  evaluation/  labeled queries (dev/test) -> retrieval metrics, answer
 | `embeddings.py` | The only place text becomes vectors. Lexical by design: it matches shared words, not meaning. Method string `hash-ngram-md5-v1` is recorded in the manifest. |
 | `index.py` | Build, save and load the FAISS `IndexFlatIP` over unit vectors (cosine), with the manifest. |
 | `lexicon.py` | Corpus document-frequency and idf weights used by the re-ranker, the extractive generator and the validator. |
-| `retriever.py` | Search with a version filter (superseded chunks excluded unless asked), optional lexical re-ranker over the top candidates, and a controlled neighbour fallback: if one of the best few hits is very short, its neighbouring chunk is added once and marked `via="neighbor"`. |
+| `bm25.py` | BM25 keyword ranking over the whole vocabulary (textbook parameters) and reciprocal rank fusion. Built from the chunks at load time, so the index files and their hashes are unchanged. |
+| `retriever.py` | Hybrid search (FAISS and BM25 each propose 50 candidates; fusion decides which 30 enter re-ranking), the version filter (superseded chunks excluded unless asked), the lexical re-ranker, and a controlled neighbour fallback: if one of the best few hits is very short, its neighbouring chunk is added once and marked `via="neighbor"`. |
+| `rewrite.py` | Optional, Claude mode only, off by default. One small-model call turns the question into search keywords that are appended for searching. The generator and validator see the original question. Failures fall back silently. |
 | `generators/extractive.py` | Default, no model. Scores single lines by idf-weighted question overlap plus credit for title and section context, keeps the top lines within a relative cutoff, and follows list lead-ins ("...:") and anaphoric continuations ("This..."). |
 | `generators/llm.py` | Optional. Claude answers from the retrieved passages only, cites chunk ids, and replies `NOT_IN_EVIDENCE` when the answer is absent. The prompt is `prompts/answer_style.txt`. Request id, model and usage are recorded. The SDK import is lazy. Failures raise `GenerationError`, which the service turns into an abstention. |
-| `validator.py` | **v2.** `confidence = coverage x relevance`, independent of the generator. *Coverage*: idf-weighted share of the answer's content words found in the evidence or its source metadata, halved when the answer contains a number-with-unit or a negation that the evidence does not. *Relevance*: half the rescaled top retrieval score plus half the share of question terms that the **answer** addresses. `validated` requires confidence at or above the threshold (default 0.6) **and** a citation. A leading "Yes," or "No," is a response marker and is not scored as a content term or a negation claim (round 2). |
+| `validator.py` | **v2.** `confidence = coverage x relevance`, independent of the generator. *Coverage*: idf-weighted share of the answer's content words found in the evidence or its source metadata, halved when the answer contains a number-with-unit or a negation that the evidence does not. *Relevance*: half the rescaled top retrieval score plus half the share of question terms that the **answer** addresses. `validated` requires confidence at or above the threshold (default 0.6) **and** a citation. Three narrow rules came from the improvement rounds: a leading "Yes," or "No," is not scored as a content term or a negation claim; a number's unit is only checked when the next word is a real unit; a number fused with a footnote in the PDF text ("10.303") also supports its integer part; and question terms found in the cited passages' text count as addressed. |
 | `service.py` | `QAService.ask()` wires retrieval, generation and validation; it is the only place that does. |
 | `api.py` | FastAPI app. Index loaded in the lifespan handler; `.env` read at start-up. Pydantic validates input. |
 | `evalkit.py` | Metrics (document-level and capped Precision@K, Hit@K, MRR), answer-correctness matching, threshold sweep, review list, Wilson intervals, label validation, validator stress harness. |
@@ -95,13 +99,17 @@ failure is also an abstention, so the endpoint does not return 5xx for a model o
 
 ## 7. Decisions and rejected experiments
 
-Accepted (each measured on dev first): context-aware sentence scoring, validator v2, list-continuation rules, lexical re-ranker
-(weights 0.5 and 1.0 performed alike, the smaller was kept), a tightened LLM prompt, and the yes/no response marker in the validator (judged on dev material by rules committed beforehand; evaluation report, section 10).
+Every change below was measured on dev material under accept/reject rules committed beforehand (`evaluation/reports/*_rules.txt`), and the
+numbers are in [EVALUATION_REPORT.md](EVALUATION_REPORT.md) sections 10 to 12 and [EVALUATION_LOG.md](EVALUATION_LOG.md).
 
-Rejected and reverted, with the evidence in [EVALUATION_LOG.md](EVALUATION_LOG.md):
+Accepted: context-aware sentence scoring, validator v2, list-continuation rules, lexical re-ranker (weights 0.5 and 1.0 performed alike, the smaller was
+kept), a tightened LLM prompt, the yes/no response marker, hybrid BM25 + FAISS retrieval, and the three validator refinements above.
 
-- **idf-weighted embeddings** (two variants): failed the pre-set rule, because ranking quality dropped on both corpora.
-- **Scaling relevance by unknown question words:** fixed one out-of-scope case but flagged many correct answers.
+Tried and reverted: idf-weighted embeddings (two variants); scaling relevance by unknown question words; joining or doubling compound spellings
+("hand rub"/"handrub"); a hand-written synonym table; three variants of reference-list removal; 50- and 35-word chunks.
+
+Built and available but off by default: Claude question rewriting. It met its (higher) retrieval bar narrowly, was safe end to end, and showed no end-to-end
+benefit, so it ships as an opt-in setting.
 
 Decisions worth knowing:
 
@@ -119,7 +127,8 @@ Decisions worth knowing:
 - Lexical matching: paraphrases, synonyms and swapped plausible values can slip through the validator or be wrongly flagged.
 - Near-domain out-of-scope questions can be answered with on-topic sentences by the extractive path and validated.
 - Real PDFs: reference lists become noise chunks, figure text is jumbled, image-only pages give no text, no OCR.
-- The LLM generator is nondeterministic and withholds many correct answers on real documents at the default threshold.
+- Natural questions worded differently from the document often miss the passage that answers them on real PDFs, because matching is lexical. Offline fixes were tried and mostly failed; closing the gap needs semantic matching, which conflicts with the deterministic, API-free design unless a local model is accepted.
+- The LLM generator is nondeterministic and still withholds a share of correct answers on real documents at the default threshold.
 - Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
 - Docker files and the Windows setup instructions were written but not run on a machine of that kind.
 

@@ -1,5 +1,5 @@
 {
-  "bad_answers_flagged_rate": 0.88,
+  "bad_answers_flagged_rate": 0.8889,
   "by_kind": {
     "contradiction": {
       "correct_decisions": 1,
@@ -7,14 +7,14 @@
       "rate": 1.0
     },
     "fabricated_number": {
-      "correct_decisions": 9,
-      "n": 9,
+      "correct_decisions": 10,
+      "n": 10,
       "rate": 1.0
     },
     "faithful": {
-      "correct_decisions": 13,
-      "n": 14,
-      "rate": 0.9286
+      "correct_decisions": 14,
+      "n": 16,
+      "rate": 0.875
     },
     "off_corpus_fabrication": {
       "correct_decisions": 3,
@@ -37,8 +37,8 @@
       "rate": 1.0
     },
     "unsupported_addition": {
-      "correct_decisions": 2,
-      "n": 2,
+      "correct_decisions": 3,
+      "n": 3,
       "rate": 1.0
     },
     "wrong_claim": {
@@ -47,8 +47,8 @@
       "rate": 0.6
     }
   },
-  "good_answers_accepted_rate": 0.8667,
-  "n": 40,
+  "good_answers_accepted_rate": 0.8235,
+  "n": 44,
   "rows": [
     {
       "answer": "Use an alcohol-based hand rub for 20 to 30 seconds when hands are not visibly soiled.",
@@ -755,7 +755,7 @@
     {
       "answer": "Storage units must maintain the following temperature ranges at all times: Refrigerators between 0°C and 4°C (32°F and 39°F).",
       "caught": true,
-      "confidence": 0.358,
+      "confidence": 0.365,
       "corpus": "real",
       "gold_docs": [
         "cdc-vaccine-storage-toolkit-2026"
@@ -778,7 +778,7 @@
     {
       "answer": "Calibration testing should be performed every 2 to 3 years, or according to the manufacturer’s recommended schedule.",
       "caught": true,
-      "confidence": 0.904,
+      "confidence": 0.905,
       "corpus": "real",
       "gold_docs": [
         "cdc-vaccine-storage-toolkit-2026"
@@ -798,7 +798,7 @@
     {
       "answer": "Calibration testing should be performed every 10 years.",
       "caught": true,
-      "confidence": 0.398,
+      "confidence": 0.395,
       "corpus": "real",
       "gold_docs": [
         "cdc-vaccine-storage-toolkit-2026"
@@ -821,7 +821,7 @@
     {
       "answer": "Respiratory protection with NIOSH certified N95 or higher level respirator is recommended for healthcare personnel entering the AIIR.",
       "caught": true,
-      "confidence": 0.728,
+      "confidence": 0.73,
       "corpus": "real",
       "gold_docs": [
         "cdc-isolation-precautions-2007"
@@ -841,7 +841,7 @@
     {
       "answer": "A cloth face covering is sufficient for healthcare personnel entering the AIIR.",
       "caught": true,
-      "confidence": 0.434,
+      "confidence": 0.439,
       "corpus": "real",
       "gold_docs": [
         "cdc-isolation-precautions-2007"
@@ -855,7 +855,7 @@
       "note": "",
       "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
       "reasons": [
-        "low evidence coverage (0.70); unsupported terms: cover, sufficient"
+        "low evidence coverage (0.71); unsupported terms: cover, sufficient"
       ],
       "source_query": "R01",
       "status": "needs_review"
@@ -863,7 +863,7 @@
     {
       "answer": "Historically, the area of defined risk has been a distance of 3 feet around the patient.",
       "caught": true,
-      "confidence": 0.704,
+      "confidence": 0.716,
       "corpus": "real",
       "gold_docs": [
         "cdc-isolation-precautions-2007"
@@ -883,7 +883,7 @@
     {
       "answer": "Historically, the area of defined risk has been a distance of 30 feet around the patient.",
       "caught": true,
-      "confidence": 0.316,
+      "confidence": 0.322,
       "corpus": "real",
       "gold_docs": [
         "cdc-isolation-precautions-2007"
@@ -920,6 +920,95 @@
         "low evidence coverage (0.09); unsupported terms: amoxicillin, otiti, media, 80, 90, milligram, per, kilogram"
       ],
       "source_query": "RO1",
+      "status": "needs_review"
+    },
+    {
+      "answer": "No, brushes are not recommended for surgical hand preparation.",
+      "caught": false,
+      "confidence": 0.343,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "not recommended"
+      ],
+      "id": "V41",
+      "kind": "faithful",
+      "label": "good",
+      "note": "yes/no lead-in",
+      "question": "Is it acceptable to use a brush when scrubbing before an operation?",
+      "reasons": [
+        "weak relevance to the question (0.34)"
+      ],
+      "source_query": null,
+      "status": "needs_review"
+    },
+    {
+      "answer": "Yes, dry hands thoroughly with a single-use towel.",
+      "caught": true,
+      "confidence": 0.691,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "single-use towel"
+      ],
+      "id": "V42",
+      "kind": "faithful",
+      "label": "good",
+      "note": "yes/no lead-in",
+      "question": "Should the towel used to dry hands after washing be used only once?",
+      "reasons": [],
+      "source_query": null,
+      "status": "validated"
+    },
+    {
+      "answer": "No, scrub hands and forearms for at least 15 minutes every time.",
+      "caught": true,
+      "confidence": 0.15,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "2–5 minutes",
+        "2-5 minutes"
+      ],
+      "id": "V43",
+      "kind": "fabricated_number",
+      "label": "bad",
+      "note": "yes/no lead-in with a made-up number",
+      "question": "Is there a minimum scrub time with antimicrobial soap before surgery?",
+      "reasons": [
+        "number(s) not found in evidence: 15",
+        "low evidence coverage (0.31); unsupported terms: least, 15, every",
+        "weak relevance to the question (0.48)"
+      ],
+      "source_query": null,
+      "status": "needs_review"
+    },
+    {
+      "answer": "Yes, alcohol-based handrub reliably kills spores of C. difficile within seconds.",
+      "caught": true,
+      "confidence": 0.558,
+      "corpus": "real",
+      "gold_docs": [
+        "who-hand-hygiene-guidelines-summary-2009"
+      ],
+      "gold_phrases": [
+        "spore"
+      ],
+      "id": "V44",
+      "kind": "unsupported_addition",
+      "label": "bad",
+      "note": "yes/no lead-in with an unsupported claim",
+      "question": "Does alcohol-based handrub kill bacterial spores?",
+      "reasons": [
+        "low evidence coverage (0.61); unsupported terms: reliably, kill, within"
+      ],
+      "source_query": null,
       "status": "needs_review"
     }
   ],

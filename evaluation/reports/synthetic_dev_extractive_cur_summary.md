@@ -23,7 +23,7 @@
 | Metric | Value |
 |---|---|
 | Pass rate (validated / in-corpus) | 95.0% |
-| Mean confidence (in-corpus) | 0.7795 |
+| Mean confidence (in-corpus) | 0.794 |
 | Answer correct (expected facts present) | 95.0% |
 | **Validated precision** (correct among validated) | 94.7% |
 | **Validated but wrong** | 5.3% |
@@ -45,16 +45,16 @@ A high pass rate alone is not evidence of quality: an extractive answer is copie
 | 0.5 | 100.0% | 95.0% | 5.0% | 0.0% | 60.0% | 84.0% |
 | 0.55 | 100.0% | 95.0% | 5.0% | 0.0% | 40.0% | 88.0% |
 | 0.6 | 95.0% | 94.7% | 5.3% | 5.3% | 40.0% | 84.0% |
-| 0.65 | 85.0% | 94.1% | 5.9% | 15.8% | 40.0% | 76.0% |
+| 0.65 | 90.0% | 94.4% | 5.6% | 10.5% | 40.0% | 80.0% |
 | 0.7 | 80.0% | 93.8% | 6.2% | 21.1% | 40.0% | 72.0% |
 | 0.75 | 65.0% | 92.3% | 7.7% | 36.8% | 20.0% | 64.0% |
-| 0.8 | 45.0% | 88.9% | 11.1% | 57.9% | 20.0% | 48.0% |
-| 0.85 | 25.0% | 80.0% | 20.0% | 79.0% | 0.0% | 36.0% |
-| 0.9 | 10.0% | 100.0% | 0.0% | 89.5% | 0.0% | 32.0% |
+| 0.8 | 50.0% | 90.0% | 10.0% | 52.6% | 20.0% | 52.0% |
+| 0.85 | 30.0% | 83.3% | 16.7% | 73.7% | 0.0% | 40.0% |
+| 0.9 | 15.0% | 66.7% | 33.3% | 89.5% | 0.0% | 28.0% |
 
 ## Items for analyst review (4)
 
 - **S11** (correct answer withheld, confidence 0.578): What bleach strength is used for blood spills?
-- **S23** (VALIDATED BUT WRONG, confidence 0.859): What are the steps of shared decision making?
+- **S23** (VALIDATED BUT WRONG, confidence 1.0): What are the steps of shared decision making?
 - **S45** (VALIDATED BUT OUT OF CORPUS, confidence 0.745): How should radioactive waste be disposed of?
 - **S47** (VALIDATED BUT OUT OF CORPUS, confidence 0.837): What is the incubation period of influenza?

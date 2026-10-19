@@ -54,6 +54,10 @@ uvicorn guiderail.api:app --app-dir src --port 9070
 | `GUIDERAIL_THRESHOLD` | `0.6` | confidence at or above which an answer is `validated` (0 to 1) |
 | `GUIDERAIL_RERANK_WEIGHT` | `0.5` | lexical re-ranker weight; `0` turns the re-ranker off |
 | `GUIDERAIL_GENERATOR` | `extractive` | `extractive` (offline) or `llm` (Claude) |
+| `GUIDERAIL_HYBRID` | `1` | hybrid retrieval (FAISS + BM25 fused); `0` falls back to FAISS alone |
+| `GUIDERAIL_REWRITE` | `0` | `1` lets Claude mode rewrite the question into search keywords first (one extra small-model call, about a second; off because no end-to-end benefit was measured) |
+| `GUIDERAIL_REWRITE_MODEL` | `claude-haiku-4-5-20251001` | model used for the rewrite |
+| `GUIDERAIL_MAX_WORDS` | `80` | chunk budget used when the index is built (set it before `pipeline.py`; changing it changes the index hash) |
 | `GUIDERAIL_LLM_MODEL` | see `config.py` | model used by the LLM generator |
 | `ANTHROPIC_API_KEY` | none | only for `GUIDERAIL_GENERATOR=llm` |
 

@@ -192,9 +192,15 @@ def build_report() -> str:
             "- **Validator round 2 sample.** The queries used to judge and confirm the yes/no fix were enriched for yes/no form on purpose, "
             "so their results show that the fix works on that case, not how often the case occurs.",
             "- **Not addressed.** The extractive generator still validates wrong answers when retrieval misses the fact or it picks the wrong "
-            "sentence, because the validator checks support in the retrieved text, not correctness.", ""]
+            "sentence, because the validator checks support in the retrieved text, not correctness.",
+            "- **Retrieval ceiling on natural questions.** Questions worded differently from the document (\"benefits\" for \"advantages\", "
+            "\"sanitiser\" for \"handrub\", \"how long\" for \"duration\") often miss the passage that answers them, because matching is lexical. Four rounds of "
+            "offline fixes (section 11) kept only the hybrid keyword search. A small-model question rewrite helped some questions and hurt others "
+            "and is off by default. Closing this gap properly needs semantic matching, which the brief's deterministic, API-free design rules out.", ""]
     out += section_before_after()
     out += section_round2()
+    out += section_retrieval_rounds()
+    out += section_validator3()
     return "\n".join(out)
 
 
@@ -241,6 +247,76 @@ def section_before_after() -> list[str]:
     rules = REPORTS / "rerun_5doc_rules.txt"
     out += (rules.read_text(encoding="utf-8").strip().splitlines() if rules.exists() else [])
     out += ["```", ""]
+    return out
+
+
+RETRIEVAL_STEPS = [
+    ("r3A", "A: join \"hand rub\" into \"handrub\"", "round 3"),
+    ("r3B", "B: add BM25 keyword search, fused with FAISS", "round 3"),
+    ("r3C", "C: query-side synonym table", "round 3"),
+    ("r3D", "D: drop reference sections one at a time", "round 3"),
+    ("r4A2", "A2: keep both spellings of compound words", "round 4"),
+    ("r4D3", "D3: drop reference lists by content and by runs", "round 4"),
+    ("r5E", "E: Claude rewrites the question (retrieval only)", "round 5"),
+    ("r6W50", "Chunks of at most 50 words (was 80)", "round 6"),
+    ("r6W35", "Chunks of at most 35 words (was 80)", "round 6"),
+]
+
+
+def section_retrieval_rounds() -> list[str]:
+    out = ["## 11. Retrieval rounds 3 to 6: what was tried to make natural questions work on real PDFs", "",
+           "Each change was measured on the real and synthetic dev questions with the extractive generator, against the previous kept state, under "
+           "rules committed before the change (`evaluation/reports/retrieval_round*_rules.txt`). Hit@5 counts questions whose answer-bearing "
+           "passage is in the top 5. A change is kept only if it gains and no guard is broken (G1 synthetic retrieval, G2 earlier real queries, "
+           "G3 wrong-but-validated and out-of-scope accepts, G4 validator stress set, G5 identical index builds).", "",
+           "| Change | Round | Real-dev Hit@5 | Real-dev MRR | Synthetic MRR | Guards broken | Decision |", "|---|---|---|---|---|---|---|"]
+    for tag, label, rnd in RETRIEVAL_STEPS:
+        p = REPORTS / f"retrieval_round3_{tag}.json"
+        if not p.exists():
+            continue
+        d = json.loads(p.read_text(encoding="utf-8"))
+        rd, sd = d["real_dev"], d["synthetic_dev"]
+        broken = [k for k, v in d["rules"].items() if k != "gain" and v is False] or ["none"]
+        decision = "kept" if d["keep"] else "reverted"
+        if tag == "r5E" and d["keep"]:
+            decision = "met its bar narrowly; shipped off by default (no end-to-end benefit)"
+        out.append(f"| {label} | {rnd} | {rd['hit5_before']} → {rd['hit5_after']} of {rd['n']} | {rd['mrr_before']:.3f} → {rd['mrr_after']:.3f} | "
+                   f"{sd['mrr'][0]:.3f} → {sd['mrr'][1]:.3f} | {', '.join(broken)} | {decision} |")
+    base, rw = load("real", "dev", "llm", "r5Lbase"), load("real", "dev", "llm", "r5Lrw")
+    sbase, srw = load("synthetic", "dev", "llm", "r5Lbase"), load("synthetic", "dev", "llm", "r5Lrw")
+    if base and rw:
+        out += ["", "**Round 5, step 2: Claude end to end, dev split, without and with question rewriting** (one live run each; Claude runs vary a little).", "",
+                "| Corpus | Rewriting | In-corpus n | Pass | Answer correct | Wrong but validated | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|---|"]
+        for corpus, pair in (("real", (base, rw)), ("synthetic", (sbase, srw))):
+            for name, rep in zip(("off", "on"), pair):
+                k = counts(rescored(rep))
+                out.append(f"| {corpus} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                           f"{k['validated'] - k['val_correct']} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    out += ["", "**Reading this.** Only the hybrid search was kept; its gain is real but modest. The other offline ideas did not help or hurt. Rewriting the "
+            "question with a small model rescued some questions and displaced others, with no net end-to-end change. The owner's own test questions "
+            "(\"benefits of hand-rub\", \"how long should i rub my hands with sanitiser\") remain unreliable on the real PDFs.", ""]
+    return out
+
+
+def section_validator3() -> list[str]:
+    p = REPORTS / "validator_round3.json"
+    if not p.exists():
+        return []
+    d = json.loads(p.read_text(encoding="utf-8"))
+    names = {"V1": "V1: check a number's unit only when the next word is a real unit",
+             "V2": "V2: a number fused with a footnote (10.303) also supports its integer part",
+             "V3": "V3: question terms found in the cited text count as addressed"}
+    out = ["## 12. Validator round 3: three narrow fixes for correct answers that were withheld", "",
+           "Judged on saved dev answers (no API calls) by rules committed first (`evaluation/reports/validator_round3_rules.txt`): A no new wrong-but-validated "
+           "or out-of-scope accepts in any report, B stress set not worse, C at least one withheld correct answer released.", "",
+           "| Fix | A | B | C | Correct answers released | New wrong-but-validated | Decision |", "|---|---|---|---|---|---|---|"]
+    for name, f in d["fixes"].items():
+        rel = "; ".join(f"{k}: {', '.join(v)}" for k, v in f["released_correct"].items() if v) or "none"
+        nw = "; ".join(f"{k}: {', '.join(v)}" for k, v in f["new_wrong_validated"].items() if v) or "none"
+        out.append(f"| {names[name]} | {'held' if f['rules']['A'] else 'FAILED'} | {'held' if f['rules']['B'] else 'FAILED'} | "
+                   f"{'held' if f['rules']['C'] else 'FAILED'} | {rel} | {nw} | {'kept' if f['kept'] else 'reverted'} |")
+    out += ["", "V3 did not release the answers with the lowest question support, whose question words (\"fridge\", \"settle\") are not in the cited text either. "
+            "Its benefit is small. All kept fixes are settings in `validator.py`.", ""]
     return out
 
 
@@ -326,8 +402,8 @@ STEPS = [
     ("llm_v2", "llm", "LLM generator, tightened prompt", "Plain text, no commentary or markdown, reuse the guideline's wording.", "ACCEPTED: fewer correct answers withheld, validated precision held."),
     ("final", "extractive", "Frozen configuration, extractive (real corpus = 5 documents)", "No change in configuration; real corpus now 5 documents and 17 more queries.", "Reported as is."),
     ("final", "llm", "Frozen configuration, LLM (real corpus = 5 documents)", "Same, live LLM.", "Reported as is."),
-    ("cur", "extractive", "+ validator F1: leading yes/no is a response marker (extractive)", "Re-scored saved answers; real dev now includes the new round-2 dev queries.", "ACCEPTED under rules committed first: no new wrong or out-of-scope accepts, stress set not worse, correct answers released (section 10 of the report)."),
-    ("cur", "llm", "+ validator F1 (LLM)", "Same.", "ACCEPTED (same rules)."),
+    ("cur", "extractive", "Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3", "Fresh runs of the final settings; real dev now includes all later dev queries.", "Reported as is; see sections 10 to 12 of the report for how each part was judged."),
+    ("cur", "llm", "Shipped configuration (LLM)", "Same, live Claude runs.", "Reported as is."),
 ]
 
 

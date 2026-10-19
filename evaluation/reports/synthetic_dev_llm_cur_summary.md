@@ -22,15 +22,15 @@
 
 | Metric | Value |
 |---|---|
-| Pass rate (validated / in-corpus) | 90.0% |
-| Mean confidence (in-corpus) | 0.7541 |
+| Pass rate (validated / in-corpus) | 100.0% |
+| Mean confidence (in-corpus) | 0.7863 |
 | Answer correct (expected facts present) | 100.0% |
 | **Validated precision** (correct among validated) | 100.0% |
 | **Validated but wrong** | 0.0% |
-| Correct but flagged for review | 10.0% |
+| Correct but flagged for review | 0.0% |
 | Out-of-corpus sent to review | 100.0% |
 | Out-of-corpus falsely validated | 0.0% |
-| Decision accuracy (all queries) | 92.0% |
+| Decision accuracy (all queries) | 100.0% |
 
 A high pass rate alone is not evidence of quality: an extractive answer is copied from the evidence, so coverage is near-perfect by construction. Validated precision and the validated-but-wrong rate are the meaningful numbers.
 
@@ -42,17 +42,15 @@ A high pass rate alone is not evidence of quality: an extractive answer is copie
 | 0.35 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
 | 0.4 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
 | 0.45 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
-| 0.5 | 95.0% | 100.0% | 0.0% | 5.0% | 0.0% | 96.0% |
-| 0.55 | 90.0% | 100.0% | 0.0% | 10.0% | 0.0% | 92.0% |
-| 0.6 | 90.0% | 100.0% | 0.0% | 10.0% | 0.0% | 92.0% |
-| 0.65 | 75.0% | 100.0% | 0.0% | 25.0% | 0.0% | 80.0% |
-| 0.7 | 70.0% | 100.0% | 0.0% | 30.0% | 0.0% | 76.0% |
-| 0.75 | 50.0% | 100.0% | 0.0% | 50.0% | 0.0% | 60.0% |
+| 0.5 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
+| 0.55 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
+| 0.6 | 100.0% | 100.0% | 0.0% | 0.0% | 0.0% | 100.0% |
+| 0.65 | 95.0% | 100.0% | 0.0% | 5.0% | 0.0% | 96.0% |
+| 0.7 | 80.0% | 100.0% | 0.0% | 20.0% | 0.0% | 84.0% |
+| 0.75 | 65.0% | 100.0% | 0.0% | 35.0% | 0.0% | 72.0% |
 | 0.8 | 40.0% | 100.0% | 0.0% | 60.0% | 0.0% | 52.0% |
-| 0.85 | 30.0% | 100.0% | 0.0% | 70.0% | 0.0% | 44.0% |
+| 0.85 | 25.0% | 100.0% | 0.0% | 75.0% | 0.0% | 40.0% |
 | 0.9 | 10.0% | 100.0% | 0.0% | 90.0% | 0.0% | 28.0% |
 
-## Items for analyst review (2)
+## Items for analyst review (0)
 
-- **S11** (correct answer withheld, confidence 0.453): What bleach strength is used for blood spills?
-- **S29** (correct answer withheld, confidence 0.543): Which vaccine needs a booster every ten years?

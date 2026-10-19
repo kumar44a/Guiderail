@@ -6,3 +6,7 @@
 2026-10-18T13:12:48+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=llm
 2026-10-18T18:00:36+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=extractive
 2026-10-18T18:00:44+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=llm
+2026-10-19T00:47:11+00:00	split=test	corpus=synthetic	index=45c3d9422161	run_eval generator=extractive
+2026-10-19T00:47:11+00:00	split=test	corpus=synthetic	index=45c3d9422161	run_eval generator=llm
+2026-10-19T00:51:14+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=extractive
+2026-10-19T00:51:22+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=llm
