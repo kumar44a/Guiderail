@@ -41,6 +41,13 @@ RELEVANCE_CEIL = 0.30      # cosine at or above this counts as full retrieval re
 PENALTY = 0.5              # multiplier on coverage for unsupported numbers / negations
 NEGATIONS = frozenset({"not", "no", "never", "without"})
 _NUMBER_RE = re.compile(r"\d+(?:\.\d+)?")
+# Validator round 3. Each switch is judged separately by evaluation/judge_validator3.py; the values below are the shipped ones.
+GATE_QUANTITY_UNITS = True     # V1: only check "number + unit" pairs when the word after the number is a real unit
+FOOTNOTE_DECIMALS = True       # V2: evidence "10.303" (a number fused with a footnote) also supports "10"
+CITED_TEXT_SUPPORT = True      # V3: question terms found in the cited passages' text count as addressed
+UNITS = frozenset("""second seconds minute minutes hour hours day days week weeks month months year years feet foot inch inches
+    cm mm meter meters metre metres degree degrees c f percent % mg ml mcg g kg dose doses""".split())
+_FOOTNOTE_DECIMAL = re.compile(r"\d+\.\d{3}")
 # "No, brushes are not recommended": a leading yes/no answers the question's form and is not a claim about the
 # evidence, so it is not scored as a content term or an unsupported negation. Requires punctuation after it, so a
 # determiner ("No further action is needed") is left alone.
@@ -99,11 +106,15 @@ def validate(
     reasons: list[str] = []
 
     evidence_numbers = set(_NUMBER_RE.findall(evidence_text))
+    if FOOTNOTE_DECIMALS:
+        evidence_numbers |= {n.split(".")[0] for n in evidence_numbers if _FOOTNOTE_DECIMAL.fullmatch(n)}
     unsupported_numbers = [n for n in dict.fromkeys(_NUMBER_RE.findall(answer)) if n not in evidence_numbers]
     evidence_quantities = {(n, tokenize(u, apply_stem=True)[0] if tokenize(u) else u.lower())
                            for n, u in _QUANTITY_RE.findall(evidence_text)}
     for n, u in dict.fromkeys(_QUANTITY_RE.findall(answer)):
         unit = tokenize(u)[0] if tokenize(u) else u.lower()
+        if GATE_QUANTITY_UNITS and u.lower() not in UNITS:
+            continue
         if n not in unsupported_numbers and (n, unit) not in evidence_quantities and not _unit_is_stopword(u):
             unsupported_numbers.append(f"{n} {u}")
     if unsupported_numbers:
@@ -117,6 +128,8 @@ def validate(
     q_tokens = set(tokenize(question))
     q_weight = lexicon.weight(q_tokens)
     addressed = set(answer_tokens) | set(tokenize(" ".join(f"{c.title} {c.section}" for c in cited_chunks or evidence[:1])))
+    if CITED_TEXT_SUPPORT and cited_chunks:
+        addressed |= set(tokenize(" ".join(c.text for c in cited_chunks)))
     question_support = lexicon.weight(q_tokens & addressed) / q_weight if q_weight else 0.0
     retrieval_relevance = _clamp((top_score - RELEVANCE_FLOOR) / (RELEVANCE_CEIL - RELEVANCE_FLOOR))
     relevance = 0.5 * retrieval_relevance + 0.5 * question_support

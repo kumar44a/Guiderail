@@ -25,3 +25,9 @@ If A fails for V3 the fix is reverted whole; no weaker variant is tried in this 
 After the last kept fix: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.
 Expectation stated in advance: V1 and V2 are narrow and should pass. V3 loosens a check and may well fail A on the extractive reports, which is the
 reason it is judged on them.
+
+OUTCOME (written after the judgement; the rules above were committed first)
+All three fixes met their rules on the saved dev answers (evaluation/reports/validator_round3.json): V1 released two correct answers (one extractive, one Claude),
+V2 released two (Claude), V3 released one (synthetic Claude); none created a wrong-but-validated answer or an out-of-scope accept in any of the four reports;
+the stress set was unchanged. V3 did not release the low-question-support answers that motivated it (their question words, such as "fridge" and "settle", are not
+in the cited text either), so its benefit is small and its risk is not zero. All three are shipped as settings in validator.py.

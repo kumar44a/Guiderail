@@ -1,0 +1,334 @@
+{
+  "baseline": {
+    "real_dev_extractive_r3B": {
+      "wrong_validated": [
+        "N03",
+        "N05",
+        "N17",
+        "N18",
+        "N21",
+        "N23",
+        "N24",
+        "R09",
+        "R28",
+        "R36",
+        "T03"
+      ],
+      "ooc_accepted": [
+        "NO1",
+        "RO5",
+        "RO7"
+      ],
+      "validated_correct": [
+        "N01",
+        "N02",
+        "N06",
+        "N08",
+        "N09",
+        "N10",
+        "N12",
+        "N13",
+        "N16",
+        "N20",
+        "N22",
+        "N25",
+        "N26",
+        "R01",
+        "R03",
+        "R05",
+        "R18",
+        "R20",
+        "R22",
+        "R24",
+        "R26",
+        "R30",
+        "R33",
+        "R34",
+        "R37",
+        "R38",
+        "R39",
+        "R40",
+        "T01",
+        "T05",
+        "T07"
+      ],
+      "withheld_correct": [
+        "N04",
+        "N14",
+        "N15",
+        "R07",
+        "R35"
+      ]
+    },
+    "synthetic_dev_extractive_r3B": {
+      "wrong_validated": [
+        "S23"
+      ],
+      "ooc_accepted": [
+        "S45",
+        "S47"
+      ],
+      "validated_correct": [
+        "S01",
+        "S03",
+        "S05",
+        "S07",
+        "S09",
+        "S13",
+        "S15",
+        "S17",
+        "S19",
+        "S21",
+        "S25",
+        "S27",
+        "S29",
+        "S31",
+        "S33",
+        "S35",
+        "S37",
+        "S39"
+      ],
+      "withheld_correct": [
+        "S11"
+      ]
+    },
+    "real_dev_llm_r5Lbase": {
+      "wrong_validated": [
+        "N17",
+        "N24",
+        "R36"
+      ],
+      "ooc_accepted": [],
+      "validated_correct": [
+        "N02",
+        "N06",
+        "N08",
+        "N09",
+        "N10",
+        "N12",
+        "N13",
+        "N16",
+        "N22",
+        "N23",
+        "N26",
+        "R01",
+        "R03",
+        "R05",
+        "R18",
+        "R20",
+        "R22",
+        "R26",
+        "R30",
+        "R33",
+        "R34",
+        "R35",
+        "R37",
+        "R38",
+        "R39",
+        "R40",
+        "T01",
+        "T03",
+        "T05",
+        "T07"
+      ],
+      "withheld_correct": [
+        "N01",
+        "N04",
+        "N14",
+        "N15",
+        "N19",
+        "N20",
+        "N25",
+        "R07",
+        "R24"
+      ]
+    },
+    "synthetic_dev_llm_r5Lbase": {
+      "wrong_validated": [],
+      "ooc_accepted": [],
+      "validated_correct": [
+        "S01",
+        "S03",
+        "S05",
+        "S07",
+        "S09",
+        "S13",
+        "S15",
+        "S17",
+        "S19",
+        "S21",
+        "S23",
+        "S25",
+        "S27",
+        "S31",
+        "S33",
+        "S35",
+        "S37",
+        "S39"
+      ],
+      "withheld_correct": [
+        "S11",
+        "S29"
+      ]
+    },
+    "stress": {
+      "bad_flagged": 0.8889,
+      "good_accepted": 0.8235,
+      "caught": {
+        "V01": true,
+        "V02": true,
+        "V03": true,
+        "V04": false,
+        "V05": true,
+        "V06": true,
+        "V07": true,
+        "V08": false,
+        "V09": true,
+        "V10": true,
+        "V11": true,
+        "V12": true,
+        "V13": true,
+        "V14": true,
+        "V15": true,
+        "V16": true,
+        "V17": true,
+        "V18": true,
+        "V19": true,
+        "V20": false,
+        "V21": true,
+        "V22": true,
+        "V23": false,
+        "V24": true,
+        "V25": true,
+        "V26": true,
+        "V27": true,
+        "V28": false,
+        "V29": true,
+        "V30": true,
+        "V31": true,
+        "V32": true,
+        "V33": true,
+        "V34": true,
+        "V35": true,
+        "V36": true,
+        "V37": true,
+        "V38": true,
+        "V39": true,
+        "V40": true,
+        "V41": false,
+        "V42": true,
+        "V43": true,
+        "V44": true
+      }
+    }
+  },
+  "fixes": {
+    "V1": {
+      "rules": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "kept": true,
+      "released_correct": {
+        "real_dev_extractive_r3B": [
+          "R35"
+        ],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [
+          "N25"
+        ],
+        "synthetic_dev_llm_r5Lbase": []
+      },
+      "new_wrong_validated": {
+        "real_dev_extractive_r3B": [],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [],
+        "synthetic_dev_llm_r5Lbase": []
+      },
+      "stress_broke": [],
+      "stress": {
+        "bad_flagged": [
+          0.8889,
+          0.8889
+        ],
+        "good_accepted": [
+          0.8235,
+          0.8235
+        ]
+      }
+    },
+    "V2": {
+      "rules": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "kept": true,
+      "released_correct": {
+        "real_dev_extractive_r3B": [],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [
+          "N20",
+          "R24"
+        ],
+        "synthetic_dev_llm_r5Lbase": []
+      },
+      "new_wrong_validated": {
+        "real_dev_extractive_r3B": [],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [],
+        "synthetic_dev_llm_r5Lbase": []
+      },
+      "stress_broke": [],
+      "stress": {
+        "bad_flagged": [
+          0.8889,
+          0.8889
+        ],
+        "good_accepted": [
+          0.8235,
+          0.8235
+        ]
+      }
+    },
+    "V3": {
+      "rules": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "kept": true,
+      "released_correct": {
+        "real_dev_extractive_r3B": [],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [],
+        "synthetic_dev_llm_r5Lbase": [
+          "S29"
+        ]
+      },
+      "new_wrong_validated": {
+        "real_dev_extractive_r3B": [],
+        "synthetic_dev_extractive_r3B": [],
+        "real_dev_llm_r5Lbase": [],
+        "synthetic_dev_llm_r5Lbase": []
+      },
+      "stress_broke": [],
+      "stress": {
+        "bad_flagged": [
+          0.8889,
+          0.8889
+        ],
+        "good_accepted": [
+          0.8235,
+          0.8235
+        ]
+      }
+    }
+  },
+  "kept": [
+    "CITED_TEXT_SUPPORT",
+    "FOOTNOTE_DECIMALS",
+    "GATE_QUANTITY_UNITS"
+  ]
+}

@@ -155,3 +155,44 @@ def test_marker_does_not_hide_a_fabricated_number():
 def test_negation_later_in_the_answer_is_still_checked():
     v = _yn("No, brushes are never allowed.")
     assert "never" in v.unsupported_terms and any("negation" in r for r in v.reasons)
+
+
+# ---------- validator round 3: V1 unit gate, V2 footnote decimals, V3 cited text ----------
+
+def _val(question, answer, evidence_text, cited=True, top=0.4):
+    from guiderail.lexicon import Lexicon as L
+    chunks = [_plain(evidence_text)]
+    return validate(question, answer, chunks, top, L(chunks), cited_chunks=chunks if cited else None)
+
+
+def test_a_year_followed_by_an_ordinary_word_is_not_an_unsupported_quantity():
+    ev = "World Hand Hygiene Day 2026: Action saves lives. Posters are available in all official languages."
+    v = _val("what languages are the posters in", "The 2026 posters are available in all official languages.", ev)
+    assert v.unsupported_numbers == []
+
+
+def test_a_real_unit_mismatch_is_still_caught():
+    ev = "Rub hands for 20 seconds until dry."
+    assert _val("how long to rub", "Rub hands for 20 seconds until dry.", ev).unsupported_numbers == []
+    assert "20 minutes" in _val("how long to rub", "Rub hands for 20 minutes until dry.", ev).unsupported_numbers
+    assert _val("how long to rub", "Rub hands for 40 seconds until dry.", ev).unsupported_numbers == ["40"]
+
+
+def test_a_number_fused_with_a_footnote_still_supports_its_integer_part():
+    ev = "The overall sink-to-patient bed ratio should be of 1:10.303 Placement of products matters."
+    assert _val("sink to patient ratio", "The sink-to-patient bed ratio should be 1:10.", ev).unsupported_numbers == []
+
+
+def test_a_real_decimal_does_not_support_its_integer_part():
+    ev = "Use 10.5 mg per dose."
+    assert _val("dose", "Use 10 mg per dose.", ev).unsupported_numbers          # 10 is not supported by 10.5
+    assert _val("dose", "Use 10.5 mg per dose.", ev).unsupported_numbers == []
+
+
+def test_question_terms_found_in_the_cited_text_count_as_addressed():
+    ev = "Unit temperatures may take two to seven days to stabilize in a newly installed refrigerator."
+    q = "how long does the unit temperature take to stabilize"
+    with_cited = _val(q, "Two to seven days.", ev)
+    without = _val(q, "Two to seven days.", ev, cited=False)
+    assert with_cited.question_support > without.question_support
+    assert _val("how do I bake a chocolate cake", "Two to seven days.", ev).question_support == 0.0     # unrelated question gains nothing
