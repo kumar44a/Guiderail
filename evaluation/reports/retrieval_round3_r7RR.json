@@ -1,0 +1,78 @@
+{
+  "step": "r7RR",
+  "against": "r7base",
+  "real_dev": {
+    "n": 65,
+    "hit5_before": 51,
+    "hit5_after": 50,
+    "mrr_before": 0.6038,
+    "mrr_after": 0.6063
+  },
+  "focus": {
+    "prefix": "M",
+    "n": 15,
+    "hit5_before": 10,
+    "hit5_after": 9,
+    "mrr_before": 0.4278,
+    "mrr_after": 0.4389
+  },
+  "synthetic_dev": {
+    "hit5": [
+      20,
+      20,
+      20
+    ],
+    "mrr": [
+      0.825,
+      0.825
+    ]
+  },
+  "real_dev_old_queries_hit5": [
+    22,
+    22,
+    24
+  ],
+  "errors_before": {
+    "real": {
+      "wrong_validated": 18,
+      "ooc_accepted": 6,
+      "correct_validated": 37
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 18
+    }
+  },
+  "errors_after": {
+    "real": {
+      "wrong_validated": 19,
+      "ooc_accepted": 7,
+      "correct_validated": 36
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 18
+    }
+  },
+  "stress": {
+    "bad_flagged": [
+      0.8889,
+      0.8889
+    ],
+    "good_accepted": [
+      0.8235,
+      0.8235
+    ]
+  },
+  "rules": {
+    "gain": false,
+    "G1": true,
+    "G2": true,
+    "G3": false,
+    "G4": true,
+    "G5": true
+  },
+  "keep": false
+}

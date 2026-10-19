@@ -193,6 +193,8 @@ def build_report() -> str:
             "so their results show that the fix works on that case, not how often the case occurs.",
             "- **Not addressed.** The extractive generator still validates wrong answers when retrieval misses the fact or it picks the wrong "
             "sentence, because the validator checks support in the retrieved text, not correctness.",
+            "- **Independent test.** On the sealed questions (section 13) the results were far below the development numbers. The development figures above "
+            "are optimistic and the sealed figures are the better guide to real use.",
             "- **Retrieval ceiling on natural questions.** Questions worded differently from the document (\"benefits\" for \"advantages\", "
             "\"sanitiser\" for \"handrub\", \"how long\" for \"duration\") often miss the passage that answers them, because matching is lexical. Four rounds of "
             "offline fixes (section 11) kept only the hybrid keyword search. A small-model question rewrite helped some questions and hurt others "
@@ -201,6 +203,7 @@ def build_report() -> str:
     out += section_round2()
     out += section_retrieval_rounds()
     out += section_validator3()
+    out += section_sealed()
     return "\n".join(out)
 
 
@@ -260,6 +263,7 @@ RETRIEVAL_STEPS = [
     ("r5E", "E: Claude rewrites the question (retrieval only)", "round 5"),
     ("r6W50", "Chunks of at most 50 words (was 80)", "round 6"),
     ("r6W35", "Chunks of at most 35 words (was 80)", "round 6"),
+    ("r7RR", "Reference-list removal, retried on fresh questions", "round 7"),
 ]
 
 
@@ -317,6 +321,44 @@ def section_validator3() -> list[str]:
                    f"{'held' if f['rules']['C'] else 'FAILED'} | {rel} | {nw} | {'kept' if f['kept'] else 'reverted'} |")
     out += ["", "V3 did not release the answers with the lowest question support, whose question words (\"fridge\", \"settle\") are not in the cited text either. "
             "Its benefit is small. All kept fixes are settings in `validator.py`.", ""]
+    return out
+
+
+def section_sealed() -> list[str]:
+    ext, llm = load("real", "sealed", "extractive", "sealed"), load("real", "sealed", "llm", "sealed")
+    if not (ext and llm):
+        return []
+    owner = lambda i: i.startswith("U")
+    sub = lambda rp, keep: {**rp, "records": [r for r in rp["records"] if keep(r["id"])]}
+    out = ["## 13. The sealed set: questions the system was never tuned on", "",
+           "Real corpus only, run once per generator on the frozen configuration after all tuning had stopped (rules: `evaluation/reports/sealed_run_rules.txt`, "
+           "committed first). It holds questions written by the assistant (N31 to N42, NO4, NO5) and nine questions written by the project owner (U01 to U09, all "
+           "about hand rub). The owner supplied no expected answers; the assistant labelled them from the PDFs before the run, so those labels are the assistant's "
+           "judgement. A tenth owner question (U10) is not scored because the documents answer it only indirectly.", "",
+           "| Generator | Questions | In-corpus n | Pass | Answer correct | Validated precision | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|---|"]
+    for gen, rep in (("extractive", ext), ("llm", llm)):
+        rep = rescored(rep)
+        for name, keep in (("all sealed", lambda i: True), ("assistant's", lambda i: not owner(i)), ("owner's (U01 to U09)", owner)):
+            k = counts(sub(rep, keep))
+            out.append(f"| {gen} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                       f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    out += ["", "The owner's nine questions, one by one (V = validated, R = sent to review; correct = contains every expected fact):", "",
+            "| Id | Question | Expected | Extractive | Claude |", "|---|---|---|---|---|"]
+    er, lr = ({r["id"]: r for r in rescored(x)["records"]} for x in (ext, llm))
+    qs = {q.id: q for q in load_queries(CORPORA["real"]["queries"], "sealed")}
+    for i in sorted(k for k in er if owner(k)):
+        q = qs[i]
+        def fmt(r):
+            if r["abstained"]:
+                return "R, no answer given"
+            return ("V" if r["confidence"] >= 0.6 and r["cited"] else "R") + ("" if r["correct"] is None else (" correct" if r["correct"] else " wrong"))
+        out.append(f"| {i} | {q.question} | {'answerable' if q.kind == 'in_corpus' else 'not in the documents'} | {fmt(er[i])} | {fmt(lr[i])} |")
+    out += ["", "**Reading this.** On questions it was not built around, the system is much weaker than on its development questions. The Claude generator never "
+            "answered a question the documents cannot answer, but it abstained on most answerable hand-rub questions because retrieval did not surface the passage, "
+            "and it validated one wrong answer built from a reference-list entry. The extractive generator validated figure captions and reference citations as "
+            "answers, including for questions the documents cannot answer. For real documents the Claude generator is the only reasonable choice, and even it "
+            "should be treated as a research prototype. The cause is the lexical retrieval described in the limitations; a semantic embedding model would address "
+            "it and was ruled out for this project.", ""]
     return out
 
 

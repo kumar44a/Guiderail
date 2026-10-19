@@ -46,17 +46,26 @@ def main() -> int:
     ap.add_argument("--determinism", action="store_true")
     ap.add_argument("--min-queries", type=int, default=1, help="gain bar: real-dev Hit@5 must rise by this many queries ...")
     ap.add_argument("--min-mrr", type=float, default=0.02, help="... or MRR by this much (round 5 uses 3 and 0.03)")
+    ap.add_argument("--focus-prefix", default=None, help="judge the gain on real-dev queries whose id starts with this prefix (round 7: M)")
     ap.add_argument("--retrieval-only", action="store_true", help="skip the extractive error guards G3 and G4 (round 5 step 1)")
     args = ap.parse_args()
 
     out, ok = {"step": args.step, "against": args.against}, True
     rb, rs = load("real", args.against), load("real", args.step)
     sb, ss = load("synthetic", args.against), load("synthetic", args.step)
-    old = lambda i: not i.startswith("N")          # real dev queries that existed before the natural-wording set
+    old = lambda i: not i.startswith(("N", "M"))   # real dev queries that existed before the natural-wording sets
     (hb, n), (hs, _) = hit5(rb), hit5(rs)
     mrr_b, mrr_s = rb["retrieval"]["mrr"], rs["retrieval"]["mrr"]
     out["real_dev"] = {"n": n, "hit5_before": hb, "hit5_after": hs, "mrr_before": round(mrr_b, 4), "mrr_after": round(mrr_s, 4)}
-    gain = (hs - hb >= args.min_queries or mrr_s - mrr_b >= args.min_mrr) and hs >= hb
+    if args.focus_prefix:
+        foc = lambda i: i.startswith(args.focus_prefix)
+        (fb, fn), (fs, _) = hit5(rb, foc), hit5(rs, foc)
+        fmrr = lambda rep: (lambda sel: sum(r["rr"] for r in sel) / len(sel))([r for i, r in rows(rep).items() if foc(i)])
+        out["focus"] = {"prefix": args.focus_prefix, "n": fn, "hit5_before": fb, "hit5_after": fs,
+                        "mrr_before": round(fmrr(rb), 4), "mrr_after": round(fmrr(rs), 4)}
+        gain = (fs - fb >= args.min_queries or fmrr(rs) - fmrr(rb) >= args.min_mrr) and fs >= fb
+    else:
+        gain = (hs - hb >= args.min_queries or mrr_s - mrr_b >= args.min_mrr) and hs >= hb
     g1 = hit5(ss)[0] >= hit5(sb)[0] and ss["retrieval"]["mrr"] >= sb["retrieval"]["mrr"] - 0.01
     g2 = hit5(rs, old)[0] >= hit5(rb, old)[0]
     eb = {c: errors(r) for c, r in (("real", rb), ("synthetic", sb))}

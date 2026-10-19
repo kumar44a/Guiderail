@@ -20,3 +20,8 @@ Judged on the new M/MO questions, extractive generator, retrieval and end to end
 Then, if kept: one Claude run on the new questions with and without RR (variance exists): out-of-scope accepts must not rise and wrong-but-validated answers must
 not rise by more than 1. If not kept, RR is reverted and the sealed-run weakness is reported as a limitation.
 Afterwards: regenerate all tables on the shipped configuration; the sealed set is NOT run again.
+
+OUTCOME (written after the measurement; the rules above were committed first)
+RR REVERTED. On the 15 fresh answerable questions, Hit@5 went 10 -> 9 and MRR 0.428 -> 0.439 (bar: +2 queries or +0.03 MRR); extractive wrong-but-validated rose
+from 18 to 19 and out-of-scope accepts from 6 to 7 across the real dev material (judge output: retrieval_round3_r7RR.json). The hypothesis that reference lists are the
+main cause of the sealed-run failures is not supported. The sealed weakness stays and is reported as a limitation. The sealed set was not run again.

@@ -58,11 +58,19 @@ def stats_block() -> str:
             k = bs.counts(bs.rescored(bs.load(corpus, "test", gen, "cur")))
             lines.append(f"| {corpus} / {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
                          f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    sealed = {g: bs.load("real", "sealed", g, "sealed") for g in ("extractive", "llm")}
     s, r = syn["retrieval"], real["retrieval"]
     lines += ["", "| Retrieval (test split) | Precision@5 | Capped Precision@5 | Hit@5 | MRR |", "|---|---|---|---|---|",
               f"| synthetic | {bs.pct(s['precision@5'])} | {bs.pct(s['capped_precision@5'])} | {bs.pct(s['hit@5'])} | {s['mrr']:.3f} |",
-              f"| real | {bs.pct(r['precision@5'])} | {bs.pct(r['capped_precision@5'])} | {bs.pct(r['hit@5'])} | {r['mrr']:.3f} |",
-              END]
+              f"| real | {bs.pct(r['precision@5'])} | {bs.pct(r['capped_precision@5'])} | {bs.pct(r['hit@5'])} | {r['mrr']:.3f} |"]
+    if all(sealed.values()):
+        lines += ["", "**Sealed set (real PDFs; questions the system was never tuned on, run once):**", "",
+                  "| Generator | In-corpus n | Pass | Answer correct | Validated precision | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|"]
+        for gen, rep in sealed.items():
+            k = bs.counts(bs.rescored(rep))
+            lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
+                         f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    lines.append(END)
     return "\n".join(lines)
 
 
