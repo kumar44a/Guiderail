@@ -1,0 +1,26 @@
+Retrieval round 5: Claude rewrites the question (Claude mode only). Written and committed BEFORE any code or measurement.
+
+Why (owner's decision, after rounds 3 and 4): offline keyword techniques reached a ceiling. The remaining failures are vocabulary gaps
+that need language knowledge ("benefits" ~ "advantages", "sanitiser" ~ "handrub", "how long" ~ "duration"). A small model has that knowledge.
+
+Change E  Before searching, one cheap Claude call (claude-haiku-4-5-20251001) rewrites the question as a short list of search keywords in
+the formal vocabulary of guideline documents. The prompt is prompts/query_rewrite.txt (its examples are on unrelated topics, chosen not to
+overlap any evaluation query). The rewrite is APPENDED to the question for searching: the text embedded for FAISS, the BM25 query, and the
+lexical re-ranker all see "question + rewrite". The generator and the validator see only the ORIGINAL question, so a rewrite cannot make a
+poorly matched answer look relevant. On any failure the original question is used. The rewrite is recorded in the response's debug block.
+Offline mode (extractive generator) never calls the API and is unchanged. Switch: GUIDERAIL_REWRITE=0 turns it off in Claude mode.
+
+Data: the same real-dev and synthetic-dev material as rounds 3 and 4 (real dev has 50 answerable queries). The owner's four tried questions
+are in it (N17, N18) or are checked by hand afterwards; they carry no extra weight. Sealed set: unchanged; run once at the end.
+To make the measurement repeatable, every rewrite is stored in evaluation/reports/rewrite_cache.json (question -> rewrite) the first time
+it is made, and later runs read the stored value. So retrieval numbers with rewriting are deterministic once the cache exists.
+
+Step 1, retrieval only (cached rewrites): real-dev Hit@5 and MRR, with and without rewriting, same hybrid retriever.
+  Keep E only if real-dev Hit@5 rises by at least 3 queries or MRR by at least 0.03 (a higher bar than for offline changes, because E adds
+  cost, latency and nondeterminism), with no fall in Hit@5, and
+  G1  synthetic dev Hit@5 does not fall and MRR does not fall by more than 0.01;
+  G2  Hit@5 on the earlier real dev queries does not fall.
+Step 2, end to end with the Claude generator, dev only, one run with rewriting and one without (LLM variance exists, so a small difference
+  is noise): out-of-corpus questions wrongly validated must not rise, and wrong-but-validated answers must not rise by more than 1.
+If a rule fails, E is reverted and the failure reported. Latency and cost per question are measured and reported either way.
+Then: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.
