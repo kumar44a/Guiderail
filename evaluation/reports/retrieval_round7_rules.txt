@@ -1,0 +1,22 @@
+Retrieval round 7: reference-list removal, retried on questions of the kind that exposed it. Written and committed BEFORE any code or measurement.
+
+Why: the sealed run (the owner's questions about hand rub) showed that for topics the PDFs cite heavily, reference-list entries and figure captions crowd out
+the real passage: the extractive generator validated reference citations and captions as answers, and the Claude generator validated an answer built from a
+reference-list entry. The earlier dev questions did not show this, so rounds 3 and 4 judged reference removal neutral. The sealed results are exposed and are
+NOT used to tune. This round uses fresh questions written from the PDFs (M01-M24, MO1-MO5, split dev) with no system output in front of the author.
+Some of their topics (skin reactions, fire) overlap the owner's "disadvantages" question; they are phrased differently but the overlap is disclosed.
+
+Change RR: the reference-list detector exactly as registered in round 4, addendum 1 ("D3"): a section is dropped when it has at least 6 non-empty rows (title
+counts) and at least 30% of them are citation lines, or when it belongs to a run of 3 or more consecutive sections of at least 2 rows with at least 30%
+citation lines. Parameters and citation-line definition unchanged from that addendum (code in commit dc00bf9). Nothing else changes.
+
+Baseline: the frozen configuration (hybrid retrieval, validator rounds 2-3, 80-word chunks, rewriting off).
+Judged on the new M/MO questions, extractive generator, retrieval and end to end:
+  Keep RR only if on the M questions Hit@5 rises by at least 2 queries OR MRR rises by at least 0.03, with no fall in Hit@5, AND
+  G1 synthetic dev Hit@5 not lower and MRR not lower by more than 0.01 (the synthetic corpus has no PDFs, so this is a sanity check);
+  G2 Hit@5 on all earlier real dev queries does not fall;
+  G3 with the extractive generator, wrong-but-validated answers and out-of-scope accepts do not rise on the new questions or on the earlier dev questions;
+  G4 the validator stress set is not worse;  G5 two index builds are byte-identical.
+Then, if kept: one Claude run on the new questions with and without RR (variance exists): out-of-scope accepts must not rise and wrong-but-validated answers must
+not rise by more than 1. If not kept, RR is reverted and the sealed-run weakness is reported as a limitation.
+Afterwards: regenerate all tables on the shipped configuration; the sealed set is NOT run again.

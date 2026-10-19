@@ -1,0 +1,1146 @@
+{
+  "corpus": "real",
+  "generator": "llm",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "N31",
+      "kind": "in_corpus",
+      "question": "what room temperature suits the vaccine fridge",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "mResvia may be stored at room temperature for up to 24 hours before administration, so the syringe's BUD is 24 hours at room temperature (or 90 days refrigerated).",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-1"
+      ],
+      "cited": true,
+      "confidence": 0.817,
+      "correct": true,
+      "generator_error": null,
+      "id": "N32",
+      "kind": "in_corpus",
+      "question": "how long can the mResvia syringe stay at room temperature before use",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.817,
+        "coverage": 1.0,
+        "question_support": 0.73,
+        "reasons": [],
+        "retrieval_relevance": 0.904,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Previously frozen lyophilized varicella vaccine may be stored in the refrigerator for up to 72 hours before reconstitution, so once placed in refrigeration, the unopened vial's BUD is 72 hours. Always follow the guidance in the manufacturer's package insert for thawing instructions and the correct BUD.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-0"
+      ],
+      "cited": true,
+      "confidence": 0.628,
+      "correct": true,
+      "generator_error": null,
+      "id": "N33",
+      "kind": "in_corpus",
+      "question": "how long can previously frozen varicella vaccine sit in the fridge before it is mixed",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.628,
+        "coverage": 1.0,
+        "question_support": 0.501,
+        "reasons": [],
+        "retrieval_relevance": 0.754,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Smallpox vaccine should be administered to exposed susceptible persons within 4 days after exposure. Susceptible persons should be immunized or given the appropriate immune globulin as soon as possible following unprotected contact with a patient with smallpox (Category IA).",
+      "citations": [
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-3",
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-1"
+      ],
+      "cited": true,
+      "confidence": 0.874,
+      "correct": true,
+      "generator_error": null,
+      "id": "N34",
+      "kind": "in_corpus",
+      "question": "how soon must smallpox vaccine be given after exposure",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.874,
+        "coverage": 0.94,
+        "question_support": 0.859,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "given"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hand hygiene can be performed by using either plain soap or products including antiseptic agents, which have the property of inactivating microorganisms or inhibiting their growth with different action spectra. Examples include alcohols, chlorhexidine gluconate, chlorine derivatives, iodine, chloroxylenol, quaternary ammonium compounds, and triclosan. Hexachlorophene and iodophors are also listed among the antiseptics, and alcohols are used at a typical concentration of 60-80 % with fast speed of action and no residual activity.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-0",
+        "who-hand-hygiene-guidelines-summary-2009#fungi-spores-p-39-0"
+      ],
+      "cited": true,
+      "confidence": 0.922,
+      "correct": true,
+      "generator_error": null,
+      "id": "N35",
+      "kind": "in_corpus",
+      "question": "what antiseptics are used for hand hygiene",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.922,
+        "coverage": 0.922,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also",
+          "list",
+          "among",
+          "concentration"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes, liquid, bar, leaf or powdered forms of soap are acceptable. When bar soap is used, small bars of soap in racks that facilitate drainage should be used to allow the bars to dry (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-2"
+      ],
+      "cited": true,
+      "confidence": 0.867,
+      "correct": true,
+      "generator_error": null,
+      "id": "N36",
+      "kind": "in_corpus",
+      "question": "is bar soap acceptable for handwashing",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.867,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.735,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When a hand hygiene improvement programme has to be initiated from scratch, the essential steps are: Step 1, Facility preparedness – readiness for action; Step 2, Baseline evaluation – establishing the current situation; Step 3, Implementation – introducing the improvement activities; Step 4, Follow-up evaluation – evaluating the implementation impact; and Step 5, Action planning and review cycle – developing a plan for the next 5 years (minimum).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#4-reminders-in-the-workplace-prompting-and-reminding-p-36-9"
+      ],
+      "cited": true,
+      "confidence": 0.888,
+      "correct": true,
+      "generator_error": null,
+      "id": "N37",
+      "kind": "in_corpus",
+      "question": "what are the steps to start a hand hygiene programme from scratch",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.888,
+        "coverage": 1.0,
+        "question_support": 0.777,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not add soap (IA) or alcohol-based formulations (II) to a partially empty soap dispenser. If soap dispensers are reused, follow recommended procedures for cleansing.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-6"
+      ],
+      "cited": true,
+      "confidence": 0.596,
+      "correct": true,
+      "generator_error": null,
+      "id": "N38",
+      "kind": "in_corpus",
+      "question": "what do i do if a soap dispenser is partly empty",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.596,
+        "coverage": 1.0,
+        "question_support": 0.594,
+        "reasons": [
+          "weak relevance to the question (0.60)"
+        ],
+        "retrieval_relevance": 0.597,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The WHO infection prevention and control global newsletter is dated 29 April 2026.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-1-0"
+      ],
+      "cited": true,
+      "confidence": 0.709,
+      "correct": true,
+      "generator_error": null,
+      "id": "N40",
+      "kind": "in_corpus",
+      "question": "what is the date of the 2026 WHO IPC newsletter",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.709,
+        "coverage": 0.879,
+        "question_support": 0.702,
+        "reasons": [],
+        "retrieval_relevance": 0.91,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "dat"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "You can use the new digital toolkit, which offers modifiable templates for making your own posters, for both individuals and organizations, along with templates for social media posts and your own PPT presentations. The \"Your 5 Moments for Hand Hygiene Poster\" is also listed among the tools under Safety Climate.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-2-0",
+        "who-hand-hygiene-guidelines-summary-2009#safety-climate-p-59-0"
+      ],
+      "cited": true,
+      "confidence": 0.66,
+      "correct": true,
+      "generator_error": null,
+      "id": "N41",
+      "kind": "in_corpus",
+      "question": "what can i use to make my own hand hygiene posters",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.66,
+        "coverage": 0.77,
+        "question_support": 0.715,
+        "reasons": [
+          "low evidence coverage (0.77); unsupported terms: use, offer, along, also, list, tool, under"
+        ],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "use",
+          "offer",
+          "along",
+          "also",
+          "list",
+          "tool",
+          "under"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes, freezing can harm vaccines: inactivated vaccines, even when exposed to freezing temperatures, may not appear frozen, giving no visual indication of reduced or lost potency. Vaccines stored at inappropriate temperatures should not be administered unless public health authorities or the manufacturer confirm they are safe and effective based on stability data. To reduce the risk of freezing vaccines during transport, do not use frozen gel packs or coolant packs from original vaccine shipments to pack refrigerated vaccines, because they can still freeze vaccines even if they are conditioned or appear to be \"sweating\".",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#why-the-cold-chain-matters-p-7-1",
+        "cdc-vaccine-storage-toolkit-2026#coolants-for-transport-p-32-0"
+      ],
+      "cited": true,
+      "confidence": 0.722,
+      "correct": false,
+      "generator_error": null,
+      "id": "N42",
+      "kind": "in_corpus",
+      "question": "can freezing damage vaccines",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.722,
+        "coverage": 0.947,
+        "question_support": 0.601,
+        "reasons": [],
+        "retrieval_relevance": 0.923,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "harm",
+          "becaus"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "NO4",
+      "kind": "out_of_corpus",
+      "question": "what is the recommended size of a hospital waiting room",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "NO5",
+      "kind": "out_of_corpus",
+      "question": "how do i calibrate a blood pressure monitor",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "U01",
+      "kind": "in_corpus",
+      "question": "What are the benefits of hand rub?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "U02",
+      "kind": "in_corpus",
+      "question": "What is the chemical composition / composition of hand rub ?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Isopropyl alcohol is present in at least one commercial hand rub, as reflected in the reference \"Dermal absorption of isopropyl alcohol from a commercial hand rub: implications for its use in hand decontamination\".",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#america-morbidity-and-mortality-weekly-p-51-5"
+      ],
+      "cited": true,
+      "confidence": 0.672,
+      "correct": false,
+      "generator_error": null,
+      "id": "U03",
+      "kind": "in_corpus",
+      "question": "Which alcohol is present in hand rub?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.672,
+        "coverage": 0.672,
+        "question_support": 1.0,
+        "reasons": [
+          "low evidence coverage (0.67); unsupported terms: present, least, one, reflect, referenc"
+        ],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "present",
+          "least",
+          "one",
+          "reflect",
+          "referenc"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "U04",
+      "kind": "in_corpus",
+      "question": "Is hand rub safe to drink ?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "U05",
+      "kind": "out_of_corpus",
+      "question": "Can we use hand rub as a nail polish remover ?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "U06",
+      "kind": "out_of_corpus",
+      "question": "Which is the best hand rub company ?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "U07",
+      "kind": "out_of_corpus",
+      "question": "Who discovered hand rub and when it was used for the first time.",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "U08",
+      "kind": "out_of_corpus",
+      "question": "Is the hand rub used in hospitals are same as domestic use.",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "U09",
+      "kind": "in_corpus",
+      "question": "What are the disadvantages of using hand rub ?",
+      "split": "sealed",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.9375,
+    "capped_precision@10": 0.8562,
+    "capped_precision@5": 0.8875,
+    "hit@1": 0.3125,
+    "hit@10": 0.75,
+    "hit@5": 0.625,
+    "mrr": 0.4273,
+    "n": 16,
+    "precision@1": 0.9375,
+    "precision@10": 0.8562,
+    "precision@5": 0.8875,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N31",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what room temperature suits the vaccine fridge",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N32",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long can the mResvia syringe stay at room temperature before use",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N33",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "how long can previously frozen varicella vaccine sit in the fridge before it is mixed",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N34",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "how soon must smallpox vaccine be given after exposure",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N35",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "what antiseptics are used for hand hygiene",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N36",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "is bar soap acceptable for handwashing",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N37",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what are the steps to start a hand hygiene programme from scratch",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N38",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what do i do if a soap dispenser is partly empty",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N40",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "what is the date of the 2026 WHO IPC newsletter",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.1,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N41",
+        "precision@1": 0.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "what can i use to make my own hand hygiene posters",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-ipc-newsletter-2026-04",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "N42",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "can freezing damage vaccines",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "U01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the benefits of hand rub?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "U02",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "What is the chemical composition / composition of hand rub ?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "U03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Which alcohol is present in hand rub?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "U04",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Is hand rub safe to drink ?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 9,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "U09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the disadvantages of using hand rub ?",
+        "rr": 0.1111111111111111,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "N31",
+      "question": "what room temperature suits the vaccine fridge",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Do not add soap (IA) or alcohol-based formulations (II) to a partially empty soap dispenser. If soap dispensers are reused, follow recommended procedures for cleansing.",
+      "confidence": 0.596,
+      "id": "N38",
+      "question": "what do i do if a soap dispenser is partly empty",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.60)"
+    },
+    {
+      "answer": "Yes, freezing can harm vaccines: inactivated vaccines, even when exposed to freezing temperatures, may not appear frozen, giving no visual indication of reduced or lost potency. Vaccines stored at inappropriate temperatures should not be ad",
+      "confidence": 0.722,
+      "id": "N42",
+      "question": "can freezing damage vaccines",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "U01",
+      "question": "What are the benefits of hand rub?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "U02",
+      "question": "What is the chemical composition / composition of hand rub ?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Isopropyl alcohol is present in at least one commercial hand rub, as reflected in the reference \"Dermal absorption of isopropyl alcohol from a commercial hand rub: implications for its use in hand decontamination\".",
+      "confidence": 0.672,
+      "id": "U03",
+      "question": "Which alcohol is present in hand rub?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": "low evidence coverage (0.67); unsupported terms: present, least, one, reflect, referenc"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "U04",
+      "question": "Is hand rub safe to drink ?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "U09",
+      "question": "What are the disadvantages of using hand rub ?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    }
+  ],
+  "rewrite": false,
+  "split": "sealed",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9091,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6875,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.1818,
+      "validated_precision": 0.8182
+    },
+    {
+      "correct_but_flagged_rate": 0.1111,
+      "decision_accuracy": 0.8636,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.625,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
+    },
+    {
+      "correct_but_flagged_rate": 0.2222,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5625,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.2222,
+      "validated_precision": 0.7778
+    },
+    {
+      "correct_but_flagged_rate": 0.3333,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.4375,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.1429,
+      "validated_precision": 0.8571
+    },
+    {
+      "correct_but_flagged_rate": 0.4444,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.3125,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.4444,
+      "decision_accuracy": 0.8182,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.3125,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.5556,
+      "decision_accuracy": 0.7727,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.25,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.8889,
+      "decision_accuracy": 0.6364,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.0625,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.8636,
+    "in_corpus": {
+      "answer_correct_rate": 0.5625,
+      "correct_but_flagged_rate": 0.1111,
+      "mean_confidence": 0.5222,
+      "n": 16,
+      "pass_rate": 0.625,
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.0,
+      "n": 6,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}
