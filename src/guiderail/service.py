@@ -35,16 +35,18 @@ def _citation(hit: Hit) -> dict:
 
 class QAService:
     def __init__(self, loaded: LoadedIndex, generator: Generator | None = None,
-                 threshold: float = DEFAULT_THRESHOLD, rerank_weight: float | None = None):
+                 threshold: float = DEFAULT_THRESHOLD, rerank_weight: float | None = None, rewriter=None):
         self.loaded = loaded
         self.lexicon = Lexicon(loaded.chunks)
         self.retriever = Retriever(loaded, self.lexicon, config.rerank_weight() if rerank_weight is None else rerank_weight,
                                    hybrid=config.hybrid())
         self.generator = generator or ExtractiveGenerator(self.lexicon)
         self.threshold = threshold
+        self.rewriter = rewriter
 
     def ask(self, question: str, top_k: int = 5) -> QAResult:
-        hits = self.retriever.expand_sparse(self.retriever.search(question, top_k))
+        rewrite = self.rewriter.rewrite(question) if self.rewriter is not None else None
+        hits = self.retriever.expand_sparse(self.retriever.search(question, top_k, rewrite=rewrite))
         error = None
         try:
             generated = self.generator.generate(question, hits)
@@ -67,6 +69,7 @@ class QAService:
         )
         debug = {
             "generator": self.generator.name,
+            "rewrite": rewrite,
             "validation": validation.to_dict(),
             "evidence": [{**_citation(h), "via": h.via} for h in hits],
         }

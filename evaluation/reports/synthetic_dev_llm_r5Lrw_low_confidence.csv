@@ -1,0 +1,4 @@
+id,reason,confidence,question,answer,validator_notes
+S01,flagged: low confidence,0.326,How long should I rub alcohol-based hand sanitizer on my hands?,"The CDC says to rub alcohol-based hand rub until hands are dry, which usually takes about 20 seconds. The WHO says to use an alcohol-based hand rub for 20 to 30 seconds when hands are not visibly soiled, an increase from 15 to 20 seconds in",number(s) not found in evidence: 2019; low evidence coverage (0.47); unsupported terms: say
+S11,correct answer withheld,0.453,What bleach strength is used for blood spills?,"Use 0.5 percent sodium hypochlorite for blood and body fluid spills, compared with 0.1 percent for routine disinfection.",weak relevance to the question (0.50)
+S29,correct answer withheld,0.543,Which vaccine needs a booster every ten years?,"Give one dose of Tdap, then a Td or Tdap booster every 10 years.",weak relevance to the question (0.54)

@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_THRESHOLD = 0.6
 DEFAULT_RERANK_WEIGHT = 0.5      # chosen on the dev split; 0 turns the lexical re-ranker off
 DEFAULT_LLM_MODEL = "claude-opus-5-5"
+DEFAULT_REWRITE_MODEL = "claude-haiku-4-5-20251001"
 
 
 def load_env_file(path: Path | None = None) -> None:
@@ -54,6 +55,16 @@ def generator_name() -> str:
     if name not in {"extractive", "llm"}:
         raise ValueError(f"GUIDERAIL_GENERATOR must be 'extractive' or 'llm', got {name!r}")
     return name
+
+
+def rewrite() -> bool:
+    """Query rewriting in the Claude mode. Off by default: the evaluation showed no end-to-end benefit (see the round 5 outcome).
+    GUIDERAIL_REWRITE=1 turns it on."""
+    return os.environ.get("GUIDERAIL_REWRITE", "0").lower() in {"1", "true", "yes", "on"}
+
+
+def rewrite_model() -> str:
+    return os.environ.get("GUIDERAIL_REWRITE_MODEL", DEFAULT_REWRITE_MODEL)
 
 
 def llm_model() -> str:

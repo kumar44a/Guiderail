@@ -30,6 +30,8 @@ def main() -> int:
     ap.add_argument("--rerank-weight", type=float, default=None,
                     help="lexical re-ranking weight (default: config, 0 = off)")
     ap.add_argument("--tag", default="", help="suffix for report file names, e.g. a change label")
+    ap.add_argument("--rewrite-cache", default=None,
+                    help="turn on query rewriting (API calls on cache misses) and read/write rewrites in this JSON file")
     args = ap.parse_args()
 
     loaded = fresh_index(args.corpus)
@@ -46,14 +48,20 @@ def main() -> int:
         config.load_env_file()
         from guiderail.generators.llm import LlmGenerator
         generator = LlmGenerator()
-    service = QAService(loaded, generator=generator, threshold=args.threshold, rerank_weight=args.rerank_weight)
+    rewriter = None
+    if args.rewrite_cache:
+        config.load_env_file()
+        from guiderail.rewrite import QueryRewriter
+        rewriter = QueryRewriter(cache_path=args.rewrite_cache)
+    service = QAService(loaded, generator=generator, threshold=args.threshold, rerank_weight=args.rerank_weight, rewriter=rewriter)
 
     records = run_qa(queries, service)
     report = {
         "corpus": args.corpus, "split": args.split, "generator": service.generator.name,
         "threshold": args.threshold, "index_sha256": sha, "manifest_counts": loaded.manifest["counts"],
         "rerank_weight": service.retriever.rerank_weight,
-        "retrieval": retrieval_eval(queries, service.retriever),
+        "retrieval": retrieval_eval(queries, service.retriever, rewriter=rewriter),
+        "rewrite": bool(rewriter),
         "validation": summarize(records, args.threshold),
         "sweep": sweep(records),
         "review": review_list(records, args.threshold),

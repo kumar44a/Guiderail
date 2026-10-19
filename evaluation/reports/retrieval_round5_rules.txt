@@ -24,3 +24,14 @@ Step 2, end to end with the Claude generator, dev only, one run with rewriting a
   is noise): out-of-corpus questions wrongly validated must not rise, and wrong-but-validated answers must not rise by more than 1.
 If a rule fails, E is reverted and the failure reported. Latency and cost per question are measured and reported either way.
 Then: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.
+
+ROUND 5 OUTCOME (written after the measurements; the rules above were committed first)
+Step 1 (retrieval only, cached rewrites): real-dev Hit@5 41 -> 41, MRR 0.6566 -> 0.6897 (+0.033, bar +0.03); synthetic unchanged; earlier real dev Hit@5
+unchanged. The bar was met narrowly and only through MRR. Mixed per query: rescues (N07, N04, N18 to rank 8) and losses (N20 3 -> 7, N03 out of top 10).
+Step 2 (Claude end to end, dev, one run each): real pass 33 / 33, wrong-but-validated 3 / 3, out-of-scope accepted 0 / 0; synthetic within noise.
+Safe, but no end-to-end benefit shown. On the owner's four questions: one gain, one loss, four unchanged failures.
+Decision: the pre-registered keep rule is met, so the code stays. Because the end-to-end benefit is not demonstrated and rewriting adds a call, about a
+second of latency and nondeterminism, it ships OFF by default (GUIDERAIL_REWRITE=1 turns it on in Claude mode). This is a more conservative choice than
+the rule required and is reported as such.
+Diagnosis of the duration question with rewriting on: the answer chunk (Figure II.1) is 80 words of mostly figure instructions, so the fact is diluted;
+ranks 1-6 are two short figure captions, a glossary entry and three reference-list chunks.

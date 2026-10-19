@@ -1,0 +1,4 @@
+id,reason,confidence,question,answer,validator_notes
+S11,correct answer withheld,0.578,What bleach strength is used for blood spills?,"Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills. Rate the strength of evidence as high, moderate, low or insufficient. Panels should record a recommendation as supported only when",weak relevance to the question (0.58)
+S23,VALIDATED BUT WRONG,0.859,What are the steps of shared decision making?,This document defines shared decision making and describes how clinicians should apply it when more than one reasonable option exists. Shared decision making is most useful when evidence is uncertain or when options carry different trade-of,
+S47,VALIDATED BUT OUT OF CORPUS,0.837,What is the incubation period of influenza?,Declare the outbreak over after two maximum incubation periods have passed without a new case.,

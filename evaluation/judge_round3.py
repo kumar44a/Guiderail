@@ -44,6 +44,9 @@ def main() -> int:
     ap.add_argument("--step", required=True)
     ap.add_argument("--against", required=True)
     ap.add_argument("--determinism", action="store_true")
+    ap.add_argument("--min-queries", type=int, default=1, help="gain bar: real-dev Hit@5 must rise by this many queries ...")
+    ap.add_argument("--min-mrr", type=float, default=0.02, help="... or MRR by this much (round 5 uses 3 and 0.03)")
+    ap.add_argument("--retrieval-only", action="store_true", help="skip the extractive error guards G3 and G4 (round 5 step 1)")
     args = ap.parse_args()
 
     out, ok = {"step": args.step, "against": args.against}, True
@@ -53,7 +56,7 @@ def main() -> int:
     (hb, n), (hs, _) = hit5(rb), hit5(rs)
     mrr_b, mrr_s = rb["retrieval"]["mrr"], rs["retrieval"]["mrr"]
     out["real_dev"] = {"n": n, "hit5_before": hb, "hit5_after": hs, "mrr_before": round(mrr_b, 4), "mrr_after": round(mrr_s, 4)}
-    gain = (hs - hb >= 1 or mrr_s - mrr_b >= 0.02) and hs >= hb
+    gain = (hs - hb >= args.min_queries or mrr_s - mrr_b >= args.min_mrr) and hs >= hb
     g1 = hit5(ss)[0] >= hit5(sb)[0] and ss["retrieval"]["mrr"] >= sb["retrieval"]["mrr"] - 0.01
     g2 = hit5(rs, old)[0] >= hit5(rb, old)[0]
     eb = {c: errors(r) for c, r in (("real", rb), ("synthetic", sb))}
@@ -74,6 +77,8 @@ def main() -> int:
     out["errors_before"], out["errors_after"] = eb, es
     out["stress"] = {"bad_flagged": [stb["bad_answers_flagged_rate"], sts["bad_answers_flagged_rate"]],
                      "good_accepted": [stb["good_answers_accepted_rate"], sts["good_answers_accepted_rate"]]}
+    if args.retrieval_only:
+        g3 = g4 = True
     out["rules"] = {"gain": gain, "G1": g1, "G2": g2, "G3": g3, "G4": g4, "G5": g5}
     out["keep"] = bool(gain and g1 and g2 and g3 and g4 and g5 is not False)
     (REPORTS / f"retrieval_round3_{args.step}.json").write_text(json.dumps(out, indent=2), encoding="utf-8")

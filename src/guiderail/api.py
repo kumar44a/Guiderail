@@ -64,7 +64,16 @@ def _build_generator() -> Generator | None:
     return None  # QAService default (extractive)
 
 
-def create_app(index_dir=None, generator: Generator | None = None, threshold: float | None = None) -> FastAPI:
+def _build_rewriter():
+    """Query rewriting is part of the Claude mode only; the offline extractive mode never calls an API."""
+    if config.generator_name() == "llm" and config.rewrite():
+        from .rewrite import QueryRewriter
+
+        return QueryRewriter()
+    return None
+
+
+def create_app(index_dir=None, generator: Generator | None = None, threshold: float | None = None, rewriter=None) -> FastAPI:
     config.load_env_file()     # .env supplies defaults; real environment variables win
     @asynccontextmanager
     async def lifespan(app: FastAPI):
@@ -73,6 +82,7 @@ def create_app(index_dir=None, generator: Generator | None = None, threshold: fl
             loaded,
             generator=generator or _build_generator(),
             threshold=config.threshold() if threshold is None else threshold,
+            rewriter=rewriter if rewriter is not None else (_build_rewriter() if generator is None else None),
         )
         yield
 

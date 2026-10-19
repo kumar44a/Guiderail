@@ -131,10 +131,10 @@ def validate_labels(queries: list[Query], chunks: list[Chunk]) -> list[str]:
 
 # ---------------------------------------------------------------- retrieval
 
-def retrieval_eval(queries: list[Query], retriever: Retriever, ks=DEFAULT_KS) -> dict:
+def retrieval_eval(queries: list[Query], retriever: Retriever, ks=DEFAULT_KS, rewriter=None) -> dict:
     rows = []
     for q in (q for q in queries if q.kind == "in_corpus"):
-        hits = retriever.search(q.question, top_k=max(ks))
+        hits = retriever.search(q.question, top_k=max(ks), rewrite=rewriter.rewrite(q.question) if rewriter else None)
         relevant = [h.chunk.doc_id in q.relevant_docs for h in hits]
         bearing = [is_answer_bearing(h.chunk, q) for h in hits]
         first = next((i + 1 for i, b in enumerate(bearing) if b), None)

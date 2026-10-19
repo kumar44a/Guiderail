@@ -1,0 +1,16 @@
+Retrieval round 6: chunk size. Written and committed BEFORE any code or measurement.
+
+Why: round 5's diagnosis. Facts inside long chunks of mostly other text (a figure, a list) are diluted for both the hashed vectors and BM25.
+The chunk budget (80 words) has never been varied. Shorter chunks should let a short fact stand on its own; the cost is less context per chunk.
+
+Candidates: maximum chunk length of 50 words and of 35 words (the baseline is the kept state of round 3: 80 words, hybrid on, rewriting off).
+Everything else unchanged. The index is rebuilt for each candidate; documents, loader and retrieval code are untouched. The neighbour fallback for
+very short chunks (fewer than 25 words) is unchanged.
+
+Judged exactly as in round 3: real-dev Hit@5 must rise by at least one query or MRR by at least 0.02 with no fall in Hit@5, and the guards hold:
+G1 synthetic dev Hit@5 not lower and MRR not lower by more than 0.01; G2 earlier real dev queries' Hit@5 not lower; G3 with the extractive generator,
+dev wrong-but-validated answers and out-of-scope accepts do not rise on either corpus; G4 validator stress not worse; G5 index builds byte-identical.
+If both candidates pass, the one with the higher real-dev MRR is kept. If neither passes, 80 words stays.
+Because chunk size changes how much context the generator and validator see, a candidate that passes must also be checked end to end with the Claude
+generator on dev (once): out-of-scope accepts must not rise and wrong-but-validated answers must not rise by more than 1.
+Then: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.

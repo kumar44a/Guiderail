@@ -37,8 +37,11 @@ class Retriever:
         self._unit_tokens: dict[str, list[set[str]]] = {}
         self._by_position = {(c.doc_id, c.position): c for c in self.chunks}
 
-    def search(self, question: str, top_k: int = 5, include_superseded: bool = False) -> list[Hit]:
+    def search(self, question: str, top_k: int = 5, include_superseded: bool = False, rewrite: str | None = None) -> list[Hit]:
         """Top-k chunks by cosine similarity.
+
+        `rewrite` (optional search keywords from the query rewriter) is appended to the question for FAISS, BM25 and the lexical re-ranker.
+        Hit.score is always the cosine to the ORIGINAL question, so the validator's relevance input is independent of any rewrite.
 
         Version policy: chunks from superseded documents are skipped unless
         `include_superseded` is set, so a withdrawn recommendation is never cited
@@ -47,16 +50,20 @@ class Retriever:
         total = self.index.ntotal
         if total == 0 or top_k < 1:
             return []
-        query = embed(question)
-        if not query.any():
+        original = embed(question)
+        if not original.any():
             return []
+        if rewrite:
+            question, query = f"{question} {rewrite}", embed(f"{question} {rewrite}")
+        else:
+            query = original
         if self.hybrid:
-            return self._search_hybrid(question, query, top_k, include_superseded)
+            return self._search_hybrid(question, query, original, top_k, include_superseded)
         fetch = min(total, max(top_k * 4, 20, RERANK_POOL if self.rerank_weight else 0))
         while True:
             scores, ids = self.index.search(query.reshape(1, -1), fetch)
             hits = [
-                Hit(self.chunks[i], float(s))
+                Hit(self.chunks[i], float(s) if rewrite is None else float(np.dot(original, self.index.reconstruct(int(i)))))
                 for s, i in zip(scores[0], ids[0])
                 if i >= 0 and (include_superseded or self.chunks[i].is_latest)
             ]
@@ -66,7 +73,7 @@ class Retriever:
                 return hits[:top_k]
             fetch = min(total, fetch * 2)
 
-    def _search_hybrid(self, question: str, query: np.ndarray, top_k: int, include_superseded: bool) -> list[Hit]:
+    def _search_hybrid(self, question: str, query: np.ndarray, original: np.ndarray, top_k: int, include_superseded: bool) -> list[Hit]:
         """FAISS and BM25 each propose candidates; reciprocal rank fusion decides which enter the re-ranking pool."""
         total = self.index.ntotal
         allowed = (lambda i: True) if include_superseded else (lambda i: self.chunks[i].is_latest)
@@ -79,7 +86,7 @@ class Retriever:
             fetch = min(total, fetch * 2)
         sparse = [i for i, _ in self._bm25.rank(tokenize(question), FUSION_POOL, allowed)]
         pool = reciprocal_rank_fusion([dense, sparse])[:max(RERANK_POOL, top_k)]
-        hits = [Hit(self.chunks[i], float(np.dot(query, self.index.reconstruct(i)))) for i in pool]
+        hits = [Hit(self.chunks[i], float(np.dot(original, self.index.reconstruct(i)))) for i in pool]
         if self.rerank_weight:
             hits = self._rerank(question, hits)
         return hits[:top_k]
