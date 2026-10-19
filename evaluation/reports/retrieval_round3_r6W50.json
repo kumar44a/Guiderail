@@ -1,0 +1,70 @@
+{
+  "step": "r6W50",
+  "against": "r3B",
+  "real_dev": {
+    "n": 50,
+    "hit5_before": 41,
+    "hit5_after": 40,
+    "mrr_before": 0.6566,
+    "mrr_after": 0.6655
+  },
+  "synthetic_dev": {
+    "hit5": [
+      20,
+      20,
+      20
+    ],
+    "mrr": [
+      0.825,
+      0.8042
+    ]
+  },
+  "real_dev_old_queries_hit5": [
+    22,
+    22,
+    24
+  ],
+  "errors_before": {
+    "real": {
+      "wrong_validated": 11,
+      "ooc_accepted": 3,
+      "correct_validated": 31
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 18
+    }
+  },
+  "errors_after": {
+    "real": {
+      "wrong_validated": 10,
+      "ooc_accepted": 4,
+      "correct_validated": 33
+    },
+    "synthetic": {
+      "wrong_validated": 1,
+      "ooc_accepted": 2,
+      "correct_validated": 17
+    }
+  },
+  "stress": {
+    "bad_flagged": [
+      0.8889,
+      0.8889
+    ],
+    "good_accepted": [
+      0.8235,
+      0.7647
+    ]
+  },
+  "rules": {
+    "gain": false,
+    "G1": false,
+    "G2": true,
+    "G3": false,
+    "G4": false,
+    "G5": null
+  },
+  "keep": false
+}

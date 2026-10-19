@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import tempfile
 from pathlib import Path
@@ -19,7 +20,9 @@ from guiderail.index import save_index  # noqa: E402
 from guiderail.loaders import MarkdownLoader, PdfLoader  # noqa: E402
 
 
-def build(corpus: Path, out: Path, max_words: int = DEFAULT_MAX_WORDS, loader: str = "markdown") -> dict:
+def build(corpus: Path, out: Path, max_words: int | None = None, loader: str = "markdown") -> dict:
+    """GUIDERAIL_MAX_WORDS overrides the chunk budget (used by the evaluation to compare chunk sizes)."""
+    max_words = max_words or int(os.environ.get("GUIDERAIL_MAX_WORDS", DEFAULT_MAX_WORDS))
     docs = (PdfLoader if loader == "pdf" else MarkdownLoader)(corpus).load()
     chunks, removed = chunk_corpus(docs, max_words)
     return save_index(out, docs, chunks, duplicates_removed=removed, max_words=max_words)

@@ -14,3 +14,9 @@ If both candidates pass, the one with the higher real-dev MRR is kept. If neithe
 Because chunk size changes how much context the generator and validator see, a candidate that passes must also be checked end to end with the Claude
 generator on dev (once): out-of-scope accepts must not rise and wrong-but-validated answers must not rise by more than 1.
 Then: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.
+
+ROUND 6 OUTCOME (written after the measurements)
+  50 words: real-dev Hit@5 41 -> 40, MRR 0.6566 -> 0.6655; synthetic MRR 0.825 -> 0.804; stress set worse; extractive out-of-scope accepts up. REVERTED.
+  35 words: real-dev Hit@5 41 -> 37, MRR 0.6566 -> 0.6027. REVERTED.
+  80 words stays. (judge outputs: retrieval_round3_r6W50.json, retrieval_round3_r6W35.json)
+Net result of rounds 3-6 on retrieval: only hybrid BM25 + FAISS fusion (B) was kept; Claude query rewriting (round 5) is available but off by default.

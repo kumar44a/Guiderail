@@ -1,0 +1,27 @@
+Validator round 3. Written and committed BEFORE any code change and before any measurement.
+
+Why: end to end, the Claude generator answers about four in five real-dev questions correctly, but the validator withholds about one in five of the
+correct answers (9 of 50 in the latest dev run; reasons read from the validator's own recorded components, no new run):
+  - low question support although the answer is right: the answer says "refrigerator" or "stabilize", the question said "fridge" or "settle" (6 cases);
+  - number checks that misfire: "1:10" read as unsupported because the PDF glues a footnote onto it ("1:10.303"), and "2026 posters" read as an
+    unsupported quantity because the word after a number is treated as its unit (3 cases).
+Scope: the validator only. Retrieval, generators, prompts, threshold (0.6), weights and floors are untouched. Fixes are judged one at a time, cumulatively,
+in this order:
+  V1  The number-with-unit check applies only when the word after the number is a real unit: second, minute, hour, day, week, month, year, feet, foot,
+      inch, cm, mm, meter, metre, degree, C, F, percent, %, mg, ml, mcg, g, kg, dose. The plain check that every number in the answer occurs in the
+      evidence is unchanged.
+  V2  An evidence number written as digits, a point and exactly three digits ("10.303") also supports its integer part ("10"). This repairs numbers that the
+      PDF text extraction fused with a footnote reference. It cannot support a decimal such as "10.5".
+  V3  Question support also credits question terms that occur in the text of the CITED passages, not only in the answer and the cited titles. If a cited
+      passage contains the question's words, the passage is about the question even when the answer does not repeat them.
+Material: only reports made with the CURRENT retrieval configuration, so the evidence can be rebuilt exactly: real and synthetic dev, extractive
+(retrieval round 3's kept state, tag r3B) and Claude (latest runs, tag r5Lbase), plus the validator stress set. evaluation/revalidate.py must first reproduce
+every stored confidence exactly under the current validator (--verify); if it does not, stop. No API calls are made in this round until the final run.
+Keep rule for each fix, on that material (all must hold):
+  A  in no report does the number of wrong-but-validated answers or of out-of-scope accepts go up;
+  B  no stress case decided correctly before is decided wrongly after, and the share of bad answers sent to review does not fall;
+  C  at least one correct answer that was withheld is validated.
+If A fails for V3 the fix is reverted whole; no weaker variant is tried in this round. Later fixes are judged without a reverted one.
+After the last kept fix: freeze, regenerate the report tables on the shipped configuration, run the sealed set once per generator. Nothing is tuned on it.
+Expectation stated in advance: V1 and V2 are narrow and should pass. V3 loosens a check and may well fail A on the extractive reports, which is the
+reason it is judged on them.
