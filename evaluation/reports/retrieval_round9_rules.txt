@@ -1,0 +1,32 @@
+Round 9: raising the Claude pass rate on real PDFs. Written and committed BEFORE any Claude measurement. (The code switch GUIDERAIL_LLM_CONTEXT, default 0 = off, exists but does nothing until set.)
+
+Target: Claude pass rate (validated / in-corpus) at threshold 0.6 of at least 80% on the real-PDF held-out test split. The last measurement was 18 of 24 (75%): 5 abstentions and 1 correct answer held back by the validator.
+
+Honest priors, stated before measuring:
+ - Most Claude abstentions are retrieval misses. On the real dev split (65 questions) the Claude run abstained on 11; for 8 of them no chunk carrying the fact appears in the top 10, 1 appears at rank 9 and
+   2 at ranks 1 to 2 (Claude abstained although the evidence was present). On the test split the abstentions' fact ranks are 1, 4, 7 and none. So the two levers below can at best recover a few
+   questions; a miss where the fact is nowhere in the top 10 is not fixable by them.
+ - The earlier Claude query rewrite showed no end-to-end benefit on dev (round 5).
+ - The test split has 24 questions; one question is 4.2 points. Reaching 80% means gaining two. That is within noise, so a pass there alone is weak evidence; the extra checks below exist for that reason.
+ - Exposure: I have seen the test split's per-question results for the Claude run, including the fact ranks quoted above. The levers are chosen from patterns on DEV (above), and judged on dev only.
+
+Candidates, tried in this order, each against the kept state (Claude generator, current shipped configuration, document cohesion 0.5):
+ K1 the Claude generator sees the top 8 passages instead of top_k (GUIDERAIL_LLM_CONTEXT=8). Retrieval, index and validator logic unchanged; the validator sees the passages the generator saw.
+ K2 K1 plus the Claude question rewrite (GUIDERAIL_REWRITE=1, cached) .
+ K3 only if K1 or K2 is kept and leaves dev abstentions where the evidence was present: a one-line change to prompt rule 6 so Claude gives the part of the answer a passage states instead of NOT_IN_EVIDENCE
+    when a passage addresses the question (text committed with the run).
+
+Baseline noise: the Claude generator is not deterministic. The baseline is the existing "cur" dev reports AND one fresh repeat run of the current configuration (tag r9base2), so run-to-run noise is measured.
+
+Dev material: real dev (65 answerable-plus-out-of-scope as in "real dev", Claude generator) and synthetic dev (20 + 5). One Claude run per candidate.
+Keep rule (all must hold, against BOTH baseline runs):
+ Q1 real dev pass count (validated in-corpus) rises by at least 2 questions over each baseline run.
+ Q2 wrong-but-validated count on real dev does not rise by more than 1; validated precision does not fall by more than 2 points.
+ Q3 out-of-scope accepts on real dev and synthetic dev do not rise at all.
+ Q4 synthetic dev pass count does not fall by more than 1.
+ Q5 no generator errors in any run (a run with failed requests is discarded and repeated, not scored).
+The smallest candidate that passes is kept; if K1 passes, K2 is not tried unless K3 needs it. If nothing passes, everything is reverted (switches stay off), the 80% target is reported as not met, and the round ends.
+
+If a candidate is kept: freeze it, then (1) run the real test split once with Claude and report the pass rate against 80% (MET only if at least 20 of 24); (2) re-run the four sealed sets (sealed to sealed4) once with Claude on the
+kept configuration as an independent replication, reported beside their earlier results; a gain on the test split that does not appear on the sealed sets is reported as probable noise. Then regenerate the shipped tables.
+Needs: Anthropic API credit (the account balance was empty at the end of round 8). Everything is reported as found.

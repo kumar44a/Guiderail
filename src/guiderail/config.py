@@ -53,6 +53,11 @@ def hybrid() -> bool:
 DEFAULT_DOC_COHESION = 0.5   # retrieval round 8: the smallest value that passed its keep rule
 
 
+def llm_context() -> int:
+    """How many passages the Claude generator may see (retrieval round 9). 0 means the caller's top_k, unchanged."""
+    return int(os.environ.get("GUIDERAIL_LLM_CONTEXT", "0") or 0)
+
+
 def doc_cohesion() -> float:
     """Weight of the document-cohesion re-rank bonus (retrieval round 8). 0 turns it off."""
     return float(os.environ.get("GUIDERAIL_DOC_COHESION", str(DEFAULT_DOC_COHESION)) or 0)

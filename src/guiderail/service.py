@@ -46,7 +46,8 @@ class QAService:
 
     def ask(self, question: str, top_k: int = 5) -> QAResult:
         rewrite = self.rewriter.rewrite(question) if self.rewriter is not None else None
-        hits = self.retriever.expand_sparse(self.retriever.search(question, top_k, rewrite=rewrite))
+        depth = max(top_k, config.llm_context()) if getattr(self.generator, "name", "") == "llm" else top_k
+        hits = self.retriever.expand_sparse(self.retriever.search(question, depth, rewrite=rewrite))
         error = None
         try:
             generated = self.generator.generate(question, hits)
