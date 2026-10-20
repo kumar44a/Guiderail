@@ -40,7 +40,7 @@ The current figures are in the README block and report sections 2 to 4. Read the
 
 - **Lexical retrieval.** Matching is by shared words, so a question worded differently from the document often misses the passage that answers it. This is the main weakness on real PDFs. A semantic embedding model would address it and was ruled out for this project.
 - **The extractive generator is unsafe on real PDFs.** It can validate figure captions or reference entries as answers, including for questions the documents do not cover. Use the Claude generator for real documents.
-- **The Claude generator withholds many correct answers** on real documents, and is nondeterministic.
+- **The Claude generator withholds many correct answers** on real documents, and is nondeterministic. After the last retrieval change it also withheld two more synthetic held-out answers than before; whether that is the change or run-to-run variation was not established (see the development notes).
 - **Independent evidence is thin and author-biased.** The synthetic corpus, queries, labels and stress cases were written by the same AI that wrote the system; no clinician has reviewed any guideline text, query, label or answer. The owner's question sets came without expected answers, so the labels are the assistant's reading of the PDFs (one was wrong and was corrected, and many are loosely worded). Only a few sealed questions are out of scope, so false-accept behaviour is barely measured.
 - **Answer-correct is a fact-string proxy**, which misses some correct paraphrases and over-credits loose labels.
 - **Real-PDF extraction** is lossy (reference lists become noise, figure text is jumbled, image-only pages give no text, no OCR). The French WHO file was excluded.
