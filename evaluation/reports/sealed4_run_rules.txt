@@ -12,3 +12,7 @@ The labels are the assistant's judgement; the owner is asked to check them.
 
 Configuration: frozen, as for every earlier sealed run. One run per generator, logged in test_split_runs.log. Nothing is changed afterwards on the strength of these results.
 Reported as found; not pooled with the other sealed sets.
+
+OUTCOME NOTE (added after the run): run afterwards, the "no local partner" question and the "long power outage" question were both answered from the toolkit (alternative storage
+facilities; leave the door sealed unless the temperature can be monitored), so they were answerable; the single-dose-vial-in-freezer question got no answer from either generator.
+Results: generated report section 16.

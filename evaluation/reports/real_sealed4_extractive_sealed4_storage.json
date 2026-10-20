@@ -1,0 +1,2507 @@
+{
+  "corpus": "real",
+  "generator": "extractive",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Between -90°C and -60°C (-130°F and -76°F) for an ultra-cold freezer. 6. If appropriate for the unit, consider adding extra water bottles to improve temperature stability. Never leave vaccines in a storage unit that does not maintain temperatures within the recommended range. If the unit is unable to stabilize the temperature within the required range, or if temperatures in the unit consistently fall at the extreme high or low end of the range, the vaccine supply is at high risk Ultra-cold freezers between -90°C and -60°C (-130°F and -76°F) Thermostats should be set at the factory-set or midpoint temperature—for example, 5°C (41°F) for refrigerators or -20°C (-4°F) for freezers—to help reduce the risk of temperature excursions. Consult the owner’s manual for instructions on how to operate the thermostat. Thermostats are marked in various ways and, in general, show levels of coldness rather than temperatures. The only way to know the temperature of a vaccine storage unit is to measure and The freezer of a household-grade unit may be used for non-vaccine medical storage, so long as the use does not compromise the temperature range within the refrigerator compartment.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#5-repeat-these-steps-as-needed-until-the-temperature-has-stabilized-p-21-1",
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-1",
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-5"
+      ],
+      "cited": true,
+      "confidence": 0.923,
+      "correct": false,
+      "generator_error": null,
+      "id": "S01",
+      "kind": "in_corpus",
+      "question": "What are the specific temperature ranges required for refrigerators, standard freezers, and ultra-cold storage units?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.923,
+        "coverage": 1.0,
+        "question_support": 0.847,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccine Storage Units: Refrigerator and Freezer Four types of units are suitable for storing vaccines and are listed below in order of preference.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-equipment-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 0.985,
+      "correct": false,
+      "generator_error": null,
+      "id": "S02",
+      "kind": "in_corpus",
+      "question": "Which four types of storage units are suitable for storing vaccines, and what is their CDC order of preference?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.985,
+        "coverage": 1.0,
+        "question_support": 0.97,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not turn off the freezer compartment, as this will Water bottles are not recommended for use with the majority of pharmaceutical-grade and purpose-built units. Although similar to pharmaceutical-grade units, purpose-built units are unique in their design for vaccine storage. Pharmaceutical-grade units are the third best option because they are specifically engineered to store pharmaceuticals or biologics. These units often have",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-1",
+        "cdc-vaccine-storage-toolkit-resources-2026#storage-units-p-2-0",
+        "cdc-vaccine-storage-toolkit-2026#3-pharmaceutical-grade-units-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 0.866,
+      "correct": true,
+      "generator_error": null,
+      "id": "S03",
+      "kind": "in_corpus",
+      "question": "What makes a purpose-built or pharmaceutical-grade unit superior to a household-grade unit?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.866,
+        "coverage": 1.0,
+        "question_support": 0.733,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "It may take 2 to 7 days to stabilize the temperature in a newly installed or repaired refrigerator, and 2 to 3 days for a freezer. After 2 consecutive days of temperatures recorded within the recommended range, the unit is considered stable and ready for use.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#stabilizing-temperatures-in-new-and-repaired-units-p-12-0",
+        "cdc-vaccine-storage-toolkit-2026#stabilizing-temperatures-in-new-and-repaired-units-p-12-1"
+      ],
+      "cited": true,
+      "confidence": 0.874,
+      "correct": true,
+      "generator_error": null,
+      "id": "S04",
+      "kind": "in_corpus",
+      "question": "How many consecutive days of stable temperature monitoring are required before stocking a newly installed or repaired refrigerator or freezer?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.874,
+        "coverage": 1.0,
+        "question_support": 0.749,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A digital data logger (DDL) is a specific type of TMD that has the capability for continuous monitoring and provides the most accurate storage unit temperature information, including details on how long a unit has been operating outside the recommended temperature range (referred to as a “temperature excursion”). Many purpose-built closed or doorless units may utilize air sensors (non-buffered probes).Because these units have very limited exposure to ambient air, buffered probes are not essential. • Many units include built-in digital data loggers (DDLs) with electronic interfaces that provide continuous temperature data and/or provide min/max readings. VFC providers must verify that these built-in DDLs meet VFC data logger requirements. Vaccine S torage Battery changes may affect temperature accuracy and may warrant checking against a known, calibrated TMD. Check with the device’s manufacturer for specific information on battery changes. Temperature data from a DDL can either be downloaded to a computer using special software or retrieved from a website. The software or website may also allow providers to set the frequency of temperature readings. Reviewing DDL data is critical for ensuring vaccine potency, so it is important to decide whether independent software or",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-0",
+        "cdc-vaccine-storage-toolkit-resources-2026#temperature-monitoring-p-2-0",
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-3"
+      ],
+      "cited": true,
+      "confidence": 0.775,
+      "correct": false,
+      "generator_error": null,
+      "id": "S05",
+      "kind": "in_corpus",
+      "question": "What key technical features must a digital data logger (DDL) possess to ensure reliable temperature tracking?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.775,
+        "coverage": 1.0,
+        "question_support": 0.55,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Place the buffered probe of the DDL in the center of the unit with the vaccines surrounding it. A device placed near the unit’s walls, floor, vent, ceiling, or door may indicate temperatures that are colder or warmer than the actual vaccine temperature. Certain purpose-built units may recommend alternate locations or have designated areas for probe placement. Consult the owner’s manual for detailed instructions on proper TMD placement in these units. Many purpose-built closed or doorless units may utilize air sensors (non-buffered probes).Because these units have very limited exposure to ambient air, buffered probes are not essential. • Many units include built-in digital data loggers (DDLs) with electronic interfaces that provide continuous temperature data and/or provide min/max readings. VFC providers must verify that these built-in DDLs meet VFC data logger requirements. Vaccine S torage Many DDLs use a buffered temperature probe, a device that provides the most accurate measurement of vaccine temperatures.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-placement-p-14-1",
+        "cdc-vaccine-storage-toolkit-resources-2026#temperature-monitoring-p-2-0",
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-1"
+      ],
+      "cited": true,
+      "confidence": 0.815,
+      "correct": true,
+      "generator_error": null,
+      "id": "S06",
+      "kind": "in_corpus",
+      "question": "Where should the buffered probe of a DDL be placed inside a storage unit to accurately reflect vaccine temperatures?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.815,
+        "coverage": 1.0,
+        "question_support": 0.631,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate enough to ensure vaccines are stored within correct temperature ranges. Using these devices can pose a significant risk of damaging vaccines. Always review the manufacturer’s package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that Each DDL or appropriate TMD should have a current and valid Certificate of Calibration Testing. Some vendors that perform calibration testing only issue certificates for units that pass. In these instances, the certificate may not explicitly state \"passed.\" If there is no indication of a passing result on the certificate, a statement from the vendor outlining their certification process may be kept on file as an alternative. If calibration testing indicates that a TMD is not accurate within ±0.5°C (±1°F), the TMD must be replaced.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-limitations-p-15-1",
+        "cdc-vaccine-storage-toolkit-2026#certificate-of-calibration-testing-p-15-0",
+        "cdc-vaccine-storage-toolkit-2026#certificate-of-calibration-testing-p-15-3"
+      ],
+      "cited": true,
+      "confidence": 0.912,
+      "correct": false,
+      "generator_error": null,
+      "id": "S07",
+      "kind": "in_corpus",
+      "question": "What information must be shown on a valid Certificate of Calibration Testing for a temperature monitoring device (TMD)?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.912,
+        "coverage": 1.0,
+        "question_support": 0.824,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate enough to ensure vaccines are stored within correct temperature ranges. Using these devices can pose a significant risk of damaging vaccines. Always review the manufacturer’s package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that If there is any question about accuracy, the device should be replaced or sent for calibration testing. Use of an appropriate temperature monitoring device and current calibration certificates",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-limitations-p-15-1",
+        "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-1",
+        "cdc-vaccine-storage-toolkit-2026#2-routine-storage-and-handling-procedures-p-8-0"
+      ],
+      "cited": true,
+      "confidence": 0.856,
+      "correct": false,
+      "generator_error": null,
+      "id": "S08",
+      "kind": "in_corpus",
+      "question": "How often should routine calibration testing be conducted on temperature monitoring devices?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.856,
+        "coverage": 1.0,
+        "question_support": 0.712,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Any actions taken if a temperature excursion occurred Some TMDs require resetting minimum/maximum temperatures to start tracking new readings for the next temperature check. Always follow the manufacturer’s instructions for proper use. Keep temperature logs for 3 years to track trends and recurring issues. VFC providers and others who administer vaccines purchased with public funds should contact their immunization program for state-specific requirements related to record keeping. If the device displays minimum/maximum temperatures, this information should be checked and recorded as soon as the vaccines are stored. VFC providers must review and document temperature data every hour using a DDL with a digital display and a probe in buffered material. Checking and recording in temperature logs the minimum/maximum temperatures at the start of each workday",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-temperature-monitoring-p-17-1",
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-3",
+        "cdc-vaccine-storage-toolkit-2026#staff-roles-and-responsibilities-p-9-1"
+      ],
+      "cited": true,
+      "confidence": 0.646,
+      "correct": false,
+      "generator_error": null,
+      "id": "S09",
+      "kind": "in_corpus",
+      "question": "What daily schedule and specific data points must staff record on standard temperature logs?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.646,
+        "coverage": 1.0,
+        "question_support": 0.722,
+        "reasons": [],
+        "retrieval_relevance": 0.57,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Any actions taken if a temperature excursion occurred Some TMDs require resetting minimum/maximum temperatures to start tracking new readings for the next temperature check. Always follow the manufacturer’s instructions for proper use. Keep temperature logs for 3 years to track trends and recurring issues. VFC providers and others who administer vaccines purchased with public funds should contact their immunization program for state-specific requirements related to record keeping. Temperatures should be monitored and documented in temperature logs when storing vaccines during an emergency. use the impacted vaccines. Be prepared to provide documentation of the event (e.g., temperature log data) for the best guidance. 6. Complete documentation of the event, including a. Action taken",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-temperature-monitoring-p-17-1",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-5"
+      ],
+      "cited": true,
+      "confidence": 0.707,
+      "correct": true,
+      "generator_error": null,
+      "id": "S10",
+      "kind": "in_corpus",
+      "question": "For how many years does the CDC mandate keeping physical or digital vaccine temperature logs on file?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.707,
+        "coverage": 1.0,
+        "question_support": 0.414,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "CHECKLIST FOR EMERGENCY VACCINE STORAGE, HANDLING, AND TRANSPORT Up-to-date contact information for Primary vaccine coordinator Backup vaccine coordinator Additional staff to assist in emergencies Immunization program Vaccine manufacturers Refrigerator and freezer maintenance and repair companies Temperature monitoring device (TMD) companies Utility/power company Vaccine storage unit ala rm company (if applicable) Generator repair company (if applicable) Sources for qualified cont ainers and packouts Descriptions of the roles a nd responsibilities of the primary and backup vaccine coordinators Information for each sto The backup coordinator, like the primary coordinator, should be an expert on the facility’s storage and handling SOPs. Updated contact lists (e.g., primary and backup vaccine coordinators, vaccine manufacturers, service providers)",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-resources-2026#checklist-of-general-information-p-3-0",
+        "cdc-vaccine-storage-toolkit-2026#staff-roles-and-responsibilities-p-9-0",
+        "cdc-vaccine-storage-toolkit-2026#1-general-information-p-8-0"
+      ],
+      "cited": true,
+      "confidence": 0.825,
+      "correct": true,
+      "generator_error": null,
+      "id": "S11",
+      "kind": "in_corpus",
+      "question": "What are the core responsibilities assigned to the primary and backup vaccine coordinators?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.825,
+        "coverage": 1.0,
+        "question_support": 0.65,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "All staff who receive vaccine deliveries, handle vaccines, or administer vaccines should be trained in general storage and handling practices and be familiar with their facility’s storage and handling standard operating procedures (SOPs). All staff members who are involved in vaccine management—from receiving shipments to administering vaccines—should be trained in general storage and handling practices and be familiar with their facility’s storage and handling SOPs. Train staff on routine vaccine storage and handling and emergency procedures.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#section-two-staffing-and-training-p-8-0",
+        "cdc-vaccine-storage-toolkit-2026#staff-training-p-10-0",
+        "cdc-vaccine-storage-toolkit-2026#staff-training-p-10-1"
+      ],
+      "cited": true,
+      "confidence": 0.695,
+      "correct": true,
+      "generator_error": null,
+      "id": "S12",
+      "kind": "in_corpus",
+      "question": "Under what circumstances or intervals must clinic staff receive mandatory vaccine storage and handling training?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.695,
+        "coverage": 1.0,
+        "question_support": 0.389,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Arrange stock for each vaccine type so that doses with the earliest expiration dates are placed in front of those with later expiration dates. Rotating stock at least weekly, so vaccines with the earliest expiration dates are used first If expired vaccines cannot be removed immediately, it must be possible to make them inaccessible inside the unit. *The inventory printout should be used to complete storage and handling and inventory sections of the site visit reviewer’s guide. Complete the following checklist and forms and store this information in an easily accessible area near the vaccine storage unit. CHECKLIST FOR NON-EMERGENCY VACCINE STORAGE, HANDLING, AND TRANSPORT",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#stock-rotation-and-removal-p-24-0",
+        "cdc-vaccine-storage-toolkit-2026#staff-roles-and-responsibilities-p-9-1",
+        "cdc-vaccine-storage-toolkit-resources-2026#vfc-vaccine-management-p-2-1"
+      ],
+      "cited": true,
+      "confidence": 0.916,
+      "correct": true,
+      "generator_error": null,
+      "id": "S13",
+      "kind": "in_corpus",
+      "question": "How should stock be arranged inside storage units so that products expiring earliest are used first (First-Expired, First-Out)?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.916,
+        "coverage": 1.0,
+        "question_support": 0.832,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccines and diluents must be carefully unpacked, stored at the recommended temperatures, and documented immediately upon arrival. Immediately upon arrival at the destination, unpack the vaccines and place them in a freezer at a temperature range between -50°C and -15°C (-58°F and +5°F) or -90°C and -60°C (-130°F and -76°F) for ultra-cold freezer storage. Any stand-a lone freezer that maintains these temperatures is acceptable. Vaccines must always be immediately checked and appropriately stored upon arrival.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#unpacking-vaccine-deliveries-p-22-0",
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-1",
+        "cdc-vaccine-storage-toolkit-2026#scheduling-and-receiving-deliveries-p-22-0"
+      ],
+      "cited": true,
+      "confidence": 0.896,
+      "correct": false,
+      "generator_error": null,
+      "id": "S14",
+      "kind": "in_corpus",
+      "question": "How should vaccine deliveries be processed and unpacked immediately upon arrival at the facility?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.896,
+        "coverage": 1.0,
+        "question_support": 0.791,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Container Transport for Off Site Clinic, Satellite Facility, or Relocation of Stock Vaccine transport to off-site or satellite facilities is different from both shipping and emergency transport. a website program works best for facility. Use DDLs for routine, on-site vaccine storage; during vaccine transport; and in temporary, mobile, off-site, satellite, and community vaccination clinics. Place a DDL or other appropriate TMD in each vaccine storage unit and each transport unit. Have at least one backup DDL or TMD in case a primary device breaks, malfunctions, or requires calibration.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#non-emergency-transport-systems-p-32-0",
+        "cdc-vaccine-storage-toolkit-2026#general-principles-of-transport-p-31-0",
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-4"
+      ],
+      "cited": true,
+      "confidence": 0.845,
+      "correct": false,
+      "generator_error": null,
+      "id": "S15",
+      "kind": "in_corpus",
+      "question": "What are the acceptable containers and packouts approved for non-emergency vaccine transport to off-site or satellite clinics?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.845,
+        "coverage": 1.0,
+        "question_support": 0.69,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Example: Varicella-containing vaccines must be administered within 30 minutes of reconstitution. The beyond-use time is 30 minutes. Example: MMR vaccines (except MMRV) must be administered within 8 hours of reconstitution. The beyond-use time is 8 hours. Some multidose vials must be discarded a certain number of days after first puncture with a needle. Example: If the package insert states the vaccine must be discarded 28 days after first puncture, Before preparing vaccines, staff must check the BUD on the vial or syringe. In addition, vaccine coordinators should create and maintain a system for tracking BUDs, such as Predraw reconstituted vaccine into a syringe only when ready to administer, as it has limited beyond-use time. If not used within 30 minutes, follow the manufacturer’s guidance for storage and time limits.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-2",
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-3",
+        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-3"
+      ],
+      "cited": true,
+      "confidence": 0.966,
+      "correct": true,
+      "generator_error": null,
+      "id": "S16",
+      "kind": "in_corpus",
+      "question": "What is the standard beyond-use time for administering reconstituted varicella-containing vaccines and MMR vaccines?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.966,
+        "coverage": 1.0,
+        "question_support": 0.932,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "First punctured with a needle (for multidose vials). The BUD varies by product and by type of transition. A BUD that falls on the same day might instead be called the beyond-use time. Not all vaccines have a BUD. The manufacturer’s package insert or Emergency Use Authorization (EUA) Fact Sheet for Healthcare Providers will specify when a BUD applies. Always review these materials to confirm BUD requirements. Calculating a BUD Some vaccines must be used before the expiration date because they have a beyond-use date (BUD)—an earlier deadline after which the product should not be used. Unlike the manufacturer-set expiration date, the BUD is calculated by the provider based on manufacturer guidance.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#understanding-beyond-use-dates-p-26-1",
+        "cdc-vaccine-storage-toolkit-2026#understanding-beyond-use-dates-p-26-0"
+      ],
+      "cited": true,
+      "confidence": 0.861,
+      "correct": false,
+      "generator_error": null,
+      "id": "S17",
+      "kind": "in_corpus",
+      "question": "What steps must a provider take to calculate and document a Beyond-Use Date (BUD) when transitioning vaccines between storage states?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.861,
+        "coverage": 1.0,
+        "question_support": 0.723,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never use dormitory- or bar-style combined refrigerator/freezer units for vaccine storage. These units have a single exterior door and an evaporator plate/cooling coil, usually located in an icemaker/freezer compartment. Dormitory-style (bar-style) storage unit A combination refrigerator/freezer unit with one exterior door and an evaporator plate (cooling coil), which is usually located inside an icemaker compartment (freezer) within the refrigerator. These units have been shown to pose a significant risk of freezing vaccines, even when used for temporary storage.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#dormitory-style-combined-units-p-11-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-7"
+      ],
+      "cited": true,
+      "confidence": 0.87,
+      "correct": true,
+      "generator_error": null,
+      "id": "S18",
+      "kind": "in_corpus",
+      "question": "Why does the CDC strictly prohibit the use of dormitory-style or bar-style combined refrigerator/freezer units for vaccine storage?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.87,
+        "coverage": 1.0,
+        "question_support": 0.741,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations. Temperature variations can occur with the refrigerator compartment of a household-grade unit also.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0"
+      ],
+      "cited": true,
+      "confidence": 0.958,
+      "correct": true,
+      "generator_error": null,
+      "id": "S19",
+      "kind": "in_corpus",
+      "question": "Why must vaccines never be stored in the freezer compartment of a household-grade combination refrigerator/freezer unit?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.958,
+        "coverage": 1.0,
+        "question_support": 0.915,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Position vaccines and diluents 2 to 3 inches from the unit walls, ceiling, floor, and door. If using a household-grade unit, avoid storing vaccines and diluents in any part of the unit that may not provide stable temperatures or sufficient air flow, such as directly under cooling vents; in deli, fruit, or vegetable drawers; or on refrigerator door shelves. The instability of temperatures and air flow in these areas may expose vaccines to inappropriate storage temperatures. These areas include directly under cooling vents; in deli, fruit, or vegetable drawers; or on refrigerator door shelves.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-1",
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-2"
+      ],
+      "cited": true,
+      "confidence": 0.903,
+      "correct": true,
+      "generator_error": null,
+      "id": "S20",
+      "kind": "in_corpus",
+      "question": "Why are storage unit door shelves, fruit/vegetable bins, and deli drawers prohibited areas for vaccines and diluents?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.903,
+        "coverage": 1.0,
+        "question_support": 0.807,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Never store food and beverages in the unit with vaccines. Frequent opening of the refrigerator door to retrieve food items can adversely affect the internal temperature of the unit and potentially damage the vaccines.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-3"
+      ],
+      "cited": true,
+      "confidence": 0.821,
+      "correct": true,
+      "generator_error": null,
+      "id": "S21",
+      "kind": "in_corpus",
+      "question": "Why should vaccines, diluents, and water bottles never be stored alongside food, beverages, or biohazard specimens?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.821,
+        "coverage": 1.0,
+        "question_support": 0.642,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Some types of TMDs have significant limitations and should not be used to measure temperatures in vaccine storage units. These devices can be difficult to read and only display the temperature at the moment they are checked, which means they may fail to detect temperature excursions. A digital data logger (DDL) is a specific type of TMD that has the capability for continuous monitoring and provides the most accurate storage unit temperature information, including details on how long a unit has been operating outside the recommended temperature range (referred to as a “temperature excursion”). TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate enough to ensure vaccines are stored within correct temperature ranges. Using these devices can pose a significant risk of damaging vaccines. Always review the manufacturer’s package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-limitations-p-15-0",
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-limitations-p-15-1"
+      ],
+      "cited": true,
+      "confidence": 0.876,
+      "correct": false,
+      "generator_error": null,
+      "id": "S22",
+      "kind": "in_corpus",
+      "question": "Which specific types of thermometers are not recommended for monitoring vaccines due to accuracy limitations?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.876,
+        "coverage": 1.0,
+        "question_support": 0.752,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Multi-outlet power strips. If built-in circuit switches, Uninterruptible Power Supply (UPS) unit, or power strip surge protection must be used, make sure the device is rated to carry the maximum current as specified by the storage unit’s manufacturer. Additionally, consider how the device manages when the power is restored. Whether the device automatically restarts and allows the equipment to run or must be manually switched on should be considered and represented in Emergency Plans and SOPs. Contact the unit manufacturer for any additional questions or guidance regarding circuit switches, power strips, UPS, or surge protection. Best Practices for Check the temperature each time vaccines are accessed in the unit. Review storage unit temperature readings Troubleshoot any fluctuation in temperature based on additional information provided in this toolkit, manufacturer manuals, and/or office storage and handling SOPs. Implement emergency SOPs if the storage If the entire storage unit is affected by a temperature excursion because of a power supply issue, unit malfunction, Outlets that a wall switch can activate.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#power-supply-p-16-3",
+        "cdc-vaccine-storage-toolkit-2026#power-supply-p-16-4",
+        "cdc-vaccine-storage-toolkit-2026#power-supply-p-16-2"
+      ],
+      "cited": true,
+      "confidence": 0.827,
+      "correct": true,
+      "generator_error": null,
+      "id": "S23",
+      "kind": "in_corpus",
+      "question": "Why is it dangerous to plug a vaccine storage unit into an outlet controlled by a wall switch or a standard multi-outlet power strip?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.827,
+        "coverage": 1.0,
+        "question_support": 0.655,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not turn off the freezer compartment, as this will Water bottles are not recommended for use with the majority of pharmaceutical-grade and purpose-built units. Although similar to pharmaceutical-grade units, purpose-built units are unique in their design for vaccine storage. Many purpose-built units do not need water bottles to maintain thermal stability.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-1",
+        "cdc-vaccine-storage-toolkit-resources-2026#storage-units-p-2-0",
+        "cdc-vaccine-storage-toolkit-resources-2026#temperature-monitoring-p-2-1"
+      ],
+      "cited": true,
+      "confidence": 0.895,
+      "correct": true,
+      "generator_error": null,
+      "id": "S24",
+      "kind": "in_corpus",
+      "question": "Why should water bottles generally not be placed inside pharmaceutical-grade or purpose-built units?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.895,
+        "coverage": 1.0,
+        "question_support": 0.789,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not use frozen gel packs or coolant packs from original vaccine shipments to pack refrigerated vaccines. They can still freeze vaccines even if they are conditioned or appear to be “sweating.” JULY 2026 | VACCINE STORAGE AND HANDLING TOOLKIT 29 Secure storage containers during transport. Emergencies tool describes a system in which properly conditioned frozen water bottles can be used as a coolant when transporting vaccines during emergency situations. A transport system that uses conditioned water bottles and hard-sided insulated containers or Styrofoam™, in conjunction with The Packing Vaccines for Transport During Emergencies tool",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#coolants-for-transport-p-32-0",
+        "cdc-vaccine-storage-toolkit-2026#the-packing-vaccines-for-transport-during-p-37-0",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-transport-during-emergencies-p-37-0"
+      ],
+      "cited": true,
+      "confidence": 0.733,
+      "correct": false,
+      "generator_error": null,
+      "id": "S25",
+      "kind": "in_corpus",
+      "question": "Why must commercial shipping containers and frozen coolant gel packs from distributors never be reused for routine non-emergency transport?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.733,
+        "coverage": 1.0,
+        "question_support": 0.522,
+        "reasons": [],
+        "retrieval_relevance": 0.945,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Time at the end of transport when vaccines are placed in a stable storage unit. Do not use dry ice, even for temporary transport or storage. Dry ice might expose frozen vaccines to temperatures colder than -50°C (-58°F). If frozen vaccines must be transported, use a portable vaccine freezer unit or qualified container and packout that maintains temperatures between -50°C and -15°C (-58°F and +5°F) or between -90°C and -60°C (-130°F and -76°F) for ultra-cold transport. Follow these steps for transporting frozen vaccines: Place a TMD (preferably with a buffered probe) in the container as close as possible to the vaccines.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-2",
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-0"
+      ],
+      "cited": true,
+      "confidence": 0.747,
+      "correct": true,
+      "generator_error": null,
+      "id": "S26",
+      "kind": "in_corpus",
+      "question": "Why is dry ice strictly prohibited when temporarily transporting standard frozen vaccines?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.747,
+        "coverage": 1.0,
+        "question_support": 0.495,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "be used because it may not be possible to determine if the rubber seal has been punctured. At the end of the workday, discard all unused SDVs without a protective cap. Single-Dose Vials A single-dose vial (SDV) contains one dose and should be used one time for one patient. SDVs typically do not contain antimicrobial preservatives, making them susceptible to contamination and potential sources of infection when used improperly. Never combine leftover vaccine from one SDV with another. Open an SDV when you are ready to use it. Before removing the protective cap, always check the vial to verify it’s the correct vaccine. Once the cap is removed, the vaccine must Manufacturer-Filled Syringes A manufacturer-filled syringe (MFS) is prepared and sealed under sterile conditions by the manufacturer. Activate an MFS by removing the syringe cap or attaching the needle only when ready to use it. An MFS does not contain a preservative to help prevent the growth of microorganisms. Once the sterile seal has been broken, the vaccine should be used or discarded by the end of the workday.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-1",
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-0",
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-5"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "S27",
+      "kind": "in_corpus",
+      "question": "Why should single-dose vials (SDVs) that have had their protective caps removed be discarded at the end of the workday if unused?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not administer medications from single-dose vials or ampules to multiple patients or combine leftover contents for later use369 453, 1005. Single-Dose Vials A single-dose vial (SDV) contains one dose and should be used one time for one patient. SDVs typically do not contain antimicrobial preservatives, making them susceptible to contamination and potential sources of infection when used improperly. Never combine leftover vaccine from one SDV with another. Open an SDV when you are ready to use it. Before removing the protective cap, always check the vial to verify it’s the correct vaccine. Once the cap is removed, the vaccine must If providers receive multiple doses of the same vaccine in the same presentation from the same lot with the same expiration date, they can document these doses as one entry on the stock record. Indicate the total number of doses received, regardless of how many vials or syringes the doses came in. For example, if providers receive 10 single-dose vials of the same vaccine with the same lot number and expiration date, they can make a single entry on the",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-2",
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-0",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-inventory-accounting-p-23-3"
+      ],
+      "cited": true,
+      "confidence": 0.758,
+      "correct": false,
+      "generator_error": null,
+      "id": "S28",
+      "kind": "in_corpus",
+      "question": "Why is it unacceptable to pool or combine leftover vaccine from multiple single-dose or multidose vials to create a full dose?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.758,
+        "coverage": 1.0,
+        "question_support": 0.515,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "access devices when withdrawing vaccine from a multidose vial. Leaving a vial access device inserted into a vial septum provides a direct route for microorganisms to contaminate the vaccine. be used through the expiration date printed on the vial, unless the vaccine is contaminated or compromised in some way or there is a BUD noted in the package insert. The BUD should be noted on the vaccine vial along with the initials of the person making the calculation. Never use partial doses from two or more vials to obtain a dose of vaccine. Based on safe injection practices, CDC does not recommend using vial adapters, spikes, or other vial Example: MMR vaccines (except MMRV) must be administered within 8 hours of reconstitution. The beyond-use time is 8 hours. Some multidose vials must be discarded a certain number of days after first puncture with a needle. Example: If the package insert states the vaccine must be discarded 28 days after first puncture, Before preparing vaccines, staff must check the BUD on the vial or syringe. In addition, vaccine coordinators should create and maintain a system for tracking BUDs, such as",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-4",
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-3",
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-3"
+      ],
+      "cited": true,
+      "confidence": 0.636,
+      "correct": true,
+      "generator_error": null,
+      "id": "S29",
+      "kind": "in_corpus",
+      "question": "Why does the CDC strongly advise against leaving vial spikes or adaptors attached to multidose vials?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.636,
+        "coverage": 1.0,
+        "question_support": 0.43,
+        "reasons": [],
+        "retrieval_relevance": 0.842,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never freeze diluents—not even during transport. If diluents stored at room temperature (20°C to 25°C [68°F to 77°F]) are going to be transported with refrigerated vaccines, they should be refrigerated in advance for as long as possible so they do not raise the container temperature when placed with refrigerated vaccines. Avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Never store food and beverages in the unit with vaccines. Frequent opening of the refrigerator door to retrieve food items can adversely affect the internal temperature of the unit and potentially damage the vaccines.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#transporting-vaccine-diluents-p-34-0",
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-3"
+      ],
+      "cited": true,
+      "confidence": 0.879,
+      "correct": true,
+      "generator_error": null,
+      "id": "S30",
+      "kind": "in_corpus",
+      "question": "Why must diluents never be placed into a freezer unit, even during transport?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.879,
+        "coverage": 1.0,
+        "question_support": 0.758,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Using the wrong diluent is a serious vaccine administration error that may result in incorrect doses and possible contamination. Never use a stock vial of sterile water or normal saline to reconstitute vaccines. Even if the diluent is composed of sterile water or saline, use only the specific diluent supplied with the vaccine. Never administer vaccine reconstituted with the wrong diluent. If an incorrectly reconstituted vaccine is administered, contact the immunization program or the vaccine manufacturer for revaccination and safety",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-reconstitution-p-29-3"
+      ],
+      "cited": true,
+      "confidence": 0.919,
+      "correct": true,
+      "generator_error": null,
+      "id": "S31",
+      "kind": "in_corpus",
+      "question": "Why is using a stock vial of standard sterile water or normal saline to reconstitute a vaccine considered a serious clinical error?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.919,
+        "coverage": 1.0,
+        "question_support": 0.837,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Any staff member who hears an alarm or notices a temperature excursion on the TMD should immediately notify the primary or backup vaccine coordinator, or report the problem to their supervisor.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-1"
+      ],
+      "cited": true,
+      "confidence": 0.511,
+      "correct": false,
+      "generator_error": null,
+      "id": "S32",
+      "kind": "in_corpus",
+      "question": "Why should staff never silence or reset a temperature alarm without notifying coordinators and investigating the root cause?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.511,
+        "coverage": 1.0,
+        "question_support": 0.369,
+        "reasons": [
+          "weak relevance to the question (0.51)"
+        ],
+        "retrieval_relevance": 0.653,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If using a company or personal vehicle, transport vaccines only inside the passenger cabin, not in the trunk or truck bed, which may be too hot or too cold.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#transport-planning-and-preparation-p-33-2"
+      ],
+      "cited": true,
+      "confidence": 0.818,
+      "correct": true,
+      "generator_error": null,
+      "id": "S33",
+      "kind": "in_corpus",
+      "question": "Why must vaccines never be transported inside the trunk or cargo bed of a vehicle?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.818,
+        "coverage": 1.0,
+        "question_support": 0.636,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Any staff member who hears an alarm or notices a temperature excursion on the TMD should immediately notify the primary or backup vaccine coordinator, or report the problem to their supervisor. In general, manufacturers analyze information about the magnitude of the temperature excursion and the total amount of time that temperatures were out of range, as well as information about the vaccine in question, to determine whether a vaccine is likely to still be viable. In addition, investing in a reliable device helps avoid the financial hardships of replacing vaccines that have lost their potency due to storage at out-of-range temperatures.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-1",
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-devices-p-13-0"
+      ],
+      "cited": true,
+      "confidence": 0.865,
+      "correct": true,
+      "generator_error": null,
+      "id": "S34",
+      "kind": "in_corpus",
+      "question": "Why should staff avoid immediately throwing away vaccines that were exposed to an out-of-range temperature excursion?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.865,
+        "coverage": 1.0,
+        "question_support": 0.73,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "S35",
+      "kind": "in_corpus",
+      "question": "My storage unit alarm went off during the weekend. What is the immediate, step-by-step troubleshooting workflow I must execute right now?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "For example, mResvia, an RSV vaccine, if stored frozen, must be stored at temperatures between -40°C and -15°C (-40°F and 5°F). This is a narrower range than many other frozen vaccines, which are stored between -50°C and -15°C. If you store mResvia alongside other frozen vaccines, ensure the storage unit temperature does not fall below -40°C.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-may-differ-p-13-0"
+      ],
+      "cited": true,
+      "confidence": 0.754,
+      "correct": true,
+      "generator_error": null,
+      "id": "S36",
+      "kind": "in_corpus",
+      "question": "If I am co-storing the frozen RSV vaccine mResvia with other standard frozen vaccines, what narrower temperature floor must I maintain to avoid spoiling it?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.754,
+        "coverage": 1.0,
+        "question_support": 0.508,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Multidose Vials A multidose vial (MDV) contains more than one dose of vaccine. Because MDVs typically contain a preservative to help prevent microorganism growth, they can be entered or punctured more than once. Only the number of doses indicated in the manufacturer’s package insert should be withdrawn from the vial. After the maximum number of doses has been withdrawn, the vial should be discarded, even if there is vaccine left and the expiration date has not been reached. MDVs can Example: MMR vaccines (except MMRV) must be administered within 8 hours of reconstitution. The beyond-use time is 8 hours. Some multidose vials must be discarded a certain number of days after first puncture with a needle. Example: If the package insert states the vaccine must be discarded 28 days after first puncture, Before preparing vaccines, staff must check the BUD on the vial or syringe. In addition, vaccine coordinators should create and maintain a system for tracking BUDs, such as",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-2",
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-3"
+      ],
+      "cited": true,
+      "confidence": 0.724,
+      "correct": true,
+      "generator_error": null,
+      "id": "S37",
+      "kind": "in_corpus",
+      "question": "What should I do if a multidose vial still has liquid remaining inside, but the maximum number of doses on the package insert has already been drawn?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.724,
+        "coverage": 1.0,
+        "question_support": 0.449,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "However, a partially used vial cannot be transferred from one provider to another, or across state lines. In rare circumstances, a partially used vial may need to be transported to or from an off-site/satellite facility operated by the same provider.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#transporting-opened-multidose-vials-p-33-0"
+      ],
+      "cited": true,
+      "confidence": 0.854,
+      "correct": true,
+      "generator_error": null,
+      "id": "S38",
+      "kind": "in_corpus",
+      "question": "Can our mobile clinic transport an already opened, partially used multidose vial to another satellite location across state lines?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.854,
+        "coverage": 1.0,
+        "question_support": 0.708,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep sufficient fuel on hand to continuously run the generator for at least 72 hours. A backup battery power source can be used in lieu of a generator. Test any backup generator quarterly and have it serviced annually. Having an on-site generator prevents the need to transport vaccines to an alternative storage facility during a power outage.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#generators-and-backup-battery-power-sources-p-37-0",
+        "cdc-vaccine-storage-toolkit-2026#monitoring-devices-p-20-1"
+      ],
+      "cited": true,
+      "confidence": 0.725,
+      "correct": true,
+      "generator_error": null,
+      "id": "S39",
+      "kind": "in_corpus",
+      "question": "If our facility relies on an emergency backup generator, how often must it be tested, serviced, and how many hours of fuel must be stocked on-site?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.725,
+        "coverage": 1.0,
+        "question_support": 0.56,
+        "reasons": [],
+        "retrieval_relevance": 0.89,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Emergencies tool describes a system in which properly conditioned frozen water bottles can be used as a coolant when transporting vaccines during emergency situations. A transport system that uses conditioned water bottles and hard-sided insulated containers or Styrofoam™, in conjunction with The Packing Vaccines for Transport During Emergencies tool Conditioned water bottles Frozen water bottles that have been submerged under lukewarm water until the ice block inside can spin freely.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#the-packing-vaccines-for-transport-during-p-37-0",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-transport-during-emergencies-p-37-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-at-alternative-storage-sites-p-38-5"
+      ],
+      "cited": true,
+      "confidence": 0.816,
+      "correct": true,
+      "generator_error": null,
+      "id": "S40",
+      "kind": "in_corpus",
+      "question": "Under what extreme emergency conditions does the CDC permit using conditioned frozen water bottles or original shipping boxes for vaccine transport?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.816,
+        "coverage": 1.0,
+        "question_support": 0.632,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If the expiration date is extended beyond what appears on the label, manufacturers typically communicate the change through the FDA’s Expiration Dating Extension website or through mass communications such as “Dear Health Care Provider” letters. EUA-authorized vaccines: Refer to the EUA Fact Sheet for Healthcare Providers. More information on EUAs is available at Emergency Use Authorization | FDA. Note: Vaccine manufacturers may occasionally revise expiration or beyond-use dates after the release of the package insert or EUA Fact Sheet. These updates are typically communicated through the FDA’s Expiration Dating Extension website or in a “Dear Health Care Provider” letter.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-manufacturers-update-expiration-dates-p-25-0",
+        "cdc-vaccine-storage-toolkit-2026#section-5-vaccine-preparation-p-3-5"
+      ],
+      "cited": true,
+      "confidence": 0.78,
+      "correct": true,
+      "generator_error": null,
+      "id": "S41",
+      "kind": "in_corpus",
+      "question": "How should I document a vaccine whose expiration date was officially extended by the manufacturer via an FDA Dear Health Care Provider notice?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.78,
+        "coverage": 1.0,
+        "question_support": 0.559,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Always review the manufacturer’s package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that the correct temperature range is maintained.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-may-differ-p-13-1"
+      ],
+      "cited": true,
+      "confidence": 0.486,
+      "correct": false,
+      "generator_error": null,
+      "id": "S42",
+      "kind": "in_corpus",
+      "question": "If a clinical worker forgot to manually record a daily temperature on the physical sheet, can they estimate or back-fill the entry?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.486,
+        "coverage": 1.0,
+        "question_support": 0.137,
+        "reasons": [
+          "weak relevance to the question (0.49)"
+        ],
+        "retrieval_relevance": 0.834,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccine wastage if predrawn doses do not match the number of vaccine recipients. In rare circumstances, such as during large off-site vaccination clinics, predrawing vaccine doses might be the only option. If vaccines must be predrawn, adhere to the following best practices: Set up a separate administration station for each vaccine type. Draw up vaccines only after arriving at the vaccination site. Each vaccinator should draw up only one MDV at a time, regardless of whether it contains 2 or 10 doses. Likewise, no vaccinator should activate more than 10 MFSs at a time or predraw more than 10 doses from SDVs. If providers receive multiple doses of the same vaccine in the same presentation from the same lot with the same expiration date, they can document these doses as one entry on the stock record. Indicate the total number of doses received, regardless of how many vials or syringes the doses came in. For example, if providers receive 10 single-dose vials of the same vaccine with the same lot number and expiration date, they can make a single entry on the",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-1",
+        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-3",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-inventory-accounting-p-23-3"
+      ],
+      "cited": true,
+      "confidence": 0.774,
+      "correct": true,
+      "generator_error": null,
+      "id": "S43",
+      "kind": "in_corpus",
+      "question": "In a large community vaccination clinic where predrawing cannot be avoided, what is the maximum number of syringes or vials a vaccinator can predraw at one time?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.774,
+        "coverage": 1.0,
+        "question_support": 0.717,
+        "reasons": [],
+        "retrieval_relevance": 0.83,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In off-site clinic settings, each person preparing and administering vaccines should remove no more than one multidose vial or 10 doses at a time. During an emergency, vaccines During a powe r outage, only open the storage unit door if Vaccine wastage if predrawn doses do not match the number of vaccine recipients. In rare circumstances, such as during large off-site vaccination clinics, predrawing vaccine doses might be the only option. If vaccines must be predrawn, adhere to the following best practices: Set up a separate administration station for each vaccine type. Draw up vaccines only after arriving at the vaccination site. Once each predrawn dose is prepared, label the syringe with the vaccine name and dosage, the beyond-use date and time, lot number, and the preparer’s initials. Additional pertinent information can be added, such as age range or if the dose is intended for use as primary or booster dose.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-after-transport-p-35-2",
+        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-1",
+        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-2"
+      ],
+      "cited": true,
+      "confidence": 0.414,
+      "correct": false,
+      "generator_error": null,
+      "id": "S44",
+      "kind": "in_corpus",
+      "question": "If predrawn doses prepared for a morning clinic are left unused by the end of the shift, can they be refrigerated and administered the following morning?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.414,
+        "coverage": 1.0,
+        "question_support": 0.436,
+        "reasons": [
+          "weak relevance to the question (0.41)"
+        ],
+        "retrieval_relevance": 0.391,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Example: Moderna RSV vaccine, mResvia, may be stored in the refrigerator for up to 90 days or at room temperature for up to 24 hours before administration. In this case, the syringe's BUD is 90 days refrigerated or 24 hours at room temperature. Reconstituted vaccines Once mixed with its diluent, a vaccine has have a short window for use. If not administered immediately, follow manufacturer guidance for storage conditions and time limits. If diluents stored at room temperature (20°C to 25°C [68°F to 77°F]) are going to be transported with refrigerated vaccines, they should be refrigerated in advance for as long as possible so they do not raise the container temperature when placed with refrigerated vaccines. All diluents can be stored at refrigerated temperatures, and some can also be stored at room temperature.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-1",
+        "cdc-vaccine-storage-toolkit-2026#transporting-vaccine-diluents-p-34-0",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-reconstitution-p-29-1"
+      ],
+      "cited": true,
+      "confidence": 0.698,
+      "correct": false,
+      "generator_error": null,
+      "id": "S45",
+      "kind": "in_corpus",
+      "question": "If diluents are stored at room temperature but must travel with refrigerated vaccines, how should they be pre-conditioned so they don't elevate the packout temperature?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.698,
+        "coverage": 1.0,
+        "question_support": 0.396,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "While vials are not usually considered hazardous or pharmaceutical waste, an empty rotavirus dispensing tube or oral applicator is considered medical waste and should be disposed of in a medical waste container. Empty vaccine vials – Most are not considered hazardous or pharmaceutical waste and do not require disposal in a biomedical waste container. However, check and comply with state requirements for disposal. Open and broken vials and syringes, manufacturer-filled syringes that have been activated, and vaccine predrawn by providers – These cannot be returned and should be discarded according to state requirements. Medical waste disposal requirements are set by state environmental agencies. Contact your immunization program or state environmental agency for guidance to ensure the facility’s vaccine disposal procedures comply with state and federal regulations.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-disposal-p-24-1",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-disposal-p-24-0",
+        "cdc-vaccine-storage-toolkit-2026#vaccine-disposal-p-24-2"
+      ],
+      "cited": true,
+      "confidence": 0.821,
+      "correct": true,
+      "generator_error": null,
+      "id": "S46",
+      "kind": "in_corpus",
+      "question": "How does the medical waste disposal process differ for an empty oral rotavirus applicator versus a standard emptied vaccine vial?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.821,
+        "coverage": 1.0,
+        "question_support": 0.642,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A digital data logger (DDL) is a specific type of TMD that has the capability for continuous monitoring and provides the most accurate storage unit temperature information, including details on how long a unit has been operating outside the recommended temperature range (referred to as a “temperature excursion”). If using a digital data logger (DDL), determine the length of time vaccine may have been affected Many purpose-built closed or doorless units may utilize air sensors (non-buffered probes).Because these units have very limited exposure to ambient air, buffered probes are not essential. • Many units include built-in digital data loggers (DDLs) with electronic interfaces that provide continuous temperature data and/or provide min/max readings. VFC providers must verify that these built-in DDLs meet VFC data logger requirements. Vaccine S torage",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#digital-data-logger-p-13-0",
+        "cdc-vaccine-storage-toolkit-resources-2026#use-cdc-s-vaccine-storage-p-9-0",
+        "cdc-vaccine-storage-toolkit-resources-2026#temperature-monitoring-p-2-0"
+      ],
+      "cited": true,
+      "confidence": 0.329,
+      "correct": false,
+      "generator_error": null,
+      "id": "S47",
+      "kind": "in_corpus",
+      "question": "If a digital data logger is accidentally dropped onto the clinic floor, can staff continue using it immediately, or is re-verification required?",
+      "split": "sealed4",
+      "validation": {
+        "confidence": 0.329,
+        "coverage": 1.0,
+        "question_support": 0.276,
+        "reasons": [
+          "weak relevance to the question (0.33)"
+        ],
+        "retrieval_relevance": 0.383,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.9149,
+    "capped_precision@10": 0.8617,
+    "capped_precision@5": 0.8979,
+    "hit@1": 0.5745,
+    "hit@10": 0.8936,
+    "hit@5": 0.8511,
+    "mrr": 0.673,
+    "n": 47,
+    "precision@1": 0.9149,
+    "precision@10": 0.8617,
+    "precision@5": 0.8979,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S01",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What are the specific temperature ranges required for refrigerators, standard freezers, and ultra-cold storage units?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "S02",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "Which four types of storage units are suitable for storing vaccines, and what is their CDC order of preference?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S03",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "What makes a purpose-built or pharmaceutical-grade unit superior to a household-grade unit?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S04",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "How many consecutive days of stable temperature monitoring are required before stocking a newly installed or repaired refrigerator or freezer?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S05",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "What key technical features must a digital data logger (DDL) possess to ensure reliable temperature tracking?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S06",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "Where should the buffered probe of a DDL be placed inside a storage unit to accurately reflect vaccine temperatures?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S07",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What information must be shown on a valid Certificate of Calibration Testing for a temperature monitoring device (TMD)?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 6,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "S08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How often should routine calibration testing be conducted on temperature monitoring devices?",
+        "rr": 0.16666666666666666,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S09",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "What daily schedule and specific data points must staff record on standard temperature logs?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S10",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "For how many years does the CDC mandate keeping physical or digital vaccine temperature logs on file?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S11",
+        "precision@1": 0.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "What are the core responsibilities assigned to the primary and backup vaccine coordinators?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S12",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Under what circumstances or intervals must clinic staff receive mandatory vaccine storage and handling training?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S13",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "How should stock be arranged inside storage units so that products expiring earliest are used first (First-Expired, First-Out)?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S14",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "How should vaccine deliveries be processed and unpacked immediately upon arrival at the facility?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S15",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the acceptable containers and packouts approved for non-emergency vaccine transport to off-site or satellite clinics?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S16",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What is the standard beyond-use time for administering reconstituted varicella-containing vaccines and MMR vaccines?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S17",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What steps must a provider take to calculate and document a Beyond-Use Date (BUD) when transitioning vaccines between storage states?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S18",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why does the CDC strictly prohibit the use of dormitory-style or bar-style combined refrigerator/freezer units for vaccine storage?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S19",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why must vaccines never be stored in the freezer compartment of a household-grade combination refrigerator/freezer unit?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S20",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "Why are storage unit door shelves, fruit/vegetable bins, and deli drawers prohibited areas for vaccines and diluents?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S21",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why should vaccines, diluents, and water bottles never be stored alongside food, beverages, or biohazard specimens?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S22",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Which specific types of thermometers are not recommended for monitoring vaccines due to accuracy limitations?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S23",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why is it dangerous to plug a vaccine storage unit into an outlet controlled by a wall switch or a standard multi-outlet power strip?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S24",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "Why should water bottles generally not be placed inside pharmaceutical-grade or purpose-built units?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S25",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why must commercial shipping containers and frozen coolant gel packs from distributors never be reused for routine non-emergency transport?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S26",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why is dry ice strictly prohibited when temporarily transporting standard frozen vaccines?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S27",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why should single-dose vials (SDVs) that have had their protective caps removed be discarded at the end of the workday if unused?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "S28",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "Why is it unacceptable to pool or combine leftover vaccine from multiple single-dose or multidose vials to create a full dose?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S29",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 1.0,
+        "question": "Why does the CDC strongly advise against leaving vial spikes or adaptors attached to multidose vials?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S30",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why must diluents never be placed into a freezer unit, even during transport?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S31",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why is using a stock vial of standard sterile water or normal saline to reconstitute a vaccine considered a serious clinical error?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "S32",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "Why should staff never silence or reset a temperature alarm without notifying coordinators and investigating the root cause?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S33",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "Why must vaccines never be transported inside the trunk or cargo bed of a vehicle?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S34",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why should staff avoid immediately throwing away vaccines that were exposed to an out-of-range temperature excursion?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "S35",
+        "precision@1": 0.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "My storage unit alarm went off during the weekend. What is the immediate, step-by-step troubleshooting workflow I must execute right now?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S36",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "If I am co-storing the frozen RSV vaccine mResvia with other standard frozen vaccines, what narrower temperature floor must I maintain to avoid spoiling it?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S37",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "What should I do if a multidose vial still has liquid remaining inside, but the maximum number of doses on the package insert has already been drawn?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S38",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "Can our mobile clinic transport an already opened, partially used multidose vial to another satellite location across state lines?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S39",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "If our facility relies on an emergency backup generator, how often must it be tested, serviced, and how many hours of fuel must be stocked on-site?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S40",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Under what extreme emergency conditions does the CDC permit using conditioned frozen water bottles or original shipping boxes for vaccine transport?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S41",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should I document a vaccine whose expiration date was officially extended by the manufacturer via an FDA Dear Health Care Provider notice?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 6,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "S42",
+        "precision@1": 0.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "If a clinical worker forgot to manually record a daily temperature on the physical sheet, can they estimate or back-fill the entry?",
+        "rr": 0.16666666666666666,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S43",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "In a large community vaccination clinic where predrawing cannot be avoided, what is the maximum number of syringes or vials a vaccinator can predraw at one time?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S44",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "If predrawn doses prepared for a morning clinic are left unused by the end of the shift, can they be refrigerated and administered the following morning?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "S45",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "If diluents are stored at room temperature but must travel with refrigerated vaccines, how should they be pre-conditioned so they don't elevate the packout temperature?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S46",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "How does the medical waste disposal process differ for an empty oral rotavirus applicator versus a standard emptied vaccine vial?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S47",
+        "precision@1": 0.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "If a digital data logger is accidentally dropped onto the clinic floor, can staff continue using it immediately, or is re-verification required?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Between -90°C and -60°C (-130°F and -76°F) for an ultra-cold freezer. 6. If appropriate for the unit, consider adding extra water bottles to improve temperature stability. Never leave vaccines in a storage unit that does not maintain temper",
+      "confidence": 0.923,
+      "id": "S01",
+      "question": "What are the specific temperature ranges required for refrigerators, standard freezers, and ultra-cold storage units?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Vaccine Storage Units: Refrigerator and Freezer Four types of units are suitable for storing vaccines and are listed below in order of preference.",
+      "confidence": 0.985,
+      "id": "S02",
+      "question": "Which four types of storage units are suitable for storing vaccines, and what is their CDC order of preference?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "A digital data logger (DDL) is a specific type of TMD that has the capability for continuous monitoring and provides the most accurate storage unit temperature information, including details on how long a unit has been operating outside the",
+      "confidence": 0.775,
+      "id": "S05",
+      "question": "What key technical features must a digital data logger (DDL) possess to ensure reliable temperature tracking?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate ",
+      "confidence": 0.912,
+      "id": "S07",
+      "question": "What information must be shown on a valid Certificate of Calibration Testing for a temperature monitoring device (TMD)?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "TMDs that do not have a current and valid Certificate of Calibration Testing Important: Some devices sold in hardware and appliance stores are designed to monitor temperatures for household food storage. They are not calibrated or accurate ",
+      "confidence": 0.856,
+      "id": "S08",
+      "question": "How often should routine calibration testing be conducted on temperature monitoring devices?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Any actions taken if a temperature excursion occurred Some TMDs require resetting minimum/maximum temperatures to start tracking new readings for the next temperature check. Always follow the manufacturer’s instructions for proper use. Keep",
+      "confidence": 0.646,
+      "id": "S09",
+      "question": "What daily schedule and specific data points must staff record on standard temperature logs?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Vaccines and diluents must be carefully unpacked, stored at the recommended temperatures, and documented immediately upon arrival. Immediately upon arrival at the destination, unpack the vaccines and place them in a freezer at a temperature",
+      "confidence": 0.896,
+      "id": "S14",
+      "question": "How should vaccine deliveries be processed and unpacked immediately upon arrival at the facility?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Container Transport for Off Site Clinic, Satellite Facility, or Relocation of Stock Vaccine transport to off-site or satellite facilities is different from both shipping and emergency transport. a website program works best for facility. Us",
+      "confidence": 0.845,
+      "id": "S15",
+      "question": "What are the acceptable containers and packouts approved for non-emergency vaccine transport to off-site or satellite clinics?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "First punctured with a needle (for multidose vials). The BUD varies by product and by type of transition. A BUD that falls on the same day might instead be called the beyond-use time. Not all vaccines have a BUD. The manufacturer’s package ",
+      "confidence": 0.861,
+      "id": "S17",
+      "question": "What steps must a provider take to calculate and document a Beyond-Use Date (BUD) when transitioning vaccines between storage states?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Some types of TMDs have significant limitations and should not be used to measure temperatures in vaccine storage units. These devices can be difficult to read and only display the temperature at the moment they are checked, which means the",
+      "confidence": 0.876,
+      "id": "S22",
+      "question": "Which specific types of thermometers are not recommended for monitoring vaccines due to accuracy limitations?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Do not use frozen gel packs or coolant packs from original vaccine shipments to pack refrigerated vaccines. They can still freeze vaccines even if they are conditioned or appear to be “sweating.” JULY 2026 | VACCINE STORAGE AND HANDLING TOO",
+      "confidence": 0.733,
+      "id": "S25",
+      "question": "Why must commercial shipping containers and frozen coolant gel packs from distributors never be reused for routine non-emergency transport?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Do not administer medications from single-dose vials or ampules to multiple patients or combine leftover contents for later use369 453, 1005. Single-Dose Vials A single-dose vial (SDV) contains one dose and should be used one time for one p",
+      "confidence": 0.758,
+      "id": "S28",
+      "question": "Why is it unacceptable to pool or combine leftover vaccine from multiple single-dose or multidose vials to create a full dose?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Any staff member who hears an alarm or notices a temperature excursion on the TMD should immediately notify the primary or backup vaccine coordinator, or report the problem to their supervisor.",
+      "confidence": 0.511,
+      "id": "S32",
+      "question": "Why should staff never silence or reset a temperature alarm without notifying coordinators and investigating the root cause?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.51)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "S35",
+      "question": "My storage unit alarm went off during the weekend. What is the immediate, step-by-step troubleshooting workflow I must execute right now?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Always review the manufacturer’s package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that the correct temperature range is maintained.",
+      "confidence": 0.486,
+      "id": "S42",
+      "question": "If a clinical worker forgot to manually record a daily temperature on the physical sheet, can they estimate or back-fill the entry?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.49)"
+    },
+    {
+      "answer": "In off-site clinic settings, each person preparing and administering vaccines should remove no more than one multidose vial or 10 doses at a time. During an emergency, vaccines During a powe r outage, only open the storage unit door if Vacc",
+      "confidence": 0.414,
+      "id": "S44",
+      "question": "If predrawn doses prepared for a morning clinic are left unused by the end of the shift, can they be refrigerated and administered the following morning?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.41)"
+    },
+    {
+      "answer": "Example: Moderna RSV vaccine, mResvia, may be stored in the refrigerator for up to 90 days or at room temperature for up to 24 hours before administration. In this case, the syringe's BUD is 90 days refrigerated or 24 hours at room temperat",
+      "confidence": 0.698,
+      "id": "S45",
+      "question": "If diluents are stored at room temperature but must travel with refrigerated vaccines, how should they be pre-conditioned so they don't elevate the packout temperature?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "A digital data logger (DDL) is a specific type of TMD that has the capability for continuous monitoring and provides the most accurate storage unit temperature information, including details on how long a unit has been operating outside the",
+      "confidence": 0.329,
+      "id": "S47",
+      "question": "If a digital data logger is accidentally dropped onto the clinic floor, can staff continue using it immediately, or is re-verification required?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.33)"
+    }
+  ],
+  "rewrite": false,
+  "split": "sealed4",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6383,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9787,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.3696,
+      "validated_precision": 0.6304
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6596,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9574,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.3556,
+      "validated_precision": 0.6444
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6596,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9574,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.3556,
+      "validated_precision": 0.6444
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.6809,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9362,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.3409,
+      "validated_precision": 0.6591
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7021,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9149,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.3256,
+      "validated_precision": 0.6744
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7234,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8936,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.3095,
+      "validated_precision": 0.6905
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7234,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8936,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.3095,
+      "validated_precision": 0.6905
+    },
+    {
+      "correct_but_flagged_rate": 0.0345,
+      "decision_accuracy": 0.7234,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8511,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.3,
+      "validated_precision": 0.7
+    },
+    {
+      "correct_but_flagged_rate": 0.069,
+      "decision_accuracy": 0.7234,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8085,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.2895,
+      "validated_precision": 0.7105
+    },
+    {
+      "correct_but_flagged_rate": 0.2069,
+      "decision_accuracy": 0.6596,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.7021,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.303,
+      "validated_precision": 0.697
+    },
+    {
+      "correct_but_flagged_rate": 0.3103,
+      "decision_accuracy": 0.6383,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.5957,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.2857,
+      "validated_precision": 0.7143
+    },
+    {
+      "correct_but_flagged_rate": 0.5517,
+      "decision_accuracy": 0.5106,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.4255,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.35,
+      "validated_precision": 0.65
+    },
+    {
+      "correct_but_flagged_rate": 0.7931,
+      "decision_accuracy": 0.4468,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.1915,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.7234,
+    "in_corpus": {
+      "answer_correct_rate": 0.617,
+      "correct_but_flagged_rate": 0.0,
+      "mean_confidence": 0.7777,
+      "n": 47,
+      "pass_rate": 0.8936,
+      "validated_but_wrong_rate": 0.3095,
+      "validated_precision": 0.6905
+    },
+    "out_of_corpus": {
+      "false_accept_rate": null,
+      "mean_confidence": null,
+      "n": 0,
+      "needs_review_rate": null
+    },
+    "threshold": 0.6
+  }
+}

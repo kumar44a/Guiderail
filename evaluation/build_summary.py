@@ -207,6 +207,7 @@ def build_report() -> str:
     out += section_sealed()
     out += section_sealed2()
     out += section_sealed3_iso()
+    out += section_sealed4()
     return "\n".join(out)
 
 
@@ -403,6 +404,31 @@ def section_sealed3_iso() -> list[str]:
            "The owner's questions on the 2007 CDC isolation guideline, run once per generator on the frozen configuration (rules: `evaluation/reports/sealed3_run_rules.txt`, "
            "committed first). The owner supplied no expected answers; the assistant labelled them from the PDF text. Every scored question is labelled answerable, "
            "so this part says **nothing** about out-of-scope false accepts. Three questions the assistant could not classify were left unscored. About half of the "
+           "scored questions have loose expected facts (marked weak), so \"answer correct\" over-credits; the matcher also misses some paraphrased correct answers, "
+           "so the figures are a proxy in both directions.", "",
+           "| Generator | Questions | In-corpus n | Pass | Answer correct | Validated precision |", "|---|---|---|---|---|---|"]
+    for gen, rep in (("extractive", ext), ("llm", llm)):
+        rep = rescored(rep)
+        for name, keep in (("all", lambda i: True), ("firm labels", lambda i: not weak(i)), ("weak labels", weak)):
+            k = counts(sub(rep, keep))
+            out.append(f"| {gen} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                       f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
+    r = ext["retrieval"]
+    out += ["", f"Retrieval: Hit@5 {pct(r['hit@5'])}, Hit@10 {pct(r['hit@10'])}, MRR {r['mrr']:.3f}, document-level Precision@5 {pct(r['precision@5'])}.", ""]
+    return out
+
+
+def section_sealed4() -> list[str]:
+    ext, llm = load("real", "sealed4", "extractive", "sealed4_storage"), load("real", "sealed4", "llm", "sealed4_storage")
+    if not (ext and llm):
+        return []
+    qs = {q.id: q for q in load_queries(CORPORA["real"]["queries"], "sealed4")}
+    weak = lambda i: "weak:" in qs[i].note
+    sub = lambda rp, keep: {**rp, "records": [r for r in rp["records"] if keep(r["id"])]}
+    out = ["## 16. Third sealed set, part 2: the CDC Vaccine Storage and Handling Toolkit (S01 to S47)", "",
+           "The owner's questions on the 2026 CDC vaccine storage toolkit, run once per generator on the frozen configuration (rules: `evaluation/reports/sealed4_run_rules.txt`, "
+           "committed first). The owner supplied no expected answers; the assistant labelled them from the PDF text. Every scored question is labelled answerable, "
+           "so this part says **nothing** about out-of-scope false accepts. Three questions the assistant could not classify were left unscored (two of them turned out to be answerable when run afterwards). About half of the "
            "scored questions have loose expected facts (marked weak), so \"answer correct\" over-credits; the matcher also misses some paraphrased correct answers, "
            "so the figures are a proxy in both directions.", "",
            "| Generator | Questions | In-corpus n | Pass | Answer correct | Validated precision |", "|---|---|---|---|---|---|"]

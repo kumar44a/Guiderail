@@ -86,6 +86,14 @@ def stats_block() -> str:
             k = bs.counts(bs.rescored(rep))
             lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
                          f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
+    sto = {g: bs.load("real", "sealed4", g, "sealed4_storage") for g in ("extractive", "llm")}
+    if all(sto.values()):
+        lines += ["", "**Third sealed set, part 2 (CDC vaccine storage toolkit; all questions answerable, so no out-of-scope column):**", "",
+                  "| Generator | In-corpus n | Pass | Answer correct | Validated precision |", "|---|---|---|---|---|"]
+        for gen, rep in sto.items():
+            k = bs.counts(bs.rescored(rep))
+            lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
+                         f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
     lines.append(END)
     return "\n".join(lines)
 
