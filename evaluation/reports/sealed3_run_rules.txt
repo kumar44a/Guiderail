@@ -1,0 +1,17 @@
+Third sealed run, part 1: CDC isolation guideline (2007). Written and committed BEFORE these questions were run on the system.
+Part 2 (the vaccine storage toolkit questions) is still being written by the owner and will be added to the same split with its own rules note.
+
+Set: real corpus, split "sealed3", ids I01-I47. The owner's CDC isolation questions, pasted without expected answers. The owner's text lists 50 distinct questions
+(its negative and edge groups were pasted twice; duplicates dropped). The assistant labelled them from the PDF text before any run; check_labels.py confirms
+every expected fact exists in the document (0 problems). Nothing was tried on the system first.
+
+Scored: 47 questions, all labelled answerable. 28 of them carry loose expected facts (marked "weak:" in the record note), so "answer correct" over-credits and the
+firm rows are the better guide. Not scored: 3 questions the assistant could not classify after searching several phrasings (household members and varicella;
+recontamination of clean hands near environmental surfaces; emergency intubation with unknown pathogen status). They are listed in evaluation/sealed3_unscored_iso.json
+and are run and shown separately afterwards.
+No question is labelled out of scope, so this part measures nothing about false accepts on out-of-scope questions. That is a gap in the set, not a result.
+The labels are the assistant's judgement (lesson from the second set: one label was wrong in the direction of "not in the documents"; this time
+doubtful questions are left unscored instead of being called out of scope).
+
+Configuration: frozen, as for the earlier sealed runs. Run once with the extractive generator and once with the Claude generator; both are logged in test_split_runs.log.
+Nothing is changed afterwards on the strength of these results. Reported as found; not pooled with the other sealed sets.

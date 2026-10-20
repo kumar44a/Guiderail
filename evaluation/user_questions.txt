@@ -85,3 +85,98 @@ Which antiseptic agents have poor or non-existent residual persistence on the sk
 What non-enveloped viruses exhibit reduced susceptibility to standard alcohol concentrations?
 How does high workload, understaffing, and overcrowding negatively impact hand hygiene compliance?
 What institutional barriers prevent health-care facilities from maintaining an effective patient safety culture?
+
+# CDC isolation
+# Positive Questions (Standard Implementation, Best Practices & Indications)
+Questions asking how to properly implement protocols, baseline requirements, and standard operating procedures.
+What are the core components of Standard Precautions that apply to all patients regardless of suspected infection status?
+What are the three transmission-based categories added on top of Standard Precautions?
+When should healthcare personnel wear a surgical mask during lumbar puncture and spinal procedures?
+What are the essential elements of Respiratory Hygiene/Cough Etiquette at initial triage or reception?
+What are the recommended environmental air-exchange rates and pressure requirements for an Airborne Infection Isolation Room (AIIR)?
+When is an alcohol-based hand rub preferred over soap and water for routine clinical hand decontamination?
+Under what clinical criteria can Droplet Precautions be initiated empirically before confirmatory laboratory tests return?
+How far apart should patient beds be separated in multi-bed rooms when single rooms are unavailable for contact or droplet isolation?
+What specific environmental controls define a Protective Environment for allogeneic hematopoietic stem cell transplant (HSCT) patients?
+Which vaccines are recommended to provide post-exposure prophylaxis or routine occupational immunity to healthcare workers?
+What personal protective equipment (PPE) must be donned immediately upon entering a room under Contact Precautions?
+What criteria and minimum timeframes are used to determine when transmission-based precautions can be safely discontinued?
+How should reusable patient-care equipment be reprocessed before being transferred to another patient?
+What role does clinical microbiology laboratory support play in routine infection surveillance and outbreak control?
+What are the recommended administrative policies for screening visitors entering high-risk clinical units like ICUs or oncology wards?
+In what circumstances is the use of single-dose medication vials preferred over multiple-dose vials?
+What steps must be taken to safely don and doff PPE to prevent self-contamination during patient care?
+
+# Negative Questions (Contraindications, Prohibitions, Breaches & Adverse Risks)
+Questions addressing what must NOT be done, documented failure modes, safety hazards, and adverse consequences.
+Why must used needles and syringes never be reinserted into a multiple-dose vial or saline container?
+Under what conditions is an alcohol-based hand rub ineffective, mandating the use of soap and water instead?
+Why should non-immune healthcare personnel be prohibited from caring for patients with airborne diseases like varicella or measles?
+What psychological and clinical adverse effects are associated with placing patients on isolation precautions?
+Why are dried and fresh flowers or potted plants strictly prohibited in the rooms of HSCT patients?
+Why is it unsafe to dismantle used needle-syringe assemblies in the same workspace where new medications are prepared?
+What are the consequences of not wearing a face mask while placing a central venous line or performing a myelogram?
+When should visitors displaying active communicable symptoms be excluded from entering inpatient facilities?
+Why does a single negative surveillance culture fail to justify the removal of Contact Precautions for multi-drug resistant organisms (MDROs)?
+Why should routine barrier precautions not be expanded beyond Standard/Transmission precautions for solid organ transplant recipients in non-protective environments?
+What hazards occur when reusable medical devices are shared between patients without documented intermediate reprocessing?
+Why is the reuse of single-use disposable needles or syringes between different patients considered a major regulatory breach?
+What negative outcomes are linked to inadequate nurse staffing levels in high-risk intensive care units?
+Why should symptomatic healthcare personnel with acute respiratory illness avoid direct contact with high-risk patients?
+What common procedural failures in ambulatory clinics have repeatedly triggered large outbreaks of Hepatitis B and Hepatitis C?
+Why is a lack of documented fever insufficient evidence to rule out a contagious respiratory infection like pertussis?
+Why is relying on glove use alone without performing pre- and post-glove hand hygiene a violation of infection control standards?
+
+# Edge Questions (Resource Constraints, Ambiguities, Atypical Cases & Complex Scenarios)
+Questions exploring gray areas, border cases between guidelines, home/ambulatory care exceptions, and multi-pathogen complexities.
+How should a facility manage a patient needing Airborne Precautions when no certified AIIR room or negative pressure system is available?
+What is the appropriate protocol for terminally ill patients whose only visiting family members are actively coughing or symptomatic?
+How should transmission-based precautions be adapted for home healthcare settings where specialized ventilation cannot be engineered?
+Should family members living in the same household wear respirators or masks when visiting a hospitalized family member with known varicella exposure?
+How should Contact Precautions be handled in multi-bed units when private isolation rooms are completely occupied?
+How should immunocompromised patients with prolonged viral shedding (weeks to months) be managed regarding isolation duration?
+What PPE is required when dealing with emerging pathogens that transmit via multiple overlapping routes (e.g., SARS-CoV)?
+How does the management of MDRO colonization differ between acute care hospitals and long-term care facilities (LTCFs)?
+What respiratory protection is required for an HSCT patient who must leave a Protective Environment during active hospital construction?
+How should pediatric patients with coughing fits be handled if developmental or clinical factors make wearing a surgical mask impossible?
+Under what circumstances can two patients with the same confirmed infectious pathogen be cohorted in the same isolation room?
+What protocol governs healthcare personnel with waning acellular pertussis immunity who are exposed during a neonatal unit outbreak?
+What specific criteria allow a facility to permanently classify a patient as an MDRO carrier versus attempting decolonization?
+What infection control steps are warranted when a patient presents with an undiagnosed febrile rash illness of unknown etiology?
+How should clean hands be protected from re-contamination when manipulating environmental surfaces immediately surrounding a bedridden patient?
+What is the protocol for administering emergency endotracheal intubation when the transmissible pathogen status is entirely unknown?
+
+Why must used needles and syringes never be reinserted into a multiple-dose vial or saline container?
+Under what conditions is an alcohol-based hand rub ineffective, mandating the use of soap and water instead?
+Why should non-immune healthcare personnel be prohibited from caring for patients with airborne diseases like varicella or measles?
+What psychological and clinical adverse effects are associated with placing patients on isolation precautions?
+Why are dried and fresh flowers or potted plants strictly prohibited in the rooms of HSCT patients?
+Why is it unsafe to dismantle used needle-syringe assemblies in the same workspace where new medications are prepared?
+What are the consequences of not wearing a face mask while placing a central venous line or performing a myelogram?
+When should visitors displaying active communicable symptoms be excluded from entering inpatient facilities?
+Why does a single negative surveillance culture fail to justify the removal of Contact Precautions for multi-drug resistant organisms (MDROs)?
+Why should routine barrier precautions not be expanded beyond Standard/Transmission precautions for solid organ transplant recipients in non-protective environments?
+What hazards occur when reusable medical devices are shared between patients without documented intermediate reprocessing?
+Why is the reuse of single-use disposable needles or syringes between different patients considered a major regulatory breach?
+What negative outcomes are linked to inadequate nurse staffing levels in high-risk intensive care units?
+Why should symptomatic healthcare personnel with acute respiratory illness avoid direct contact with high-risk patients?
+What common procedural failures in ambulatory clinics have repeatedly triggered large outbreaks of Hepatitis B and Hepatitis C?
+Why is a lack of documented fever insufficient evidence to rule out a contagious respiratory infection like pertussis?
+Why is relying on glove use alone without performing pre- and post-glove hand hygiene a violation of infection control standards?
+
+How should a facility manage a patient needing Airborne Precautions when no certified AIIR room or negative pressure system is available?
+What is the appropriate protocol for terminally ill patients whose only visiting family members are actively coughing or symptomatic?
+How should transmission-based precautions be adapted for home healthcare settings where specialized ventilation cannot be engineered?
+Should family members living in the same household wear respirators or masks when visiting a hospitalized family member with known varicella exposure?
+How should Contact Precautions be handled in multi-bed units when private isolation rooms are completely occupied?
+How should immunocompromised patients with prolonged viral shedding (weeks to months) be managed regarding isolation duration?
+What PPE is required when dealing with emerging pathogens that transmit via multiple overlapping routes (e.g., SARS-CoV)?
+How does the management of MDRO colonization differ between acute care hospitals and long-term care facilities (LTCFs)?
+What respiratory protection is required for an HSCT patient who must leave a Protective Environment during active hospital construction?
+How should pediatric patients with coughing fits be handled if developmental or clinical factors make wearing a surgical mask impossible?
+Under what circumstances can two patients with the same confirmed infectious pathogen be cohorted in the same isolation room?
+What protocol governs healthcare personnel with waning acellular pertussis immunity who are exposed during a neonatal unit outbreak?
+What specific criteria allow a facility to permanently classify a patient as an MDRO carrier versus attempting decolonization?
+What infection control steps are warranted when a patient presents with an undiagnosed febrile rash illness of unknown etiology?
+How should clean hands be protected from re-contamination when manipulating environmental surfaces immediately surrounding a bedridden patient?
+What is the protocol for administering emergency endotracheal intubation when the transmissible pathogen status is entirely unknown?
