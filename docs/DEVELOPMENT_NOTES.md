@@ -50,7 +50,7 @@ Limits of these checks:
 
 ## 3. Not verified
 
-- **Docker.** The Dockerfile and compose file were written without Docker being installed, so they have never been built or run.
+- **Docker (partly verified).** The Dockerfile and compose file were written without Docker, then run once later on macOS with Docker Desktop 29.9.1: images built, the API container became healthy, `/health` matched the local index hash, `/qa` answered and abstained as expected, the UI returned HTTP 200. Not verified: the Claude generator or a mounted real-PDF index in the container, Linux, and Windows.
 - **Windows.** The Windows setup commands were not run on Windows.
 - **The Streamlit UI in a real browser.** It is tested headlessly with Streamlit's `AppTest` against the real API app, not by eye.
 - **Clinical correctness.** Nothing here has been checked against medical judgement.

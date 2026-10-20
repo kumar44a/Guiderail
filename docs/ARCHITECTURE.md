@@ -132,7 +132,7 @@ Decisions worth knowing:
 - The LLM generator is nondeterministic and still withholds a share of correct answers on real documents at the default threshold.
 - Document-level Precision@5 first missed 0.65; a larger corpus (v2) showed document size was not the cause, and a document-cohesion re-rank (round 8) then cleared the target on a fresh final set. That is a document-level metric; it does not fix passages missed because of wording differences on real PDFs.
 - Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
-- Docker files and the Windows setup instructions were written but not run on a machine of that kind.
+- Docker was verified once on macOS only (build, API health, `/qa`, UI); the Windows setup instructions were written but not run.
 
 ## 9. Phases
 
@@ -142,5 +142,5 @@ Decisions worth knowing:
 | 1 Corpus and index | corpus, loaders, chunker, embedder, FAISS, manifest | done |
 | 2 RAG service | retriever, generators, validator, `/qa`, `/health` | done |
 | 3 Evaluation | labeled sets, metrics, sweep, stress test, reports (re-run on the five-document real corpus) | done |
-| 4 Packaging | README with generated stats, RUNBOOK, Docker, Streamlit, DEVELOPMENT_NOTES, docs-sync check | done (Docker unrun) |
-| 5 Submission | executed notebook, technical summary, metrics, limitations | done (Docker unrun) |
+| 4 Packaging | README with generated stats, RUNBOOK, Docker, Streamlit, DEVELOPMENT_NOTES, docs-sync check | done (Docker verified on macOS only) |
+| 5 Submission | executed notebook, technical summary, metrics, limitations | done |

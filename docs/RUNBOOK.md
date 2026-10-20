@@ -183,8 +183,8 @@ docker compose up --build        # API :9070, UI :8501
 ```
 
 The image builds the synthetic index at build time and fails the build if two builds differ. By default it serves the extractive
-generator with no network access. **These files were written but never run**: Docker was not installed on the development machine.
-Expect to debug the first build. For the real PDFs, build `index_real` on the host and mount it:
+generator with no network access. **Verified once**, on macOS with Docker Desktop 29.9.1: both images built, the API container became healthy, `/health` matched the local index hash, `/qa` answered, and the UI returned HTTP 200. Not tried: the Claude generator in the container, a mounted real-PDF index, Linux, Windows.
+If port 9070 or 8501 is already in use on the host, stop the other process first (the UI container failed to start for that reason during verification). For the real PDFs, build `index_real` on the host and mount it:
 `volumes: ["./index_real:/app/index_real:ro"]` with `GUIDERAIL_INDEX_DIR=/app/index_real`.
 
 ## 8. Troubleshooting

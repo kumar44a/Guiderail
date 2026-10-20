@@ -1,5 +1,5 @@
 # docker compose up --build        -> API on http://localhost:9070, UI on http://localhost:8501
-# Not run on the machine this was written on (Docker was not installed there): see docs/RUNBOOK.md.
+# Verified once on macOS (Docker Desktop 29.9.1): builds, API healthy, /qa answers, UI serves. Not tried on Linux or Windows: see docs/RUNBOOK.md.
 services:
   api:
     build: .

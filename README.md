@@ -117,8 +117,8 @@ streamlit run ui/app.py        # talks to the API at GUIDERAIL_API_URL (default 
 docker compose up --build      # API on :9070, UI on :8501
 ```
 
-The Docker files were written but **not run** on the machine this was built on (Docker was not installed there).
-See the RUNBOOK before depending on them.
+The Docker setup was run once on macOS (Apple silicon) with Docker Desktop 29.9.1: both images built (the build includes the determinism check), the API container reported healthy, `/health` returned the same index hash as a local build, `/qa` answered an in-scope question and sent an out-of-scope one to review, and the UI answered with HTTP 200. Not tried: the Claude generator or a mounted real-PDF index inside Docker, Linux, Windows.
+See the RUNBOOK for the details.
 
 ## Using real documents and the LLM generator
 

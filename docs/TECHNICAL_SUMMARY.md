@@ -44,7 +44,7 @@ The current figures are in the README block and report sections 2 to 4. Read the
 - **Independent evidence is thin and author-biased.** The synthetic corpus, queries, labels and stress cases were written by the same AI that wrote the system; no clinician has reviewed any guideline text, query, label or answer. The owner's question sets came without expected answers, so the labels are the assistant's reading of the PDFs (one was wrong and was corrected, and many are loosely worded). Only a few sealed questions are out of scope, so false-accept behaviour is barely measured.
 - **Answer-correct is a fact-string proxy**, which misses some correct paraphrases and over-credits loose labels.
 - **Real-PDF extraction** is lossy (reference lists become noise, figure text is jumbled, image-only pages give no text, no OCR). The French WHO file was excluded.
-- **Not run:** Docker and the Windows setup were written but never executed; the Streamlit UI was tested headlessly, not in a browser.
+- **Partly verified:** Docker was built and run once on macOS (API healthy, `/qa` answered, UI served); the Claude generator and a mounted real-PDF index were not tried in the container, and Linux and Windows setups were never run. The Streamlit UI was tested headlessly and by a Docker HTTP check, not by eye in a browser.
 
 ## Reproducing it
 

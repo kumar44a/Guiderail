@@ -79,7 +79,7 @@ display(Markdown(block))"""),
 - **Precision@5 of 0.65:** missed at first on the synthetic corpus; a document-cohesion re-rank (retrieval round 8) reached it on a fresh final set, judged under rules written first (report section 18). The brief's own v1 held-out figure sits right on the threshold.
 - **Not met:** the Claude generator's 80% pass rate on the real-PDF held-out split.
 - **Weak:** on real PDFs, retrieval is lexical and often misses the passage that answers a question worded differently from the document. The offline extractive generator can then validate a wrong answer; use the Claude generator for real documents. A semantic embedding model would help and was ruled out for this project.
-- **Thin evidence:** the corpus and queries were written by the same AI that wrote the system; no clinician reviewed anything; only a few out-of-scope questions exist in the independent sets; Docker and Windows setups were never run.
+- **Thin evidence:** the corpus and queries were written by the same AI that wrote the system; no clinician reviewed anything; only a few out-of-scope questions exist in the independent sets; Docker was verified on macOS only and the Windows setup never ran.
 
 Full account: `docs/EVALUATION_REPORT.md` (sections 11 to 16), `docs/DEVELOPMENT_NOTES.md`."""),
 ]
