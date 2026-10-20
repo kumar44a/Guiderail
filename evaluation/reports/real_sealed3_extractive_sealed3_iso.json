@@ -1,0 +1,2550 @@
+{
+  "corpus": "real",
+  "generator": "extractive",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Standard Precautions include a group of infection prevention practices that apply to all patients, regardless of suspected or confirmed infection status, in any setting in which healthcare is delivered (Table 4). A group of infection prevention practices that apply to all patients, regardless of suspected or confirmed diagnosis or presumed infection status.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-0",
+        "cdc-isolation-precautions-2007#hygiene-cough-etiquette-in-healthcare-settings-p-139-2"
+      ],
+      "cited": true,
+      "confidence": 0.855,
+      "correct": false,
+      "generator_error": null,
+      "id": "I01",
+      "kind": "in_corpus",
+      "question": "What are the core components of Standard Precautions that apply to all patients regardless of suspected infection status?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.855,
+        "coverage": 1.0,
+        "question_support": 0.71,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "There are three categories of Transmission-Based Precautions: Contact Precautions, Droplet Precautions, and Airborne Precautions. Included three transmission-based precaution categories: airborne, droplet, and contact For some diseases that have multiple routes of transmission (e.g., SARS), more than one Transmission-Based Precautions category may be used.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-0",
+        "cdc-isolation-precautions-2007#precautions-in-hospitals-p-122-2-0"
+      ],
+      "cited": true,
+      "confidence": 0.799,
+      "correct": true,
+      "generator_error": null,
+      "id": "I02",
+      "kind": "in_corpus",
+      "question": "What are the three transmission-based categories added on top of Standard Precautions?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.799,
+        "coverage": 1.0,
+        "question_support": 0.598,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Infection control practices for special lumbar puncture procedures Wear a surgical mask when placing a catheter or injecting material into the spinal canal or subdural space (i.e., during myelograms, lumbar puncture and spinal or epidural anesthesia).906 907-909 910, 911 912-914, 918 1007 Category IB IV.J. As a result, the question of whether face masks should be worn to prevent droplet spread of oral flora during spinal procedures (e.g., myelogram, lumbar puncture, spinal anesthesia) has been debated916, 917. Three such areas of practice that have been added are: Respiratory Hygiene/Cough Etiquette, safe injection practices, and use of masks for insertion of catheters or injection of material into spinal or epidural spaces via lumbar puncture procedures (e.g., myelogram, spinal or epidural anesthesia).",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-4",
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-22",
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-5"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "I03",
+      "kind": "in_corpus",
+      "question": "When should healthcare personnel wear a surgical mask during lumbar puncture and spinal procedures?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Respiratory hygiene/cough etiquette (source containment of infectious respiratory secretions in symptomatic patients, beginning at initial point of encounter e.g., triage and reception areas in emergency departments and physician offices) Instruct symptomatic persons to cover mouth/nose when sneezing/coughing; use tissues and dispose in no-touch receptacle; observe hand hygiene after soiling of hands with respiratory secretions; wear surgical mask if tolerated or maintain spatial separation, >3 feet if possible. Implement the following measures to contain respiratory secretions in patients and accompanying individuals who have signs and symptoms of a respiratory infection, beginning at the point of initial encounter in a healthcare setting (e.g., triage, reception and waiting areas in emergency departments, outpatient clinics and physician offices) 20, 24, 145, 902, 989. These measures are targeted to all patients with symptoms of respiratory infection and their accompanying family members or friends beginning at the point of initial encounter with a healthcare setting (e.g., reception/triage in emergency departments, ambulatory clinics, healthcare provider offices)126 (Srinivasin A ICHE 2004; 25: 1020; Respiratory",
+      "citations": [
+        "cdc-isolation-precautions-2007#component-recommendations-p-129-5",
+        "cdc-isolation-precautions-2007#iv-c-respiratory-hygiene-cough-etiquette-p-83-1",
+        "cdc-isolation-precautions-2007#masks-and-n95-respirators-p-138-11"
+      ],
+      "cited": true,
+      "confidence": 0.879,
+      "correct": true,
+      "generator_error": null,
+      "id": "I04",
+      "kind": "in_corpus",
+      "question": "What are the essential elements of Respiratory Hygiene/Cough Etiquette at initial triage or reception?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.879,
+        "coverage": 1.0,
+        "question_support": 0.758,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "An AIIR is a single-patient room that is equipped with special air handling and ventilation capacity that meet the American Institute of Architects/Facility Guidelines Institute (AIA/FGI) standards for AIIRs (i.e., monitored negative pressure relative to the surrounding area, 12 air exchanges per hour for new construction and renovation and 6 air exchanges per hour for existing facilities, air exhausted directly to the outside or recirculated through HEPA filtration before return)12, 13. The term “Airborne Precautions” has been supplemented with the term “Airborne Infection Isolation Room (AIIR)” for consistency with the Guidelines for Environmental Infection Control in Healthcare Facilities11, the Guidelines for Preventing the Transmission of Mycobacterium tuberculosis in Health-Care Settings 200512 and the American Institute of Architects (AIA) guidelines for design and construction of hospitals, 200613 Formerly, negative pressure isolation room, an AIIR is a single-occupancy patient-care room used to isolate persons with a suspected or confirmed airborne infectious disease.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-10",
+        "cdc-isolation-precautions-2007#infectious-agents-in-healthcare-settings-p-14-10",
+        "cdc-isolation-precautions-2007#hand-hygiene-p-133-0"
+      ],
+      "cited": true,
+      "confidence": 0.837,
+      "correct": true,
+      "generator_error": null,
+      "id": "I05",
+      "kind": "in_corpus",
+      "question": "What are the recommended environmental air-exchange rates and pressure requirements for an Airborne Infection Isolation Room (AIIR)?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.837,
+        "coverage": 1.0,
+        "question_support": 0.749,
+        "reasons": [],
+        "retrieval_relevance": 0.925,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use an alcohol-based handrub as the preferred means for routine hand antisepsis in all other clinical situations described in items D(a) to D(f) listed below if hands are not visibly soiled (IA).75, 82, 94, 95, 145-149 If alcohol-based handrub is not obtainable, wash hands with soap and water (IB). In the absence of visible soiling of hands, approved alcohol-based products for hand disinfection are preferred over antimicrobial or plain soap and water because of their superior microbiocidal activity, reduced drying of the skin, and convenience559. The preferred method of hand decontamination is with an alcohol-based hand rub562, 978.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-1",
+        "cdc-isolation-precautions-2007#iv-a-hand-hygiene-p-80-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "I06",
+      "kind": "in_corpus",
+      "question": "When is an alcohol-based hand rub preferred over soap and water for routine clinical hand decontamination?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "While it is not possible to identify prospectively all patients needing Transmission-Based Precautions, certain clinical syndromes and conditions carry a sufficiently high risk to warrant their use empirically while confirmatory tests are pending (Table 2). Since laboratory tests, especially those that depend on culture techniques, often require two or more days for completion, Transmission-Based Precautions must be implemented while test results are pending based on the clinical presentation and likely pathogens. Application of rapid diagnostic tests to support clinical decisions involving patient treatment, room selection, and implementation of control measures including barrier precautions and use of vaccine or chemoprophylaxis agents (e.g., influenza610-612, B. pertussis613, RSV614, 615, and enteroviruses616). The microbiologist provides guidance to limit rapid testing to clinical situations in which rapid results influence patient management decisions, as well as providing oversight of point-of-care testing performed by non-laboratory healthcare workers617.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-c-syndromic-and-empiric-applications-of-transmission-based-precautions-p-74-1",
+        "cdc-isolation-precautions-2007#iii-c-syndromic-and-empiric-applications-of-transmission-based-precautions-p-74-0",
+        "cdc-isolation-precautions-2007#of-precautions-to-prevent-transmission-p-44-24"
+      ],
+      "cited": true,
+      "confidence": 0.739,
+      "correct": true,
+      "generator_error": null,
+      "id": "I07",
+      "kind": "in_corpus",
+      "question": "Under what clinical criteria can Droplet Precautions be initiated empirically before confirmatory laboratory tests return?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.739,
+        "coverage": 1.0,
+        "question_support": 0.478,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Options for patient placement include single patient rooms, two patient rooms, and multi-bed wards. Spatial separation of ≥3 feet and drawing the curtain between patient beds is especially important for patients in multi-bed rooms with infections transmitted by the droplet route. Single-patient rooms are always indicated for patients placed on Airborne Precautions and in a Protective Environment and are preferred for patients who require Contact or Droplet Precautions23, 24, 410, 435, 796, 797.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-0",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-7",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-4"
+      ],
+      "cited": true,
+      "confidence": 0.762,
+      "correct": true,
+      "generator_error": null,
+      "id": "I08",
+      "kind": "in_corpus",
+      "question": "How far apart should patient beds be separated in multi-bed rooms when single rooms are unavailable for contact or droplet isolation?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.762,
+        "coverage": 1.0,
+        "question_support": 0.524,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Place allogeneic hematopoietic stem cell transplant (HSCT) patients in a Protective Environment as described in the “Guideline to Prevent Opportunistic Infections in HSCT Patients” (https://www.cdc.gov/mmwr/preview/mmwrhtml/rr4910a1.htm accessed May 2016)15, the “Guideline for Environmental Infection Control in Health-Care Facilities” (https://www.cdc.gov/infectioncontrol/guidelines/environmental/index.html ac cessed May 2016)11 and the “Guidelines for Preventing Health-Care-Associated Pneumonia, 2003” (https://www.cdc.gov/infectioncontrol/guidelines/pneumonia/index.html ac cessed May 2016)14 to reduce exposure to environmental fungi (e.g., Aspergillus sp)157, 158. A set of prevention measures termed Protective Environment has been added to the precautions used to prevent HAIs. These measures, which have been defined in other guidelines , consist of engineering and design interventions that decrease the risk of exposure to environmental fungi for severely immunocompromised allogeneic hematiopoietic stem cell transplant (HSCT) patients during their highest risk phase, usually the first 100 days post transplant, or longer in the presence of graft-versushost disease11, 13-15. Recommendations for a Protective Environment apply The accumulated evidence that environmental controls decrease the risk of lifethreatening fungal infections in the most severely immunocompromised patients (allogeneic hematopoietic stem-cell transplant patients) led to the update on the components of the Protective Environment (PE).",
+      "citations": [
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-0",
+        "cdc-isolation-precautions-2007#infectious-agents-in-healthcare-settings-p-14-11",
+        "cdc-isolation-precautions-2007#executive-summary-p-9-6"
+      ],
+      "cited": true,
+      "confidence": 0.966,
+      "correct": false,
+      "generator_error": null,
+      "id": "I09",
+      "kind": "in_corpus",
+      "question": "What specific environmental controls define a Protective Environment for allogeneic hematopoietic stem cell transplant (HSCT) patients?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.966,
+        "coverage": 1.0,
+        "question_support": 0.931,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Varicella Post-exposure Prophylaxis Update [May 2019] Postexposure prophylaxis: provide postexposure vaccine ASAP but within 120 hours; for susceptible exposed persons for whom vaccine is contraindicated (immunocompromised persons, pregnant women, newborns whose mother’s varicella onset is <5 days before delivery or within 48 hours after delivery) provide varicella zoster immune globulin as soon as possible after exposure and within 10 days. Workers at Bacillus anthracis-Contaminated Sites — United States, 2001–2002 (https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5135a3.h t m accessed September 2018).) Hand hygiene: Handwashing for 30-60 seconds with soap and water or 2% chlorhexidine gluconate after spore contact (alcohol handrubs inactive against spores [983].) Postexposure prophylaxis following environmental exposure: 60 days of antimicrobials (either doxycycline, ciprofloxacin, or levofloxacin) and Postexposure vaccine under IND. Aerosolized powder, environmental exposures: Respirator (N95 mask or Powered Air Purifying Respirators), protective clothing; decontamination of persons with powder on them (Notice to Readers: Occupational Health Guidelines for Remediation Workers at Bacillus anthracis-Contaminated Sites --- United States, 2001--2002 (https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5135a3.htm a ccessed September 2018).",
+      "citations": [
+        "cdc-isolation-precautions-2007#varicella-zoster-airborne-p-119-1",
+        "cdc-isolation-precautions-2007#readers-occupational-health-guidelines-for-remediation-p-100-0",
+        "cdc-isolation-precautions-2007#characteristics-additional-information-p-126-0"
+      ],
+      "cited": true,
+      "confidence": 0.879,
+      "correct": true,
+      "generator_error": null,
+      "id": "I10",
+      "kind": "in_corpus",
+      "question": "Which vaccines are recommended to provide post-exposure prophylaxis or routine occupational immunity to healthcare workers?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.879,
+        "coverage": 1.0,
+        "question_support": 0.759,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "However, when Contact Precautions are used (i.e., to prevent transmission of an infectious agent that is not interrupted by Standard Precautions alone and that is associated with environmental contamination), donning of both gown and gloves upon room entry is indicated to address unintentional contact with contaminated environmental surfaces54, 72, 73, 88. Use vacuum cleaner equipped with HEPA filters when vacuum cleaning is necessary Figure. Example of Safe Donning and Removal of Personal Protective Equipment (PPE) For updated content see Sequence for Putting on Personal Protective Equipment Example of Safe Donning and Removal of Personal Protective Equipment (PPE) ...............................",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-12",
+        "cdc-isolation-precautions-2007#v-other-p-131-0",
+        "cdc-isolation-precautions-2007#table-of-contents-p-4-11"
+      ],
+      "cited": true,
+      "confidence": 0.814,
+      "correct": true,
+      "generator_error": null,
+      "id": "I11",
+      "kind": "in_corpus",
+      "question": "What personal protective equipment (PPE) must be donned immediately upon entering a room under Contact Precautions?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.814,
+        "coverage": 1.0,
+        "question_support": 0.628,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "See the 2006 HICPAC/CDC MDRO guideline 927 for discussion of possible criteria to discontinue Contact Precautions for patients colonized or infected with MDROs. Criteria used to assign Transmission-Based Precautions categories follow: Transmission-Based Precautions are used when the route(s) of transmission is (are) not completely interrupted using Standard Precautions alone.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-5",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-11",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-0"
+      ],
+      "cited": true,
+      "confidence": 0.738,
+      "correct": false,
+      "generator_error": null,
+      "id": "I12",
+      "kind": "in_corpus",
+      "question": "What criteria and minimum timeframes are used to determine when transmission-based precautions can be safely discontinued?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.738,
+        "coverage": 1.0,
+        "question_support": 0.477,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Develop and implement policies and procedures to ensure that reusable patient care equipment is cleaned and reprocessed appropriately before use on another patient11, 956, 957, 958, 959, 836, 87, 11, 960, 961. Also, equipment or items in the patient environment likely to have been contaminated with infectious fluids must be handled in a manner to prevent transmission of infectious agents, (e.g., wear gloves for handling, contain heavily soiled equipment, properly clean and disinfect or sterilize reusable equipment before use on another patient). Also, equipment or items in the patient environment likely to have been contaminated with infectious body fluids must be handled in a manner to prevent transmission of infectious agents (e.g., wear gloves for direct contact, contain heavily soiled equipment, properly clean and disinfect or sterilize reusable equipment before use on another patient).",
+      "citations": [
+        "cdc-isolation-precautions-2007#ib-ic-p-78-0",
+        "cdc-isolation-precautions-2007#hygiene-cough-etiquette-in-healthcare-settings-p-139-4",
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-1"
+      ],
+      "cited": true,
+      "confidence": 0.908,
+      "correct": true,
+      "generator_error": null,
+      "id": "I13",
+      "kind": "in_corpus",
+      "question": "How should reusable patient-care equipment be reprocessed before being transferred to another patient?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.908,
+        "coverage": 1.0,
+        "question_support": 0.816,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The critical role of the clinical microbiology laboratory in infection control and healthcare epidemiology is described well553, 554, 598-600 and is supported by the Infectious Disease Society of America policy statement on consolidation of clinical microbiology laboratories published in 2001 553. The role of the clinical microbiology laboratory in supporting infection control is described to emphasize the need for this service in healthcare facilities. The role of the microbiology laboratory in surveillance and control of nosocomial infections.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-precautions-to-prevent-transmission-p-44-18",
+        "cdc-isolation-precautions-2007#infectious-agents-in-healthcare-settings-p-10-3",
+        "cdc-isolation-precautions-2007#states-national-nosocomial-infections-surveillance-system-pediatrics-p-164-73"
+      ],
+      "cited": true,
+      "confidence": 0.841,
+      "correct": false,
+      "generator_error": null,
+      "id": "I14",
+      "kind": "in_corpus",
+      "question": "What role does clinical microbiology laboratory support play in routine infection surveillance and outbreak control?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.841,
+        "coverage": 1.0,
+        "question_support": 0.681,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Screen visitors to high-risk patient care areas (e.g., oncology units, hematopoietic stem cell transplant [HSCT] units, intensive care units, other severely immunocompromised patients) for possible infection43 24, 41, 962, 963.Category IB I.F. Visitor screening is especially important during community outbreaks of infectious diseases and for high risk patient units.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ib-ic-p-78-3",
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-12"
+      ],
+      "cited": true,
+      "confidence": 0.646,
+      "correct": true,
+      "generator_error": null,
+      "id": "I15",
+      "kind": "in_corpus",
+      "question": "What are the recommended administrative policies for screening visitors entering high-risk clinical units like ICUs or oncology wards?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.646,
+        "coverage": 1.0,
+        "question_support": 0.559,
+        "reasons": [],
+        "retrieval_relevance": 0.732,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Whenever possible, use of single-dose vials is preferred over multiple-dose vials, especially when medications will be administered to multiple patients. Do not administer medications from single-dose vials or ampules to multiple patients or combine leftover contents for later use369 453, 1005. Use single-dose vials for parenteral medications whenever possible453.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-17",
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-2"
+      ],
+      "cited": true,
+      "confidence": 0.938,
+      "correct": true,
+      "generator_error": null,
+      "id": "I16",
+      "kind": "in_corpus",
+      "question": "In what circumstances is the use of single-dose medication vials preferred over multiple-dose vials?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.938,
+        "coverage": 1.0,
+        "question_support": 0.876,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "It may be necessary to change gloves during the care of a single patient to prevent cross-contamination of body sites559, 740. New in this guideline is a figure that shows a recommended sequence for donning and removing personal protective equipment used for isolation precautions to optimize safety and prevent self-contamination during removal. During patient care, transmission of infectious organisms can be reduced by adhering to the principles of working from “clean” to “dirty”, and confining or limiting contamination to surfaces that are directly needed for patient care.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-7",
+        "cdc-isolation-precautions-2007#infectious-agents-in-healthcare-settings-p-10-8"
+      ],
+      "cited": true,
+      "confidence": 0.661,
+      "correct": false,
+      "generator_error": null,
+      "id": "I17",
+      "kind": "in_corpus",
+      "question": "What steps must be taken to safely don and doff PPE to prevent self-contamination during patient care?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.661,
+        "coverage": 1.0,
+        "question_support": 0.386,
+        "reasons": [],
+        "retrieval_relevance": 0.935,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "reinsertion of used needles into a multiple-dose vial or solution container (e.g., saline bag) and 2. If multidose vials must be used, both the needle or cannula and syringe used to access the multidose vial must be sterile453, 1002.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-15",
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-3"
+      ],
+      "cited": true,
+      "confidence": 0.831,
+      "correct": false,
+      "generator_error": null,
+      "id": "I18",
+      "kind": "in_corpus",
+      "question": "Why must used needles and syringes never be reinserted into a multiple-dose vial or saline container?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.831,
+        "coverage": 1.0,
+        "question_support": 0.766,
+        "reasons": [],
+        "retrieval_relevance": 0.896,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "difficileassociated outbreaks, in particular glove use (as part of contact precautions) and handwashing with a plain or antimicrobial soap and water following glove removal after caring for patients with diarrhoea.359, 360 Alcohol-based handrubs can then be used exceptionally after handwashing in these instances, after making sure that hands are perfectly dry. For example, washing hands regularly with soap and water immediately before or after using an alcohol-based product is not only unnecessary but may lead to dermatitis.163 The use of very hot water for handwashing should be avoided as it increases the likelihood of skin damage. Use an alcohol-based handrub as the preferred means for routine hand antisepsis in all other clinical situations described in items D(a) to D(f) listed below if hands are not visibly soiled (IA).75, 82, 94, 95, 145-149 If alcohol-based handrub is not obtainable, wash hands with soap and water (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-13",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2"
+      ],
+      "cited": true,
+      "confidence": 0.731,
+      "correct": true,
+      "generator_error": null,
+      "id": "I19",
+      "kind": "in_corpus",
+      "question": "Under what conditions is an alcohol-based hand rub ineffective, mandating the use of soap and water instead?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.731,
+        "coverage": 1.0,
+        "question_support": 0.463,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Personnel restrictions Restrict susceptible healthcare personnel from entering the rooms of patients known or suspected to have measles (rubeola), varicella (chickenpox), disseminated zoster, or smallpox if other immune healthcare personnel are available17, 775. (https://www.cdc.gov/infection-control/hcp/measles/ Susceptible healthcare personnel (HCP) should not enter room i f immune care providers are available; regardless of presumptive evidence of immunity, HCP should use respiratory protection that is at least as protective as a fittested, NIOSH-certified N95 respirator upon entry into the patient's room or care area. Although Airborne Precautions are recommended for preventing airborne transmission of measles and varicella-zoster viruses, there are no data upon which to base a recommendation for respiratory protection to protect susceptible personnel against these two infections; transmission of varicella-zoster virus has been prevented among pediatric patients using negative pressure isolation alone773.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ia-ic-p-91-6",
+        "cdc-isolation-precautions-2007#recommendations-for-measles-in-healthcare-settings-p-108-0",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-38"
+      ],
+      "cited": true,
+      "confidence": 0.791,
+      "correct": true,
+      "generator_error": null,
+      "id": "I20",
+      "kind": "in_corpus",
+      "question": "Why should non-immune healthcare personnel be prohibited from caring for patients with airborne diseases like varicella or measles?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.791,
+        "coverage": 1.0,
+        "question_support": 0.583,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When Transmission-Based Precautions are indicated, efforts must be made to counteract possible adverse effects on patients (i.e., anxiety, depression and other mood disturbances920-922, perceptions of stigma923, reduced contact with clinical staff924-926, and increases in preventable adverse events565 in order to improve acceptance by the patients and adherence by HCWs. In long-term care and other residential settings, make decisions regarding patient placement on a case-by-case basis, balancing infection risks to other patients in the room, the presence of risk factors that increase the likelihood of transmission, and the potential adverse psychological impact on the infected or colonized patient920, Avoid placing patients on Droplet Precautions in the same room with patients who have conditions that may increase the risk of adverse outcome from infection or that may facilitate transmission (e.g., those who are immunocompromised, have or have anticipated prolonged lengths of stay).",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-1",
+        "cdc-isolation-precautions-2007#v-b-contact-precautions-p-87-5",
+        "cdc-isolation-precautions-2007#v-c-droplet-precautions-p-89-2"
+      ],
+      "cited": true,
+      "confidence": 0.953,
+      "correct": true,
+      "generator_error": null,
+      "id": "I21",
+      "kind": "in_corpus",
+      "question": "What psychological and clinical adverse effects are associated with placing patients on isolation precautions?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.953,
+        "coverage": 1.0,
+        "question_support": 0.906,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "prohibiting dried and fresh flowers and potted plants in the rooms of HSCT patients. No flowers (fresh or dried) or potted plants in PE rooms or areas Prohibit dried and fresh flowers and potted plants942-944.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-9",
+        "cdc-isolation-precautions-2007#v-other-p-131-0",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-4"
+      ],
+      "cited": true,
+      "confidence": 0.929,
+      "correct": false,
+      "generator_error": null,
+      "id": "I22",
+      "kind": "in_corpus",
+      "question": "Why are dried and fresh flowers or potted plants strictly prohibited in the rooms of HSCT patients?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.929,
+        "coverage": 1.0,
+        "question_support": 0.859,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In one of these outbreaks, preparation of medications in the same workspace where used needle/syringes were dismantled also may have been a contributing factor. These and other outbreaks of viral hepatitis could have been prevented by adherence to basic principles of aseptic technique for the preparation and administration of parenteral medications 453, 454.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-16"
+      ],
+      "cited": true,
+      "confidence": 0.8,
+      "correct": true,
+      "generator_error": null,
+      "id": "I23",
+      "kind": "in_corpus",
+      "question": "Why is it unsafe to dismantle used needle-syringe assemblies in the same workspace where new medications are prepared?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.8,
+        "coverage": 1.0,
+        "question_support": 0.614,
+        "reasons": [],
+        "retrieval_relevance": 0.985,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Face masks are effective in limiting the dispersal of oropharyngeal droplets918 and are recommended for the placement of central venous catheters919. Infection control practices for special lumbar puncture procedures Wear a surgical mask when placing a catheter or injecting material into the spinal canal or subdural space (i.e., during myelograms, lumbar puncture and spinal or epidural anesthesia).906 907-909 910, 911 912-914, 918 1007 Category IB IV.J. As a result, the question of whether face masks should be worn to prevent droplet spread of oral flora during spinal procedures (e.g., myelogram, lumbar puncture, spinal anesthesia) has been debated916, 917.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-22",
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-4"
+      ],
+      "cited": true,
+      "confidence": 0.822,
+      "correct": false,
+      "generator_error": null,
+      "id": "I24",
+      "kind": "in_corpus",
+      "question": "What are the consequences of not wearing a face mask while placing a central venous line or performing a myelogram?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.822,
+        "coverage": 1.0,
+        "question_support": 0.646,
+        "reasons": [],
+        "retrieval_relevance": 0.997,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Screening may be passive through the use of signs to alert family members and visitors with signs and symptoms of communicable diseases not to enter clinical areas.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-13"
+      ],
+      "cited": true,
+      "confidence": 0.55,
+      "correct": true,
+      "generator_error": null,
+      "id": "I25",
+      "kind": "in_corpus",
+      "question": "When should visitors displaying active communicable symptoms be excluded from entering inpatient facilities?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.55,
+        "coverage": 1.0,
+        "question_support": 0.554,
+        "reasons": [
+          "weak relevance to the question (0.55)"
+        ],
+        "retrieval_relevance": 0.546,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "For specific recommendations for use of Contact Precautions for colonization or infection with MDROs, go to Management of Multidrug- Resistant Organisms in Healthcare Settings 2006 (https://www.cdc.gov/infection-control/hcp/mdro-management/ accessed May 2016)870. HIV Human immunodeficiency virus HCW Healthcare worker HSCT Hematopoetic stem-cell transplant ICU Intensive care unit LTCF Long-term care facility MDRO Multidrug-resistant organism MDR-GNB Multidrug-resistant gram-negative bacilli MRSA Methicillin-resistant Staphylococcus aureus Continued increase in the incidence of HAIs caused by multidrug-resistant organisms (MDROs) in all healthcare settings and the expanded body of knowledge concerning prevention of transmission of MDROs created a need for more specific recommendations for surveillance and control of these pathogens that would be practical and effective in various types of healthcare settings.",
+      "citations": [
+        "cdc-isolation-precautions-2007#v-b-contact-precautions-p-87-0",
+        "cdc-isolation-precautions-2007#hicpac-healthcare-infection-control-practices-advisory-committee-p-13-0",
+        "cdc-isolation-precautions-2007#executive-summary-p-9-8"
+      ],
+      "cited": true,
+      "confidence": 0.686,
+      "correct": false,
+      "generator_error": null,
+      "id": "I26",
+      "kind": "in_corpus",
+      "question": "Why does a single negative surveillance culture fail to justify the removal of Contact Precautions for multi-drug resistant organisms (MDROs)?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.686,
+        "coverage": 1.0,
+        "question_support": 0.372,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A Protective Environment does not include the use of barrier precautions beyond those indicated for Standard and Transmission- Based Precautions. No published reports support the benefit of placing solid organ transplants or other immunocompromised patients in a Protective Environment. Barrier precautions (e.g., masks, gowns, gloves) are not required for healthcare personnel in the absence of suspected or confirmed infection unless indicated according to Standard Precautions or if recommended for source control (e.g., mask) for any individual entering the protective environment room.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-11",
+        "cdc-isolation-precautions-2007#ii-standard-and-expanded-precautions-p-130-0"
+      ],
+      "cited": true,
+      "confidence": 0.886,
+      "correct": true,
+      "generator_error": null,
+      "id": "I27",
+      "kind": "in_corpus",
+      "question": "Why should routine barrier precautions not be expanded beyond Standard/Transmission precautions for solid organ transplant recipients in non-protective environments?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.886,
+        "coverage": 1.0,
+        "question_support": 0.771,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Patient-care devices (e.g., electronic thermometers, glucose monitoring devices) may transmit pathogens if devices contaminated with blood or body fluids are shared between patients without cleaning and disinfecting between patients74 75-77. a healthcare provider develops herpetic whitlow on a finger after contact with HSV when providing oral care to a patient without using gloves or HSV is transmitted to a patient from a herpetic whitlow on an ungloved hand of a healthcare worker (HCW)70, 71. I.B.3.a.ii. Indirect contact transmission. Indirect transmission involves the transfer of an infectious agent through a contaminated intermediate object or person. In the absence of a point-source outbreak, it is difficult to determine how indirect transmission occurs. Consult other guidelines for detailed guidance in developing specific protocols for cleaning and reprocessing medical equipment and patient care items in both routine and special circumstances11, 14, 18, 20, 740, 836, 848.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-17",
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-15",
+        "cdc-isolation-precautions-2007#ii-j-patient-care-equipment-and-instruments-devices-p-63-3"
+      ],
+      "cited": true,
+      "confidence": 0.571,
+      "correct": true,
+      "generator_error": null,
+      "id": "I28",
+      "kind": "in_corpus",
+      "question": "What hazards occur when reusable medical devices are shared between patients without documented intermediate reprocessing?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.571,
+        "coverage": 1.0,
+        "question_support": 0.718,
+        "reasons": [
+          "weak relevance to the question (0.57)"
+        ],
+        "retrieval_relevance": 0.423,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Needles, cannulae and syringes are sterile, single-use items; they should not be reused for another patient nor to access a medication or solution that might be used for a subsequent patient453, 919, 1004, 1005. These include the use of a sterile, single-use, disposable needle and syringe for each injection given and prevention of contamination of injection equipment and medication. use of a single needle/syringe to administer intravenous medication to multiple patients.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-h-safe-injection-practices-p-86-1",
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-17",
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-16"
+      ],
+      "cited": true,
+      "confidence": 0.545,
+      "correct": true,
+      "generator_error": null,
+      "id": "I29",
+      "kind": "in_corpus",
+      "question": "Why is the reuse of single-use disposable needles or syringes between different patients considered a major regulatory breach?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.545,
+        "coverage": 1.0,
+        "question_support": 0.484,
+        "reasons": [
+          "weak relevance to the question (0.55)"
+        ],
+        "retrieval_relevance": 0.607,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Include prevention of healthcare-associated infections (HAI) as one determinant of bedside nurse staffing levels and composition, especially in high-risk units585-589, 590, 592, 593, 551, 594, 595, 418, 596, 597, 583. Rate, risk factors, and outcomes of nosocomial primary bloodstream infection in pediatric intensive care unit patients. Screen visitors to high-risk patient care areas (e.g., oncology units, hematopoietic stem cell transplant [HSCT] units, intensive care units, other severely immunocompromised patients) for possible infection43 24, 41, 962, 963.Category IB I.F.",
+      "citations": [
+        "cdc-isolation-precautions-2007#category-ib-ic-p-77-2",
+        "cdc-isolation-precautions-2007#recommendations-of-the-healthcare-infection-control-practices-advisory-p-142-17",
+        "cdc-isolation-precautions-2007#ib-ic-p-78-3"
+      ],
+      "cited": true,
+      "confidence": 0.826,
+      "correct": true,
+      "generator_error": null,
+      "id": "I30",
+      "kind": "in_corpus",
+      "question": "What negative outcomes are linked to inadequate nurse staffing levels in high-risk intensive care units?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.826,
+        "coverage": 1.0,
+        "question_support": 0.676,
+        "reasons": [],
+        "retrieval_relevance": 0.975,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Healthcare personnel who have a respiratory infection are advised to avoid direct patient contact, especially with high risk patients. In 2002, CDC/HICPAC recommended (Category IA) that artificial fingernails and extenders not be worn by healthcare personnel who have contact with high-risk patients (e.g., those in ICUs, ORs) due to the association with outbreaks of gram-negative bacillus and candidal infections as confirmed by molecular typing of isolates30, 31, 559, 722-725.The need to restrict the wearing of artificial fingernails by all healthcare personnel who provide direct patient care or by healthcare personnel who have contact with other high risk groups (e.g., V.D.4.a.ii. Smallpox (vaccinated and unvaccinated). Respiratory protection is recommended for all healthcare personnel, including those with a documented “take” after smallpox vaccination due to the risk of a genetically engineered virus against which the vaccine may not provide protection, or of exposure to a very large viral load (e.g., from high-risk aerosol-generating procedures, immunocompromised patients, hemorrhagic or flat smallpox108, 129. Category II V.D.4.b. § Suspected measles, chickenpox or disseminated zoster. Interim Measles Infection Control [July 2019] For current recommendations on",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-14",
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-3",
+        "cdc-isolation-precautions-2007#ia-ic-p-91-9"
+      ],
+      "cited": true,
+      "confidence": 0.834,
+      "correct": false,
+      "generator_error": null,
+      "id": "I31",
+      "kind": "in_corpus",
+      "question": "Why should symptomatic healthcare personnel with acute respiratory illness avoid direct contact with high-risk patients?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.834,
+        "coverage": 1.0,
+        "question_support": 0.668,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The continued occurrence of outbreaks of hepatitis B and hepatitis C viruses in ambulatory settings indicated a need to re-iterate safe injection practice recommendations as part of Standard Precautions. A large nosocomial outbreak of hepatitis C and hepatitis B among patients receiving pain remediation treatments. Transmission of bloodborne pathogens (i.e., hepatitis B and C viruses and, rarely, HIV) in outbreaks, sometimes involving hundreds of patients, continues to occur in ambulatory settings.",
+      "citations": [
+        "cdc-isolation-precautions-2007#executive-summary-p-9-5",
+        "cdc-isolation-precautions-2007#927-management-of-multidrug-resistant-organisms-in-healthcare-settings-p-200-25",
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-71"
+      ],
+      "cited": true,
+      "confidence": 0.733,
+      "correct": false,
+      "generator_error": null,
+      "id": "I32",
+      "kind": "in_corpus",
+      "question": "What common procedural failures in ambulatory clinics have repeatedly triggered large outbreaks of Hepatitis B and Hepatitis C?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.733,
+        "coverage": 1.0,
+        "question_support": 0.479,
+        "reasons": [],
+        "retrieval_relevance": 0.987,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Although fever will be present in many respiratory infections, patients with pertussis and mild upper respiratory tract infections are often afebrile. Therefore, the absence of fever does not always exclude a respiratory infection.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-13"
+      ],
+      "cited": true,
+      "confidence": 0.546,
+      "correct": true,
+      "generator_error": null,
+      "id": "I33",
+      "kind": "in_corpus",
+      "question": "Why is a lack of documented fever insufficient evidence to rule out a contagious respiratory infection like pertussis?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.546,
+        "coverage": 1.0,
+        "question_support": 0.254,
+        "reasons": [
+          "weak relevance to the question (0.55)"
+        ],
+        "retrieval_relevance": 0.839,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Post signs at entrances and in strategic places (e.g., elevators, cafeterias) within ambulatory and inpatient settings with instructions to patients and other persons with symptoms of a respiratory infection to cover their mouths/noses when coughing or sneezing, use and dispose of tissues, and perform hand hygiene after hands have been in contact with respiratory secretions. Multicenter intervention program to increase adherence to hand hygiene recommendations and glove use and to reduce the incidence of antimicrobial resistance. The use of gloves does not replace the need for hand hygiene by either handrubbing or handwashing (IB).",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-c-respiratory-hygiene-cough-etiquette-p-83-2",
+        "who-hand-hygiene-guidelines-summary-2009#reference-list-p-43-9",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-0"
+      ],
+      "cited": true,
+      "confidence": 0.703,
+      "correct": true,
+      "generator_error": null,
+      "id": "I34",
+      "kind": "in_corpus",
+      "question": "Why is relying on glove use alone without performing pre- and post-glove hand hygiene a violation of infection control standards?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.703,
+        "coverage": 1.0,
+        "question_support": 0.407,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If tuberculosis is unlikely and there are no AIIRs and/or respirators available, use Droplet Precautions instead of Airborne Precautions Tuberculosis more likely in HIV-infected individual than in HIV negative individual Respiratory Infections Cough/fever/pulmonary infiltrate in any lung location in a patient with a history of recent travel (10-21 days) to countries with active outbreaks of SARS, avian influenza M. In settings where Airborne Precautions cannot be implemented due to limited engineering resources (e.g., physician offices), masking the patient, placing the patient in a private room (e.g., office examination room) with the door closed, and providing N95 or higher level respirators or masks if respirators are not available for healthcare personnel will reduce the likelihood of airborne transmission until the patient is either transferred to a facility with an AIIR or returned to the home environment, as deemed medically appropriate. Whenever an AIIR is in use for a patient on Airborne Precautions, monitor air pressure daily with visual indicators (e.g., smoke tubes, flutter strips), regardless of the presence of differential pressure sensing devices (e.g., manometers)11, 12, 1023, 1024.",
+      "citations": [
+        "cdc-isolation-precautions-2007#airborne-precautions-p-123-2",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-12",
+        "cdc-isolation-precautions-2007#ia-ic-p-91-1"
+      ],
+      "cited": true,
+      "confidence": 0.824,
+      "correct": true,
+      "generator_error": null,
+      "id": "I35",
+      "kind": "in_corpus",
+      "question": "How should a facility manage a patient needing Airborne Precautions when no certified AIIR room or negative pressure system is available?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.824,
+        "coverage": 1.0,
+        "question_support": 0.648,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), then the symptomatic visitor must wear a mask while in the healthcare facility and remain in the patient’s room, avoiding exposure to others, especially in public waiting areas and the cafeteria. During periods of increased prevalence of respiratory infections in the community (e.g., as indicated by increased school absenteeism, increased number of patients seeking care for a respiratory infection), offer masks to coughing patients and other symptomatic persons (e.g., persons who accompany ill patients) upon entry into the facility or medical office 126, 899 898 and encourage them to maintain special separation, ideally a distance of at least 3 feet, from others in common waiting areas 23, 103, 111, 114 20,",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-15",
+        "cdc-isolation-precautions-2007#iv-c-respiratory-hygiene-cough-etiquette-p-83-4"
+      ],
+      "cited": true,
+      "confidence": 0.535,
+      "correct": true,
+      "generator_error": null,
+      "id": "I36",
+      "kind": "in_corpus",
+      "question": "What is the appropriate protocol for terminally ill patients whose only visiting family members are actively coughing or symptomatic?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.535,
+        "coverage": 1.0,
+        "question_support": 0.515,
+        "reasons": [
+          "weak relevance to the question (0.53)"
+        ],
+        "retrieval_relevance": 0.555,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In settings where Airborne Precautions cannot be implemented due to limited engineering resources (e.g., physician offices), masking the patient, placing the patient in a private room (e.g., office examination room) with the door closed, and providing N95 or higher level respirators or masks if respirators are not available for healthcare personnel will reduce the likelihood of airborne transmission until the patient is either transferred to a facility with an AIIR or returned to the home environment, as deemed medically appropriate. Application of Transmission-Based Precautions in Ambulatory and Home Care Settings Although Transmission-Based Precautions generally apply in all healthcare settings, exceptions exist. Application of Transmission-Based Precautions in Ambulatory and Home Care Settings ........................",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-12",
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-5",
+        "cdc-isolation-precautions-2007#table-of-contents-p-4-9"
+      ],
+      "cited": true,
+      "confidence": 0.779,
+      "correct": true,
+      "generator_error": null,
+      "id": "I37",
+      "kind": "in_corpus",
+      "question": "How should transmission-based precautions be adapted for home healthcare settings where specialized ventilation cannot be engineered?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.779,
+        "coverage": 1.0,
+        "question_support": 0.558,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "For example, exposure to aerosolgenerating procedures (e.g., endotracheal intubation, suctioning) was associated with transmission of infection to large numbers of healthcare personnel outside of the United States93, 94, 96, 98, 253.Therefore, aerosolization of small infectious particles generated during these and other similar procedures could be a risk factor for transmission to others within a multi-bed room or shared airspace. At the time of this publication, CDC recommends Standard Precautions, with emphasis on the use of hand hygiene, Contact Precautions with emphasis on environmental cleaning due to the detection of SARS CoV RNA by PCR on surfaces in rooms occupied by SARS patients138, 254, 258, Airborne Precautions, including use of fit-tested NIOSHapproved N95 or higher level respirators, and eye protection259. In multi-patient rooms, ≥3 feet spatial separation between beds is advised to reduce the opportunities for inadvertent sharing of items between the infected/colonized patient and other patients.",
+      "citations": [
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-4",
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-8",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-4"
+      ],
+      "cited": true,
+      "confidence": 0.757,
+      "correct": true,
+      "generator_error": null,
+      "id": "I38",
+      "kind": "in_corpus",
+      "question": "How should Contact Precautions be handled in multi-bed units when private isolation rooms are completely occupied?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.757,
+        "coverage": 1.0,
+        "question_support": 0.669,
+        "reasons": [],
+        "retrieval_relevance": 0.846,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In immunocompromised patients, viral shedding can persist for prolonged periods of time (many weeks to months) and transmission to others may occur during that time; therefore, the duration of contact and/or droplet precautions may be prolonged for many weeks500, 928-933.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-2"
+      ],
+      "cited": true,
+      "confidence": 0.889,
+      "correct": true,
+      "generator_error": null,
+      "id": "I39",
+      "kind": "in_corpus",
+      "question": "How should immunocompromised patients with prolonged viral shedding (weeks to months) be managed regarding isolation duration?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.889,
+        "coverage": 1.0,
+        "question_support": 0.779,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "of SARS transmission: 1. obligate: under natural conditions, disease occurs following transmission of the agent only through inhalation of small particle aerosols (e.g., tuberculosis); 2. preferential: natural infection results from transmission through multiple routes, but small particle aerosols are the predominant route (e.g., measles, varicella); and 3. opportunistic: agents that naturally cause disease through other routes, but under special circumstances may be transmitted via fine particle aerosols149. This conceptual framework can explain rare occurrences of airborne transmission of agents that evidence for recommendations for a specific disease and for new infectious agents (e.g., SARS-CoV, avian influenza) that have been added to Appendix A. The reader may refer to more detailed discussion concerning modes of transmission and emerging pathogens in the background text and for MDRO control in Appendix B (Management of Multidrug-Resistant Organisms in Healthcare Settings (https://www.cdc.gov/infectioncontrol/guidelines/mdro/ ac cessed May 2016). Type and Duration of Precautions Recommended for Selected Infections and Conditions1 It is noteworthy that there was no transmission of SARS-CoV to public hospital workers in Vietnam despite inconsistent use of infection control measures, including use of PPE, which suggests other factors (e.g., severity of disease, frequency of high risk procedures or events, environmental features) may influence opportunities for transmission260.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-36",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-15",
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-10"
+      ],
+      "cited": true,
+      "confidence": 0.81,
+      "correct": false,
+      "generator_error": null,
+      "id": "I40",
+      "kind": "in_corpus",
+      "question": "What PPE is required when dealing with emerging pathogens that transmit via multiple overlapping routes (e.g., SARS-CoV)?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.81,
+        "coverage": 1.0,
+        "question_support": 0.619,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Develop and implement systems for early detection and management (e.g., use of appropriate infection control measures, including isolation precautions, PPE) of potentially infectious persons at initial points of patient encounter in outpatient settings (e.g., triage areas, emergency departments, outpatient clinics, physician offices) and at the time of admission to hospitals and long-term care facilities (LTCF)9, 122, 134, 253, 827. State Operations Manual: Appendix PP - Guidance to Surveyors for Long Term Care Facilities (https://www.cms.gov/Regulations-and- Guidance/Guidance/Manuals/downloads/som107ap_pp_guidelines_ltcf.pdf accessed May 2016) [Current version of this document may differ from original.] 438. Typically these professionals direct or provide consultation to an infection control program in a hospital, long term care facility (LTCF), or healthcare delivery system (also see infection control professional).",
+      "citations": [
+        "cdc-isolation-precautions-2007#ib-ic-p-78-2",
+        "cdc-isolation-precautions-2007#states-national-nosocomial-infections-surveillance-system-pediatrics-p-164-21",
+        "cdc-isolation-precautions-2007#hand-hygiene-p-133-14"
+      ],
+      "cited": true,
+      "confidence": 0.815,
+      "correct": true,
+      "generator_error": null,
+      "id": "I41",
+      "kind": "in_corpus",
+      "question": "How does the management of MDRO colonization differ between acute care hospitals and long-term care facilities (LTCFs)?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.815,
+        "coverage": 1.0,
+        "question_support": 0.631,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "During periods of construction, to prevent inhalation of respirable particles that could contain infectious spores, provide respiratory protection (e.g., N95 respirator) to patients who are medically fit to tolerate a respirator when they are required to leave the Protective Environment945, 158. Respiratory protection e.g., N95 respirator, for the patient when leaving PE during periods of construction No recommendation for use of particulate respirators when leaving the Protective Environment in the absence of construction.",
+      "citations": [
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-5",
+        "cdc-isolation-precautions-2007#i-patients-allogeneic-hematopoeitic-stem-cell-transplant-hsct-only-p-130-0",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-6"
+      ],
+      "cited": true,
+      "confidence": 0.887,
+      "correct": true,
+      "generator_error": null,
+      "id": "I42",
+      "kind": "in_corpus",
+      "question": "What respiratory protection is required for an HSCT patient who must leave a Protective Environment during active hospital construction?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.887,
+        "coverage": 1.0,
+        "question_support": 0.774,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In response to the global outbreak of SARS in 2003 and in preparation for pandemic influenza, healthcare providers working in outpatient settings are urged to implement source containment measures (e.g., asking coughing patients to wear a surgical mask or cover their coughs with tissues) to prevent transmission of respiratory infections, beginning at the point of initial patient encounter9, 262, 828 as described below in section III.A.1.a. Respiratory hygiene/cough etiquette (source containment of infectious respiratory secretions in symptomatic patients, beginning at initial point of encounter e.g., triage and reception areas in emergency departments and physician offices) Instruct symptomatic persons to cover mouth/nose when sneezing/coughing; use tissues and dispose in no-touch receptacle; observe hand hygiene after soiling of hands with respiratory secretions; wear surgical mask if tolerated or maintain spatial separation, >3 feet if possible. Patients suspected of having such an infection can wear a surgical mask for source containment, if tolerated, and should be placed in an examination room, preferably an AIIR, as soon as possible.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-15",
+        "cdc-isolation-precautions-2007#component-recommendations-p-129-5",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-18"
+      ],
+      "cited": true,
+      "confidence": 0.517,
+      "correct": true,
+      "generator_error": null,
+      "id": "I43",
+      "kind": "in_corpus",
+      "question": "How should pediatric patients with coughing fits be handled if developmental or clinical factors make wearing a surgical mask impossible?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.517,
+        "coverage": 1.0,
+        "question_support": 0.319,
+        "reasons": [
+          "weak relevance to the question (0.52)"
+        ],
+        "retrieval_relevance": 0.715,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Category II  * V.B.2.a.ii.Place together in the same room (cohort) patients who are infected or colonized with the same pathogen and are suitable roommates29, 638, 808, 811-813, 815, 818, 819 Category IB If it becomes necessary to place a patient who requires Contact Precautions in a room with a patient who is not infected or colonized with the same infectious agent:  * V.B.2.a.iii. Place together in the same room (cohort) patients who are infected the same pathogen and are suitable roommates814,816. Determine patient placement based on the following principles:  Route(s) of transmission of the known or suspected infectious agent  Risk factors for transmission in the infected patient  Risk factors for adverse outcomes resulting from an HAI in other patients in the area or room being considered for patient-placement  Availability of single-patient rooms  Patient options for room-sharing (e.g., cohorting patients with the same infection) Category II",
+      "citations": [
+        "cdc-isolation-precautions-2007#v-b-contact-precautions-p-87-2",
+        "cdc-isolation-precautions-2007#v-c-droplet-precautions-p-89-1",
+        "cdc-isolation-precautions-2007#iv-d-patient-placement-p-84-1"
+      ],
+      "cited": true,
+      "confidence": 0.766,
+      "correct": false,
+      "generator_error": null,
+      "id": "I44",
+      "kind": "in_corpus",
+      "question": "Under what circumstances can two patients with the same confirmed infectious pathogen be cohorted in the same isolation room?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.766,
+        "coverage": 1.0,
+        "question_support": 0.531,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "HCWs who have close contact with infants with pertussis are at particularly high risk because of waning immunity and, until 2005, the absence of a vaccine that could be used in adults. However, two acellular pertussis vaccines were licensed in the United States in 2005, one for use in individuals aged 11-18 and one for use in ages 10-64 years882. In addition, several patient factors increase the likelihood that infection will result from exposure to pathogens in healthcare settings (e.g., immaturity of the neonatal immune system, lack of previous natural infection and resulting immunity, prevalence of patients with congenital or acquired immune deficiencies, congenital anatomic anomalies, and use of life-saving invasive devices in neontal and pediatric intensive care units)63.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-7",
+        "cdc-isolation-precautions-2007#at-health-protection-agency-creutzfeldt-jakob-disease-cjd-p-28-54"
+      ],
+      "cited": true,
+      "confidence": 0.463,
+      "correct": true,
+      "generator_error": null,
+      "id": "I45",
+      "kind": "in_corpus",
+      "question": "What protocol governs healthcare personnel with waning acellular pertussis immunity who are exposed during a neonatal unit outbreak?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.463,
+        "coverage": 1.0,
+        "question_support": 0.557,
+        "reasons": [
+          "weak relevance to the question (0.46)"
+        ],
+        "retrieval_relevance": 0.37,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "control precautions during patient care, environmental measures (e.g., cleaning and disinfection of the patient care environment and equipment, dedicated single-patient-use of non-critical equipment), and decolonization therapy when appropriate. The prevention and control of MDROs is a national priority - one that requires that all healthcare facilities and agencies assume responsibility and participate in communitywide control programs176, 177. A detailed discussion of this topic and recommendations for prevention was published in 2006 may be found at Management of Multidrug- Resistant Organisms facility. See Appendix A for specific recommendations. I.C.1. b. Multidrug-resistant organisms (MDROs). In general, MDROs are defined as microorganisms – predominantly bacteria – that are resistant to one or more classes of antimicrobial agents176. Although the names of certain MDROs suggest resistance to only one agent (e.g., methicillin-resistant Staphylococcus aureus [MRSA], vancomycin resistant enterococcus [VRE]), these pathogens are usually resistant to all but a few commercially available antimicrobial agents. This latter feature defines MDROs that are considered to be epidemiologically MRSA is the only MDRO for which effective decolonization regimens are available867.",
+      "citations": [
+        "cdc-isolation-precautions-2007#healthcare-settings-p-22-14",
+        "cdc-isolation-precautions-2007#healthcare-settings-p-22-11",
+        "cdc-isolation-precautions-2007#iii-d-discontinuation-of-transmission-based-precautions-transmission-based-p-75-2"
+      ],
+      "cited": true,
+      "confidence": 0.528,
+      "correct": false,
+      "generator_error": null,
+      "id": "I46",
+      "kind": "in_corpus",
+      "question": "What specific criteria allow a facility to permanently classify a patient as an MDRO carrier versus attempting decolonization?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.528,
+        "coverage": 1.0,
+        "question_support": 0.309,
+        "reasons": [
+          "weak relevance to the question (0.53)"
+        ],
+        "retrieval_relevance": 0.746,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The strategy is targeted at patients and accompanying family members and friends with undiagnosed transmissible respiratory infections, and applies to any person with signs of illness including cough, congestion, rhinorrhea, or increased production of respiratory secretions when entering a healthcare facility40, 41, 43. Standard 4 days after onset of rash; duration of illness in immune compromised Interim Measles Infection Control [July 2019] Signs can be posted at the entrance to facilities or at the reception or registration desk requesting that the patient or individuals accompanying the patient promptly inform the receptionist if there are symptoms of a respiratory infection (e.g., cough, flu-like illness, increased production of respiratory secretions).",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-a-standard-precautions-p-69-8",
+        "cdc-isolation-precautions-2007#measles-rubeola-airborne-p-108-0",
+        "cdc-isolation-precautions-2007#ii-g-patient-placement-p-59-16"
+      ],
+      "cited": true,
+      "confidence": 0.697,
+      "correct": true,
+      "generator_error": null,
+      "id": "I47",
+      "kind": "in_corpus",
+      "question": "What infection control steps are warranted when a patient presents with an undiagnosed febrile rash illness of unknown etiology?",
+      "split": "sealed3",
+      "validation": {
+        "confidence": 0.697,
+        "coverage": 1.0,
+        "question_support": 0.393,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.9362,
+    "capped_precision@10": 0.8277,
+    "capped_precision@5": 0.8511,
+    "hit@1": 0.4681,
+    "hit@10": 0.8511,
+    "hit@5": 0.7872,
+    "mrr": 0.6002,
+    "n": 47,
+    "precision@1": 0.9362,
+    "precision@10": 0.8277,
+    "precision@5": 0.8511,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the core components of Standard Precautions that apply to all patients regardless of suspected infection status?",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I02",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the three transmission-based categories added on top of Standard Precautions?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "When should healthcare personnel wear a surgical mask during lumbar puncture and spinal procedures?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I04",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the essential elements of Respiratory Hygiene/Cough Etiquette at initial triage or reception?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the recommended environmental air-exchange rates and pressure requirements for an Airborne Infection Isolation Room (AIIR)?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.2,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I06",
+        "precision@1": 0.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "When is an alcohol-based hand rub preferred over soap and water for routine clinical hand decontamination?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I07",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "Under what clinical criteria can Droplet Precautions be initiated empirically before confirmatory laboratory tests return?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How far apart should patient beds be separated in multi-bed rooms when single rooms are unavailable for contact or droplet isolation?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What specific environmental controls define a Protective Environment for allogeneic hematopoietic stem cell transplant (HSCT) patients?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I10",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "Which vaccines are recommended to provide post-exposure prophylaxis or routine occupational immunity to healthcare workers?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I11",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What personal protective equipment (PPE) must be donned immediately upon entering a room under Contact Precautions?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I12",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What criteria and minimum timeframes are used to determine when transmission-based precautions can be safely discontinued?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I13",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should reusable patient-care equipment be reprocessed before being transferred to another patient?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I14",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What role does clinical microbiology laboratory support play in routine infection surveillance and outbreak control?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I15",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "What are the recommended administrative policies for screening visitors entering high-risk clinical units like ICUs or oncology wards?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I16",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "In what circumstances is the use of single-dose medication vials preferred over multiple-dose vials?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "I17",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "What steps must be taken to safely don and doff PPE to prevent self-contamination during patient care?",
+        "rr": 0.125,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I18",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.8,
+        "question": "Why must used needles and syringes never be reinserted into a multiple-dose vial or saline container?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.0,
+        "capped_precision@5": 0.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I19",
+        "precision@1": 0.0,
+        "precision@10": 0.0,
+        "precision@5": 0.0,
+        "question": "Under what conditions is an alcohol-based hand rub ineffective, mandating the use of soap and water instead?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I20",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why should non-immune healthcare personnel be prohibited from caring for patients with airborne diseases like varicella or measles?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I21",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What psychological and clinical adverse effects are associated with placing patients on isolation precautions?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I22",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why are dried and fresh flowers or potted plants strictly prohibited in the rooms of HSCT patients?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I23",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "Why is it unsafe to dismantle used needle-syringe assemblies in the same workspace where new medications are prepared?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I24",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "What are the consequences of not wearing a face mask while placing a central venous line or performing a myelogram?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I25",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.2,
+        "question": "When should visitors displaying active communicable symptoms be excluded from entering inpatient facilities?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "I26",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why does a single negative surveillance culture fail to justify the removal of Contact Precautions for multi-drug resistant organisms (MDROs)?",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I27",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why should routine barrier precautions not be expanded beyond Standard/Transmission precautions for solid organ transplant recipients in non-protective environments?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I28",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "What hazards occur when reusable medical devices are shared between patients without documented intermediate reprocessing?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I29",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why is the reuse of single-use disposable needles or syringes between different patients considered a major regulatory breach?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I30",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What negative outcomes are linked to inadequate nurse staffing levels in high-risk intensive care units?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I31",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why should symptomatic healthcare personnel with acute respiratory illness avoid direct contact with high-risk patients?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I32",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What common procedural failures in ambulatory clinics have repeatedly triggered large outbreaks of Hepatitis B and Hepatitis C?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.2,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I33",
+        "precision@1": 0.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "Why is a lack of documented fever insufficient evidence to rule out a contagious respiratory infection like pertussis?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.1,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I34",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "Why is relying on glove use alone without performing pre- and post-glove hand hygiene a violation of infection control standards?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I35",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should a facility manage a patient needing Airborne Precautions when no certified AIIR room or negative pressure system is available?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I36",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What is the appropriate protocol for terminally ill patients whose only visiting family members are actively coughing or symptomatic?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I37",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should transmission-based precautions be adapted for home healthcare settings where specialized ventilation cannot be engineered?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I38",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "How should Contact Precautions be handled in multi-bed units when private isolation rooms are completely occupied?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I39",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should immunocompromised patients with prolonged viral shedding (weeks to months) be managed regarding isolation duration?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I40",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What PPE is required when dealing with emerging pathogens that transmit via multiple overlapping routes (e.g., SARS-CoV)?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I41",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How does the management of MDRO colonization differ between acute care hospitals and long-term care facilities (LTCFs)?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I42",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What respiratory protection is required for an HSCT patient who must leave a Protective Environment during active hospital construction?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I43",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "How should pediatric patients with coughing fits be handled if developmental or clinical factors make wearing a surgical mask impossible?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "I44",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Under what circumstances can two patients with the same confirmed infectious pathogen be cohorted in the same isolation room?",
+        "rr": 0.125,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I45",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What protocol governs healthcare personnel with waning acellular pertussis immunity who are exposed during a neonatal unit outbreak?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "I46",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What specific criteria allow a facility to permanently classify a patient as an MDRO carrier versus attempting decolonization?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "I47",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What infection control steps are warranted when a patient presents with an undiagnosed febrile rash illness of unknown etiology?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Standard Precautions include a group of infection prevention practices that apply to all patients, regardless of suspected or confirmed infection status, in any setting in which healthcare is delivered (Table 4). A group of infection preven",
+      "confidence": 0.855,
+      "id": "I01",
+      "question": "What are the core components of Standard Precautions that apply to all patients regardless of suspected infection status?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Place allogeneic hematopoietic stem cell transplant (HSCT) patients in a Protective Environment as described in the “Guideline to Prevent Opportunistic Infections in HSCT Patients” (https://www.cdc.gov/mmwr/preview/mmwrhtml/rr4910a1.htm acc",
+      "confidence": 0.966,
+      "id": "I09",
+      "question": "What specific environmental controls define a Protective Environment for allogeneic hematopoietic stem cell transplant (HSCT) patients?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "See the 2006 HICPAC/CDC MDRO guideline 927 for discussion of possible criteria to discontinue Contact Precautions for patients colonized or infected with MDROs. Criteria used to assign Transmission-Based Precautions categories follow: Trans",
+      "confidence": 0.738,
+      "id": "I12",
+      "question": "What criteria and minimum timeframes are used to determine when transmission-based precautions can be safely discontinued?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "The critical role of the clinical microbiology laboratory in infection control and healthcare epidemiology is described well553, 554, 598-600 and is supported by the Infectious Disease Society of America policy statement on consolidation of",
+      "confidence": 0.841,
+      "id": "I14",
+      "question": "What role does clinical microbiology laboratory support play in routine infection surveillance and outbreak control?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "It may be necessary to change gloves during the care of a single patient to prevent cross-contamination of body sites559, 740. New in this guideline is a figure that shows a recommended sequence for donning and removing personal protective ",
+      "confidence": 0.661,
+      "id": "I17",
+      "question": "What steps must be taken to safely don and doff PPE to prevent self-contamination during patient care?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "reinsertion of used needles into a multiple-dose vial or solution container (e.g., saline bag) and 2. If multidose vials must be used, both the needle or cannula and syringe used to access the multidose vial must be sterile453, 1002.",
+      "confidence": 0.831,
+      "id": "I18",
+      "question": "Why must used needles and syringes never be reinserted into a multiple-dose vial or saline container?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "prohibiting dried and fresh flowers and potted plants in the rooms of HSCT patients. No flowers (fresh or dried) or potted plants in PE rooms or areas Prohibit dried and fresh flowers and potted plants942-944.",
+      "confidence": 0.929,
+      "id": "I22",
+      "question": "Why are dried and fresh flowers or potted plants strictly prohibited in the rooms of HSCT patients?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Face masks are effective in limiting the dispersal of oropharyngeal droplets918 and are recommended for the placement of central venous catheters919. Infection control practices for special lumbar puncture procedures Wear a surgical mask wh",
+      "confidence": 0.822,
+      "id": "I24",
+      "question": "What are the consequences of not wearing a face mask while placing a central venous line or performing a myelogram?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Screening may be passive through the use of signs to alert family members and visitors with signs and symptoms of communicable diseases not to enter clinical areas.",
+      "confidence": 0.55,
+      "id": "I25",
+      "question": "When should visitors displaying active communicable symptoms be excluded from entering inpatient facilities?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.55)"
+    },
+    {
+      "answer": "For specific recommendations for use of Contact Precautions for colonization or infection with MDROs, go to Management of Multidrug- Resistant Organisms in Healthcare Settings 2006 (https://www.cdc.gov/infection-control/hcp/mdro-management/",
+      "confidence": 0.686,
+      "id": "I26",
+      "question": "Why does a single negative surveillance culture fail to justify the removal of Contact Precautions for multi-drug resistant organisms (MDROs)?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Patient-care devices (e.g., electronic thermometers, glucose monitoring devices) may transmit pathogens if devices contaminated with blood or body fluids are shared between patients without cleaning and disinfecting between patients74 75-77",
+      "confidence": 0.571,
+      "id": "I28",
+      "question": "What hazards occur when reusable medical devices are shared between patients without documented intermediate reprocessing?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.57)"
+    },
+    {
+      "answer": "Needles, cannulae and syringes are sterile, single-use items; they should not be reused for another patient nor to access a medication or solution that might be used for a subsequent patient453, 919, 1004, 1005. These include the use of a s",
+      "confidence": 0.545,
+      "id": "I29",
+      "question": "Why is the reuse of single-use disposable needles or syringes between different patients considered a major regulatory breach?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.55)"
+    },
+    {
+      "answer": "Healthcare personnel who have a respiratory infection are advised to avoid direct patient contact, especially with high risk patients. In 2002, CDC/HICPAC recommended (Category IA) that artificial fingernails and extenders not be worn by he",
+      "confidence": 0.834,
+      "id": "I31",
+      "question": "Why should symptomatic healthcare personnel with acute respiratory illness avoid direct contact with high-risk patients?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "The continued occurrence of outbreaks of hepatitis B and hepatitis C viruses in ambulatory settings indicated a need to re-iterate safe injection practice recommendations as part of Standard Precautions. A large nosocomial outbreak of hepat",
+      "confidence": 0.733,
+      "id": "I32",
+      "question": "What common procedural failures in ambulatory clinics have repeatedly triggered large outbreaks of Hepatitis B and Hepatitis C?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Although fever will be present in many respiratory infections, patients with pertussis and mild upper respiratory tract infections are often afebrile. Therefore, the absence of fever does not always exclude a respiratory infection.",
+      "confidence": 0.546,
+      "id": "I33",
+      "question": "Why is a lack of documented fever insufficient evidence to rule out a contagious respiratory infection like pertussis?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.55)"
+    },
+    {
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), then the symptomatic visitor must wear a mask while in the healthcare facility and r",
+      "confidence": 0.535,
+      "id": "I36",
+      "question": "What is the appropriate protocol for terminally ill patients whose only visiting family members are actively coughing or symptomatic?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.53)"
+    },
+    {
+      "answer": "of SARS transmission: 1. obligate: under natural conditions, disease occurs following transmission of the agent only through inhalation of small particle aerosols (e.g., tuberculosis); 2. preferential: natural infection results from transmi",
+      "confidence": 0.81,
+      "id": "I40",
+      "question": "What PPE is required when dealing with emerging pathogens that transmit via multiple overlapping routes (e.g., SARS-CoV)?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "In response to the global outbreak of SARS in 2003 and in preparation for pandemic influenza, healthcare providers working in outpatient settings are urged to implement source containment measures (e.g., asking coughing patients to wear a s",
+      "confidence": 0.517,
+      "id": "I43",
+      "question": "How should pediatric patients with coughing fits be handled if developmental or clinical factors make wearing a surgical mask impossible?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.52)"
+    },
+    {
+      "answer": "Category II  * V.B.2.a.ii.Place together in the same room (cohort) patients who are infected or colonized with the same pathogen and are suitable roommates29, 638, 808, 811-813, 815, 818, 819 Category IB If it becomes necessary to place a ",
+      "confidence": 0.766,
+      "id": "I44",
+      "question": "Under what circumstances can two patients with the same confirmed infectious pathogen be cohorted in the same isolation room?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "HCWs who have close contact with infants with pertussis are at particularly high risk because of waning immunity and, until 2005, the absence of a vaccine that could be used in adults. However, two acellular pertussis vaccines were licensed",
+      "confidence": 0.463,
+      "id": "I45",
+      "question": "What protocol governs healthcare personnel with waning acellular pertussis immunity who are exposed during a neonatal unit outbreak?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.46)"
+    },
+    {
+      "answer": "control precautions during patient care, environmental measures (e.g., cleaning and disinfection of the patient care environment and equipment, dedicated single-patient-use of non-critical equipment), and decolonization therapy when appropr",
+      "confidence": 0.528,
+      "id": "I46",
+      "question": "What specific criteria allow a facility to permanently classify a patient as an MDRO carrier versus attempting decolonization?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.53)"
+    }
+  ],
+  "rewrite": false,
+  "split": "sealed3",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7021,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.2979,
+      "validated_precision": 0.7021
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7021,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 1.0,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.2979,
+      "validated_precision": 0.7021
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7021,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 1.0,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.2979,
+      "validated_precision": 0.7021
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.7021,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 1.0,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.2979,
+      "validated_precision": 0.7021
+    },
+    {
+      "correct_but_flagged_rate": 0.0303,
+      "decision_accuracy": 0.6809,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.9787,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.3043,
+      "validated_precision": 0.6957
+    },
+    {
+      "correct_but_flagged_rate": 0.1515,
+      "decision_accuracy": 0.617,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8723,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.3171,
+      "validated_precision": 0.6829
+    },
+    {
+      "correct_but_flagged_rate": 0.2121,
+      "decision_accuracy": 0.5745,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8298,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
+    },
+    {
+      "correct_but_flagged_rate": 0.2424,
+      "decision_accuracy": 0.5532,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.8085,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.3421,
+      "validated_precision": 0.6579
+    },
+    {
+      "correct_but_flagged_rate": 0.2727,
+      "decision_accuracy": 0.5745,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.7447,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.3143,
+      "validated_precision": 0.6857
+    },
+    {
+      "correct_but_flagged_rate": 0.3636,
+      "decision_accuracy": 0.5532,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.6383,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.3,
+      "validated_precision": 0.7
+    },
+    {
+      "correct_but_flagged_rate": 0.5152,
+      "decision_accuracy": 0.4681,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.5106,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
+    },
+    {
+      "correct_but_flagged_rate": 0.697,
+      "decision_accuracy": 0.4468,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.2766,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.2308,
+      "validated_precision": 0.7692
+    },
+    {
+      "correct_but_flagged_rate": 0.8485,
+      "decision_accuracy": 0.3617,
+      "ooc_false_accept_rate": null,
+      "pass_rate": 0.1489,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.2857,
+      "validated_precision": 0.7143
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.5745,
+    "in_corpus": {
+      "answer_correct_rate": 0.7021,
+      "correct_but_flagged_rate": 0.2121,
+      "mean_confidence": 0.7716,
+      "n": 47,
+      "pass_rate": 0.8298,
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
+    },
+    "out_of_corpus": {
+      "false_accept_rate": null,
+      "mean_confidence": null,
+      "n": 0,
+      "needs_review_rate": null
+    },
+    "threshold": 0.6
+  }
+}

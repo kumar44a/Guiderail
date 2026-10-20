@@ -206,6 +206,7 @@ def build_report() -> str:
     out += section_validator3()
     out += section_sealed()
     out += section_sealed2()
+    out += section_sealed3_iso()
     return "\n".join(out)
 
 
@@ -389,6 +390,30 @@ def section_sealed2() -> list[str]:
             "The Hit@5 figure means that for about a third of the answerable questions no retrieved chunk in the top five contained the expected fact. The two generators share this retrieval.", "",
             "**Reading this.** Both sealed sets say the same thing: the right document is found, the right passage often is not, and when it is not, the extractive generator "
             "still validates a wrong answer while the Claude generator more often withholds. Results here are on one document and one author's labels, so they are indicative, not precise.", ""]
+    return out
+
+def section_sealed3_iso() -> list[str]:
+    ext, llm = load("real", "sealed3", "extractive", "sealed3_iso"), load("real", "sealed3", "llm", "sealed3_iso")
+    if not (ext and llm):
+        return []
+    qs = {q.id: q for q in load_queries(CORPORA["real"]["queries"], "sealed3")}
+    weak = lambda i: "weak:" in qs[i].note
+    sub = lambda rp, keep: {**rp, "records": [r for r in rp["records"] if keep(r["id"])]}
+    out = ["## 15. Third sealed set, part 1: the CDC isolation guideline (I01 to I47)", "",
+           "The owner's questions on the 2007 CDC isolation guideline, run once per generator on the frozen configuration (rules: `evaluation/reports/sealed3_run_rules.txt`, "
+           "committed first). The owner supplied no expected answers; the assistant labelled them from the PDF text. Every scored question is labelled answerable, "
+           "so this part says **nothing** about out-of-scope false accepts. Three questions the assistant could not classify were left unscored. About half of the "
+           "scored questions have loose expected facts (marked weak), so \"answer correct\" over-credits; the matcher also misses some paraphrased correct answers, "
+           "so the figures are a proxy in both directions.", "",
+           "| Generator | Questions | In-corpus n | Pass | Answer correct | Validated precision |", "|---|---|---|---|---|---|"]
+    for gen, rep in (("extractive", ext), ("llm", llm)):
+        rep = rescored(rep)
+        for name, keep in (("all", lambda i: True), ("firm labels", lambda i: not weak(i)), ("weak labels", weak)):
+            k = counts(sub(rep, keep))
+            out.append(f"| {gen} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                       f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
+    r = ext["retrieval"]
+    out += ["", f"Retrieval: Hit@5 {pct(r['hit@5'])}, Hit@10 {pct(r['hit@10'])}, MRR {r['mrr']:.3f}, document-level Precision@5 {pct(r['precision@5'])}.", ""]
     return out
 
 

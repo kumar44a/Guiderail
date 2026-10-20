@@ -15,3 +15,8 @@ doubtful questions are left unscored instead of being called out of scope).
 
 Configuration: frozen, as for the earlier sealed runs. Run once with the extractive generator and once with the Claude generator; both are logged in test_split_runs.log.
 Nothing is changed afterwards on the strength of these results. Reported as found; not pooled with the other sealed sets.
+
+OUTCOME NOTE (added after the run): the three unscored questions were then run once. The household/varicella question WAS answerable (the Claude answer found the passage),
+so leaving it unscored was right and calling it out of scope would have been wrong again. Emergency intubation with unknown status: both generators abstained (likely not covered).
+Clean-hands recontamination: extractive validated an unrelated passage about hand transmission, Claude abstained. Results: generated report section 15.
+The vaccine toolkit questions will use a separate split, sealed4, so that running one part never reruns the other.
