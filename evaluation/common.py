@@ -18,6 +18,7 @@ from pipeline import build  # noqa: E402
 REPORTS = ROOT / "evaluation" / "reports"
 CORPORA = {
     "synthetic": {"dir": ROOT / "data" / "guidelines", "loader": "markdown", "queries": ROOT / "evaluation" / "queries_synthetic.jsonl"},
+    "synthetic2": {"dir": ROOT / "data" / "guidelines_v2", "loader": "markdown", "queries": ROOT / "evaluation" / "queries_synthetic2.jsonl"},
     "real": {"dir": ROOT / "data" / "real", "loader": "pdf", "queries": ROOT / "evaluation" / "queries_real.jsonl"},
 }
 TEST_LOG = REPORTS / "test_split_runs.log"
