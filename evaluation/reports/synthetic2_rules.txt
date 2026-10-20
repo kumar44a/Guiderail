@@ -1,0 +1,22 @@
+Synthetic corpus v2 (option 2 from the review of unmet criteria). Written and committed BEFORE the corpus was built or any v2 query was run.
+
+Why: the document-level Precision@5 of 0.65 could not be reached on the v1 synthetic corpus because most documents have only 3 or 4 chunks. With one relevant document the ceiling
+for P@5 is 0.6 to 0.8 however good retrieval is (mean ceiling 0.79 on the v1 test split; the system reached 0.55). This is a property of the test material. v2 tests the question
+"is the P@5 shortfall caused by the corpus being too small per document?". It does not test whether retrieval improved: no system code changes.
+
+What changes: a new corpus data/guidelines_v2/ (script scripts/make_corpus_v2.py). Every v1 file is copied VERBATIM and gets 3 to 4 new sections of roughly 60 to 75 words, so that
+each document has at least 6 chunks. who-linen-laundry-2022 stays a single short chunk on purpose (the v1 hard case for tiny documents). Superseded pairs, WHO/CDC near-duplicates and
+all v1 front matter are unchanged. New sections add details; none contradicts existing text.
+New queries: evaluation/queries_synthetic2.jsonl. dev = the 25 v1 dev queries (facts still true, text unchanged). test = about 25 FRESH queries (20 in-corpus, 5 out-of-corpus)
+written before the system sees v2, about half on new sections and half on old text. The v1 test queries are not reused as test (already seen). Labels are checked by check_labels.py.
+Author bias, stated up front: the same AI that wrote the system wrote the corpus, the queries and the labels; the new test queries are fresh but not independent.
+
+Run order: build v2 and report chunks per document; run the v2 dev split for sanity (allowed); run the v2 test split ONCE per generator, tagged "v2". System code, thresholds and prompts are frozen.
+
+Acceptance (stated now, judged mechanically on the single test run, no tuning afterwards):
+ A. every document except who-linen-laundry-2022 has at least 6 chunks; otherwise the corpus is not what this experiment says it is.
+ B. v2 test document-level Precision@5 (extractive) is reported against 0.65 and against the v2 ceiling. It counts as MET only if it is at least 0.65. If it is lower, it is reported as not met
+    and the v1 explanation (corpus ceiling) is withdrawn for v2.
+ C. v1 reports and tables are kept untouched. v2 results are added beside them, never in place of them, and the README/report say v1 missed the target and v2 is a corpus change made after
+    seeing that.
+Everything is reported as found.
