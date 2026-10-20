@@ -24,7 +24,7 @@ from guiderail.service import QAService
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     ap.add_argument("--corpus", choices=sorted(CORPORA), required=True)
-    ap.add_argument("--split", choices=["dev", "test", "all", "sealed", "sealed2", "sealed3", "sealed4"], default="dev")
+    ap.add_argument("--split", choices=["dev", "test", "all", "sealed", "sealed2", "sealed3", "sealed4", "final"], default="dev")
     ap.add_argument("--generator", choices=["extractive", "llm"], default="extractive")
     ap.add_argument("--threshold", type=float, default=config.DEFAULT_THRESHOLD)
     ap.add_argument("--rerank-weight", type=float, default=None,

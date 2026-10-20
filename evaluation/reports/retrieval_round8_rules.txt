@@ -1,0 +1,31 @@
+Retrieval round 8: document cohesion, aimed at document-level Precision@5. Written and committed BEFORE any code or measurement.
+
+Why: the v2 experiment (synthetic2_rules.txt, report section 17) showed that Precision@5 stays below 0.65 even when documents are long enough for a ceiling of 1.0. The right document is
+first (Precision@1 95%) but ranks 2 to 5 are often filled by chunks of unrelated documents that match on generic words. Chunks of the same document as a strong hit are a better bet for the
+remaining places than isolated chunks of another document.
+
+Exposure disclosed: I looked at which documents filled ranks 2 to 5 for the 20 v2 test questions (T2-xx) before designing this change. Those questions are therefore NOT used to judge it.
+The change is judged on dev material, and the claim "target met" is judged on a FRESH final set (FX-01..FX-25 answerable, FX-O1..FX-O5 out of scope) written before any round 8 measurement
+and run once. The T2 results are reported afterwards, labelled as exposed.
+
+Candidate (one mechanism, one parameter): after the existing re-rank of the 30-chunk pool, give each chunk a bonus of lambda times the best re-rank score of ANY chunk of the same document in the pool
+(key = score + lambda x best score of its document). Only the order changes. Hit.score (the cosine to the original question), the index, the manifest, the chunks and the validator are untouched.
+Values tried, in this order: lambda = 0.5, then lambda = 1.0. Baseline = the current kept state (lambda 0). Switch: GUIDERAIL_DOC_COHESION (default 0 until a value is kept).
+
+Honest caveat stated now: document-level Precision@5 counts a chunk as relevant when its document is. Raising it by promoting siblings of a correct document can raise the metric without making the
+retrieved text more useful for the question. The guards below (answer-bearing Hit@5, MRR, wrong-but-validated, out-of-scope accepts) exist to catch that; if Precision@5 rises while the guards
+fall or stand still, the gain is reported as a metric effect, not as better retrieval.
+
+Dev material (extractive generator, no API calls): synthetic2 dev = 20 v2 dev questions + 25 extra answerable (DX-01..DX-25) + 10 out of scope; synthetic (v1) dev; real dev.
+Keep rule (all must hold for a lambda to be kept; the smallest passing lambda wins):
+ R1 gain: synthetic2 dev mean document-level Precision@5 rises by at least 0.05 absolute.
+ R2 synthetic2 dev: answer-bearing Hit@5 count not lower; MRR not lower by more than 0.01.
+ R3 synthetic (v1) dev: Hit@5 count not lower; MRR not lower by more than 0.01.
+ R4 real dev: Hit@5 not lower by more than 1 query; MRR not lower by more than 0.01.
+ R5 with the extractive generator, wrong-but-validated answers and out-of-scope accepts do not rise on synthetic2 dev or on real dev.
+ R6 questions with two or more relevant documents: Hit@5 count not lower on synthetic2 dev.
+ R7 the index builds byte-identical (hash unchanged); validator stress set not worse.
+If neither lambda passes, the change is reverted, the target is reported as not met, and no further candidate is tried in this round.
+If one passes: freeze, then run the fresh final set ONCE per generator (extractive and Claude), report document-level Precision@5 against 0.65 (MET only if at least 0.65 on the final set),
+then regenerate the shipped-configuration tables. The sealed question sets are not re-run unless the owner asks; their tables stay tagged with the configuration they were run on, and the report says so.
+Everything is reported as found.
