@@ -1,7 +1,7 @@
 # GuideRail: Architecture
 
 Healthcare Guidelines RAG Assistant: rapid query and validation, built for Spinnaker Analytics.
-Status: **implemented through Phase 4, plus the retrieval and validator improvement rounds described in section 7**; Phase 5 (final review and submission) remains.
+Status: **all phases implemented, plus the retrieval and validator improvement rounds described in section 7**.
 Measured results are not repeated here. They are generated into [EVALUATION_REPORT.md](EVALUATION_REPORT.md) and
 [the README](../README.md), so this document cannot drift from the reports.
 
@@ -142,4 +142,4 @@ Decisions worth knowing:
 | 2 RAG service | retriever, generators, validator, `/qa`, `/health` | done |
 | 3 Evaluation | labeled sets, metrics, sweep, stress test, reports (re-run on the five-document real corpus) | done |
 | 4 Packaging | README with generated stats, RUNBOOK, Docker, Streamlit, DEVELOPMENT_NOTES, docs-sync check | done (Docker unrun) |
-| 5 Submission | executed logs, technical summary, metrics, limitations | pending |
+| 5 Submission | executed notebook, technical summary, metrics, limitations | done (Docker unrun) |

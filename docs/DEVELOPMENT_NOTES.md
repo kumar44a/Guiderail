@@ -36,6 +36,7 @@ except where stated.
 | A validator change did what it claims | rules committed before the change; `revalidate.py` first proved it reproduces stored confidences exactly; `judge_round2.py` applies the rules mechanically to dev material | `python evaluation/judge_round2.py` |
 | Test-split results were not tuned on | rules committed before runs; every test-split run logged with timestamp and index hash | `evaluation/reports/test_split_runs.log`, `evaluation/reports/rerun_5doc_rules.txt`, `git log` |
 | The LLM path really works | a logged live run with model, request ids and token usage; later live runs inside the evaluation reports | `evaluation/logs/live_llm_run.json`, `evaluation/reports/*_llm_*.json` |
+| The notebook runs end to end | built and executed by `scripts/build_notebook.py` (no logic in it; it calls the package and shows saved reports); a test checks the saved file has outputs and no error cells | `pytest tests/test_notebook.py` |
 | Real PDFs load | the PDF loader was run on actual WHO and CDC documents and chunk output inspected | `python scripts/pipeline.py --real` |
 
 Limits of these checks:
