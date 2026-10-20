@@ -1,0 +1,2737 @@
+{
+  "corpus": "real",
+  "generator": "llm",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "The technical work of the 1st GPSC, which led to the WHO Guidelines on Hand Hygiene in Health Care, focused on developing recommendations and implementation strategies to improve hand hygiene practices in any situation in which health care is delivered and in all settings where health care is permanently or occasionally performed, such as home care by birth attendants. Hand hygiene, a very simple action, is well accepted to be one of the primary modes of reducing HCAI and of enhancing patient safety, and a key action within \"Clean Care is Safer Care\" is to promote hand hygiene globally and at all levels of health care.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#introduction-p-9-3",
+        "who-hand-hygiene-guidelines-summary-2009#introduction-p-9-2"
+      ],
+      "cited": true,
+      "confidence": 0.702,
+      "correct": false,
+      "generator_error": null,
+      "id": "V01",
+      "kind": "in_corpus",
+      "question": "What is the overarching purpose and primary goal of the WHO Guidelines on Hand Hygiene in Health Care?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.702,
+        "coverage": 1.0,
+        "question_support": 0.405,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V02",
+      "kind": "in_corpus",
+      "question": "What are the specific components of the \"My 5 Moments for Hand Hygiene\" framework?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use an alcohol-based handrub as the preferred means for routine hand antisepsis in all other clinical situations described in items D(a) to D(f) if hands are not visibly soiled, meaning situations other than suspected or proven exposure to spore-forming pathogens such as C. difficile, where hand washing with soap and water is preferred. Hands should be washed with soap and water when visibly dirty or visibly soiled with blood or other body fluids, or after using the toilet. When alcohol-based handrub is available in the health-care facility for hygienic hand antisepsis, the use of antimicrobial soap is not recommended.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-8"
+      ],
+      "cited": true,
+      "confidence": 0.821,
+      "correct": true,
+      "generator_error": null,
+      "id": "V03",
+      "kind": "in_corpus",
+      "question": "In which routine clinical situations is an alcohol-based handrub (ABHR) explicitly recommended over soap and water?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.821,
+        "coverage": 1.0,
+        "question_support": 0.643,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based handrubs have the advantage of the short time required for action (20 to 30 seconds). When an alcohol-based handrub is available, it should be used as the preferred means for routine hand hygiene in health care. Soap and alcohol-based handrub should not be used concomitantly (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-7",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1"
+      ],
+      "cited": true,
+      "confidence": 0.773,
+      "correct": false,
+      "generator_error": null,
+      "id": "V04",
+      "kind": "in_corpus",
+      "question": "What is the recommended duration and sequence of steps for performing hand hygiene using an alcohol-based handrub?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.773,
+        "coverage": 1.0,
+        "question_support": 0.546,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When washing hands with soap and water, wet hands with water and apply the amount of product necessary to cover all surfaces, then rinse hands with water and dry thoroughly with a single-use towel. Use clean, running water whenever possible. Soap and alcohol-based handrub should not be used concomitantly (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-0",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1"
+      ],
+      "cited": true,
+      "confidence": 0.807,
+      "correct": false,
+      "generator_error": null,
+      "id": "V05",
+      "kind": "in_corpus",
+      "question": "What is the recommended duration and step-by-step technique for washing hands with soap and water?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.807,
+        "coverage": 1.0,
+        "question_support": 0.615,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hand hygiene should be performed before handling an invasive device for patient care, regardless of whether or not gloves are used (IB). Hand hygiene should also be performed before and after touching the patient (IB), and after contact with body fluids or excretions, mucous membranes, non-intact skin, or wound dressings (IA). When handling soiled patient-care equipment, wear gloves if visibly contaminated and perform hand hygiene.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-3",
+        "cdc-isolation-precautions-2007#component-recommendations-p-129-2"
+      ],
+      "cited": true,
+      "confidence": 0.75,
+      "correct": false,
+      "generator_error": null,
+      "id": "V06",
+      "kind": "in_corpus",
+      "question": "When should hand hygiene be performed during patient care even if gloves are worn?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.75,
+        "coverage": 0.973,
+        "question_support": 0.542,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V07",
+      "kind": "in_corpus",
+      "question": "What are the 5 core elements of the WHO Multimodal Hand Hygiene Improvement Strategy?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V08",
+      "kind": "in_corpus",
+      "question": "How does proper hand hygiene impact the incidence of health care-associated infections (HCAIs) and cross-transmission?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The WHO-recommended formulations for alcohol-based handrubs contain either 75% v/v isopropanol or 80% v/v ethanol, and these were identified, tested and validated for local production at facility level.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-3"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "V09",
+      "kind": "in_corpus",
+      "question": "What are the validated formulations recommended by WHO for the local production of alcohol-based handrubs?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based handrubs with optimal antimicrobial efficacy usually contain 75 to 85% ethanol, isopropanol, or n-propanol, or a combination of these products. The WHO-recommended formulations contain either 75% v/v isopropanol, or 80% v/v ethanol.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-3"
+      ],
+      "cited": true,
+      "confidence": 0.534,
+      "correct": true,
+      "generator_error": null,
+      "id": "V10",
+      "kind": "in_corpus",
+      "question": "What is the optimal concentration range of alcohol (ethanol or isopropanol) required for effective antimicrobial efficacy?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.534,
+        "coverage": 1.0,
+        "question_support": 0.628,
+        "reasons": [
+          "weak relevance to the question (0.53)"
+        ],
+        "retrieval_relevance": 0.44,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "According to the WHO minimum requirements, the overall sink-to-patient bed ratio should be 1:10, and sinks should be located the closest possible to the point of care.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-2"
+      ],
+      "cited": true,
+      "confidence": 0.954,
+      "correct": true,
+      "generator_error": null,
+      "id": "V11",
+      "kind": "in_corpus",
+      "question": "What is the recommended sink-to-patient bed ratio according to WHO minimum requirements?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.954,
+        "coverage": 1.0,
+        "question_support": 0.908,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based products are preferred over antimicrobial or plain soap and water when hands are not visibly soiled because of their superior microbiocidal activity, reduced drying of the skin, and convenience. Alcohol-based rubs have been shown to be more efficacious than antiseptic detergents, which in turn are usually more efficacious than plain soap. Frequent use of plain soaps has also been associated with even greater skin damage, dryness and irritation than some antiseptic preparations.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-1",
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-1",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-5"
+      ],
+      "cited": true,
+      "confidence": 0.342,
+      "correct": false,
+      "generator_error": null,
+      "id": "V12",
+      "kind": "in_corpus",
+      "question": "Why are alcohol-based handrubs considered superior to handwashing with plain soap for routine decontamination?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.342,
+        "coverage": 0.43,
+        "question_support": 0.59,
+        "reasons": [
+          "negation not found in evidence: not",
+          "low evidence coverage (0.43); unsupported terms: not, visibly, convenienc, turn, also"
+        ],
+        "retrieval_relevance": 1.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "not",
+          "visibly",
+          "convenienc",
+          "turn",
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "With an antimicrobial soap, scrub hands and forearms for the length of time recommended by the manufacturer, typically 2–5 minutes, and long scrub times (e.g. 10 minutes) are not necessary. With an alcohol-based surgical handrub product with sustained activity, follow the manufacturer's instructions for application times, apply the product to dry hands only, and use sufficient product to keep hands and forearms wet with the handrub throughout the surgical hand preparation procedure. Do not combine surgical hand scrub and surgical handrub with alcohol-based products sequentially, and if quality of water is not assured in the operating theatre, surgical hand antisepsis using an alcohol-based handrub is recommended before donning sterile gloves.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-2"
+      ],
+      "cited": true,
+      "confidence": 0.937,
+      "correct": true,
+      "generator_error": null,
+      "id": "V13",
+      "kind": "in_corpus",
+      "question": "How should surgical hand preparation be performed using an alcohol-based handrub versus antimicrobial soap?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.937,
+        "coverage": 1.0,
+        "question_support": 0.873,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The selection of hand hygiene products should be based on the relative efficacy of antiseptic agents according to ASTM and EN standards and consideration for selection of products for hygienic hand antisepsis and surgical hand preparation. Other criteria are dermal tolerance and skin reactions, and time for drying, considering that different products are associated with different drying times.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#chloroxylenol-0-5-4-slow-contradictory-hw-p-39-2"
+      ],
+      "cited": true,
+      "confidence": 0.781,
+      "correct": false,
+      "generator_error": null,
+      "id": "V14",
+      "kind": "in_corpus",
+      "question": "What are the criteria for selecting suitable hand hygiene products in health-care facilities?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.781,
+        "coverage": 1.0,
+        "question_support": 0.562,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Most studies used multimodal strategies to improve hand hygiene compliance, which included audits of hand hygiene practices and performance feedback alongside HCWs' education, reminders, better water and soap availability, alcohol-based handrub and an improved institutional safety climate. Evaluation and feedback means monitoring hand hygiene practices and infrastructure, along with related perceptions and knowledge among HCWs, while providing performance and results feedback to the staff. Compliance has been assessed by means of direct observation or consumption of hand hygiene products, and this variation in measurement makes comparisons difficult.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#2-3-strategies-to-improve-hand-hygiene-compliance-p-17-1",
+        "who-hand-hygiene-guidelines-summary-2009#guideline-implementation-p-35-4",
+        "who-hand-hygiene-guidelines-summary-2009#2-3-strategies-to-improve-hand-hygiene-compliance-p-17-0"
+      ],
+      "cited": true,
+      "confidence": 0.787,
+      "correct": true,
+      "generator_error": null,
+      "id": "V15",
+      "kind": "in_corpus",
+      "question": "What role does performance feedback and direct observation play in improving hand hygiene compliance?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.787,
+        "coverage": 0.893,
+        "question_support": 0.763,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "alongsid",
+          "better",
+          "assess",
+          "variation"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Especially in a facility where a hand hygiene improvement programme has to be initiated from scratch, the essential steps are Step 1: Facility preparedness – readiness for action, Step 2: Baseline evaluation – establishing the current situation, and Step 3: Implementation – introducing the improvement activities. These are followed by Step 4: Follow-up evaluation – evaluating the implementation impact, and Step 5: Action planning and review cycle – developing a plan for the next 5 years (minimum). Part III of the Guide to Implementation proposes this step-wise approach for practical implementation at the health-care setting level, and also indicates the resources necessary to implementation and provides a template action plan.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#4-reminders-in-the-workplace-prompting-and-reminding-p-36-9",
+        "who-hand-hygiene-guidelines-summary-2009#4-reminders-in-the-workplace-prompting-and-reminding-p-36-8"
+      ],
+      "cited": true,
+      "confidence": 0.949,
+      "correct": true,
+      "generator_error": null,
+      "id": "V16",
+      "kind": "in_corpus",
+      "question": "What step-wise approach should health-care facilities follow when setting up a hand hygiene program from scratch?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.949,
+        "coverage": 0.985,
+        "question_support": 0.927,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "It is essential that administrators ensure that conditions are conducive to the promotion of a multifaceted, multimodal hand hygiene strategy and an approach that promotes a patient safety culture, including providing HCWs with access to a safe, continuous water supply at all outlets and the necessary facilities to perform handwashing (IB), and a readily accessible alcohol-based handrub at the point of patient care (IA). Administrators should make improved hand hygiene adherence (compliance) an institutional priority and provide appropriate leadership, administrative support, financial resources and support for hand hygiene and other infection prevention and control activities (IB), and ensure that HCWs have dedicated time for infection control training, including sessions on hand hygiene (II). They should also implement a multidisciplinary, multifaceted and multimodal programme designed to improve adherence of HCWs to recommended hand hygiene practices (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#9-1-for-health-care-administrators-p-28-0",
+        "who-hand-hygiene-guidelines-summary-2009#9-1-for-health-care-administrators-p-28-1"
+      ],
+      "cited": true,
+      "confidence": 0.834,
+      "correct": true,
+      "generator_error": null,
+      "id": "V17",
+      "kind": "in_corpus",
+      "question": "What are the institutional and leadership responsibilities of health-care administrators under these guidelines?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.834,
+        "coverage": 0.987,
+        "question_support": 0.691,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Health-care workers should be provided with hand lotions or creams to minimize the occurrence of irritant contact dermatitis associated with hand antisepsis or handwashing (IA). Regular use of hand cream can attenuate skin dryness and roughness caused by frequent hand washing.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-8",
+        "who-hand-hygiene-guidelines-summary-2009#international-journal-of-infectious-p-49-3"
+      ],
+      "cited": true,
+      "confidence": 0.796,
+      "correct": true,
+      "generator_error": null,
+      "id": "V18",
+      "kind": "in_corpus",
+      "question": "How can hand lotions or humectant-containing formulations prevent irritant contact dermatitis among health-care workers?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.796,
+        "coverage": 1.0,
+        "question_support": 0.591,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V19",
+      "kind": "in_corpus",
+      "question": "What are the recommended guidelines regarding the length and maintenance of natural fingernails for healthcare providers?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Individual or portable dispensers such as pocket bottles are ideal if combined with wall-mounted dispensing systems, to increase point-of-care access and enable use in units where wall-mounted dispensers should be avoided or cannot be installed. Because many of these systems are used as disposables, environmental considerations should also be taken into account.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-6"
+      ],
+      "cited": true,
+      "confidence": 0.755,
+      "correct": true,
+      "generator_error": null,
+      "id": "V20",
+      "kind": "in_corpus",
+      "question": "In what situations can individual/portable dispensers (such as pocket bottles) enhance hand hygiene compliance?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.755,
+        "coverage": 0.902,
+        "question_support": 0.675,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "individual",
+          "portabl",
+          "avoid"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V21",
+      "kind": "in_corpus",
+      "question": "What evidence grading categories (e.g., Category IA, IB, IC, II) does WHO use to classify its recommendations?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hand hygiene should be promoted at the community level to strengthen both self-protection and the protection of others (II). This is a recommendation for national governments, alongside making improved hand hygiene adherence a national priority.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#9-2-for-national-governments-p-28-0"
+      ],
+      "cited": true,
+      "confidence": 0.765,
+      "correct": true,
+      "generator_error": null,
+      "id": "V22",
+      "kind": "in_corpus",
+      "question": "How should hand hygiene be promoted at the community level to enhance public health?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.765,
+        "coverage": 0.912,
+        "question_support": 0.677,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "alongsid"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The guideline links handrubs at the point of care to a dramatic impact on overall infection rates. It recommends providing HCWs with a readily accessible alcohol-based handrub at the point of patient care (IA). It also states that wall-mounted and point-of-care dispensers should be used in combination to achieve maximum compliance, with wall-mounted handrub dispensers positioned in locations that facilitate hand hygiene at the point of care.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-14",
+        "who-hand-hygiene-guidelines-summary-2009#9-1-for-health-care-administrators-p-28-0",
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-3"
+      ],
+      "cited": true,
+      "confidence": 0.644,
+      "correct": true,
+      "generator_error": null,
+      "id": "V23",
+      "kind": "in_corpus",
+      "question": "What are the advantages of point-of-care handrub dispensers over centralized hallway sinks?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.644,
+        "coverage": 0.921,
+        "question_support": 0.441,
+        "reasons": [],
+        "retrieval_relevance": 0.958,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "link",
+          "also",
+          "stat"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Educational interventions have produced positive changes in knowledge and attitude, but there often has been limited or no accompanying change in behavior, although self-reported adherence is higher in groups that received an educational intervention. Educational interventions that incorporated videotaping and performance feedback were successful in improving adherence during the period of study, but the long-term effect of these interventions is not known. With reminders in the workplace, an improvement was observed in HCWs' perception of the importance of HCAI and its prevention and in their knowledge about hand transmission and hand hygiene practices, along with a substantial system change in the facilities and equipment available for hand hygiene.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-precautions-to-prevent-transmission-p-44-32",
+        "who-hand-hygiene-guidelines-summary-2009#4-reminders-in-the-workplace-prompting-and-reminding-p-36-5"
+      ],
+      "cited": true,
+      "confidence": 0.534,
+      "correct": true,
+      "generator_error": null,
+      "id": "V24",
+      "kind": "in_corpus",
+      "question": "How do educational campaigns and visual workplace reminders influence long-term behavioral change?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.534,
+        "coverage": 0.872,
+        "question_support": 0.545,
+        "reasons": [],
+        "retrieval_relevance": 0.68,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "produc",
+          "but",
+          "behavior",
+          "although",
+          "known",
+          "along"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Pittet and colleagues estimated the direct and indirect costs of a hand hygiene programme at less than US$ 57 000 per year for a 2600-bed hospital, an average of US$ 1.42 per patient admitted. They concluded that the hand hygiene programme was cost-saving if less than 1% of the reduction in HCAIs observed was attributable to improved hand hygiene practices.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#2-5-cost-effectiveness-of-hand-hygiene-promotion-p-20-3"
+      ],
+      "cited": true,
+      "confidence": 0.687,
+      "correct": true,
+      "generator_error": null,
+      "id": "V25",
+      "kind": "in_corpus",
+      "question": "How does improving hand hygiene compliance prove cost-effective for hospitals and national health systems?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.687,
+        "coverage": 0.953,
+        "question_support": 0.442,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "colleagu"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hand washing with soap and water is the preferred means, rather than an alcohol-based handrub, \"if exposure to potential spore-forming pathogens is strongly suspected or proven, including outbreaks of C. difficile\" (IB). Hands should also be washed with soap and water \"when visibly dirty or visibly soiled with blood or other body fluids\" (IB) or \"after using the toilet\" (II). The alcohol-based handrub is the preferred means for routine hand antisepsis in other clinical situations only \"if hands are not visibly soiled\", and \"soap and alcohol-based handrub should not be used concomitantly\" (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1"
+      ],
+      "cited": true,
+      "confidence": 0.837,
+      "correct": true,
+      "generator_error": null,
+      "id": "V26",
+      "kind": "in_corpus",
+      "question": "When must an alcohol-based handrub not be used in place of soap and water?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.837,
+        "coverage": 0.956,
+        "question_support": 0.751,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also",
+          "only"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V27",
+      "kind": "in_corpus",
+      "question": "Why should healthcare workers not use soap and alcohol-based handrub concomitantly?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohols have virtually no activity against bacterial spores or protozoan oocysts, and reduced activity against some non-enveloped (non-lipophilic) viruses. Concern has been raised about the lack of efficacy of alcohol-based handrubs against sporeforming pathogens, in particular C. difficile, and although alcohol-based handrubs may not be effective against C. difficile, it has not been shown that they trigger a rise in C. difficile-associated disease. C. difficile-associated disease rates began to rise in the USA long before the widespread use of alcohol-based handrubs, and several studies demonstrated a lack of association between the consumption of alcohol-based handrubs and the incidence of clinical isolates of C. difficile.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-8",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-11",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-12"
+      ],
+      "cited": true,
+      "confidence": 0.68,
+      "correct": false,
+      "generator_error": null,
+      "id": "V28",
+      "kind": "in_corpus",
+      "question": "What are the limitations of alcohol-based handrubs against bacterial spores, specifically Clostridium difficile?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.68,
+        "coverage": 1.0,
+        "question_support": 0.634,
+        "reasons": [],
+        "retrieval_relevance": 0.726,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, it has not been shown that they do: although alcohol-based handrubs may not be effective against C. difficile, it has not been shown that they trigger a rise in C. difficile-associated disease. C. difficile-associated disease rates began to rise in the USA long before the widespread use of alcohol-based handrubs, and several studies demonstrated a lack of association between the consumption of alcohol-based handrubs and the incidence of clinical isolates of C. difficile. During C. difficile-associated outbreaks, contact precautions are highly recommended, including glove use and handwashing with a plain or antimicrobial soap and water following glove removal after caring for patients with diarrhoea.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-11",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-12",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-13"
+      ],
+      "cited": true,
+      "confidence": 0.808,
+      "correct": true,
+      "generator_error": null,
+      "id": "V29",
+      "kind": "in_corpus",
+      "question": "Does the widespread adoption of alcohol-based handrubs cause an increase in C. difficile outbreaks?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.808,
+        "coverage": 0.986,
+        "question_support": 0.639,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "includ"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The guideline says \"Do not wash gloves for the purpose of reuse since this practice has been associated with transmission of pathogens\". It also states \"Do not wear the same pair of gloves for the care of more than one patient\". In the case of glove reuse, \"implement the safest reprocessing method\".",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-b-2-gloves-p-82-1",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-2"
+      ],
+      "cited": true,
+      "confidence": 0.489,
+      "correct": false,
+      "generator_error": null,
+      "id": "V30",
+      "kind": "in_corpus",
+      "question": "Why is the reuse of disposable medical gloves strongly discouraged?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.489,
+        "coverage": 0.852,
+        "question_support": 0.584,
+        "reasons": [
+          "weak relevance to the question (0.57)"
+        ],
+        "retrieval_relevance": 0.563,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "say",
+          "also",
+          "stat"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "CDC/HICPAC recommended (Category IA) that artificial fingernails and extenders not be worn by healthcare personnel who have contact with high-risk patients (e.g., those in ICUs, ORs) due to the association with outbreaks of gram-negative bacillus and candidal infections as confirmed by molecular typing of isolates. WHO states: do not wear artificial fingernails or extenders when having direct contact with patients (IA). CDC applies the prohibition to duties that include direct contact with patients at high risk for infection and associated adverse outcomes, and advises developing an organizational policy on the wearing of non-natural nails by healthcare personnel who have direct contact with other patients (Category II).",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-3",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-2",
+        "cdc-isolation-precautions-2007#iv-a-hand-hygiene-p-80-5"
+      ],
+      "cited": true,
+      "confidence": 0.72,
+      "correct": true,
+      "generator_error": null,
+      "id": "V31",
+      "kind": "in_corpus",
+      "question": "Why are artificial fingernails or nail extenders strictly prohibited for direct patient care staff?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.72,
+        "coverage": 0.881,
+        "question_support": 0.634,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "isolat",
+          "stat",
+          "apply",
+          "prohibition",
+          "advis"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Observed risk factors for poor adherence to recommended hand hygiene practices include doctor status (rather than a nurse), nursing assistant status (rather than a nurse), physiotherapist, technician, male gender, and working in intensive care, surgical care unit, emergency care or anaesthesiology. Further observed risk factors are working during the week (vs. week-end), wearing gowns/gloves, and the moments before contact with patient environment and after contact with patient environment. Outbreak investigations have also linked understaffing or overcrowding consistently with poor adherence to hand hygiene.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-i-2-1-p-16-0",
+        "who-hand-hygiene-guidelines-summary-2009#table-i-2-3-p-19-6"
+      ],
+      "cited": true,
+      "confidence": 0.83,
+      "correct": true,
+      "generator_error": null,
+      "id": "V32",
+      "kind": "in_corpus",
+      "question": "What are the primary risk factors observed for poor hand hygiene adherence among healthcare workers?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.83,
+        "coverage": 0.947,
+        "question_support": 0.753,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "further",
+          "moment"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V33",
+      "kind": "in_corpus",
+      "question": "Why do physicians and male health-care personnel consistently demonstrate lower baseline compliance rates than nurses?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Self-reported factors for poor adherence with hand hygiene include disagreement with the recommendations and lack of scientific information of definitive impact of improved hand hygiene on HCAI.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-self-reported-factors-for-poor-adherence-with-hand-hygiene-p-16-1"
+      ],
+      "cited": true,
+      "confidence": 0.667,
+      "correct": false,
+      "generator_error": null,
+      "id": "V34",
+      "kind": "in_corpus",
+      "question": "What self-reported reasons do health-care workers give for failing to adhere to hand hygiene protocols?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.667,
+        "coverage": 1.0,
+        "question_support": 0.334,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Although alcohol-based handrubs are flammable, the risk of fires associated with such products is very low, and none of 798 health-care facilities surveyed in the USA reported a fire related to an alcohol-based handrub dispenser. A total of 766 facilities had accrued an estimated 1430 hospital-years of alcohol-based handrub use without a fire attributed to a handrub dispenser, and in Europe the incidence of fires related to such products has been extremely low, with a German study covering an estimated 25 038 hospital-years and 35 million litres of usage. In England and Wales, only two fire events out of 692 incidents were reported from the start of the \"cleanyourhands\" campaign until July 2008, and the dispenser system for alcohol-based handrubs should be approved for flammable materials (IC).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-0",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-1",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-3",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-5"
+      ],
+      "cited": true,
+      "confidence": 0.789,
+      "correct": false,
+      "generator_error": null,
+      "id": "V35",
+      "kind": "in_corpus",
+      "question": "What is the fire hazard risk associated with alcohol-based handrub dispensers, and what are the actual incident statistics?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.789,
+        "coverage": 0.973,
+        "question_support": 0.622,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "study",
+          "cover"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V36",
+      "kind": "in_corpus",
+      "question": "What safety precautions must be taken to prevent intentional or accidental ingestion of alcohol handrubs in psychiatric and pediatric units?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "There are no data showing that the use of alcohol-based handrub may be harmful because of alcohol absorption, and it is well-established that reduced compliance with hand hygiene will lead to preventable HCAIs. Possible toxicity in relation to dermal absorption of products has been reported, and alcohol-based formulations are well-tolerated.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-7",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-3"
+      ],
+      "cited": true,
+      "confidence": 0.836,
+      "correct": false,
+      "generator_error": null,
+      "id": "V37",
+      "kind": "in_corpus",
+      "question": "Does frequent use of alcohol-based handrubs lead to significant dermal absorption of alcohol into the bloodstream?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.836,
+        "coverage": 1.0,
+        "question_support": 0.673,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The use of very hot water for handwashing should be avoided as it increases the likelihood of skin damage. Avoid using hot water, as repeated exposure to hot water may increase the risk of dermatitis (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-1"
+      ],
+      "cited": true,
+      "confidence": 0.735,
+      "correct": true,
+      "generator_error": null,
+      "id": "V38",
+      "kind": "in_corpus",
+      "question": "Why is washing hands with very hot water considered counterproductive and harmful?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.735,
+        "coverage": 1.0,
+        "question_support": 0.47,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V39",
+      "kind": "in_corpus",
+      "question": "Why should soap dispensers never be topped up or partially refilled with new soap?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V40",
+      "kind": "in_corpus",
+      "question": "Why are surgical scrub brushes no longer recommended for routine surgical hand antisepsis?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Irritant contact dermatitis is more commonly reported with iodophors. Other antiseptic agents that may cause irritant contact dermatitis, in order of decreasing frequency, include chlorhexidine, chloroxylenol, triclosan and alcohol-based products. Education programmes for HCWs should include hand-care practices designed to reduce the risk of irritant contact dermatitis and other skin damage.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-2",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-7"
+      ],
+      "cited": true,
+      "confidence": 0.874,
+      "correct": true,
+      "generator_error": null,
+      "id": "V41",
+      "kind": "in_corpus",
+      "question": "What causes irritant contact dermatitis in health-care workers, and which antiseptic agents have the highest risk?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.874,
+        "coverage": 1.0,
+        "question_support": 0.747,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "According to WHO, donning gloves while hands are still wet from either washing or applying alcohol increases the risk of skin irritation. It is one of several practices that increase the risk of skin irritation and should be avoided. Hands with damaged skin may in fact increase the risk of transmission of infections to patients.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-9",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-7",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-4"
+      ],
+      "cited": true,
+      "confidence": 0.751,
+      "correct": null,
+      "generator_error": null,
+      "id": "V42",
+      "kind": "out_of_corpus",
+      "question": "How does donning gloves on damp or wet hands exacerbate skin damage and irritation?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.751,
+        "coverage": 0.902,
+        "question_support": 0.665,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "accord",
+          "several"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V43",
+      "kind": "in_corpus",
+      "question": "Why is prolonged surgical scrubbing (e.g., 10 minutes) considered unnecessary and discouraged?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "V44",
+      "kind": "out_of_corpus",
+      "question": "Why can wearing gloves create a false sense of security and lead to missed hand hygiene opportunities?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In developing countries, the usual difficulties of diagnosing HCAI are compounded by the paucity and unreliability of laboratory data, limited access to diagnostic facilities like radiology and poor medical record keeping, which are obstacles to reliable HCAI burden estimates. Therefore, limited data on HCAI from these settings are available from the literature.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#1-3-hcai-in-developing-countries-p-13-0"
+      ],
+      "cited": true,
+      "confidence": 0.801,
+      "correct": true,
+      "generator_error": null,
+      "id": "V45",
+      "kind": "in_corpus",
+      "question": "What are the main obstacles to establishing reliable HCAI surveillance data in developing countries?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.801,
+        "coverage": 0.959,
+        "question_support": 0.67,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "compound"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The introduction of automated sinks had a negative impact on consistent adherence to hand washing. \"Automated sink\" is listed alongside factors such as interruption in patient-care activities, understaffing/overcrowding, and a high number of opportunities for hand hygiene per hour of patient care. However, use of automated sinks also appears among the multimodal strategies used in studies to improve hand hygiene compliance.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-precautions-to-prevent-transmission-p-44-33",
+        "who-hand-hygiene-guidelines-summary-2009#table-i-2-1-p-16-1",
+        "who-hand-hygiene-guidelines-summary-2009#2-3-strategies-to-improve-hand-hygiene-compliance-p-17-1"
+      ],
+      "cited": true,
+      "confidence": 0.281,
+      "correct": true,
+      "generator_error": null,
+      "id": "V46",
+      "kind": "in_corpus",
+      "question": "How do automated or sensor sinks occasionally lead to lower compliance or technical issues?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.281,
+        "coverage": 0.756,
+        "question_support": 0.307,
+        "reasons": [
+          "low evidence coverage (0.76); unsupported terms: wash, list, alongsid, factor, however, also, appear, among",
+          "weak relevance to the question (0.37)"
+        ],
+        "retrieval_relevance": 0.437,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "wash",
+          "list",
+          "alongsid",
+          "factor",
+          "however",
+          "also",
+          "appear",
+          "among"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V47",
+      "kind": "in_corpus",
+      "question": "Which antiseptic agents have poor or non-existent residual persistence on the skin?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V48",
+      "kind": "in_corpus",
+      "question": "What non-enveloped viruses exhibit reduced susceptibility to standard alcohol concentrations?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Understaffing/overcrowding and a \"high number of opportunities for hand hygiene per hour of patient care\" are listed among the factors associated with poor adherence to hand hygiene. Outbreak investigations have suggested \"an association between infection and understaffing or overcrowding that was consistently linked with poor adherence to hand hygiene\".",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-i-2-1-p-16-1",
+        "who-hand-hygiene-guidelines-summary-2009#table-i-2-3-p-19-6"
+      ],
+      "cited": true,
+      "confidence": 0.701,
+      "correct": true,
+      "generator_error": null,
+      "id": "V49",
+      "kind": "in_corpus",
+      "question": "How does high workload, understaffing, and overcrowding negatively impact hand hygiene compliance?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.701,
+        "coverage": 0.956,
+        "question_support": 0.466,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "list"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "V50",
+      "kind": "in_corpus",
+      "question": "What institutional barriers prevent health-care facilities from maintaining an effective patient safety culture?",
+      "split": "sealed2",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.875,
+    "capped_precision@10": 0.7979,
+    "capped_precision@5": 0.8042,
+    "hit@1": 0.3125,
+    "hit@10": 0.8125,
+    "hit@5": 0.6875,
+    "mrr": 0.4696,
+    "n": 48,
+    "precision@1": 0.875,
+    "precision@10": 0.7979,
+    "precision@5": 0.8042,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What is the overarching purpose and primary goal of the WHO Guidelines on Hand Hygiene in Health Care?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V02",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the specific components of the \"My 5 Moments for Hand Hygiene\" framework?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V03",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "In which routine clinical situations is an alcohol-based handrub (ABHR) explicitly recommended over soap and water?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V04",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What is the recommended duration and sequence of steps for performing hand hygiene using an alcohol-based handrub?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V05",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "What is the recommended duration and step-by-step technique for washing hands with soap and water?",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V06",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "When should hand hygiene be performed during patient care even if gloves are worn?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V07",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the 5 core elements of the WHO Multimodal Hand Hygiene Improvement Strategy?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How does proper hand hygiene impact the incidence of health care-associated infections (HCAIs) and cross-transmission?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the validated formulations recommended by WHO for the local production of alcohol-based handrubs?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V10",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.6,
+        "question": "What is the optimal concentration range of alcohol (ethanol or isopropanol) required for effective antimicrobial efficacy?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V11",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.4,
+        "question": "What is the recommended sink-to-patient bed ratio according to WHO minimum requirements?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V12",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "Why are alcohol-based handrubs considered superior to handwashing with plain soap for routine decontamination?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V13",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should surgical hand preparation be performed using an alcohol-based handrub versus antimicrobial soap?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V14",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the criteria for selecting suitable hand hygiene products in health-care facilities?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V15",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What role does performance feedback and direct observation play in improving hand hygiene compliance?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V16",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What step-wise approach should health-care facilities follow when setting up a hand hygiene program from scratch?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V17",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What are the institutional and leadership responsibilities of health-care administrators under these guidelines?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V18",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How can hand lotions or humectant-containing formulations prevent irritant contact dermatitis among health-care workers?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.1,
+        "capped_precision@5": 0.0,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V19",
+        "precision@1": 0.0,
+        "precision@10": 0.1,
+        "precision@5": 0.0,
+        "question": "What are the recommended guidelines regarding the length and maintenance of natural fingernails for healthcare providers?",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V20",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "In what situations can individual/portable dispensers (such as pocket bottles) enhance hand hygiene compliance?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.0,
+        "capped_precision@5": 0.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V21",
+        "precision@1": 0.0,
+        "precision@10": 0.0,
+        "precision@5": 0.0,
+        "question": "What evidence grading categories (e.g., Category IA, IB, IC, II) does WHO use to classify its recommendations?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V22",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How should hand hygiene be promoted at the community level to enhance public health?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V23",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the advantages of point-of-care handrub dispensers over centralized hallway sinks?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.2,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 9,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V24",
+        "precision@1": 0.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "How do educational campaigns and visual workplace reminders influence long-term behavioral change?",
+        "rr": 0.1111111111111111,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V25",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How does improving hand hygiene compliance prove cost-effective for hospitals and national health systems?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V26",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.8,
+        "question": "When must an alcohol-based handrub not be used in place of soap and water?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V27",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "Why should healthcare workers not use soap and alcohol-based handrub concomitantly?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V28",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What are the limitations of alcohol-based handrubs against bacterial spores, specifically Clostridium difficile?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V29",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Does the widespread adoption of alcohol-based handrubs cause an increase in C. difficile outbreaks?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V30",
+        "precision@1": 0.0,
+        "precision@10": 0.5,
+        "precision@5": 0.4,
+        "question": "Why is the reuse of disposable medical gloves strongly discouraged?",
+        "rr": 0.125,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V31",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "Why are artificial fingernails or nail extenders strictly prohibited for direct patient care staff?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V32",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What are the primary risk factors observed for poor hand hygiene adherence among healthcare workers?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V33",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Why do physicians and male health-care personnel consistently demonstrate lower baseline compliance rates than nurses?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V34",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What self-reported reasons do health-care workers give for failing to adhere to hand hygiene protocols?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V35",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What is the fire hazard risk associated with alcohol-based handrub dispensers, and what are the actual incident statistics?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.2,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "V36",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "What safety precautions must be taken to prevent intentional or accidental ingestion of alcohol handrubs in psychiatric and pediatric units?",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V37",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Does frequent use of alcohol-based handrubs lead to significant dermal absorption of alcohol into the bloodstream?",
+        "rr": 0.125,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V38",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.6,
+        "question": "Why is washing hands with very hot water considered counterproductive and harmful?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V39",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.2,
+        "question": "Why should soap dispensers never be topped up or partially refilled with new soap?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V40",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "Why are surgical scrub brushes no longer recommended for routine surgical hand antisepsis?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V41",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What causes irritant contact dermatitis in health-care workers, and which antiseptic agents have the highest risk?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V43",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.4,
+        "question": "Why is prolonged surgical scrubbing (e.g., 10 minutes) considered unnecessary and discouraged?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V45",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the main obstacles to establishing reliable HCAI surveillance data in developing countries?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V46",
+        "precision@1": 0.0,
+        "precision@10": 0.5,
+        "precision@5": 0.6,
+        "question": "How do automated or sensor sinks occasionally lead to lower compliance or technical issues?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V47",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "Which antiseptic agents have poor or non-existent residual persistence on the skin?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V48",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "What non-enveloped viruses exhibit reduced susceptibility to standard alcohol concentrations?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "V49",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How does high workload, understaffing, and overcrowding negatively impact hand hygiene compliance?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "V50",
+        "precision@1": 0.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "What institutional barriers prevent health-care facilities from maintaining an effective patient safety culture?",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "The technical work of the 1st GPSC, which led to the WHO Guidelines on Hand Hygiene in Health Care, focused on developing recommendations and implementation strategies to improve hand hygiene practices in any situation in which health care ",
+      "confidence": 0.702,
+      "id": "V01",
+      "question": "What is the overarching purpose and primary goal of the WHO Guidelines on Hand Hygiene in Health Care?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V02",
+      "question": "What are the specific components of the \"My 5 Moments for Hand Hygiene\" framework?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Alcohol-based handrubs have the advantage of the short time required for action (20 to 30 seconds). When an alcohol-based handrub is available, it should be used as the preferred means for routine hand hygiene in health care. Soap and alcoh",
+      "confidence": 0.773,
+      "id": "V04",
+      "question": "What is the recommended duration and sequence of steps for performing hand hygiene using an alcohol-based handrub?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "When washing hands with soap and water, wet hands with water and apply the amount of product necessary to cover all surfaces, then rinse hands with water and dry thoroughly with a single-use towel. Use clean, running water whenever possible",
+      "confidence": 0.807,
+      "id": "V05",
+      "question": "What is the recommended duration and step-by-step technique for washing hands with soap and water?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Hand hygiene should be performed before handling an invasive device for patient care, regardless of whether or not gloves are used (IB). Hand hygiene should also be performed before and after touching the patient (IB), and after contact wit",
+      "confidence": 0.75,
+      "id": "V06",
+      "question": "When should hand hygiene be performed during patient care even if gloves are worn?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V07",
+      "question": "What are the 5 core elements of the WHO Multimodal Hand Hygiene Improvement Strategy?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V08",
+      "question": "How does proper hand hygiene impact the incidence of health care-associated infections (HCAIs) and cross-transmission?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Alcohol-based handrubs with optimal antimicrobial efficacy usually contain 75 to 85% ethanol, isopropanol, or n-propanol, or a combination of these products. The WHO-recommended formulations contain either 75% v/v isopropanol, or 80% v/v et",
+      "confidence": 0.534,
+      "id": "V10",
+      "question": "What is the optimal concentration range of alcohol (ethanol or isopropanol) required for effective antimicrobial efficacy?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.53)"
+    },
+    {
+      "answer": "Alcohol-based products are preferred over antimicrobial or plain soap and water when hands are not visibly soiled because of their superior microbiocidal activity, reduced drying of the skin, and convenience. Alcohol-based rubs have been sh",
+      "confidence": 0.342,
+      "id": "V12",
+      "question": "Why are alcohol-based handrubs considered superior to handwashing with plain soap for routine decontamination?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "negation not found in evidence: not; low evidence coverage (0.43); unsupported terms: not, visibly, convenienc, turn, also"
+    },
+    {
+      "answer": "The selection of hand hygiene products should be based on the relative efficacy of antiseptic agents according to ASTM and EN standards and consideration for selection of products for hygienic hand antisepsis and surgical hand preparation. ",
+      "confidence": 0.781,
+      "id": "V14",
+      "question": "What are the criteria for selecting suitable hand hygiene products in health-care facilities?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V19",
+      "question": "What are the recommended guidelines regarding the length and maintenance of natural fingernails for healthcare providers?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V21",
+      "question": "What evidence grading categories (e.g., Category IA, IB, IC, II) does WHO use to classify its recommendations?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Educational interventions have produced positive changes in knowledge and attitude, but there often has been limited or no accompanying change in behavior, although self-reported adherence is higher in groups that received an educational in",
+      "confidence": 0.534,
+      "id": "V24",
+      "question": "How do educational campaigns and visual workplace reminders influence long-term behavioral change?",
+      "reason": "correct answer withheld",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V27",
+      "question": "Why should healthcare workers not use soap and alcohol-based handrub concomitantly?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Alcohols have virtually no activity against bacterial spores or protozoan oocysts, and reduced activity against some non-enveloped (non-lipophilic) viruses. Concern has been raised about the lack of efficacy of alcohol-based handrubs agains",
+      "confidence": 0.68,
+      "id": "V28",
+      "question": "What are the limitations of alcohol-based handrubs against bacterial spores, specifically Clostridium difficile?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "The guideline says \"Do not wash gloves for the purpose of reuse since this practice has been associated with transmission of pathogens\". It also states \"Do not wear the same pair of gloves for the care of more than one patient\". In the case",
+      "confidence": 0.489,
+      "id": "V30",
+      "question": "Why is the reuse of disposable medical gloves strongly discouraged?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.57)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V33",
+      "question": "Why do physicians and male health-care personnel consistently demonstrate lower baseline compliance rates than nurses?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Self-reported factors for poor adherence with hand hygiene include disagreement with the recommendations and lack of scientific information of definitive impact of improved hand hygiene on HCAI.",
+      "confidence": 0.667,
+      "id": "V34",
+      "question": "What self-reported reasons do health-care workers give for failing to adhere to hand hygiene protocols?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Although alcohol-based handrubs are flammable, the risk of fires associated with such products is very low, and none of 798 health-care facilities surveyed in the USA reported a fire related to an alcohol-based handrub dispenser. A total of",
+      "confidence": 0.789,
+      "id": "V35",
+      "question": "What is the fire hazard risk associated with alcohol-based handrub dispensers, and what are the actual incident statistics?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V36",
+      "question": "What safety precautions must be taken to prevent intentional or accidental ingestion of alcohol handrubs in psychiatric and pediatric units?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "There are no data showing that the use of alcohol-based handrub may be harmful because of alcohol absorption, and it is well-established that reduced compliance with hand hygiene will lead to preventable HCAIs. Possible toxicity in relation",
+      "confidence": 0.836,
+      "id": "V37",
+      "question": "Does frequent use of alcohol-based handrubs lead to significant dermal absorption of alcohol into the bloodstream?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V39",
+      "question": "Why should soap dispensers never be topped up or partially refilled with new soap?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V40",
+      "question": "Why are surgical scrub brushes no longer recommended for routine surgical hand antisepsis?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "According to WHO, donning gloves while hands are still wet from either washing or applying alcohol increases the risk of skin irritation. It is one of several practices that increase the risk of skin irritation and should be avoided. Hands ",
+      "confidence": 0.751,
+      "id": "V42",
+      "question": "How does donning gloves on damp or wet hands exacerbate skin damage and irritation?",
+      "reason": "VALIDATED BUT OUT OF CORPUS",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V43",
+      "question": "Why is prolonged surgical scrubbing (e.g., 10 minutes) considered unnecessary and discouraged?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "The introduction of automated sinks had a negative impact on consistent adherence to hand washing. \"Automated sink\" is listed alongside factors such as interruption in patient-care activities, understaffing/overcrowding, and a high number o",
+      "confidence": 0.281,
+      "id": "V46",
+      "question": "How do automated or sensor sinks occasionally lead to lower compliance or technical issues?",
+      "reason": "correct answer withheld",
+      "validator_notes": "low evidence coverage (0.76); unsupported terms: wash, list, alongsid, factor, however, also, appear, among; weak relevance to the question (0.37)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V47",
+      "question": "Which antiseptic agents have poor or non-existent residual persistence on the skin?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V48",
+      "question": "What non-enveloped viruses exhibit reduced susceptibility to standard alcohol concentrations?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "V50",
+      "question": "What institutional barriers prevent health-care facilities from maintaining an effective patient safety culture?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    }
+  ],
+  "rewrite": false,
+  "split": "sealed2",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0435,
+      "decision_accuracy": 0.74,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6875,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.3333,
+      "validated_precision": 0.6667
+    },
+    {
+      "correct_but_flagged_rate": 0.0435,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6667,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.3125,
+      "validated_precision": 0.6875
+    },
+    {
+      "correct_but_flagged_rate": 0.0435,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6667,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.3125,
+      "validated_precision": 0.6875
+    },
+    {
+      "correct_but_flagged_rate": 0.0435,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6667,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.3125,
+      "validated_precision": 0.6875
+    },
+    {
+      "correct_but_flagged_rate": 0.0435,
+      "decision_accuracy": 0.78,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6458,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.2903,
+      "validated_precision": 0.7097
+    },
+    {
+      "correct_but_flagged_rate": 0.1304,
+      "decision_accuracy": 0.74,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6042,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.3103,
+      "validated_precision": 0.6897
+    },
+    {
+      "correct_but_flagged_rate": 0.1304,
+      "decision_accuracy": 0.74,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.6042,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.3103,
+      "validated_precision": 0.6897
+    },
+    {
+      "correct_but_flagged_rate": 0.1739,
+      "decision_accuracy": 0.72,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.5833,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.3214,
+      "validated_precision": 0.6786
+    },
+    {
+      "correct_but_flagged_rate": 0.2174,
+      "decision_accuracy": 0.74,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.5208,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.28,
+      "validated_precision": 0.72
+    },
+    {
+      "correct_but_flagged_rate": 0.3478,
+      "decision_accuracy": 0.7,
+      "ooc_false_accept_rate": 0.5,
+      "pass_rate": 0.4375,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.2857,
+      "validated_precision": 0.7143
+    },
+    {
+      "correct_but_flagged_rate": 0.5217,
+      "decision_accuracy": 0.72,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.2708,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.1538,
+      "validated_precision": 0.8462
+    },
+    {
+      "correct_but_flagged_rate": 0.7826,
+      "decision_accuracy": 0.64,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.1042,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.8261,
+      "decision_accuracy": 0.62,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.0833,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.74,
+    "in_corpus": {
+      "answer_correct_rate": 0.4792,
+      "correct_but_flagged_rate": 0.1304,
+      "mean_confidence": 0.525,
+      "n": 48,
+      "pass_rate": 0.6042,
+      "validated_but_wrong_rate": 0.3103,
+      "validated_precision": 0.6897
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.5,
+      "mean_confidence": 0.3755,
+      "n": 2,
+      "needs_review_rate": 0.5
+    },
+    "threshold": 0.6
+  }
+}

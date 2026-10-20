@@ -70,6 +70,14 @@ def stats_block() -> str:
             k = bs.counts(bs.rescored(rep))
             lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
                          f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    sealed2 = {g: bs.load("real", "sealed2", g, "sealed2") for g in ("extractive", "llm")}
+    if all(sealed2.values()):
+        lines += ["", "**Second sealed set (50 more of the owner's questions, same document; labels corrected once after the run, see the report):**", "",
+                  "| Generator | In-corpus n | Pass | Answer correct | Validated precision | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|"]
+        for gen, rep in sealed2.items():
+            k = bs.counts(bs.rescored(rep))
+            lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
+                         f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
     lines.append(END)
     return "\n".join(lines)
 

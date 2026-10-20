@@ -56,6 +56,7 @@ def rescored(report: dict) -> dict:
     queries = {q.id: q for q in load_queries(CORPORA[report["corpus"]]["queries"])}
     for r in report["records"]:
         q = queries[r["id"]]
+        r["kind"] = q.kind          # a label corrected after a run (V42) applies to the saved answers
         r["correct"] = answer_correct(r["answer"], q) if q.kind == "in_corpus" else None
     return report
 
@@ -204,6 +205,7 @@ def build_report() -> str:
     out += section_retrieval_rounds()
     out += section_validator3()
     out += section_sealed()
+    out += section_sealed2()
     return "\n".join(out)
 
 
@@ -359,6 +361,34 @@ def section_sealed() -> list[str]:
             "answers, including for questions the documents cannot answer. For real documents the Claude generator is the only reasonable choice, and even it "
             "should be treated as a research prototype. The cause is the lexical retrieval described in the limitations; a semantic embedding model would address "
             "it and was ruled out for this project.", ""]
+    return out
+
+def section_sealed2() -> list[str]:
+    ext, llm = load("real", "sealed2", "extractive", "sealed2"), load("real", "sealed2", "llm", "sealed2")
+    if not (ext and llm):
+        return []
+    qs = {q.id: q for q in load_queries(CORPORA["real"]["queries"], "sealed2")}
+    weak = lambda i: "weak" in qs[i].note
+    sub = lambda rp, keep: {**rp, "records": [r for r in rp["records"] if keep(r["id"])]}
+    out = ["## 14. The second sealed set (V01 to V50)", "",
+           "The owner's second batch of 50 questions, all about the WHO hand hygiene summary, run once per generator on the frozen configuration (rules: "
+           "`evaluation/reports/sealed2_run_rules.txt`, committed first, with a correction appended afterwards). The owner supplied no expected answers; the assistant "
+           "labelled them from the PDF text. The questions are long, formal and often compound. Many ask \"why\" where the document states only a rule, and about a third "
+           "have deliberately loose expected facts (marked weak in the query file), so **\"answer correct\" over-credits** and the firm rows are the better guide. "
+           "One label was wrong and was corrected after the run (V42: the documents do answer it; the saved reports keep the original label, the figures below use the "
+           "corrected one). Only one question is out of scope, so the out-of-scope column says almost nothing.", "",
+           "| Generator | Questions | In-corpus n | Pass | Answer correct | Validated precision | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|---|"]
+    for gen, rep in (("extractive", ext), ("llm", llm)):
+        rep = rescored(rep)
+        for name, keep in (("all", lambda i: True), ("firm labels", lambda i: not weak(i)), ("weak labels", weak)):
+            k = counts(sub(rep, keep))
+            out.append(f"| {gen} | {name} | {k['n_in']} | {ci(k['validated'], k['n_in'])} | {ci(k['correct'], k['n_in'])} | "
+                       f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    r = ext["retrieval"]
+    out += ["", f"Retrieval on these questions: Hit@5 {pct(r['hit@5'])}, Hit@10 {pct(r['hit@10'])}, MRR {r['mrr']:.3f}, document-level Precision@5 {pct(r['precision@5'])}. "
+            "The Hit@5 figure means that for about a third of the answerable questions no retrieved chunk in the top five contained the expected fact. The two generators share this retrieval.", "",
+            "**Reading this.** Both sealed sets say the same thing: the right document is found, the right passage often is not, and when it is not, the extractive generator "
+            "still validates a wrong answer while the Claude generator more often withholds. Results here are on one document and one author's labels, so they are indicative, not precise.", ""]
     return out
 
 

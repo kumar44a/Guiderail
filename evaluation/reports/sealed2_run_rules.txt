@@ -16,3 +16,10 @@ Known weaknesses of this set, stated in advance:
 Configuration: frozen (same as the first sealed run: hybrid retrieval, validator rounds 2 and 3, 80-word chunks, rewriting off).
 Run once with the extractive generator and once with the Claude generator. Both runs are logged in test_split_runs.log.
 Nothing is changed afterwards on the strength of these results. Reported as found, with the first sealed set kept separate (they are not pooled).
+
+CORRECTION found after the run (not before): the rules above name V43 and V45 as the two out-of-scope questions. The ids are wrong; they are V42 and V44.
+Worse, V42 (gloves on damp hands) was labelled out of scope by mistake. The summary says "donning gloves while hands are still wet from either washing or
+applying alcohol increases the risk of skin irritation". The assistant's keyword search missed it (it searched "damp"); the system found it. The label is
+corrected to in-corpus. The saved run reports keep the ORIGINAL label (V42 counted as out of scope); the generated report applies the corrected one, and the
+effect is stated there. The corrected set has 49 answerable questions and 1 out of scope (V44), so the out-of-scope check rests on a single question.
+This is one more reason to read the answerable-question results with caution: the labeller (the assistant) is fallible in both directions.
