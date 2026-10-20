@@ -479,3 +479,16 @@ Other sets on the same change (tables elsewhere in this report are regenerated o
 **Outcome.** Document-level Precision@5 now clears 0.65 on the fresh final set and on the synthetic v1 held-out test. The v1 figure sits on the threshold and was seen before this change, so the fresh final set is the evidence. The v2 test questions were exposed to the author before the change was designed, so their improvement is shown but not counted.
 
 **What this does and does not mean.** Document-level Precision@5 treats a chunk as relevant when its document is. The change raises it by moving chunks of the right document ahead of chunks of unrelated ones; on the held-out sets it left answer-bearing Hit@5 and MRR unchanged (on dev it moved Hit@5 by one query), so its visible benefit is the metric the brief set rather than better evidence for answers. It does not address the real-PDF weakness (right passage not retrieved when the wording differs), and the Claude pass-rate target on the real held-out split is unchanged. The sealed question sets (sections 13 to 16) were run on the earlier configuration and were not repeated; their tables stay tagged to it. A Claude re-run of the exposed v2 test failed for lack of API credits and was discarded rather than reported.
+
+## 19. Round 9: trying to lift the Claude pass rate on real PDFs
+
+Aim: the Claude generator's pass rate on the real-PDF held-out split was below the brief's 80%. Rules and candidates were committed before any Claude measurement (`evaluation/reports/retrieval_round9_rules.txt`). Each candidate was run once on the real and synthetic dev splits with Claude, against two baseline runs of the shipped configuration (the Claude generator is not deterministic, so the baselines also show run-to-run noise). No run had generator errors.
+
+| Run | Real dev passes (of 65) | Wrong but validated | Validated precision | Out-of-scope accepted | Synthetic dev passes (of 20) | Rules | Kept |
+|---|---|---|---|---|---|---|---|
+| baseline `cur` | 44 | 6 | 86.4% | 0 | 19 | n/a | n/a |
+| baseline `r9base2` | 45 | 6 | 86.7% | 0 | 19 | n/a | n/a |
+| K1: Claude sees the top 8 passages | 45 | 5 | 88.9% | 0 | 18 | Q1 FAILED, Q2 ok, Q3 ok, Q4 ok, Q5 ok | reverted |
+| K2: K1 plus Claude question rewrite | 46 | 7 | 84.8% | 0 | 19 | Q1 FAILED, Q2 ok, Q3 ok, Q4 ok, Q5 ok | reverted |
+
+**Outcome.** Neither candidate gained the two questions the rule required over both baselines, and the two baseline runs themselves differ by a question. Nothing was kept, the switches stay off, and the held-out split was not re-run. The Claude pass-rate target on real PDFs remains **not met**. This is consistent with the diagnosis that most abstentions are questions where no retrieved chunk carries the fact, which more passages or keyword rewriting cannot supply; matching on meaning would be needed, and was ruled out for this project.

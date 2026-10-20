@@ -1,0 +1,3751 @@
+{
+  "corpus": "real",
+  "generator": "llm",
+  "index_sha256": "9bc2368dd16cc34895739532fd499a215ca2442c8297947ec7016afda2480ef7",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 3,
+      "WHO": 2
+    },
+    "chunks": 1938,
+    "documents": 5,
+    "superseded_documents": 0
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Healthcare personnel entering the AIIR should use respiratory protection with a NIOSH certified N95 or higher level respirator to prevent acquisition of airborne infectious agents such as M. tuberculosis. For measles, regardless of presumptive evidence of immunity, HCP should use respiratory protection that is at least as protective as a fittested, NIOSH-certified N95 respirator upon entry into the patient's room or care area.",
+      "citations": [
+        "cdc-isolation-precautions-2007#of-multidrug-resistant-organisms-in-healthcare-settings-p-15-30",
+        "cdc-isolation-precautions-2007#recommendations-for-measles-in-healthcare-settings-p-108-0"
+      ],
+      "cited": true,
+      "confidence": 0.933,
+      "correct": true,
+      "generator_error": null,
+      "id": "R01",
+      "kind": "in_corpus",
+      "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.933,
+        "coverage": 1.0,
+        "question_support": 0.867,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "There are two tiers of HICPAC/CDC precautions to prevent transmission of infectious agents, Standard Precautions and Transmission-Based Precautions. Standard Precautions are intended to be applied to the care of all patients in all healthcare settings, regardless of the suspected or confirmed presence of an infectious agent. Transmission-Based Precautions are for patients who are known or suspected to be infected or colonized with infectious agents which require additional control measures, and they include Contact Precautions, Droplet Precautions, and Airborne Precautions, always used in addition to Standard Precautions.",
+      "citations": [
+        "cdc-isolation-precautions-2007#part-iii-precautions-to-prevent-transmission-of-infectious-p-69-0",
+        "cdc-isolation-precautions-2007#part-iii-precautions-to-prevent-transmission-of-infectious-p-69-1",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R03",
+      "kind": "in_corpus",
+      "question": "What are the two tiers of precautions used to prevent transmission of infectious agents?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When gloves are worn in combination with other PPE, they are put on last. Gowns are usually the first piece of PPE to be donned. Gloves that fit snugly around the wrist are preferred with an isolation gown because they will cover the gown cuff and provide a more reliable continuous barrier for the arms, wrists, and hands.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-9",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-13"
+      ],
+      "cited": true,
+      "confidence": 0.91,
+      "correct": true,
+      "generator_error": null,
+      "id": "R05",
+      "kind": "in_corpus",
+      "question": "When gloves are worn with other protective equipment, in what order are they put on?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.91,
+        "coverage": 1.0,
+        "question_support": 0.819,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), the symptomatic visitor must wear a mask while in the healthcare facility. They must also remain in the patient's room, avoiding exposure to others, especially in public waiting areas and the cafeteria.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-n-adjunctive-measures-p-65-15"
+      ],
+      "cited": true,
+      "confidence": 0.556,
+      "correct": true,
+      "generator_error": null,
+      "id": "R07",
+      "kind": "in_corpus",
+      "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.556,
+        "coverage": 0.974,
+        "question_support": 0.615,
+        "reasons": [
+          "weak relevance to the question (0.57)"
+        ],
+        "retrieval_relevance": 0.527,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R09",
+      "kind": "in_corpus",
+      "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Storage units must maintain refrigerators between 2°C and 8°C (36°F and 46°F) at all times. Always review the manufacturer's package insert or EUA Fact Sheet for Healthcare Providers to verify immunization product storage requirements and ensure that the correct temperature range is maintained.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-may-differ-p-13-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T01",
+      "kind": "in_corpus",
+      "question": "What temperature range must vaccine refrigerators maintain?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Calibration testing should be performed every 2 to 3 years, or according to the manufacturer's recommended schedule. If a TMD is dropped, hit against the side of a storage unit, or is potentially damaged in any way, its accuracy should be checked against another calibrated TMD, and if there is any question about accuracy, the device should be replaced or sent for calibration testing.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-0",
+        "cdc-vaccine-storage-toolkit-2026#calibration-testing-of-temperature-monitoring-devices-p-15-1"
+      ],
+      "cited": true,
+      "confidence": 0.905,
+      "correct": true,
+      "generator_error": null,
+      "id": "T03",
+      "kind": "in_corpus",
+      "question": "How often should temperature monitoring devices be calibration tested?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.905,
+        "coverage": 1.0,
+        "question_support": 0.811,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Exposed vaccines should be labeled \"DO NOT USE—TEMPERATURE EXCURSION\", moved to the correct storage conditions, and placed in a separate container apart from other vaccines in the unit, and they should not be discarded. These vaccines should stay separated and marked \"DO NOT USE—TEMPERATURE EXCURSION\" until a decision can be made about whether the vaccines can still be used.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-1",
+        "cdc-vaccine-storage-toolkit-2026#the-packing-vaccines-for-transport-during-p-37-1"
+      ],
+      "cited": true,
+      "confidence": 0.763,
+      "correct": true,
+      "generator_error": null,
+      "id": "T05",
+      "kind": "in_corpus",
+      "question": "What label should be put on vaccines after a temperature excursion?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.763,
+        "coverage": 0.951,
+        "question_support": 0.604,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "stay"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The backup (alternate) vaccine coordinator \"will act in the absence of the primary coordinator\" and, like the primary coordinator, \"should be an expert on the facility's storage and handling SOPs\". Staff who accept vaccine deliveries should immediately notify the primary or backup vaccine coordinator when deliveries arrive. Any staff member who hears an alarm or notices a temperature excursion should immediately notify the primary or backup vaccine coordinator, or report the problem to their supervisor.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#staff-roles-and-responsibilities-p-9-0",
+        "cdc-vaccine-storage-toolkit-2026#scheduling-and-receiving-deliveries-p-22-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-excursions-p-18-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T07",
+      "kind": "in_corpus",
+      "question": "What does the backup vaccine coordinator do?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO1",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended dose of amoxicillin for otitis media?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO3",
+      "kind": "out_of_corpus",
+      "question": "How many hours of sleep should night shift nurses get?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The duration of the entire procedure for hand hygiene technique with alcohol-based formulation is 20-30 seconds, starting by applying a palmful of the product in a cupped hand, covering all surfaces.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-ii-1-p-23-0"
+      ],
+      "cited": true,
+      "confidence": 0.618,
+      "correct": true,
+      "generator_error": null,
+      "id": "R18",
+      "kind": "in_corpus",
+      "question": "How long should the entire alcohol handrub procedure take?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.618,
+        "coverage": 0.929,
+        "question_support": 0.657,
+        "reasons": [],
+        "retrieval_relevance": 0.674,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "start"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use a towel to turn off the tap/faucet (IB). The handwashing technique likewise says \"Use towel to turn off faucet,\" after drying hands thoroughly with a single use towel.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#figure-ii-2-p-24-1"
+      ],
+      "cited": true,
+      "confidence": 0.71,
+      "correct": true,
+      "generator_error": null,
+      "id": "R20",
+      "kind": "in_corpus",
+      "question": "What should staff use to turn off the tap after washing their hands?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.71,
+        "coverage": 0.812,
+        "question_support": 0.75,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "likewis",
+          "say"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If exposure to potential spore-forming pathogens is strongly suspected or proven, including outbreaks of C. difficile, hand washing with soap and water is the preferred means (IB). During C. difficile-associated outbreaks, handwashing with a plain or antimicrobial soap and water following glove removal after caring for patients with diarrhoea is recommended, and alcohol-based handrubs can then be used exceptionally after handwashing, after making sure that hands are perfectly dry.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-9",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-13"
+      ],
+      "cited": true,
+      "confidence": 0.92,
+      "correct": true,
+      "generator_error": null,
+      "id": "R22",
+      "kind": "in_corpus",
+      "question": "For which outbreak pathogens is washing with soap and water preferred over alcohol handrub?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.92,
+        "coverage": 0.983,
+        "question_support": 0.872,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "associat"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "According to the WHO minimum requirements, the overall sink-to-patient bed ratio should be of 1:10, and sinks should be located the closest possible to the point of care.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-2"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R24",
+      "kind": "in_corpus",
+      "question": "What is the minimum sink-to-patient bed ratio according to WHO?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When performing surgical hand antisepsis using an antimicrobial soap, scrub hands and forearms for the length of time recommended by the manufacturer, typically 2–5 minutes. Long scrub times (e.g. 10 minutes) are not necessary (IB).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-1"
+      ],
+      "cited": true,
+      "confidence": 0.803,
+      "correct": true,
+      "generator_error": null,
+      "id": "R26",
+      "kind": "in_corpus",
+      "question": "How long should hands and forearms be scrubbed with antimicrobial soap before surgery?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.803,
+        "coverage": 1.0,
+        "question_support": 0.675,
+        "reasons": [],
+        "retrieval_relevance": 0.932,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R28",
+      "kind": "in_corpus",
+      "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A WHO indicator to be met by all countries is that hand hygiene compliance monitoring and feedback should be established in all reference hospitals at least, by 2026.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-2-3"
+      ],
+      "cited": true,
+      "confidence": 0.936,
+      "correct": true,
+      "generator_error": null,
+      "id": "R30",
+      "kind": "in_corpus",
+      "question": "By which year should hand hygiene compliance monitoring and feedback be established in all reference hospitals?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.936,
+        "coverage": 1.0,
+        "question_support": 0.872,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO5",
+      "kind": "out_of_corpus",
+      "question": "What steam temperature and exposure time are needed to autoclave surgical instruments?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, water bottles are not recommended for use with the majority of pharmaceutical-grade and purpose-built units, and for such units you should follow the manufacturer's guidance.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R33",
+      "kind": "in_corpus",
+      "question": "Are water bottles recommended for use with most pharmaceutical-grade and purpose-built vaccine storage units?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations, and if the facility stocks frozen vaccine, a separate stand-alone freezer unit is necessary. The freezer of a household-grade unit may be used for non-vaccine medical storage, so long as the use does not compromise the temperature range within the refrigerator compartment.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0",
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-5"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R34",
+      "kind": "in_corpus",
+      "question": "Can vaccines be stored in the freezer compartment of a household-grade combination refrigerator/freezer unit?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Soap and alcohol-based handrub should not be used concomitantly (II). In C. difficile-associated outbreaks, alcohol-based handrubs can be used exceptionally after handwashing with a plain or antimicrobial soap and water following glove removal after caring for patients with diarrhoea, after making sure that hands are perfectly dry.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1",
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-8",
+        "who-hand-hygiene-guidelines-summary-2009#the-guide-to-local-production-who-recommended-handrub-p-41-13"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R35",
+      "kind": "in_corpus",
+      "question": "Should soap and alcohol-based handrub be used concomitantly?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, hot water should be avoided, as repeated exposure to hot water may increase the risk of dermatitis (IB). The use of very hot water for handwashing should be avoided as it increases the likelihood of skin damage.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "R36",
+      "kind": "in_corpus",
+      "question": "Should hot water be used for handwashing in health care?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, when alcohol-based handrub is available in the health-care facility for hygienic hand antisepsis, the use of antimicrobial soap is not recommended (II). Soap and alcohol-based handrub should not be used concomitantly (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#b-sinks-should-be-designed-to-reduce-the-risk-of-splashes-p-25-8"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "R37",
+      "kind": "in_corpus",
+      "question": "Is the use of antimicrobial soap recommended when alcohol-based handrub is available for hand antisepsis?",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Barrier precautions (e.g., masks, gowns, gloves) are not required for healthcare personnel in the absence of suspected or confirmed infection unless indicated according to Standard Precautions or if recommended for source control (e.g., mask) for any individual entering the protective environment room.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-standard-and-expanded-precautions-p-130-0",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-7"
+      ],
+      "cited": true,
+      "confidence": 0.939,
+      "correct": true,
+      "generator_error": null,
+      "id": "R38",
+      "kind": "in_corpus",
+      "question": "Are barrier precautions required for healthcare personnel who have no suspected or confirmed infection?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.939,
+        "coverage": 1.0,
+        "question_support": 0.877,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes, when washing hands with soap and water, rinse hands with water and dry thoroughly with a single-use towel. Dry hands thoroughly using a method that does not recontaminate hands, and make sure towels are not used multiple times or by multiple people (IB). When clean or disposable towels are used, it is important to pat the skin rather than rub it to avoid cracking.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-0",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-1",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8"
+      ],
+      "cited": true,
+      "confidence": 0.893,
+      "correct": true,
+      "generator_error": null,
+      "id": "R39",
+      "kind": "in_corpus",
+      "question": "Should hands be dried with a single-use towel after washing?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.893,
+        "coverage": 1.0,
+        "question_support": 0.787,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The webinar on 7 May is the \"World Patient Safety Day Goals webinar: Prevent health care-associated infections,\" held at 2:00pm CEST.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-3-0"
+      ],
+      "cited": true,
+      "confidence": 0.764,
+      "correct": true,
+      "generator_error": null,
+      "id": "R40",
+      "kind": "in_corpus",
+      "question": "Which webinar takes place on 7 May according to the WHO IPC newsletter?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.764,
+        "coverage": 0.885,
+        "question_support": 0.765,
+        "reasons": [],
+        "retrieval_relevance": 0.962,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "held"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO7",
+      "kind": "out_of_corpus",
+      "question": "What is the recommended dosage of oseltamivir for influenza prophylaxis?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "RO8",
+      "kind": "out_of_corpus",
+      "question": "How should lead aprons be cleaned after X-ray procedures?",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "It may take 2 to 7 days to stabilize the temperature in a newly installed or repaired refrigerator, and before using it for vaccine storage you should check and record the minimum and maximum temperatures each workday for 2 to 7 days. After 2 consecutive days of temperatures recorded within the recommended range, the unit is considered stable and ready for use. For refrigerators, that range is between 2°C and 8°C (36°F and 46°F).",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#stabilizing-temperatures-in-new-and-repaired-units-p-12-0",
+        "cdc-vaccine-storage-toolkit-2026#stabilizing-temperatures-in-new-and-repaired-units-p-12-1",
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-0"
+      ],
+      "cited": true,
+      "confidence": 0.562,
+      "correct": true,
+      "generator_error": null,
+      "id": "N01",
+      "kind": "in_corpus",
+      "question": "how long does a new fridge take to settle on the right temperature",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.562,
+        "coverage": 1.0,
+        "question_support": 0.327,
+        "reasons": [
+          "weak relevance to the question (0.56)"
+        ],
+        "retrieval_relevance": 0.796,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The ultra-cold freezer temperature range for vaccines is between -90°C and -60°C (-130°F and -76°F). The same range of -90°C to -60°C (-130°F to -76°F) applies for ultra-cold transport.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-1",
+        "cdc-vaccine-storage-toolkit-resources-2026#vaccine-storage-troubleshooting-worksheet-p-11-1",
+        "cdc-vaccine-storage-toolkit-2026#transporting-frozen-vaccines-p-34-0"
+      ],
+      "cited": true,
+      "confidence": 0.73,
+      "correct": true,
+      "generator_error": null,
+      "id": "N02",
+      "kind": "in_corpus",
+      "question": "what is the ultra cold freezer temp range for vaccines",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.73,
+        "coverage": 0.87,
+        "question_support": 0.754,
+        "reasons": [],
+        "retrieval_relevance": 0.924,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "sam",
+          "apply"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A temperature monitoring device needs a current and valid Certificate of Calibration Testing showing it meets specifications and testing requirements for the American Society for Testing and Materials (ASTM) Standard E2877 Tolerance Class F or higher, or refers to another acceptable accuracy validation method, such as comparison to other traceable reference standards or tests at thermometric fixed points. Devices sold in hardware and appliance stores for household food storage are not calibrated or accurate enough to ensure vaccines are stored within correct temperature ranges.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#certificate-of-calibration-testing-p-15-1",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-device-limitations-p-15-1"
+      ],
+      "cited": true,
+      "confidence": 0.651,
+      "correct": false,
+      "generator_error": null,
+      "id": "N03",
+      "kind": "in_corpus",
+      "question": "how accurate does the thermometer have to be",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.651,
+        "coverage": 0.98,
+        "question_support": 0.486,
+        "reasons": [],
+        "retrieval_relevance": 0.843,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "show"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Thermostats should be set at the factory-set or midpoint temperature, for example 5°C (41°F) for refrigerators, to help reduce the risk of temperature excursions. Consult the owner's manual for instructions on how to operate the thermostat, since thermostats generally show levels of coldness rather than temperatures.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#temperature-ranges-p-13-1"
+      ],
+      "cited": true,
+      "confidence": 0.459,
+      "correct": true,
+      "generator_error": null,
+      "id": "N04",
+      "kind": "in_corpus",
+      "question": "what should i set the fridge thermostat to",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.459,
+        "coverage": 0.923,
+        "question_support": 0.515,
+        "reasons": [
+          "weak relevance to the question (0.50)"
+        ],
+        "retrieval_relevance": 0.481,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "sinc",
+          "generally"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "N05",
+      "kind": "in_corpus",
+      "question": "after changing the thermostat how long before i check the temperature again",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccine orders typically arrive within 1 to 2 weeks; however, delays may occur. As a general guide, reorder when inventory reaches a 4-week supply, and when possible, avoid placing last-minute or rush orders to lessen the risk of running out of vaccines.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#vaccine-ordering-p-24-1"
+      ],
+      "cited": true,
+      "confidence": 0.754,
+      "correct": true,
+      "generator_error": null,
+      "id": "N06",
+      "kind": "in_corpus",
+      "question": "how long do vaccine orders usually take to arrive",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.754,
+        "coverage": 1.0,
+        "question_support": 0.508,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Moderna RSV vaccine, mResvia, may be stored in the refrigerator for up to 90 days or at room temperature for up to 24 hours before administration, so the syringe's BUD is 90 days refrigerated or 24 hours at room temperature.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#when-a-bud-applies-p-26-1"
+      ],
+      "cited": true,
+      "confidence": 0.49,
+      "correct": true,
+      "generator_error": null,
+      "id": "N07",
+      "kind": "in_corpus",
+      "question": "how long can mResvia be kept in the fridge",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.49,
+        "coverage": 1.0,
+        "question_support": 0.273,
+        "reasons": [
+          "weak relevance to the question (0.49)"
+        ],
+        "retrieval_relevance": 0.707,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep sufficient fuel on hand to continuously run the generator for at least 72 hours, and a backup battery power source can be used in lieu of a generator. Test the generator quarterly and have it serviced annually.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#generators-and-backup-battery-power-sources-p-37-0",
+        "cdc-vaccine-storage-toolkit-2026#temperature-monitoring-during-a-power-outage-p-36-2"
+      ],
+      "cited": true,
+      "confidence": 0.874,
+      "correct": true,
+      "generator_error": null,
+      "id": "N08",
+      "kind": "in_corpus",
+      "question": "how long should generator fuel last during a power outage",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.874,
+        "coverage": 1.0,
+        "question_support": 0.749,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "An airborne infection isolation room (AIIR) should provide at least six (existing facility) or 12 (new construction/renovation) air changes per hour. This means an air flow rate of 6-12 ACH, with 6 ACH for existing structures and 12 ACH for new construction or renovation. For a Protective Environment room, ensure at least 12 air changes per hour.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ia-ic-p-91-0",
+        "cdc-isolation-precautions-2007#hand-hygiene-p-133-1",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-10",
+        "cdc-isolation-precautions-2007#vi-protective-environment-table-4-p-95-3"
+      ],
+      "cited": true,
+      "confidence": 0.721,
+      "correct": true,
+      "generator_error": null,
+      "id": "N09",
+      "kind": "in_corpus",
+      "question": "how many air changes per hour does an isolation room need",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.721,
+        "coverage": 0.906,
+        "question_support": 0.727,
+        "reasons": [],
+        "retrieval_relevance": 0.865,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "airborn",
+          "infection",
+          "mean"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Patients on droplet precautions in multi-bed rooms need spatial separation of ≥3 feet, and drawing the curtain between patient beds is especially important for them. More generally, in multi-patient rooms ≥3 feet spatial separation between beds is advised to reduce the opportunities for inadvertent sharing of items between the infected/colonized patient and other patients.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-7",
+        "cdc-isolation-precautions-2007#iii-b-transmission-based-precautions-p-72-4"
+      ],
+      "cited": true,
+      "confidence": 0.734,
+      "correct": true,
+      "generator_error": null,
+      "id": "N10",
+      "kind": "in_corpus",
+      "question": "how far apart should beds be for patients on droplet precautions in shared rooms",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.734,
+        "coverage": 0.914,
+        "question_support": 0.605,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "them",
+          "generally"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "N11",
+      "kind": "in_corpus",
+      "question": "how long does norovirus take to make you sick",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Measles vaccine should be given to exposed susceptible persons within 72 hours after the exposure. Susceptible persons should be immunized or given the appropriate immune globulin as soon as possible following unprotected contact with a patient with measles (Category IA).",
+      "citations": [
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-1"
+      ],
+      "cited": true,
+      "confidence": 0.939,
+      "correct": true,
+      "generator_error": null,
+      "id": "N12",
+      "kind": "in_corpus",
+      "question": "how soon after measles exposure should the vaccine be given",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.939,
+        "coverage": 0.939,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "given"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Varicella vaccine should be given to exposed susceptible persons as soon as possible but within 120 hours after the exposure. For high-risk persons in whom vaccine is contraindicated, varicella zoster immune globulin is given within 10 days or within 96 hours.",
+      "citations": [
+        "cdc-isolation-precautions-2007#varicella-zoster-airborne-p-119-1",
+        "cdc-isolation-precautions-2007#respiratory-hygiene-cough-etiquette12-category-ii-p-94-3",
+        "cdc-isolation-precautions-2007#or-suspected-ebola-virus-disease-in-u-s-hospitals-p-7-3"
+      ],
+      "cited": true,
+      "confidence": 0.86,
+      "correct": true,
+      "generator_error": null,
+      "id": "N13",
+      "kind": "in_corpus",
+      "question": "how soon after chickenpox exposure can the varicella vaccine be given",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.86,
+        "coverage": 0.94,
+        "question_support": 0.83,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "given"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Postexposure prophylaxis following environmental exposure is 60 days of antimicrobials (either doxycycline, ciprofloxacin, or levofloxacin) and postexposure vaccine under IND.",
+      "citations": [
+        "cdc-isolation-precautions-2007#readers-occupational-health-guidelines-for-remediation-p-100-0",
+        "cdc-isolation-precautions-2007#characteristics-additional-information-p-126-1"
+      ],
+      "cited": true,
+      "confidence": 0.568,
+      "correct": true,
+      "generator_error": null,
+      "id": "N14",
+      "kind": "in_corpus",
+      "question": "how many days of antibiotics are given after environmental exposure",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.568,
+        "coverage": 1.0,
+        "question_support": 0.644,
+        "reasons": [
+          "weak relevance to the question (0.57)"
+        ],
+        "retrieval_relevance": 0.491,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Persons with mumps should be isolated for 5 days after onset of swelling, a change from the earlier recommendation of 9 days based on a 2008 MMWR report. Susceptible HCWs should not provide care if immune caregivers are available.",
+      "citations": [
+        "cdc-isolation-precautions-2007#infection-control-practices-advisory-committee-p-110-0",
+        "cdc-isolation-precautions-2007#or-suspected-ebola-virus-disease-in-u-s-hospitals-p-7-2"
+      ],
+      "cited": true,
+      "confidence": 0.543,
+      "correct": true,
+      "generator_error": null,
+      "id": "N15",
+      "kind": "in_corpus",
+      "question": "how many days should mumps patients be isolated",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.543,
+        "coverage": 0.878,
+        "question_support": 0.703,
+        "reasons": [],
+        "retrieval_relevance": 0.534,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "isolat",
+          "earlier"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Contact Precautions should be discontinued after signs and symptoms of the infection have resolved or according to pathogen-specific recommendations. For norovirus gastroenteritis, use Contact Precautions for a minimum of 48 hours after the resolution of symptoms or to control institutional outbreaks.",
+      "citations": [
+        "cdc-isolation-precautions-2007#v-b-3-b-gowns-p-88-6",
+        "cdc-isolation-precautions-2007#precaution-precautions-comments-p-105-0"
+      ],
+      "cited": true,
+      "confidence": 0.876,
+      "correct": true,
+      "generator_error": null,
+      "id": "N16",
+      "kind": "in_corpus",
+      "question": "how long should contact precautions continue after symptoms resolve",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.876,
+        "coverage": 0.942,
+        "question_support": 0.858,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "noroviru"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "N17",
+      "kind": "in_corpus",
+      "question": "how long should i rub my hands with sanitiser",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based handrubs have the immediate advantages of \"elimination of the majority of germs (including viruses)\" and \"the short time required for action (20 to 30 seconds)\", and when available an alcohol-based handrub \"should be used as the preferred means for routine hand hygiene in health care\". It has also been shown that \"alcohol-based rubs are more efficacious than antiseptic detergents and that the latter are usually more efficacious than plain soap\".",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-7",
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-1"
+      ],
+      "cited": true,
+      "confidence": 0.758,
+      "correct": true,
+      "generator_error": null,
+      "id": "N18",
+      "kind": "in_corpus",
+      "question": "what are the benefits of hand-rub",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.758,
+        "coverage": 0.977,
+        "question_support": 0.552,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "also"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, WHO says do not wear artificial fingernails or extenders when having direct contact with patients (IA), and keep natural nails short (tips less than 0.5 cm long or approximately ¼ inch). CDC says do not wear artificial fingernails or extenders if duties include direct contact with patients at high risk for infection and associated adverse outcomes (e.g., those in ICUs or operating rooms) (Category IA), and to develop an organizational policy on the wearing of non-natural nails by healthcare personnel who have direct contact with other patients. Individuals wearing artificial nails have been shown to harbor more pathogenic organisms, especially gram negative bacilli and yeasts, than those with native nails.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-2",
+        "cdc-isolation-precautions-2007#iv-a-hand-hygiene-p-80-5",
+        "cdc-isolation-precautions-2007#ii-d-hand-hygiene-p-51-2"
+      ],
+      "cited": true,
+      "confidence": 0.435,
+      "correct": true,
+      "generator_error": null,
+      "id": "N19",
+      "kind": "in_corpus",
+      "question": "is it ok to wear fake nails around patients",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.435,
+        "coverage": 0.968,
+        "question_support": 0.354,
+        "reasons": [
+          "weak relevance to the question (0.45)"
+        ],
+        "retrieval_relevance": 0.544,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "say"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "According to the WHO minimum requirements, the overall sink-to-patient bed ratio should be 1:10, and sinks should be located the closest possible to the point of care.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-2"
+      ],
+      "cited": true,
+      "confidence": 0.643,
+      "correct": true,
+      "generator_error": null,
+      "id": "N20",
+      "kind": "in_corpus",
+      "question": "how many sinks are needed per patient bed",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.643,
+        "coverage": 1.0,
+        "question_support": 0.483,
+        "reasons": [],
+        "retrieval_relevance": 0.803,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "N21",
+      "kind": "in_corpus",
+      "question": "what percentage alcohol is in the WHO handrub recipe",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, do not wear the same pair of gloves for the care of more than one patient. Remove gloves after contact with a patient and/or the surrounding environment (including medical equipment) using proper technique to prevent hand contamination. The reuse of gloves is not recommended, and do not wash gloves for the purpose of reuse since this practice has been associated with transmission of pathogens.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-b-2-gloves-p-82-1",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-1"
+      ],
+      "cited": true,
+      "confidence": 0.725,
+      "correct": true,
+      "generator_error": null,
+      "id": "N22",
+      "kind": "in_corpus",
+      "question": "should the same gloves be used for the next patient",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.725,
+        "coverage": 1.0,
+        "question_support": 0.525,
+        "reasons": [],
+        "retrieval_relevance": 0.925,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, do not wear the same pair of gloves for the care of more than one patient, and do not wash gloves for the purpose of reuse since this practice has been associated with transmission of pathogens. Discarding gloves between patients is necessary to prevent transmission of infectious material, and gloves must not be washed for subsequent reuse because microorganisms cannot be removed reliably from glove surfaces and continued glove integrity cannot be ensured. Glove reuse has been associated with transmission of MRSA and gram-negative bacilli.",
+      "citations": [
+        "cdc-isolation-precautions-2007#iv-b-2-gloves-p-82-1",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-8"
+      ],
+      "cited": true,
+      "confidence": 0.893,
+      "correct": false,
+      "generator_error": null,
+      "id": "N23",
+      "kind": "in_corpus",
+      "question": "can disposable gloves be reused",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.893,
+        "coverage": 0.964,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.853,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "bacilli"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Ways to minimize the possible adverse effects of hand hygiene include selecting less irritating products, using skin moisturizers, and modifying certain hand hygiene behaviours such as unnecessary washing. Washing hands with soap and water immediately before or after using an alcohol-based product is unnecessary and may lead to dermatitis, very hot water should be avoided as it increases the likelihood of skin damage, and when using towels it is important to pat the skin rather than rub it to avoid cracking. Frequent use of plain soaps has been associated with even greater skin damage, dryness and irritation than some antiseptic preparations, and one strategy for reducing exposure to irritating soaps and detergents is to promote the use of alcohol-based handrubs.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-7",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-5"
+      ],
+      "cited": true,
+      "confidence": 0.906,
+      "correct": false,
+      "generator_error": null,
+      "id": "N24",
+      "kind": "in_corpus",
+      "question": "what helps with dry cracked skin from hand washing",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.906,
+        "coverage": 1.0,
+        "question_support": 0.811,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The World Hand Hygiene Day 2026 posters, including the hero poster \"for anyone, anywhere to use,\" are available \"in all United Nations official languages\".",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-1-1",
+        "who-ipc-newsletter-2026-04#page-1-2"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "N25",
+      "kind": "in_corpus",
+      "question": "what languages are the world hand hygiene day posters in",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The PAHO webinar is on 5 May @ 3:30pm CEST.",
+      "citations": [
+        "who-ipc-newsletter-2026-04#page-2-4"
+      ],
+      "cited": true,
+      "confidence": 0.773,
+      "correct": true,
+      "generator_error": null,
+      "id": "N26",
+      "kind": "in_corpus",
+      "question": "what time is the PAHO webinar",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.773,
+        "coverage": 1.0,
+        "question_support": 0.798,
+        "reasons": [],
+        "retrieval_relevance": 0.748,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "NO1",
+      "kind": "out_of_corpus",
+      "question": "what is the correct paracetamol dose for a child with fever",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "NO2",
+      "kind": "out_of_corpus",
+      "question": "how many calories are in a banana",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "NO3",
+      "kind": "out_of_corpus",
+      "question": "what sunscreen SPF should surgeons use",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M01",
+      "kind": "in_corpus",
+      "question": "how should hand rub come out of a wall dispenser so staff dont touch it",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M02",
+      "kind": "in_corpus",
+      "question": "why carry a pocket bottle of hand rub",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, elbow-activated taps are not proven: \"recommendations for their use are not based on evidence\". Sensor-activated manual or elbow- or foot-activated taps \"could be considered the optimal standard within health-care settings\" because accessing running water without touching the tap with soiled hands is preferable. However, \"their availability is not considered among the highest priorities,\" particularly in settings with limited resources.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-1"
+      ],
+      "cited": true,
+      "confidence": 0.647,
+      "correct": true,
+      "generator_error": null,
+      "id": "M03",
+      "kind": "in_corpus",
+      "question": "are elbow operated taps proven to work",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.647,
+        "coverage": 0.965,
+        "question_support": 0.665,
+        "reasons": [],
+        "retrieval_relevance": 0.674,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "proven"
+        ]
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M04",
+      "kind": "in_corpus",
+      "question": "is stronger alcohol better for hand rub",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based rubs have been shown to be more efficacious than antiseptic detergents, and antiseptic detergents are usually more efficacious than plain soap. However, hands need to be washed with soap and water when they are visibly dirty or soiled with blood or other body fluids, when exposure to potential spore-forming organisms is strongly suspected or proven, or after using the lavatory. Soap and alcohol-based handrub should not be used concomitantly.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-iii-guideline-implementation-p-39-1",
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-9",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1"
+      ],
+      "cited": true,
+      "confidence": 0.837,
+      "correct": true,
+      "generator_error": null,
+      "id": "M05",
+      "kind": "in_corpus",
+      "question": "which cleans hands better, hand rub or soap",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.837,
+        "coverage": 0.974,
+        "question_support": 0.719,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "however"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Frequent hand hygiene during patient care can cause skin reactions on HCWs' hands, and the first and most common type is irritant contact dermatitis, with symptoms such as dryness, irritation, itching and in some cases even cracking and bleeding. Frequent use of plain soaps has been associated with even greater skin damage, dryness and irritation than some antiseptic preparations. Washing hands regularly with soap and water immediately before or after using an alcohol-based product is not only unnecessary but may lead to dermatitis.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-0",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-5",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8"
+      ],
+      "cited": true,
+      "confidence": 0.732,
+      "correct": true,
+      "generator_error": null,
+      "id": "M06",
+      "kind": "in_corpus",
+      "question": "what happens to skin when hands are cleaned very often",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.732,
+        "coverage": 1.0,
+        "question_support": 0.465,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Alcohol-based handrub does not need an exogenous source of water and requires no rinsing or drying with towels or other devices. It has no need for any particular infrastructure (clean water supply network, washbasin, soap, hand towel), and it is the preferred means for routine hand antisepsis if hands are not visibly soiled. When washing with soap and water, use clean, running water whenever possible.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#appendices-p-53-3",
+        "who-hand-hygiene-guidelines-summary-2009#figure-iii-1-p-37-9",
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-2",
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-25-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M07",
+      "kind": "in_corpus",
+      "question": "what to do when there is no running water for hand washing",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When gloves are worn in combination with other PPE, they are put on last. Isolation gowns are always worn in combination with gloves, and with other PPE when indicated. Gloves that fit snugly around the wrist are preferred for use with an isolation gown because they will cover the gown cuff and provide a more reliable continuous barrier for the arms, wrists, and hands.",
+      "citations": [
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-9",
+        "cdc-isolation-precautions-2007#ii-e-personal-protective-equipment-ppe-for-healthcare-personnel-p-52-13"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M09",
+      "kind": "in_corpus",
+      "question": "when should gloves be worn",
+      "split": "dev",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes. When wearing gloves, change or remove gloves during patient care if moving from a contaminated body site to another body site (including non-intact skin, mucous membrane or medical device) within the same patient or the environment (II). Change gloves during patient care if the hands will move from a contaminated body-site (e.g., perineal area) to a clean body-site (e.g., face), Category II.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#part-ii-consensus-recommendations-p-27-1",
+        "cdc-isolation-precautions-2007#iv-b-2-gloves-p-82-2"
+      ],
+      "cited": true,
+      "confidence": 0.888,
+      "correct": true,
+      "generator_error": null,
+      "id": "M10",
+      "kind": "in_corpus",
+      "question": "do gloves need changing when moving between body sites on one patient",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.888,
+        "coverage": 1.0,
+        "question_support": 0.776,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes. Before handling medication or preparing food, perform hand hygiene using an alcohol-based handrub or wash hands with either plain or antimicrobial soap and water (IB). Soap and alcohol-based handrub should not be used concomitantly (II).",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#table-ii-1-p-22-1"
+      ],
+      "cited": true,
+      "confidence": 0.764,
+      "correct": true,
+      "generator_error": null,
+      "id": "M11",
+      "kind": "in_corpus",
+      "question": "should i clean my hands before preparing food",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.764,
+        "coverage": 1.0,
+        "question_support": 0.561,
+        "reasons": [],
+        "retrieval_relevance": 0.966,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M15",
+      "kind": "in_corpus",
+      "question": "what kind of room should the vaccine fridge sit in",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "In general, position the storage unit in a well-ventilated room, leaving at least 2 inches (5 cm) of clearance from the ceiling and 1 to 2 inches (2.5 to 5 cm) from any adjacent walls. Always refer to the manufacturer-supplied owner's manual for storage unit placement.",
+      "citations": [
+        "cdc-vaccine-storage-toolkit-2026#storage-unit-placement-p-12-0"
+      ],
+      "cited": true,
+      "confidence": 0.494,
+      "correct": true,
+      "generator_error": null,
+      "id": "M16",
+      "kind": "in_corpus",
+      "question": "how far from the ceiling should a vaccine fridge be",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.494,
+        "coverage": 0.851,
+        "question_support": 0.369,
+        "reasons": [
+          "weak relevance to the question (0.58)"
+        ],
+        "retrieval_relevance": 0.792,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "well",
+          "ventilat",
+          "suppli"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Yes. Allergic contact dermatitis is rare and represents an allergy to some ingredient in a hand hygiene product, and in its most serious form it may be associated with respiratory distress and other symptoms of anaphylaxis. Allergic reactions to antiseptic agents including quaternary ammonium compounds, iodine or iodophors, chlorhexidine, triclosan, chloroxylenol and alcohols have been reported, although allergic contact dermatitis attributable to alcohol-based handrubs is very uncommon. HCWs with skin reactions or complaints related to hand hygiene should have access to an appropriate referral service.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-1",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-3"
+      ],
+      "cited": true,
+      "confidence": 0.872,
+      "correct": true,
+      "generator_error": null,
+      "id": "M21",
+      "kind": "in_corpus",
+      "question": "can hand cleaning products cause serious allergic reactions",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.872,
+        "coverage": 1.0,
+        "question_support": 0.744,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Ways to minimize the possible adverse effects of hand hygiene include selecting less irritating products, using skin moisturizers, and modifying certain hand hygiene behaviours such as unnecessary washing. Washing hands regularly with soap and water immediately before or after using an alcohol-based product is not only unnecessary but may lead to dermatitis, and very hot water should be avoided as it increases the likelihood of skin damage. When clean or disposable towels are used, it is important to pat the skin rather than rub it to avoid cracking.",
+      "citations": [
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-7",
+        "who-hand-hygiene-guidelines-summary-2009#3-2-skin-reactions-related-to-hand-hygiene-p-40-8"
+      ],
+      "cited": true,
+      "confidence": 0.602,
+      "correct": false,
+      "generator_error": null,
+      "id": "M22",
+      "kind": "in_corpus",
+      "question": "what help should staff get for skin problems on their hands",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.602,
+        "coverage": 1.0,
+        "question_support": 0.211,
+        "reasons": [],
+        "retrieval_relevance": 0.994,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": false,
+      "generator_error": null,
+      "id": "M24",
+      "kind": "in_corpus",
+      "question": "is hand rub a fire hazard",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "MO1",
+      "kind": "out_of_corpus",
+      "question": "does hand rub expire",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "MO2",
+      "kind": "out_of_corpus",
+      "question": "which hand rub brand is best for children",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "MO3",
+      "kind": "out_of_corpus",
+      "question": "what is the recommended shelf life of an opened bottle of surgical scrub",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "MO4",
+      "kind": "out_of_corpus",
+      "question": "what is the speed limit on highways",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "MO5",
+      "kind": "out_of_corpus",
+      "question": "how do i reset my wifi router",
+      "split": "dev",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.9077,
+    "capped_precision@10": 0.8677,
+    "capped_precision@5": 0.8862,
+    "hit@1": 0.5231,
+    "hit@10": 0.8,
+    "hit@5": 0.7385,
+    "mrr": 0.6205,
+    "n": 65,
+    "precision@1": 0.9077,
+    "precision@10": 0.8677,
+    "precision@5": 0.8862,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What respiratory protection should staff use when entering an airborne infection isolation room?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the two tiers of precautions used to prevent transmission of infectious agents?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "When gloves are worn with other protective equipment, in what order are they put on?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R07",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "R09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What temperature range must vaccine refrigerators maintain?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 5,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T03",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How often should temperature monitoring devices be calibration tested?",
+        "rr": 0.2,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What label should be put on vaccines after a temperature excursion?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T07",
+        "precision@1": 0.0,
+        "precision@10": 0.7,
+        "precision@5": 0.6,
+        "question": "What does the backup vaccine coordinator do?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R18",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How long should the entire alcohol handrub procedure take?",
+        "rr": 0.25,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R20",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What should staff use to turn off the tap after washing their hands?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R22",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "For which outbreak pathogens is washing with soap and water preferred over alcohol handrub?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R24",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "What is the minimum sink-to-patient bed ratio according to WHO?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R26",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "How long should hands and forearms be scrubbed with antimicrobial soap before surgery?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 10,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "R28",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+        "rr": 0.1,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.1,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R30",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "By which year should hand hygiene compliance monitoring and feedback be established in all reference hospitals?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R33",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Are water bottles recommended for use with most pharmaceutical-grade and purpose-built vaccine storage units?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R34",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Can vaccines be stored in the freezer compartment of a household-grade combination refrigerator/freezer unit?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R35",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Should soap and alcohol-based handrub be used concomitantly?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R36",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Should hot water be used for handwashing in health care?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R37",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Is the use of antimicrobial soap recommended when alcohol-based handrub is available for hand antisepsis?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R38",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Are barrier precautions required for healthcare personnel who have no suspected or confirmed infection?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R39",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "Should hands be dried with a single-use towel after washing?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "R40",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Which webinar takes place on 7 May according to the WHO IPC newsletter?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long does a new fridge take to settle on the right temperature",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N02",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "what is the ultra cold freezer temp range for vaccines",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N03",
+        "precision@1": 0.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "how accurate does the thermometer have to be",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N04",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what should i set the fridge thermostat to",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N05",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "after changing the thermostat how long before i check the temperature again",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N06",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long do vaccine orders usually take to arrive",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N07",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "how long can mResvia be kept in the fridge",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N08",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long should generator fuel last during a power outage",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 4,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N09",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how many air changes per hour does an isolation room need",
+        "rr": 0.25,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N10",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how far apart should beds be for patients on droplet precautions in shared rooms",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N11",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long does norovirus take to make you sick",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N12",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "how soon after measles exposure should the vaccine be given",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-vaccine-storage-toolkit-resources-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N13",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how soon after chickenpox exposure can the varicella vaccine be given",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N14",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how many days of antibiotics are given after environmental exposure",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N15",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "how many days should mumps patients be isolated",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N16",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long should contact precautions continue after symptoms resolve",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N17",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how long should i rub my hands with sanitiser",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 7,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "N18",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what are the benefits of hand-rub",
+        "rr": 0.14285714285714285,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N19",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.8,
+        "question": "is it ok to wear fake nails around patients",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.6,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "N20",
+        "precision@1": 0.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "how many sinks are needed per patient bed",
+        "rr": 0.125,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N21",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "what percentage alcohol is in the WHO handrub recipe",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.2,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N22",
+        "precision@1": 0.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "should the same gloves be used for the next patient",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.0,
+        "capped_precision@5": 0.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N23",
+        "precision@1": 0.0,
+        "precision@10": 0.0,
+        "precision@5": 0.0,
+        "question": "can disposable gloves be reused",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "N24",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what helps with dry cracked skin from hand washing",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N25",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 0.8,
+        "question": "what languages are the world hand hygiene day posters in",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "N26",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "what time is the PAHO webinar",
+        "rr": 1.0,
+        "top_docs": [
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04",
+          "who-ipc-newsletter-2026-04"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 10,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "M01",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how should hand rub come out of a wall dispenser so staff dont touch it",
+        "rr": 0.1,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M02",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "why carry a pocket bottle of hand rub",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M03",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 0.8,
+        "question": "are elbow operated taps proven to work",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M04",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "is stronger alcohol better for hand rub",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M05",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "which cleans hands better, hand rub or soap",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M06",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what happens to skin when hands are cleaned very often",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M07",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what to do when there is no running water for hand washing",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M09",
+        "precision@1": 0.0,
+        "precision@10": 0.3,
+        "precision@5": 0.2,
+        "question": "when should gloves be worn",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M10",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "do gloves need changing when moving between body sites on one patient",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "cdc-isolation-precautions-2007",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M11",
+        "precision@1": 1.0,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
+        "question": "should i clean my hands before preparing food",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M15",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what kind of room should the vaccine fridge sit in",
+        "rr": 0.0,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M16",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "how far from the ceiling should a vaccine fridge be",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026",
+          "cdc-vaccine-storage-toolkit-2026"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M21",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "can hand cleaning products cause serious allergic reactions",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": null,
+        "hit@1": false,
+        "hit@10": false,
+        "hit@5": false,
+        "id": "M22",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "what help should staff get for skin problems on their hands",
+        "rr": 0.0,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "M24",
+        "precision@1": 1.0,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
+        "question": "is hand rub a fire hazard",
+        "rr": 0.5,
+        "top_docs": [
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009",
+          "who-hand-hygiene-guidelines-summary-2009"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "If exclusion is not considered to be in the best interest of the patient or family (i.e., primary family members of critically or terminally ill patients), the symptomatic visitor must wear a mask while in the healthcare facility. They must",
+      "confidence": 0.556,
+      "id": "R07",
+      "question": "What must a symptomatic visitor do if they are allowed to stay with a patient?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.57)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R09",
+      "question": "Where should patients needing droplet precautions be placed in an outpatient setting?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "R28",
+      "question": "What are the five components of the WHO multimodal hand hygiene improvement strategy?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No, hot water should be avoided, as repeated exposure to hot water may increase the risk of dermatitis (IB). The use of very hot water for handwashing should be avoided as it increases the likelihood of skin damage.",
+      "confidence": 1.0,
+      "id": "R36",
+      "question": "Should hot water be used for handwashing in health care?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "It may take 2 to 7 days to stabilize the temperature in a newly installed or repaired refrigerator, and before using it for vaccine storage you should check and record the minimum and maximum temperatures each workday for 2 to 7 days. After",
+      "confidence": 0.562,
+      "id": "N01",
+      "question": "how long does a new fridge take to settle on the right temperature",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.56)"
+    },
+    {
+      "answer": "A temperature monitoring device needs a current and valid Certificate of Calibration Testing showing it meets specifications and testing requirements for the American Society for Testing and Materials (ASTM) Standard E2877 Tolerance Class F",
+      "confidence": 0.651,
+      "id": "N03",
+      "question": "how accurate does the thermometer have to be",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Thermostats should be set at the factory-set or midpoint temperature, for example 5°C (41°F) for refrigerators, to help reduce the risk of temperature excursions. Consult the owner's manual for instructions on how to operate the thermostat,",
+      "confidence": 0.459,
+      "id": "N04",
+      "question": "what should i set the fridge thermostat to",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.50)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "N05",
+      "question": "after changing the thermostat how long before i check the temperature again",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Moderna RSV vaccine, mResvia, may be stored in the refrigerator for up to 90 days or at room temperature for up to 24 hours before administration, so the syringe's BUD is 90 days refrigerated or 24 hours at room temperature.",
+      "confidence": 0.49,
+      "id": "N07",
+      "question": "how long can mResvia be kept in the fridge",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.49)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "N11",
+      "question": "how long does norovirus take to make you sick",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Postexposure prophylaxis following environmental exposure is 60 days of antimicrobials (either doxycycline, ciprofloxacin, or levofloxacin) and postexposure vaccine under IND.",
+      "confidence": 0.568,
+      "id": "N14",
+      "question": "how many days of antibiotics are given after environmental exposure",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.57)"
+    },
+    {
+      "answer": "Persons with mumps should be isolated for 5 days after onset of swelling, a change from the earlier recommendation of 9 days based on a 2008 MMWR report. Susceptible HCWs should not provide care if immune caregivers are available.",
+      "confidence": 0.543,
+      "id": "N15",
+      "question": "how many days should mumps patients be isolated",
+      "reason": "correct answer withheld",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "N17",
+      "question": "how long should i rub my hands with sanitiser",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No, WHO says do not wear artificial fingernails or extenders when having direct contact with patients (IA), and keep natural nails short (tips less than 0.5 cm long or approximately ¼ inch). CDC says do not wear artificial fingernails or ex",
+      "confidence": 0.435,
+      "id": "N19",
+      "question": "is it ok to wear fake nails around patients",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.45)"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "N21",
+      "question": "what percentage alcohol is in the WHO handrub recipe",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No, do not wear the same pair of gloves for the care of more than one patient, and do not wash gloves for the purpose of reuse since this practice has been associated with transmission of pathogens. Discarding gloves between patients is nec",
+      "confidence": 0.893,
+      "id": "N23",
+      "question": "can disposable gloves be reused",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Ways to minimize the possible adverse effects of hand hygiene include selecting less irritating products, using skin moisturizers, and modifying certain hand hygiene behaviours such as unnecessary washing. Washing hands with soap and water ",
+      "confidence": 0.906,
+      "id": "N24",
+      "question": "what helps with dry cracked skin from hand washing",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "M01",
+      "question": "how should hand rub come out of a wall dispenser so staff dont touch it",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "M02",
+      "question": "why carry a pocket bottle of hand rub",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "M04",
+      "question": "is stronger alcohol better for hand rub",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "Alcohol-based handrub does not need an exogenous source of water and requires no rinsing or drying with towels or other devices. It has no need for any particular infrastructure (clean water supply network, washbasin, soap, hand towel), and",
+      "confidence": 1.0,
+      "id": "M07",
+      "question": "what to do when there is no running water for hand washing",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "When gloves are worn in combination with other PPE, they are put on last. Isolation gowns are always worn in combination with gloves, and with other PPE when indicated. Gloves that fit snugly around the wrist are preferred for use with an i",
+      "confidence": 1.0,
+      "id": "M09",
+      "question": "when should gloves be worn",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "M15",
+      "question": "what kind of room should the vaccine fridge sit in",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    },
+    {
+      "answer": "In general, position the storage unit in a well-ventilated room, leaving at least 2 inches (5 cm) of clearance from the ceiling and 1 to 2 inches (2.5 to 5 cm) from any adjacent walls. Always refer to the manufacturer-supplied owner's manua",
+      "confidence": 0.494,
+      "id": "M16",
+      "question": "how far from the ceiling should a vaccine fridge be",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.58)"
+    },
+    {
+      "answer": "Ways to minimize the possible adverse effects of hand hygiene include selecting less irritating products, using skin moisturizers, and modifying certain hand hygiene behaviours such as unnecessary washing. Washing hands regularly with soap ",
+      "confidence": 0.602,
+      "id": "M22",
+      "question": "what help should staff get for skin problems on their hands",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "confidence": 0.0,
+      "id": "M24",
+      "question": "is hand rub a fire hazard",
+      "reason": "flagged: low confidence",
+      "validator_notes": "abstained: no supported answer"
+    }
+  ],
+  "rewrite": true,
+  "split": "dev",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9103,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8308,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.1296,
+      "validated_precision": 0.8704
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9103,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8308,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.1296,
+      "validated_precision": 0.8704
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9103,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8308,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.1296,
+      "validated_precision": 0.8704
+    },
+    {
+      "correct_but_flagged_rate": 0.0213,
+      "decision_accuracy": 0.8974,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8154,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.1321,
+      "validated_precision": 0.8679
+    },
+    {
+      "correct_but_flagged_rate": 0.0851,
+      "decision_accuracy": 0.859,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7692,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.14,
+      "validated_precision": 0.86
+    },
+    {
+      "correct_but_flagged_rate": 0.1064,
+      "decision_accuracy": 0.8462,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7538,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.1429,
+      "validated_precision": 0.8571
+    },
+    {
+      "correct_but_flagged_rate": 0.1702,
+      "decision_accuracy": 0.8077,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7077,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.1522,
+      "validated_precision": 0.8478
+    },
+    {
+      "correct_but_flagged_rate": 0.234,
+      "decision_accuracy": 0.7821,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6462,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.1429,
+      "validated_precision": 0.8571
+    },
+    {
+      "correct_but_flagged_rate": 0.234,
+      "decision_accuracy": 0.7949,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6308,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.122,
+      "validated_precision": 0.878
+    },
+    {
+      "correct_but_flagged_rate": 0.3617,
+      "decision_accuracy": 0.7179,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5385,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.1429,
+      "validated_precision": 0.8571
+    },
+    {
+      "correct_but_flagged_rate": 0.4894,
+      "decision_accuracy": 0.641,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.4462,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.1724,
+      "validated_precision": 0.8276
+    },
+    {
+      "correct_but_flagged_rate": 0.5319,
+      "decision_accuracy": 0.6154,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.4154,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.1852,
+      "validated_precision": 0.8148
+    },
+    {
+      "correct_but_flagged_rate": 0.6596,
+      "decision_accuracy": 0.5513,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.3077,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.2,
+      "validated_precision": 0.8
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.8077,
+    "in_corpus": {
+      "answer_correct_rate": 0.7231,
+      "correct_but_flagged_rate": 0.1702,
+      "mean_confidence": 0.6674,
+      "n": 65,
+      "pass_rate": 0.7077,
+      "validated_but_wrong_rate": 0.1522,
+      "validated_precision": 0.8478
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.0,
+      "n": 13,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

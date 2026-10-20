@@ -210,6 +210,7 @@ def build_report() -> str:
     out += section_sealed4()
     out += section_v2()
     out += section_round8()
+    out += section_round9()
     return "\n".join(out)
 
 
@@ -519,6 +520,30 @@ def section_round8() -> list[str]:
             "evidence for answers. It does not address the real-PDF weakness (right passage not retrieved when the wording differs), and the Claude pass-rate target on the real "
             "held-out split is unchanged. The sealed question sets (sections 13 to 16) were run on the earlier configuration and were not repeated; their tables stay tagged to it. "
             "A Claude re-run of the exposed v2 test failed for lack of API credits and was discarded rather than reported.", ""]
+    return out
+
+def section_round9() -> list[str]:
+    paths = {k: REPORTS / f"retrieval_round9_{k}.json" for k in ("r9K1", "r9K2")}
+    if not all(p.exists() for p in paths.values()):
+        return []
+    d = {k: json.loads(p.read_text(encoding="utf-8")) for k, p in paths.items()}
+    base = d["r9K1"]["baselines"]
+    out = ["## 19. Round 9: trying to lift the Claude pass rate on real PDFs", "",
+           "Aim: the Claude generator's pass rate on the real-PDF held-out split was below the brief's 80%. Rules and candidates were committed before any Claude measurement "
+           "(`evaluation/reports/retrieval_round9_rules.txt`). Each candidate was run once on the real and synthetic dev splits with Claude, against two baseline runs of the shipped configuration "
+           "(the Claude generator is not deterministic, so the baselines also show run-to-run noise). No run had generator errors.", "",
+           "| Run | Real dev passes (of {}) | Wrong but validated | Validated precision | Out-of-scope accepted | Synthetic dev passes (of {}) | Rules | Kept |".format(
+               base["cur"]["real"]["n"], base["cur"]["synthetic"]["n"]), "|---|---|---|---|---|---|---|---|"]
+    for name, b in base.items():
+        out.append(f"| baseline `{name}` | {b['real']['pass']} | {b['real']['wrong_validated']} | {b['real']['val_precision']:.1%} | {b['real']['ooc_accepted']} | {b['synthetic']['pass']} | n/a | n/a |")
+    labels = {"r9K1": "K1: Claude sees the top 8 passages", "r9K2": "K2: K1 plus Claude question rewrite"}
+    for k, x in d.items():
+        c = x["candidate"]
+        out.append(f"| {labels[k]} | {c['real']['pass']} | {c['real']['wrong_validated']} | {c['real']['val_precision']:.1%} | {c['real']['ooc_accepted']} | {c['synthetic']['pass']} | "
+                   f"{', '.join(r + (' ok' if v else ' FAILED') for r, v in x['rules'].items())} | {'kept' if x['kept'] else 'reverted'} |")
+    out += ["", "**Outcome.** Neither candidate gained the two questions the rule required over both baselines, and the two baseline runs themselves differ by a question. Nothing was kept, the "
+            "switches stay off, and the held-out split was not re-run. The Claude pass-rate target on real PDFs remains **not met**. This is consistent with the diagnosis that most abstentions are "
+            "questions where no retrieved chunk carries the fact, which more passages or keyword rewriting cannot supply; matching on meaning would be needed, and was ruled out for this project.", ""]
     return out
 
 

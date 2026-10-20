@@ -30,3 +30,11 @@ The smallest candidate that passes is kept; if K1 passes, K2 is not tried unless
 If a candidate is kept: freeze it, then (1) run the real test split once with Claude and report the pass rate against 80% (MET only if at least 20 of 24); (2) re-run the four sealed sets (sealed to sealed4) once with Claude on the
 kept configuration as an independent replication, reported beside their earlier results; a gain on the test split that does not appear on the sealed sets is reported as probable noise. Then regenerate the shipped tables.
 Needs: Anthropic API credit (the account balance was empty at the end of round 8). Everything is reported as found.
+
+ROUND 9 OUTCOME (written after the measurements; judge outputs retrieval_round9_r9K1.json and retrieval_round9_r9K2.json; no generator errors in any run)
+  Baselines (real dev, 65 answerable): 44 passes (the earlier "cur" run) and 45 (fresh repeat r9base2): run-to-run noise alone is one question.
+  K1 (Claude sees top 8): 45 passes. Q1 fails (needs +2 over both baselines). Not kept.
+  K2 (K1 plus Claude rewrite): 46 passes, wrong-but-validated 7 (baselines 6), synthetic wrong-but-validated 1 (baselines 0). Q1 fails. Not kept.
+  K3 was only to be tried if K1 or K2 was kept, so it was not tried. Nothing was kept; the switches stay off; the shipped configuration is unchanged.
+  The Claude pass-rate target on the real held-out split stays NOT MET (75%). The test split was not re-run, per the rules (only a kept candidate is run on it).
+  Reading: more passages and keyword rewriting do not recover the abstentions, consistent with the prior stated above that most are questions where no retrieved chunk carries the fact.

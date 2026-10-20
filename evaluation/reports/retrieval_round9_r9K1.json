@@ -1,0 +1,65 @@
+{
+ "against": [
+  "cur",
+  "r9base2"
+ ],
+ "baselines": {
+  "cur": {
+   "real": {
+    "n": 65,
+    "ooc_accepted": 0,
+    "pass": 44,
+    "val_precision": 0.8636,
+    "wrong_validated": 6
+   },
+   "synthetic": {
+    "n": 20,
+    "ooc_accepted": 0,
+    "pass": 19,
+    "val_precision": 1.0,
+    "wrong_validated": 0
+   }
+  },
+  "r9base2": {
+   "real": {
+    "n": 65,
+    "ooc_accepted": 0,
+    "pass": 45,
+    "val_precision": 0.8667,
+    "wrong_validated": 6
+   },
+   "synthetic": {
+    "n": 20,
+    "ooc_accepted": 0,
+    "pass": 19,
+    "val_precision": 1.0,
+    "wrong_validated": 0
+   }
+  }
+ },
+ "candidate": {
+  "real": {
+   "n": 65,
+   "ooc_accepted": 0,
+   "pass": 45,
+   "val_precision": 0.8889,
+   "wrong_validated": 5
+  },
+  "synthetic": {
+   "n": 20,
+   "ooc_accepted": 0,
+   "pass": 18,
+   "val_precision": 1.0,
+   "wrong_validated": 0
+  }
+ },
+ "kept": false,
+ "rules": {
+  "Q1": false,
+  "Q2": true,
+  "Q3": true,
+  "Q4": true,
+  "Q5": true
+ },
+ "step": "r9K1"
+}
