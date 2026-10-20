@@ -150,7 +150,7 @@
     {
       "answer": "Hand rub is never recommended and hands must always be washed with soap and water for 20 seconds.",
       "caught": true,
-      "confidence": 0.224,
+      "confidence": 0.2,
       "corpus": "synthetic",
       "gold_docs": [
         "who-hand-hygiene-2023",
@@ -167,7 +167,7 @@
       "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
       "reasons": [
         "negation not found in evidence: never",
-        "low evidence coverage (0.38); unsupported terms: never, alway",
+        "low evidence coverage (0.34); unsupported terms: never, must, alway",
         "weak relevance to the question (0.59)"
       ],
       "source_query": "S01",
@@ -506,7 +506,7 @@
     {
       "answer": "Clean high-touch surfaces at least twice a day using an ultraviolet light robot.",
       "caught": true,
-      "confidence": 0.588,
+      "confidence": 0.525,
       "corpus": "synthetic",
       "gold_docs": [
         "who-environmental-cleaning-2022"
@@ -520,7 +520,7 @@
       "note": "",
       "question": "How many times per day should high-touch surfaces be cleaned?",
       "reasons": [
-        "low evidence coverage (0.76); unsupported terms: ultraviolet, robot"
+        "low evidence coverage (0.68); unsupported terms: using, ultraviolet, robot"
       ],
       "source_query": "S10",
       "status": "needs_review"

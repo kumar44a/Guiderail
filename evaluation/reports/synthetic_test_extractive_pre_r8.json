@@ -1,0 +1,1263 @@
+{
+  "corpus": "synthetic",
+  "generator": "extractive",
+  "index_sha256": "45c3d9422161bc9750864850b8285b1feced930110530c2741ec0b9dd986cef8",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 9,
+      "NIH": 5,
+      "WHO": 8
+    },
+    "chunks": 79,
+    "documents": 22,
+    "superseded_documents": 2
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Use soap and water when hands are visibly dirty, and after caring for a patient with Clostridioides difficile or norovirus, because alcohol is less effective against spores and non-enveloped viruses. Wash with soap and water for 40 to 60 seconds when hands are visibly soiled or contaminated with blood or body fluids. The duration for washing with soap and water increased from 30 seconds to 40 to 60 seconds.",
+      "citations": [
+        "cdc-hand-hygiene-2021#recommendations-0",
+        "who-hand-hygiene-2023#recommendations-0",
+        "who-hand-hygiene-2023#changes-from-the-2019-edition-0"
+      ],
+      "cited": true,
+      "confidence": 0.875,
+      "correct": false,
+      "generator_error": null,
+      "id": "S02",
+      "kind": "in_corpus",
+      "question": "How long must hands be washed with soap and water when visibly dirty?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.875,
+        "coverage": 1.0,
+        "question_support": 0.75,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Artificial nails and nail extensions are prohibited for staff in clinical areas. Keep natural nails short. Do not wear artificial fingernails when in direct contact with patients at high risk, such as those in intensive care or the operating room.",
+      "citations": [
+        "who-hand-hygiene-2023#recommendations-1",
+        "cdc-hand-hygiene-2021#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.836,
+      "correct": true,
+      "generator_error": null,
+      "id": "S04",
+      "kind": "in_corpus",
+      "question": "Are artificial fingernails allowed for clinical staff?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.836,
+        "coverage": 1.0,
+        "question_support": 0.718,
+        "reasons": [],
+        "retrieval_relevance": 0.954,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guideline sets out how health workers should select, put on, take off and dispose of personal protective equipment (PPE). Take off PPE in this order: gloves, eye protection, gown, mask or respirator. Perform hand hygiene immediately after removal. Remove gloves first, then perform hand hygiene, then remove other PPE. The gown and respirator come off last.",
+      "citations": [
+        "who-ppe-2024#scope-0",
+        "who-ppe-2024#recommendations-1",
+        "cdc-ppe-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "S06",
+      "kind": "in_corpus",
+      "question": "In what order should protective equipment be removed?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Fit-test every respirator user at first use and then once a year. Annual respirator fit testing is required for staff who use tight-fitting respirators.",
+      "citations": [
+        "who-ppe-2024#implementation-0",
+        "cdc-ppe-2022#implementation-0"
+      ],
+      "cited": true,
+      "confidence": 0.801,
+      "correct": true,
+      "generator_error": null,
+      "id": "S08",
+      "kind": "in_corpus",
+      "question": "How often must respirator users be fit tested?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.801,
+        "coverage": 1.0,
+        "question_support": 0.643,
+        "reasons": [],
+        "retrieval_relevance": 0.959,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "High-touch surfaces include bed rails, door handles, call buttons, light switches, tray tables and toilet flush handles. Clean them at least twice a day.",
+      "citations": [
+        "who-environmental-cleaning-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.895,
+      "correct": true,
+      "generator_error": null,
+      "id": "S10",
+      "kind": "in_corpus",
+      "question": "How often should bed rails and door handles be cleaned?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.895,
+        "coverage": 1.0,
+        "question_support": 0.789,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Change cleaning solutions at the start of each shift and after cleaning an isolation room. Keep a cleaning checklist in every room. This guideline covers routine and outbreak cleaning of patient rooms, wards and shared areas in health facilities.",
+      "citations": [
+        "who-environmental-cleaning-2022#implementation-0",
+        "who-environmental-cleaning-2022#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.516,
+      "correct": false,
+      "generator_error": null,
+      "id": "S12",
+      "kind": "in_corpus",
+      "question": "In which direction should cleaning proceed through a room?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.516,
+        "coverage": 1.0,
+        "question_support": 0.317,
+        "reasons": [
+          "weak relevance to the question (0.52)"
+        ],
+        "retrieval_relevance": 0.714,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Offer a medical mask to patients with respiratory symptoms who are waiting in common areas. Seat patients with respiratory symptoms at least one metre away from others in waiting areas.",
+      "citations": [
+        "who-respiratory-etiquette-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.753,
+      "correct": true,
+      "generator_error": null,
+      "id": "S14",
+      "kind": "in_corpus",
+      "question": "How far apart should patients with respiratory symptoms sit in a waiting area?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.753,
+        "coverage": 1.0,
+        "question_support": 0.506,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Start antiviral treatment as early as possible, ideally within 48 hours of symptom onset, for patients at high risk of complications.",
+      "citations": [
+        "cdc-respiratory-seasons-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.819,
+      "correct": true,
+      "generator_error": null,
+      "id": "S16",
+      "kind": "in_corpus",
+      "question": "How soon after symptom onset should antivirals begin for high-risk patients?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.819,
+        "coverage": 1.0,
+        "question_support": 0.639,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Staff must wear a well-fitting mask in all patient care areas through day 10 after symptom onset. Staff may return to work 5 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication and symptoms are improving.",
+      "citations": [
+        "cdc-isolation-return-to-work-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.866,
+      "correct": true,
+      "generator_error": null,
+      "id": "S18",
+      "kind": "in_corpus",
+      "question": "Do staff returning after illness still have to wear a mask?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.866,
+        "coverage": 1.0,
+        "question_support": 0.777,
+        "reasons": [],
+        "retrieval_relevance": 0.956,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use the rating insufficient when the evidence cannot be assessed because studies are missing, too small or contradictory. This document describes how NIH-sponsored panels rate the body of evidence behind a clinical recommendation.",
+      "citations": [
+        "nih-grading-2021#recommendations-0",
+        "nih-grading-2021#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.899,
+      "correct": true,
+      "generator_error": null,
+      "id": "S20",
+      "kind": "in_corpus",
+      "question": "Which NIH rating is used when the evidence cannot be assessed?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.899,
+        "coverage": 1.0,
+        "question_support": 0.798,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The hierarchy of clinical evidence, from strongest to weakest, is: systematic reviews of randomised trials, randomised controlled trials, cohort studies, case-control studies, case series and case reports, then expert opinion. This document describes how study designs are ranked by their ability to limit bias when judging the effect of an intervention. A poorly conducted randomised trial can provide weaker evidence than a well-conducted cohort study.",
+      "citations": [
+        "nih-evidence-hierarchy-2022#recommendations-0",
+        "nih-evidence-hierarchy-2022#scope-0",
+        "nih-evidence-hierarchy-2022#notes-0"
+      ],
+      "cited": true,
+      "confidence": 0.801,
+      "correct": true,
+      "generator_error": null,
+      "id": "S22",
+      "kind": "in_corpus",
+      "question": "Which study design sits at the top of the evidence hierarchy?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.801,
+        "coverage": 1.0,
+        "question_support": 0.602,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Shared decision making is most useful when evidence is uncertain or when options carry different trade-offs. It is not required for emergency care where the patient cannot take part. Shared decision making is a process in which clinicians and patients work together to choose tests, treatments or care plans, based on clinical evidence and on the patient's values and preferences. This document defines shared decision making and describes how clinicians should apply it when more than one reasonable option exists.",
+      "citations": [
+        "nih-shared-decision-making-2023#notes-0",
+        "nih-shared-decision-making-2023#recommendations-0",
+        "nih-shared-decision-making-2023#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.814,
+      "correct": false,
+      "generator_error": null,
+      "id": "S24",
+      "kind": "in_corpus",
+      "question": "What should be recorded in the notes after a shared decision?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.814,
+        "coverage": 1.0,
+        "question_support": 0.628,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.862,
+      "correct": true,
+      "generator_error": null,
+      "id": "S26",
+      "kind": "in_corpus",
+      "question": "What should be done with vaccines after a temperature excursion?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.862,
+        "coverage": 1.0,
+        "question_support": 0.723,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered. Observe recipients for 15 minutes after vaccination, and for 30 minutes if they have a history of severe allergic reaction. Perform hand hygiene at five moments: before touching a patient, before a clean or aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching patient surroundings.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-1",
+        "cdc-vaccination-adult-schedule-2024#recommendations-1",
+        "who-hand-hygiene-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.691,
+      "correct": true,
+      "generator_error": null,
+      "id": "S28",
+      "kind": "in_corpus",
+      "question": "How long should patients be observed after getting a vaccine?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.691,
+        "coverage": 1.0,
+        "question_support": 0.561,
+        "reasons": [],
+        "retrieval_relevance": 0.821,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 24 hours of becoming aware of it. Report non-serious events within 7 days through the national adverse event reporting system. This document describes how clinics should detect, report and follow up adverse events after immunisation.",
+      "citations": [
+        "nih-vaccine-safety-monitoring-2023#recommendations-0",
+        "nih-vaccine-safety-monitoring-2023#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.839,
+      "correct": true,
+      "generator_error": null,
+      "id": "S30",
+      "kind": "in_corpus",
+      "question": "How quickly must serious vaccine adverse events be reported?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.839,
+        "coverage": 1.0,
+        "question_support": 0.678,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not recap used needles. If recapping is unavoidable, use a one-handed scoop technique.",
+      "citations": [
+        "cdc-sharps-injury-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.473,
+      "correct": true,
+      "generator_error": null,
+      "id": "S32",
+      "kind": "in_corpus",
+      "question": "Should used needles be put back in their caps?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.473,
+        "coverage": 1.0,
+        "question_support": 0.374,
+        "reasons": [
+          "weak relevance to the question (0.47)"
+        ],
+        "retrieval_relevance": 0.573,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hold an antibiotic time-out at 48 to 72 hours to review the culture results and decide whether to continue, narrow or stop treatment.",
+      "citations": [
+        "nih-antimicrobial-stewardship-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.965,
+      "correct": true,
+      "generator_error": null,
+      "id": "S34",
+      "kind": "in_corpus",
+      "question": "When should antibiotic treatment be reviewed?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.965,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.929,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Store waste in a secure, ventilated area for no longer than 48 hours in temperate climates and 24 hours in hot climates. This guideline covers segregation, storage and transport of waste generated by health care activities.",
+      "citations": [
+        "who-waste-management-2021#recommendations-0",
+        "who-waste-management-2021#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.926,
+      "correct": true,
+      "generator_error": null,
+      "id": "S36",
+      "kind": "in_corpus",
+      "question": "How long can health care waste be stored in hot climates?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.926,
+        "coverage": 1.0,
+        "question_support": 0.852,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Report confirmed outbreaks to the local health department within one working day.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.847,
+      "correct": true,
+      "generator_error": null,
+      "id": "S38",
+      "kind": "in_corpus",
+      "question": "How soon must a confirmed outbreak be reported to the health department?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.847,
+        "coverage": 1.0,
+        "question_support": 0.693,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Declare the outbreak over after two maximum incubation periods have passed without a new case. Convene an outbreak control team within 48 hours of confirming an outbreak and hold a review once it is over.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#recommendations-1",
+        "cdc-outbreak-reporting-2022#implementation-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "S40",
+      "kind": "in_corpus",
+      "question": "When can an outbreak be declared over?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "S42",
+      "kind": "out_of_corpus",
+      "question": "What is the capital of France?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not wear the same gown between patients, even for extended use, unless the patients are cohorted for the same infection. Do not treat asymptomatic bacteriuria in patients who are not pregnant and are not about to have a urological procedure. Offer a medical mask to patients with respiratory symptoms who are waiting in common areas.",
+      "citations": [
+        "cdc-ppe-2022#recommendations-1",
+        "nih-antimicrobial-stewardship-2022#recommendations-1",
+        "who-respiratory-etiquette-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.328,
+      "correct": null,
+      "generator_error": null,
+      "id": "S44",
+      "kind": "out_of_corpus",
+      "question": "How should patients with measles be isolated?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.328,
+        "coverage": 1.0,
+        "question_support": 0.174,
+        "reasons": [
+          "weak relevance to the question (0.33)"
+        ],
+        "retrieval_relevance": 0.482,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "S46",
+      "kind": "out_of_corpus",
+      "question": "How many hours of sleep should night shift nurses get?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Perform hand hygiene at five moments: before touching a patient, before a clean or aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching patient surroundings. Use an alcohol-based hand rub for 20 to 30 seconds when hands are not visibly soiled. Wash with soap and water for 40 to 60 seconds when hands are visibly soiled or contaminated with blood or body fluids.",
+      "citations": [
+        "who-hand-hygiene-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.552,
+      "correct": null,
+      "generator_error": null,
+      "id": "S48",
+      "kind": "out_of_corpus",
+      "question": "What ethanol concentration should hand sanitizer contain?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.552,
+        "coverage": 1.0,
+        "question_support": 0.104,
+        "reasons": [
+          "weak relevance to the question (0.55)"
+        ],
+        "retrieval_relevance": 1.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guideline applies to all health workers who provide direct patient care in hospitals, clinics and long-term care facilities. It replaces the 2019 edition. Test patients with respiratory symptoms on admission and place them under transmission precautions while results are pending.",
+      "citations": [
+        "who-hand-hygiene-2023#scope-0",
+        "cdc-respiratory-seasons-2023#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.564,
+      "correct": null,
+      "generator_error": null,
+      "id": "S50",
+      "kind": "out_of_corpus",
+      "question": "How should patients with tuberculosis be placed in a hospital?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.564,
+        "coverage": 1.0,
+        "question_support": 0.638,
+        "reasons": [
+          "weak relevance to the question (0.56)"
+        ],
+        "retrieval_relevance": 0.489,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.95,
+    "capped_precision@10": 0.761,
+    "capped_precision@5": 0.7158,
+    "hit@1": 0.7,
+    "hit@10": 1.0,
+    "hit@5": 1.0,
+    "mrr": 0.8417,
+    "n": 20,
+    "precision@1": 0.95,
+    "precision@10": 0.32,
+    "precision@5": 0.55,
+    "rows": [
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.4,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S02",
+        "precision@1": 0.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "How long must hands be washed with soap and water when visibly dirty?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-hand-hygiene-2021",
+          "who-hand-hygiene-2023",
+          "who-hand-hygiene-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.4444444444444444,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S04",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "Are artificial fingernails allowed for clinical staff?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-hand-hygiene-2023",
+          "cdc-hand-hygiene-2021",
+          "nih-shared-decision-making-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S06",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "In what order should protective equipment be removed?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-ppe-2024",
+          "who-ppe-2024",
+          "cdc-ppe-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.375,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S08",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "How often must respirator users be fit tested?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-ppe-2022",
+          "who-ppe-2024",
+          "who-waste-management-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.75,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S10",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "How often should bed rails and door handles be cleaned?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "cdc-vaccination-cold-chain-2024",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.75,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S12",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "In which direction should cleaning proceed through a room?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.6666666666666666,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S14",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "How far apart should patients with respiratory symptoms sit in a waiting area?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-respiratory-etiquette-2021",
+          "cdc-respiratory-seasons-2023",
+          "who-respiratory-etiquette-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S16",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "How soon after symptom onset should antivirals begin for high-risk patients?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-respiratory-seasons-2023",
+          "cdc-isolation-return-to-work-2023",
+          "cdc-sharps-injury-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.75,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S18",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "Do staff returning after illness still have to wear a mask?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S20",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "Which NIH rating is used when the evidence cannot be assessed?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-grading-2021",
+          "nih-grading-2021",
+          "nih-grading-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S22",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "Which study design sits at the top of the evidence hierarchy?",
+        "rr": 0.5,
+        "top_docs": [
+          "nih-evidence-hierarchy-2022",
+          "nih-evidence-hierarchy-2022",
+          "nih-evidence-hierarchy-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S24",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "What should be recorded in the notes after a shared decision?",
+        "rr": 0.5,
+        "top_docs": [
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.75,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S26",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "What should be done with vaccines after a temperature excursion?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S28",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "How long should patients be observed after getting a vaccine?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "who-hand-hygiene-2023",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S30",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "How quickly must serious vaccine adverse events be reported?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.5,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S32",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "Should used needles be put back in their caps?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-sharps-injury-2022",
+          "who-ppe-2024",
+          "cdc-sharps-injury-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.25,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S34",
+        "precision@1": 1.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "When should antibiotic treatment be reviewed?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-antimicrobial-stewardship-2022",
+          "nih-shared-decision-making-2023",
+          "who-waste-management-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S36",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "How long can health care waste be stored in hot climates?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-waste-management-2021",
+          "who-waste-management-2021",
+          "who-hand-hygiene-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S38",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "How soon must a confirmed outbreak be reported to the health department?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "S40",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "When can an outbreak be declared over?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Use soap and water when hands are visibly dirty, and after caring for a patient with Clostridioides difficile or norovirus, because alcohol is less effective against spores and non-enveloped viruses. Wash with soap and water for 40 to 60 se",
+      "confidence": 0.875,
+      "id": "S02",
+      "question": "How long must hands be washed with soap and water when visibly dirty?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Change cleaning solutions at the start of each shift and after cleaning an isolation room. Keep a cleaning checklist in every room. This guideline covers routine and outbreak cleaning of patient rooms, wards and shared areas in health facil",
+      "confidence": 0.516,
+      "id": "S12",
+      "question": "In which direction should cleaning proceed through a room?",
+      "reason": "flagged: low confidence",
+      "validator_notes": "weak relevance to the question (0.52)"
+    },
+    {
+      "answer": "Shared decision making is most useful when evidence is uncertain or when options carry different trade-offs. It is not required for emergency care where the patient cannot take part. Shared decision making is a process in which clinicians a",
+      "confidence": 0.814,
+      "id": "S24",
+      "question": "What should be recorded in the notes after a shared decision?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Do not recap used needles. If recapping is unavoidable, use a one-handed scoop technique.",
+      "confidence": 0.473,
+      "id": "S32",
+      "question": "Should used needles be put back in their caps?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.47)"
+    }
+  ],
+  "rewrite": false,
+  "split": "test",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.6,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.15,
+      "validated_precision": 0.85
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 1.0,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.15,
+      "validated_precision": 0.85
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 1.0,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.15,
+      "validated_precision": 0.85
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 1.0,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.15,
+      "validated_precision": 0.85
+    },
+    {
+      "correct_but_flagged_rate": 0.0588,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 0.95,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.1579,
+      "validated_precision": 0.8421
+    },
+    {
+      "correct_but_flagged_rate": 0.0588,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.4,
+      "pass_rate": 0.9,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    {
+      "correct_but_flagged_rate": 0.0588,
+      "decision_accuracy": 0.88,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.9,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    {
+      "correct_but_flagged_rate": 0.0588,
+      "decision_accuracy": 0.88,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.9,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    {
+      "correct_but_flagged_rate": 0.1176,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.85,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.1176,
+      "validated_precision": 0.8824
+    },
+    {
+      "correct_but_flagged_rate": 0.1176,
+      "decision_accuracy": 0.84,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.85,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.1176,
+      "validated_precision": 0.8824
+    },
+    {
+      "correct_but_flagged_rate": 0.1765,
+      "decision_accuracy": 0.8,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.8,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.125,
+      "validated_precision": 0.875
+    },
+    {
+      "correct_but_flagged_rate": 0.5294,
+      "decision_accuracy": 0.6,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.45,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    {
+      "correct_but_flagged_rate": 0.7647,
+      "decision_accuracy": 0.48,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.2,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.88,
+    "in_corpus": {
+      "answer_correct_rate": 0.85,
+      "correct_but_flagged_rate": 0.0588,
+      "mean_confidence": 0.8239,
+      "n": 20,
+      "pass_rate": 0.9,
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.2888,
+      "n": 5,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

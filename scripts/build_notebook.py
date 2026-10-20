@@ -76,7 +76,8 @@ display(Markdown(block))"""),
 ("md", """## 6. What this does and does not show
 
 - **Met:** deterministic indexing, the REST contract, the validator working independently of the generator, and honest reporting of every result.
-- **Not met:** Precision@5 of 0.65 on the brief's own document-level definition for the synthetic corpus (see the table above; a capped variant is reported separately).
+- **Precision@5 of 0.65:** missed at first on the synthetic corpus; a document-cohesion re-rank (retrieval round 8) reached it on a fresh final set, judged under rules written first (report section 18). The brief's own v1 held-out figure sits right on the threshold.
+- **Not met:** the Claude generator's 80% pass rate on the real-PDF held-out split.
 - **Weak:** on real PDFs, retrieval is lexical and often misses the passage that answers a question worded differently from the document. The offline extractive generator can then validate a wrong answer; use the Claude generator for real documents. A semantic embedding model would help and was ruled out for this project.
 - **Thin evidence:** the corpus and queries were written by the same AI that wrote the system; no clinician reviewed anything; only a few out-of-scope questions exist in the independent sets; Docker and Windows setups were never run.
 

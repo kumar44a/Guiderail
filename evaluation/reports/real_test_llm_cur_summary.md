@@ -8,11 +8,11 @@
 | Metric | Value |
 |---|---|
 | Precision@1 (document level) | 95.8% |
-| Precision@5 (document level) | 90.8% |
-| Precision@10 (document level) | 85.4% |
+| Precision@5 (document level) | 92.5% |
+| Precision@10 (document level) | 90.4% |
 | Capped Precision@1 (vs. best attainable) | 95.8% |
-| Capped Precision@5 (vs. best attainable) | 90.8% |
-| Capped Precision@10 (vs. best attainable) | 85.4% |
+| Capped Precision@5 (vs. best attainable) | 92.5% |
+| Capped Precision@10 (vs. best attainable) | 90.4% |
 | Hit@1 (a chunk containing the expected fact) | 62.5% |
 | Hit@5 (a chunk containing the expected fact) | 83.3% |
 | Hit@10 (a chunk containing the expected fact) | 91.7% |
@@ -23,7 +23,7 @@
 | Metric | Value |
 |---|---|
 | Pass rate (validated / in-corpus) | 75.0% |
-| Mean confidence (in-corpus) | 0.6938 |
+| Mean confidence (in-corpus) | 0.6962 |
 | Answer correct (expected facts present) | 75.0% |
 | **Validated precision** (correct among validated) | 94.4% |
 | **Validated but wrong** | 5.6% |
@@ -47,14 +47,14 @@ A high pass rate alone is not evidence of quality: an extractive answer is copie
 | 0.6 | 75.0% | 94.4% | 5.6% | 5.6% | 0.0% | 93.1% |
 | 0.65 | 75.0% | 94.4% | 5.6% | 5.6% | 0.0% | 93.1% |
 | 0.7 | 70.8% | 100.0% | 0.0% | 5.6% | 0.0% | 96.5% |
-| 0.75 | 66.7% | 100.0% | 0.0% | 11.1% | 0.0% | 93.1% |
+| 0.75 | 70.8% | 100.0% | 0.0% | 5.6% | 0.0% | 96.5% |
 | 0.8 | 66.7% | 100.0% | 0.0% | 11.1% | 0.0% | 93.1% |
 | 0.85 | 58.3% | 100.0% | 0.0% | 22.2% | 0.0% | 86.2% |
 | 0.9 | 50.0% | 100.0% | 0.0% | 33.3% | 0.0% | 79.3% |
 
 ## Items for analyst review (7)
 
-- **R02** (VALIDATED BUT WRONG, confidence 0.683): What does cohorting mean?
+- **R02** (VALIDATED BUT WRONG, confidence 0.669): What does cohorting mean?
 - **R06** (flagged: low confidence, confidence 0.0): What should patients wear when they must be moved outside an airborne infection isolation room?
 - **T04** (correct answer withheld, confidence 0.522): How long should temperature logs be kept?
 - **R19** (flagged: low confidence, confidence 0.0): How long does the full procedure of washing hands with soap and water take?

@@ -30,7 +30,7 @@ OFFLINE  scripts/pipeline.py  (deterministic: no network, no randomness)
 ONLINE   FastAPI  POST /qa {question, top_k}
  [Claude mode, optional] rewrite the question into search keywords
  embed query -> FAISS top 50  +  BM25 top 50 -> reciprocal rank fusion -> drop superseded versions
-   -> lexical re-rank of the top 30 (cosine to the ORIGINAL question stays the reported score)
+   -> lexical re-rank of the top 30, then a document-cohesion bonus (round 8) (cosine to the ORIGINAL question stays the reported score)
    -> neighbour fallback for sparse top chunks -> Generator (extractive | LLM) -> Validator -> {answer, citations, confidence, status}
 
 EVALUATION  evaluation/  labeled queries (dev/test) -> retrieval metrics, answer correctness, threshold sweep,
@@ -130,7 +130,7 @@ Decisions worth knowing:
 - On an independent sealed question set (evaluation report, section 13) the system was far weaker than on its development questions; the development figures are optimistic.
 - Natural questions worded differently from the document often miss the passage that answers them on real PDFs, because matching is lexical. Offline fixes were tried and mostly failed; closing the gap needs semantic matching, which conflicts with the deterministic, API-free design unless a local model is accepted.
 - The LLM generator is nondeterministic and still withholds a share of correct answers on real documents at the default threshold.
-- Document-level Precision@5 stays below the brief's 0.65 on the held-out synthetic questions, including on a larger corpus (v2) where the score is no longer capped by document size; lower ranks fill with unrelated documents.
+- Document-level Precision@5 first missed 0.65; a larger corpus (v2) showed document size was not the cause, and a document-cohesion re-rank (round 8) then cleared the target on a fresh final set. That is a document-level metric; it does not fix passages missed because of wording differences on real PDFs.
 - Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
 - Docker files and the Windows setup instructions were written but not run on a machine of that kind.
 

@@ -8,11 +8,11 @@
 | Metric | Value |
 |---|---|
 | Precision@1 (document level) | 95.8% |
-| Precision@5 (document level) | 90.8% |
-| Precision@10 (document level) | 85.4% |
+| Precision@5 (document level) | 92.5% |
+| Precision@10 (document level) | 90.4% |
 | Capped Precision@1 (vs. best attainable) | 95.8% |
-| Capped Precision@5 (vs. best attainable) | 90.8% |
-| Capped Precision@10 (vs. best attainable) | 85.4% |
+| Capped Precision@5 (vs. best attainable) | 92.5% |
+| Capped Precision@10 (vs. best attainable) | 90.4% |
 | Hit@1 (a chunk containing the expected fact) | 62.5% |
 | Hit@5 (a chunk containing the expected fact) | 83.3% |
 | Hit@10 (a chunk containing the expected fact) | 91.7% |

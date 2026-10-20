@@ -1,0 +1,1496 @@
+{
+  "corpus": "synthetic2",
+  "generator": "extractive",
+  "index_sha256": "ffe20683ee85c7315dd68c365f15f56019f729fba4abdd7f26003fb3dcb319a5",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 9,
+      "NIH": 5,
+      "WHO": 8
+    },
+    "chunks": 164,
+    "documents": 22,
+    "superseded_documents": 2
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Staff must wear a well-fitting mask in all patient care areas through day 10 after symptom onset. A worker who becomes ill at work should leave patient areas at once, wear a medical mask while leaving, and go home. Masking stops after day 10 even if mild symptoms such as a cough continue.",
+      "citations": [
+        "cdc-isolation-return-to-work-2023#recommendations-0",
+        "cdc-isolation-return-to-work-2023#reporting-symptoms-0",
+        "cdc-isolation-return-to-work-2023#masking-through-day-10-0"
+      ],
+      "cited": true,
+      "confidence": 0.739,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-01",
+      "kind": "in_corpus",
+      "question": "How long should a symptomatic worker wear a mask after symptoms begin?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.739,
+        "coverage": 1.0,
+        "question_support": 0.694,
+        "reasons": [],
+        "retrieval_relevance": 0.785,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Cover a blood spill with absorbent material, then pour 0.5 percent sodium hypochlorite over it and leave it for 10 minutes. Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills.",
+      "citations": [
+        "who-environmental-cleaning-2022#spills-0",
+        "who-environmental-cleaning-2022#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.586,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-02",
+      "kind": "in_corpus",
+      "question": "What disinfectant strength is used on a blood spill?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.586,
+        "coverage": 1.0,
+        "question_support": 0.402,
+        "reasons": [
+          "weak relevance to the question (0.59)"
+        ],
+        "retrieval_relevance": 0.769,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Download the data logger report every week.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#daily-monitoring-0"
+      ],
+      "cited": true,
+      "confidence": 0.872,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-03",
+      "kind": "in_corpus",
+      "question": "How often should data logger reports be downloaded?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.872,
+        "coverage": 1.0,
+        "question_support": 0.745,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.747,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-04",
+      "kind": "in_corpus",
+      "question": "What must be done with vaccines after a temperature excursion?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.747,
+        "coverage": 1.0,
+        "question_support": 0.65,
+        "reasons": [],
+        "retrieval_relevance": 0.843,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Test anti-HBs 1 to 2 months after the last dose. A hepatitis B series has three doses, given at 0, 1 and 6 months. Vaccinate healthcare personnel against hepatitis B and check anti-HBs levels 1 to 2 months after the final dose of the series.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#hepatitis-b-0",
+        "cdc-vaccination-adult-schedule-2024#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.851,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-05",
+      "kind": "in_corpus",
+      "question": "How many months after the last dose should hepatitis B antibody be tested?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.851,
+        "coverage": 1.0,
+        "question_support": 0.701,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Confirm documented immunity to measles, mumps and rubella and to varicella, and give vaccine to staff without evidence of immunity. Staff are immune if they have two documented doses of vaccine, a laboratory result showing immunity or a diagnosis of varicella made by a healthcare provider. Staff without evidence receive two doses 4 to 8 weeks apart.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#recommendations-0",
+        "cdc-vaccination-adult-schedule-2024#varicella-0"
+      ],
+      "cited": true,
+      "confidence": 0.859,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-06",
+      "kind": "in_corpus",
+      "question": "How many varicella vaccine doses do staff without evidence of immunity need?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.859,
+        "coverage": 1.0,
+        "question_support": 0.718,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Hold an antibiotic time-out at 48 to 72 hours to review the culture results and decide whether to continue, narrow or stop treatment. Give prophylactic antibiotic within 60 minutes before the incision. Stop it within 24 hours after surgery in most procedures.",
+      "citations": [
+        "nih-antimicrobial-stewardship-2022#recommendations-0",
+        "nih-antimicrobial-stewardship-2022#surgical-prophylaxis-0"
+      ],
+      "cited": true,
+      "confidence": 0.574,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-07",
+      "kind": "in_corpus",
+      "question": "When should antibiotics given to prevent surgical infection usually stop?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.574,
+        "coverage": 1.0,
+        "question_support": 0.457,
+        "reasons": [
+          "weak relevance to the question (0.57)"
+        ],
+        "retrieval_relevance": 0.691,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The hierarchy of clinical evidence, from strongest to weakest, is: systematic reviews of randomised trials, randomised controlled trials, cohort studies, case-control studies, case series and case reports, then expert opinion. This document describes how study designs are ranked by their ability to limit bias when judging the effect of an intervention. Randomisation reduces selection bias and confounding, which is why randomised trials rank above observational studies.",
+      "citations": [
+        "nih-evidence-hierarchy-2022#recommendations-0",
+        "nih-evidence-hierarchy-2022#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.794,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-08",
+      "kind": "in_corpus",
+      "question": "Which study type is ranked highest in the evidence hierarchy?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.794,
+        "coverage": 1.0,
+        "question_support": 0.588,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A strong recommendation means most people would want the course of action and it can be adopted as policy in most situations. A conditional recommendation means most people would want it but many would not, so a decision needs discussion. Issue a strong recommendation when the benefits clearly outweigh the harms. Issue a conditional recommendation when the balance is uncertain or values and preferences vary.",
+      "citations": [
+        "who-grading-2020#strength-of-recommendation-0",
+        "who-grading-2020#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-09",
+      "kind": "in_corpus",
+      "question": "What does a strong recommendation mean to WHO?",
+      "split": "final",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Shared decision making is a process in which clinicians and patients work together to choose tests, treatments or care plans, based on clinical evidence and on the patient's values and preferences. Shared decision making is most useful when evidence is uncertain or when options carry different trade-offs. It is not required for emergency care where the patient cannot take part. A decision to decline treatment is a valid decision and the patient should still receive other care.",
+      "citations": [
+        "nih-shared-decision-making-2023#recommendations-0",
+        "nih-shared-decision-making-2023#notes-0",
+        "nih-shared-decision-making-2023#decisions-that-change-0"
+      ],
+      "cited": true,
+      "confidence": 0.765,
+      "correct": false,
+      "generator_error": null,
+      "id": "FX-10",
+      "kind": "in_corpus",
+      "question": "How should risks be put to patients in a shared decision?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.765,
+        "coverage": 1.0,
+        "question_support": 0.53,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Keep epinephrine and trained staff available wherever vaccines are given. Complete the form with the patient's age, sex, medical history, other medicines, the vaccine, dose number, the event description, onset date, treatment given and outcome.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#implementation-0",
+        "nih-vaccine-safety-monitoring-2023#the-report-form-0"
+      ],
+      "cited": true,
+      "confidence": 0.847,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-11",
+      "kind": "in_corpus",
+      "question": "What must be on hand wherever vaccines are given?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.847,
+        "coverage": 1.0,
+        "question_support": 0.693,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Offer a medical mask to patients with respiratory symptoms who are waiting in common areas. Seat patients with respiratory symptoms at least one metre away from others in waiting areas. Post signs at entrances and waiting areas in the local languages.",
+      "citations": [
+        "who-respiratory-etiquette-2021#recommendations-0",
+        "who-respiratory-etiquette-2021#implementation-0"
+      ],
+      "cited": true,
+      "confidence": 0.535,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-12",
+      "kind": "in_corpus",
+      "question": "How far apart should symptomatic patients sit in a waiting area?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.535,
+        "coverage": 1.0,
+        "question_support": 0.319,
+        "reasons": [
+          "weak relevance to the question (0.54)"
+        ],
+        "retrieval_relevance": 0.751,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Staff may return to work 5 days after symptom onset if they have been fever-free for at least 24 hours without fever-reducing medication and symptoms are improving. Masking stops after day 10 even if mild symptoms such as a cough continue.",
+      "citations": [
+        "cdc-isolation-return-to-work-2023#recommendations-0",
+        "cdc-isolation-return-to-work-2023#masking-through-day-10-0"
+      ],
+      "cited": true,
+      "confidence": 0.713,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-13",
+      "kind": "in_corpus",
+      "question": "After how many days can a worker with improving symptoms return under the 2023 guidance?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.713,
+        "coverage": 1.0,
+        "question_support": 0.427,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Segregate waste at the point of generation into colour-coded containers: yellow for infectious waste, red for sharps in puncture-proof containers, and black for general waste. Dispose of single-use PPE in a yellow infectious waste container. Mount containers at standing eye level where staff can see the opening.",
+      "citations": [
+        "who-waste-management-2021#recommendations-0",
+        "who-ppe-2024#supply-and-disposal-0",
+        "cdc-sharps-injury-2022#sharps-containers-0"
+      ],
+      "cited": true,
+      "confidence": 0.69,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-14",
+      "kind": "in_corpus",
+      "question": "What is put in a yellow container?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.69,
+        "coverage": 1.0,
+        "question_support": 0.651,
+        "reasons": [],
+        "retrieval_relevance": 0.728,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Replace worn equipment every three months. Use colour-coded cloths and mops: red for toilets, blue for general areas, green for kitchens and yellow for isolation rooms. Wash mops at 60 degrees Celsius and dry them fully before reuse.",
+      "citations": [
+        "who-environmental-cleaning-2022#cleaning-equipment-0"
+      ],
+      "cited": true,
+      "confidence": 0.848,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-15",
+      "kind": "in_corpus",
+      "question": "How often are worn cleaning mops replaced?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.848,
+        "coverage": 1.0,
+        "question_support": 0.734,
+        "reasons": [],
+        "retrieval_relevance": 0.962,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Name an adverse event focal point in each clinic. This document describes how clinics should detect, report and follow up adverse events after immunisation. Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 24 hours of becoming aware of it.",
+      "citations": [
+        "nih-vaccine-safety-monitoring-2023#implementation-0",
+        "nih-vaccine-safety-monitoring-2023#scope-0",
+        "nih-vaccine-safety-monitoring-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-16",
+      "kind": "in_corpus",
+      "question": "Who should each clinic name for adverse event reporting?",
+      "split": "final",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Flush a splash to the eye with clean water or saline for at least 15 minutes.",
+      "citations": [
+        "cdc-sharps-injury-2022#after-an-exposure-0"
+      ],
+      "cited": true,
+      "confidence": 0.845,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-17",
+      "kind": "in_corpus",
+      "question": "How long should an eye be flushed after a splash from a needle injury?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.845,
+        "coverage": 1.0,
+        "question_support": 0.691,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Children under 12 should not visit units caring for infants, transplant patients or patients receiving chemotherapy. Do not require young children under 2 years to wear a mask. Use universal masking in high-risk units, such as oncology and transplant, when community transmission is high.",
+      "citations": [
+        "cdc-respiratory-seasons-2023#visitor-restrictions-0",
+        "who-respiratory-etiquette-2021#children-and-carers-0",
+        "cdc-respiratory-seasons-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.905,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-18",
+      "kind": "in_corpus",
+      "question": "Should young children visit infant units when community spread is high?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.905,
+        "coverage": 1.0,
+        "question_support": 0.843,
+        "reasons": [],
+        "retrieval_relevance": 0.968,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Do not use a gown that is torn or that does not cover the arms and torso. Tell the family what is known about the event, what is being done and when they will hear again.",
+      "citations": [
+        "cdc-ppe-2022#gowns-0",
+        "nih-vaccine-safety-monitoring-2023#communicating-with-families-0"
+      ],
+      "cited": true,
+      "confidence": 0.823,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-19",
+      "kind": "in_corpus",
+      "question": "What should be done about a gown that is torn?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.823,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 0.645,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Change cleaning solutions at the start of each shift and after cleaning an isolation room.",
+      "citations": [
+        "who-environmental-cleaning-2022#implementation-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-20",
+      "kind": "in_corpus",
+      "question": "When should cleaning solutions be changed?",
+      "split": "final",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Discard any hand rub with no printed expiry date that is more than 12 months past its manufacture date.",
+      "citations": [
+        "cdc-hand-hygiene-2021#product-selection-0"
+      ],
+      "cited": true,
+      "confidence": 0.817,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-21",
+      "kind": "in_corpus",
+      "question": "How old can hand rub with no printed expiry date be before it is thrown away?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.817,
+        "coverage": 1.0,
+        "question_support": 0.635,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Report confirmed outbreaks to the local health department within one working day.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.831,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-22",
+      "kind": "in_corpus",
+      "question": "How quickly must a confirmed outbreak be reported to the health department?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.831,
+        "coverage": 1.0,
+        "question_support": 0.662,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Staff are immune if they have two documented doses of vaccine, a laboratory result showing immunity or a diagnosis of varicella made by a healthcare provider. Staff without evidence receive two doses 4 to 8 weeks apart. Give two doses at least 28 days apart to those without evidence.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#varicella-0",
+        "cdc-vaccination-adult-schedule-2024#measles-mumps-and-rubella-0"
+      ],
+      "cited": true,
+      "confidence": 0.713,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-23",
+      "kind": "in_corpus",
+      "question": "How far apart are the two varicella vaccine doses?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.713,
+        "coverage": 1.0,
+        "question_support": 0.77,
+        "reasons": [],
+        "retrieval_relevance": 0.656,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Follow up serious events for at least 30 days or until they resolve. This document describes how clinics should detect, report and follow up adverse events after immunisation. Check whether the event follows vaccination at a plausible time, whether other causes exist, whether similar events are known for the vaccine and whether the event recurred on re-exposure.",
+      "citations": [
+        "nih-vaccine-safety-monitoring-2023#recommendations-0",
+        "nih-vaccine-safety-monitoring-2023#scope-0",
+        "nih-vaccine-safety-monitoring-2023#causality-assessment-0"
+      ],
+      "cited": true,
+      "confidence": 0.914,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-24",
+      "kind": "in_corpus",
+      "question": "For how long are serious vaccine events followed up?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.914,
+        "coverage": 1.0,
+        "question_support": 0.828,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Never store vaccines in the door of the unit or in produce drawers. Keep them in the centre, away from the walls and the cooling element. Place the unit away from direct sunlight and heat sources, with at least 10 centimetres of clear space behind and beside it. Allow a newly installed unit to run for 2 to 3 days and record stable temperatures before stocking any vaccine.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-0",
+        "cdc-vaccination-cold-chain-2024#storage-unit-set-up-0"
+      ],
+      "cited": true,
+      "confidence": 0.858,
+      "correct": true,
+      "generator_error": null,
+      "id": "FX-25",
+      "kind": "in_corpus",
+      "question": "Where in a vaccine unit should vaccines be placed relative to the walls?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.858,
+        "coverage": 1.0,
+        "question_support": 0.717,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use a standard checklist for each design to judge the risk of bias.",
+      "citations": [
+        "nih-evidence-hierarchy-2022#appraisal-tools-0"
+      ],
+      "cited": true,
+      "confidence": 0.262,
+      "correct": null,
+      "generator_error": null,
+      "id": "FX-O1",
+      "kind": "out_of_corpus",
+      "question": "What is the standard dose of amoxicillin for strep throat?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.262,
+        "coverage": 1.0,
+        "question_support": 0.184,
+        "reasons": [
+          "weak relevance to the question (0.26)"
+        ],
+        "retrieval_relevance": 0.34,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "FX-O2",
+      "kind": "out_of_corpus",
+      "question": "Which scale grades the severity of coma?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Record when the patient changes their mind and why. High certainty means further research is very unlikely to change confidence in the estimate. Low means it is very likely to change the estimate.",
+      "citations": [
+        "nih-shared-decision-making-2023#decisions-that-change-0",
+        "who-grading-2020#certainty-of-evidence-0"
+      ],
+      "cited": true,
+      "confidence": 0.193,
+      "correct": null,
+      "generator_error": null,
+      "id": "FX-O3",
+      "kind": "out_of_corpus",
+      "question": "How is a tracheostomy tube changed?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.193,
+        "coverage": 1.0,
+        "question_support": 0.225,
+        "reasons": [
+          "weak relevance to the question (0.19)"
+        ],
+        "retrieval_relevance": 0.161,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "This guidance sets out vaccines recommended for healthcare personnel and the practice steps for giving them. The recommended duration for hand rub increased from 15 to 20 seconds to 20 to 30 seconds.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#scope-0",
+        "who-hand-hygiene-2023#changes-from-the-2019-edition-0"
+      ],
+      "cited": true,
+      "confidence": 0.408,
+      "correct": null,
+      "generator_error": null,
+      "id": "FX-O4",
+      "kind": "out_of_corpus",
+      "question": "What HbA1c target is recommended for adults?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.408,
+        "coverage": 1.0,
+        "question_support": 0.422,
+        "reasons": [
+          "weak relevance to the question (0.41)"
+        ],
+        "retrieval_relevance": 0.394,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "FX-O5",
+      "kind": "out_of_corpus",
+      "question": "How is malaria diagnosed?",
+      "split": "final",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 1.0,
+    "capped_precision@10": 0.7229,
+    "capped_precision@5": 0.832,
+    "hit@1": 0.76,
+    "hit@10": 1.0,
+    "hit@5": 0.96,
+    "mrr": 0.8583,
+    "n": 25,
+    "precision@1": 1.0,
+    "precision@10": 0.564,
+    "precision@5": 0.832,
+    "rows": [
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.375,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-01",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "How long should a symptomatic worker wear a mask after symptoms begin?",
+        "rr": 0.5,
+        "top_docs": [
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.375,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-02",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "What disinfectant strength is used on a blood spill?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022",
+          "who-grading-2020"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-03",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "How often should data logger reports be downloaded?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "nih-antimicrobial-stewardship-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-04",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What must be done with vaccines after a temperature excursion?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-05",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 1.0,
+        "question": "How many months after the last dose should hepatitis B antibody be tested?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-06",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 1.0,
+        "question": "How many varicella vaccine doses do staff without evidence of immunity need?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-07",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "When should antibiotics given to prevent surgical infection usually stop?",
+        "rr": 0.5,
+        "top_docs": [
+          "nih-antimicrobial-stewardship-2022",
+          "nih-antimicrobial-stewardship-2022",
+          "nih-antimicrobial-stewardship-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-08",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "Which study type is ranked highest in the evidence hierarchy?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "nih-evidence-hierarchy-2022",
+          "nih-evidence-hierarchy-2022",
+          "nih-evidence-hierarchy-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-09",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What does a strong recommendation mean to WHO?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-grading-2020",
+          "who-grading-2020",
+          "who-grading-2020"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 8,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": false,
+        "id": "FX-10",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "How should risks be put to patients in a shared decision?",
+        "rr": 0.125,
+        "top_docs": [
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-11",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "What must be on hand wherever vaccines are given?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "nih-grading-2021",
+          "cdc-hand-hygiene-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7142857142857143,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-12",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 1.0,
+        "question": "How far apart should symptomatic patients sit in a waiting area?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-respiratory-etiquette-2021",
+          "who-respiratory-etiquette-2021",
+          "who-respiratory-etiquette-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.875,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-13",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "After how many days can a worker with improving symptoms return under the 2023 guidance?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023",
+          "cdc-isolation-return-to-work-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.42857142857142855,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-14",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "What is put in a yellow container?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-waste-management-2021",
+          "who-ppe-2024",
+          "who-waste-management-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-15",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.8,
+        "question": "How often are worn cleaning mops replaced?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-16",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "Who should each clinic name for adverse event reporting?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.875,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-17",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "How long should an eye be flushed after a splash from a needle injury?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-sharps-injury-2022",
+          "cdc-sharps-injury-2022",
+          "cdc-sharps-injury-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-18",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
+        "question": "Should young children visit infant units when community spread is high?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-respiratory-seasons-2023",
+          "who-respiratory-etiquette-2021",
+          "cdc-respiratory-seasons-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.375,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-19",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "What should be done about a gown that is torn?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-ppe-2022",
+          "nih-vaccine-safety-monitoring-2023",
+          "cdc-ppe-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.875,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-20",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "When should cleaning solutions be changed?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5555555555555556,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-21",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "How old can hand rub with no printed expiry date be before it is thrown away?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-hand-hygiene-2021",
+          "cdc-hand-hygiene-2021",
+          "who-respiratory-etiquette-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-22",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "How quickly must a confirmed outbreak be reported to the health department?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.875,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-23",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 0.8,
+        "question": "How far apart are the two varicella vaccine doses?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-24",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "For how long are serious vaccine events followed up?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "FX-25",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "Where in a vaccine unit should vaccines be placed relative to the walls?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Cover a blood spill with absorbent material, then pour 0.5 percent sodium hypochlorite over it and leave it for 10 minutes. Use 0.1 percent sodium hypochlorite for routine disinfection and 0.5 percent for blood and body fluid spills.",
+      "confidence": 0.586,
+      "id": "FX-02",
+      "question": "What disinfectant strength is used on a blood spill?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.59)"
+    },
+    {
+      "answer": "Hold an antibiotic time-out at 48 to 72 hours to review the culture results and decide whether to continue, narrow or stop treatment. Give prophylactic antibiotic within 60 minutes before the incision. Stop it within 24 hours after surgery ",
+      "confidence": 0.574,
+      "id": "FX-07",
+      "question": "When should antibiotics given to prevent surgical infection usually stop?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.57)"
+    },
+    {
+      "answer": "Shared decision making is a process in which clinicians and patients work together to choose tests, treatments or care plans, based on clinical evidence and on the patient's values and preferences. Shared decision making is most useful when",
+      "confidence": 0.765,
+      "id": "FX-10",
+      "question": "How should risks be put to patients in a shared decision?",
+      "reason": "VALIDATED BUT WRONG",
+      "validator_notes": ""
+    },
+    {
+      "answer": "Offer a medical mask to patients with respiratory symptoms who are waiting in common areas. Seat patients with respiratory symptoms at least one metre away from others in waiting areas. Post signs at entrances and waiting areas in the local",
+      "confidence": 0.535,
+      "id": "FX-12",
+      "question": "How far apart should symptomatic patients sit in a waiting area?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.54)"
+    }
+  ],
+  "rewrite": false,
+  "split": "final",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9333,
+      "ooc_false_accept_rate": 0.2,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.04,
+      "validated_precision": 0.96
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9333,
+      "ooc_false_accept_rate": 0.2,
+      "pass_rate": 1.0,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.04,
+      "validated_precision": 0.96
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9333,
+      "ooc_false_accept_rate": 0.2,
+      "pass_rate": 1.0,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.04,
+      "validated_precision": 0.96
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9667,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 1.0,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.04,
+      "validated_precision": 0.96
+    },
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 0.9667,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 1.0,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.04,
+      "validated_precision": 0.96
+    },
+    {
+      "correct_but_flagged_rate": 0.0417,
+      "decision_accuracy": 0.9333,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.96,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.0417,
+      "validated_precision": 0.9583
+    },
+    {
+      "correct_but_flagged_rate": 0.125,
+      "decision_accuracy": 0.8667,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.88,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.0455,
+      "validated_precision": 0.9545
+    },
+    {
+      "correct_but_flagged_rate": 0.125,
+      "decision_accuracy": 0.8667,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.88,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.0455,
+      "validated_precision": 0.9545
+    },
+    {
+      "correct_but_flagged_rate": 0.1667,
+      "decision_accuracy": 0.8333,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.84,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.0476,
+      "validated_precision": 0.9524
+    },
+    {
+      "correct_but_flagged_rate": 0.3333,
+      "decision_accuracy": 0.7,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.68,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0588,
+      "validated_precision": 0.9412
+    },
+    {
+      "correct_but_flagged_rate": 0.375,
+      "decision_accuracy": 0.7,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.6,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.625,
+      "decision_accuracy": 0.5,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.36,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.7917,
+      "decision_accuracy": 0.3667,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.2,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.8667,
+    "in_corpus": {
+      "answer_correct_rate": 0.96,
+      "correct_but_flagged_rate": 0.125,
+      "mean_confidence": 0.805,
+      "n": 25,
+      "pass_rate": 0.88,
+      "validated_but_wrong_rate": 0.0455,
+      "validated_precision": 0.9545
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.1726,
+      "n": 5,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

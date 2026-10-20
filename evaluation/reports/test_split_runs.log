@@ -20,3 +20,12 @@
 2026-10-20T05:06:04+00:00	split=sealed4	corpus=real	index=9bc2368dd16c	run_eval generator=llm
 2026-10-20T06:25:41+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=extractive
 2026-10-20T06:25:41+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=llm
+2026-10-20T06:41:20+00:00	split=final	corpus=synthetic2	index=ffe20683ee85	run_eval generator=extractive
+2026-10-20T06:41:20+00:00	split=final	corpus=synthetic2	index=ffe20683ee85	run_eval generator=llm
+2026-10-20T06:43:42+00:00	split=test	corpus=synthetic	index=45c3d9422161	run_eval generator=extractive
+2026-10-20T06:43:42+00:00	split=test	corpus=synthetic	index=45c3d9422161	run_eval generator=llm
+2026-10-20T06:49:01+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=extractive
+2026-10-20T06:49:10+00:00	split=test	corpus=real	index=9bc2368dd16c	run_eval generator=llm
+2026-10-20T06:51:07+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=extractive
+2026-10-20T06:51:07+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=llm
+2026-10-20T06:52:22+00:00	NOTE	the Claude re-run of synthetic2 test (tag r8exposed) failed on 11 of 25 requests: Anthropic credit balance too low. Report deleted as invalid. Final-set and cur Claude reports had no generator errors.

@@ -27,9 +27,9 @@ How changes were chosen: each candidate change was measured on the **dev** split
 | Frozen configuration, LLM (real corpus = 5 documents) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 92.0% |
 | Frozen configuration, LLM (real corpus = 5 documents) | real | 81.2% | 0.747 | 81.2% | 100.0% | 0.0% | 89.5% |
 | Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3 | synthetic | 100.0% | 0.825 | 95.0% | 94.7% | 40.0% | 84.0% |
-| Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3 | real | 82.0% | 0.657 | 72.0% | 74.4% | 37.5% | 69.0% |
-| Shipped configuration (LLM) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 100.0% |
-| Shipped configuration (LLM) | real | 82.0% | 0.657 | 78.0% | 94.4% | 0.0% | 87.9% |
+| Shipped configuration (extractive): hybrid retrieval, validator rounds 2 and 3 | real | 76.9% | 0.595 | 64.6% | 68.5% | 38.5% | 65.4% |
+| Shipped configuration (LLM) | synthetic | 100.0% | 0.825 | 100.0% | 100.0% | 0.0% | 96.0% |
+| Shipped configuration (LLM) | real | 76.9% | 0.595 | 72.3% | 86.4% | 0.0% | 80.8% |
 
 ## What each step was and what was decided
 

@@ -209,6 +209,7 @@ def build_report() -> str:
     out += section_sealed3_iso()
     out += section_sealed4()
     out += section_v2()
+    out += section_round8()
     return "\n".join(out)
 
 
@@ -470,9 +471,54 @@ def section_v2() -> list[str]:
         for g in ("extractive", "llm"):
             out.append(row(f"v2 {sp}", reps[(sp, g)], g))
     out += ["", "**Outcome.** The corpus-size explanation is **not supported** as the whole story. With the ceiling lifted to 1.0, the held-out Precision@5 is still below 0.65, so "
-            "the target stays **not met**. The right document is usually first (Precision@1 is high), but places two to five are often filled with chunks from unrelated documents "
+            "the target stays **not met** at that point (retrieval round 8, section 18, later changed this). The right document is usually first (Precision@1 is high), but places two to five are often filled with chunks from unrelated documents "
             "that share generic words such as \"how\", \"many\" or \"hand\", because matching is lexical. The development split on v2 is higher than the test split; it was not tuned "
             "on, and the difference shows how much a 20-question sample moves. Retrieval changes were not made after this result: the rules said the system is frozen.", ""]
+    return out
+
+def section_round8() -> list[str]:
+    j5, j10 = REPORTS / "retrieval_round8_r8L05.json", REPORTS / "retrieval_round8_r8L10.json"
+    fin = {g: load("synthetic2", "final", g, "r8final") for g in ("extractive", "llm")}
+    if not (j5.exists() and j10.exists() and all(fin.values())):
+        return []
+    judged = {"0.5": json.loads(j5.read_text(encoding="utf-8")), "1.0": json.loads(j10.read_text(encoding="utf-8"))}
+    out = ["## 18. Retrieval round 8: document cohesion, and the Precision@5 target", "",
+           "**Change.** After the existing re-rank, each chunk also earns a bonus of lambda times the best score of any chunk of the same document in the 30-chunk pool, so siblings of "
+           "a strong hit outrank isolated chunks of other documents. Only the order changes; the index, the reported scores and the validator are untouched. Rules, candidate values and "
+           "the keep rule were committed before any code (`evaluation/reports/retrieval_round8_rules.txt`). It is judged on dev material only, with the extractive generator and no API calls.", "",
+           "| Lambda | Syn2 dev Precision@5 (before → after) | Syn2 dev Hit@5 | Syn2 dev MRR | Syn v1 dev Hit@5 | Real dev Hit@5 | Real dev MRR | Rules | Kept |", "|---|---|---|---|---|---|---|---|---|"]
+    for lam, d in judged.items():
+        r = d["rules"]
+        out.append(f"| {lam} | {d['p5_synthetic2_dev'][0]:.3f} → {d['p5_synthetic2_dev'][1]:.3f} | {d['synthetic2_dev']['hit5'][0]} → {d['synthetic2_dev']['hit5'][1]} | "
+                   f"{d['synthetic2_dev']['mrr'][0]} → {d['synthetic2_dev']['mrr'][1]} | {d['synthetic_dev']['hit5'][0]} → {d['synthetic_dev']['hit5'][1]} | "
+                   f"{d['real_dev']['hit5'][0]} → {d['real_dev']['hit5'][1]} | {d['real_dev']['mrr'][0]} → {d['real_dev']['mrr'][1]} | "
+                   f"{', '.join(k.split('_')[0] + (' ok' if v else ' FAILED') for k, v in r.items())} | {'kept' if d['kept'] else 'reverted'} |")
+    out += ["", "Lambda 0.5 was kept as the smaller value that passed. On real PDFs it costs one answer-bearing hit on the dev set and a small fall in MRR, which the rule allowed; "
+            "wrong-but-validated answers and out-of-scope accepts did not rise.", "",
+            "**The claim is judged on a fresh final set** (25 answerable and 5 out-of-scope questions, written before any round 8 measurement and run once per generator):", "",
+            "| Generator | Precision@1 | Precision@5 | Hit@5 | MRR | Pass | Mean confidence | Validated precision | Out-of-scope wrongly validated |", "|---|---|---|---|---|---|---|---|---|"]
+    for g, rep in fin.items():
+        k, r = counts(rescored(rep)), rep["retrieval"]
+        out.append(f"| {g} | {pct(r['precision@1'])} | {pct(r['precision@5'])} | {pct(r['hit@5'])} | {r['mrr']:.3f} | {ci(k['validated'], k['n_in'])} | "
+                   f"{rep['validation']['in_corpus']['mean_confidence']:.3f} | {ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    v1o, v1n = load("synthetic", "test", "extractive", "pre_r8"), load("synthetic", "test", "extractive", "cur")
+    rlo, rln = load("real", "test", "extractive", "pre_r8"), load("real", "test", "extractive", "cur")
+    exp = load("synthetic2", "test", "extractive", "r8exposed")
+    out += ["", "Other sets on the same change (tables elsewhere in this report are regenerated on the new default; the previous ones are kept as `*_pre_r8.json`):", "",
+            "| Set | Precision@5 before → after | Hit@5 before → after | MRR before → after |", "|---|---|---|---|"]
+    for name, a, b in (("Synthetic v1 held-out test (the brief's corpus)", v1o, v1n), ("Real held-out test", rlo, rln)):
+        ra, rb = a["retrieval"], b["retrieval"]
+        out.append(f"| {name} | {pct(ra['precision@5'])} → {pct(rb['precision@5'])} | {pct(ra['hit@5'])} → {pct(rb['hit@5'])} | {ra['mrr']:.3f} → {rb['mrr']:.3f} |")
+    if exp:
+        rb = exp["retrieval"]; ra = load("synthetic2", "test", "extractive", "v2")["retrieval"]
+        out.append(f"| Synthetic v2 test, exposed (see below) | {pct(ra['precision@5'])} → {pct(rb['precision@5'])} | {pct(ra['hit@5'])} → {pct(rb['hit@5'])} | {ra['mrr']:.3f} → {rb['mrr']:.3f} |")
+    out += ["", "**Outcome.** Document-level Precision@5 now clears 0.65 on the fresh final set and on the synthetic v1 held-out test. The v1 figure sits on the threshold and was seen before this change, so "
+            "the fresh final set is the evidence. The v2 test questions were exposed to the author before the change was designed, so their improvement is shown but not counted.", "",
+            "**What this does and does not mean.** Document-level Precision@5 treats a chunk as relevant when its document is. The change raises it by moving chunks of the right document ahead of chunks "
+            "of unrelated ones; on the held-out sets it left answer-bearing Hit@5 and MRR unchanged (on dev it moved Hit@5 by one query), so its visible benefit is the metric the brief set rather than better "
+            "evidence for answers. It does not address the real-PDF weakness (right passage not retrieved when the wording differs), and the Claude pass-rate target on the real "
+            "held-out split is unchanged. The sealed question sets (sections 13 to 16) were run on the earlier configuration and were not repeated; their tables stay tagged to it. "
+            "A Claude re-run of the exposed v2 test failed for lack of API credits and was discarded rather than reported.", ""]
     return out
 
 

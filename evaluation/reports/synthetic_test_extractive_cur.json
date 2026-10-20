@@ -354,14 +354,14 @@
     },
     {
       "abstained": false,
-      "answer": "After a temperature excursion, move the affected vaccines to a working unit, label them as do not use, and contact the manufacturer for guidance before any are administered. Observe recipients for 15 minutes after vaccination, and for 30 minutes if they have a history of severe allergic reaction. Perform hand hygiene at five moments: before touching a patient, before a clean or aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching patient surroundings.",
+      "answer": "Observe recipients for 15 minutes after vaccination, and for 30 minutes if they have a history of severe allergic reaction. This guideline applies to all health workers who provide direct patient care in hospitals, clinics and long-term care facilities. It replaces the 2019 edition. Perform hand hygiene at five moments: before touching a patient, before a clean or aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching patient surroundings.",
       "citations": [
-        "cdc-vaccination-cold-chain-2024#recommendations-1",
         "cdc-vaccination-adult-schedule-2024#recommendations-1",
+        "who-hand-hygiene-2023#scope-0",
         "who-hand-hygiene-2023#recommendations-0"
       ],
       "cited": true,
-      "confidence": 0.691,
+      "confidence": 0.71,
       "correct": true,
       "generator_error": null,
       "id": "S28",
@@ -369,9 +369,9 @@
       "question": "How long should patients be observed after getting a vaccine?",
       "split": "test",
       "validation": {
-        "confidence": 0.691,
+        "confidence": 0.71,
         "coverage": 1.0,
-        "question_support": 0.561,
+        "question_support": 0.599,
         "reasons": [],
         "retrieval_relevance": 0.821,
         "status": "validated",
@@ -672,20 +672,20 @@
   "rerank_weight": 0.5,
   "retrieval": {
     "capped_precision@1": 0.95,
-    "capped_precision@10": 0.761,
-    "capped_precision@5": 0.7158,
+    "capped_precision@10": 0.839,
+    "capped_precision@5": 0.835,
     "hit@1": 0.7,
     "hit@10": 1.0,
     "hit@5": 1.0,
     "mrr": 0.8417,
     "n": 20,
     "precision@1": 0.95,
-    "precision@10": 0.32,
-    "precision@5": 0.55,
+    "precision@10": 0.36,
+    "precision@5": 0.65,
     "rows": [
       {
         "capped_precision@1": 0.0,
-        "capped_precision@10": 0.4,
+        "capped_precision@10": 0.6,
         "capped_precision@5": 0.4,
         "first_answer_bearing_rank": 2,
         "hit@1": false,
@@ -693,7 +693,7 @@
         "hit@5": true,
         "id": "S02",
         "precision@1": 0.0,
-        "precision@10": 0.2,
+        "precision@10": 0.3,
         "precision@5": 0.4,
         "question": "How long must hands be washed with soap and water when visibly dirty?",
         "rr": 0.5,
@@ -705,22 +705,22 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.4444444444444444,
-        "capped_precision@5": 0.6,
+        "capped_precision@10": 0.5555555555555556,
+        "capped_precision@5": 0.8,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S04",
         "precision@1": 1.0,
-        "precision@10": 0.4,
-        "precision@5": 0.6,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
         "question": "Are artificial fingernails allowed for clinical staff?",
         "rr": 1.0,
         "top_docs": [
           "who-hand-hygiene-2023",
           "cdc-hand-hygiene-2021",
-          "nih-shared-decision-making-2023"
+          "who-hand-hygiene-2023"
         ]
       },
       {
@@ -740,46 +740,46 @@
         "top_docs": [
           "who-ppe-2024",
           "who-ppe-2024",
-          "cdc-ppe-2022"
+          "who-ppe-2024"
         ]
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.375,
-        "capped_precision@5": 0.4,
+        "capped_precision@10": 0.625,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S08",
         "precision@1": 1.0,
-        "precision@10": 0.3,
-        "precision@5": 0.4,
+        "precision@10": 0.5,
+        "precision@5": 1.0,
         "question": "How often must respirator users be fit tested?",
         "rr": 1.0,
         "top_docs": [
           "cdc-ppe-2022",
           "who-ppe-2024",
-          "who-waste-management-2021"
+          "who-ppe-2024"
         ]
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.75,
-        "capped_precision@5": 0.75,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S10",
         "precision@1": 1.0,
-        "precision@10": 0.3,
-        "precision@5": 0.6,
+        "precision@10": 0.4,
+        "precision@5": 0.8,
         "question": "How often should bed rails and door handles be cleaned?",
         "rr": 1.0,
         "top_docs": [
           "who-environmental-cleaning-2022",
-          "cdc-vaccination-cold-chain-2024",
+          "who-environmental-cleaning-2022",
           "who-environmental-cleaning-2022"
         ]
       },
@@ -806,7 +806,7 @@
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 1.0,
-        "capped_precision@5": 0.6666666666666666,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -814,19 +814,19 @@
         "id": "S14",
         "precision@1": 1.0,
         "precision@10": 0.3,
-        "precision@5": 0.4,
+        "precision@5": 0.6,
         "question": "How far apart should patients with respiratory symptoms sit in a waiting area?",
         "rr": 1.0,
         "top_docs": [
           "who-respiratory-etiquette-2021",
-          "cdc-respiratory-seasons-2023",
-          "who-respiratory-etiquette-2021"
+          "who-respiratory-etiquette-2021",
+          "cdc-respiratory-seasons-2023"
         ]
       },
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 0.5,
-        "capped_precision@5": 0.25,
+        "capped_precision@5": 0.5,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -834,19 +834,19 @@
         "id": "S16",
         "precision@1": 1.0,
         "precision@10": 0.2,
-        "precision@5": 0.2,
+        "precision@5": 0.4,
         "question": "How soon after symptom onset should antivirals begin for high-risk patients?",
         "rr": 1.0,
         "top_docs": [
           "cdc-respiratory-seasons-2023",
           "cdc-isolation-return-to-work-2023",
-          "cdc-sharps-injury-2022"
+          "cdc-respiratory-seasons-2023"
         ]
       },
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 1.0,
-        "capped_precision@5": 0.75,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -854,7 +854,7 @@
         "id": "S18",
         "precision@1": 1.0,
         "precision@10": 0.4,
-        "precision@5": 0.6,
+        "precision@5": 0.8,
         "question": "Do staff returning after illness still have to wear a mask?",
         "rr": 1.0,
         "top_docs": [
@@ -926,7 +926,7 @@
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 1.0,
-        "capped_precision@5": 0.75,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -934,7 +934,7 @@
         "id": "S26",
         "precision@1": 1.0,
         "precision@10": 0.4,
-        "precision@5": 0.6,
+        "precision@5": 0.8,
         "question": "What should be done with vaccines after a temperature excursion?",
         "rr": 1.0,
         "top_docs": [
@@ -945,7 +945,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.25,
+        "capped_precision@10": 0.75,
         "capped_precision@5": 0.25,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -953,7 +953,7 @@
         "hit@5": true,
         "id": "S28",
         "precision@1": 1.0,
-        "precision@10": 0.1,
+        "precision@10": 0.3,
         "precision@5": 0.2,
         "question": "How long should patients be observed after getting a vaccine?",
         "rr": 1.0,
@@ -985,16 +985,16 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.5,
-        "capped_precision@5": 0.5,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.75,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S32",
         "precision@1": 1.0,
-        "precision@10": 0.2,
-        "precision@5": 0.4,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
         "question": "Should used needles be put back in their caps?",
         "rr": 1.0,
         "top_docs": [
@@ -1040,7 +1040,7 @@
         "top_docs": [
           "who-waste-management-2021",
           "who-waste-management-2021",
-          "who-hand-hygiene-2023"
+          "who-waste-management-2021"
         ]
       },
       {
@@ -1195,13 +1195,13 @@
       "validated_precision": 0.8889
     },
     {
-      "correct_but_flagged_rate": 0.1176,
-      "decision_accuracy": 0.84,
+      "correct_but_flagged_rate": 0.0588,
+      "decision_accuracy": 0.88,
       "ooc_false_accept_rate": 0.0,
-      "pass_rate": 0.85,
+      "pass_rate": 0.9,
       "threshold": 0.7,
-      "validated_but_wrong_rate": 0.1176,
-      "validated_precision": 0.8824
+      "validated_but_wrong_rate": 0.1111,
+      "validated_precision": 0.8889
     },
     {
       "correct_but_flagged_rate": 0.1176,
@@ -1246,7 +1246,7 @@
     "in_corpus": {
       "answer_correct_rate": 0.85,
       "correct_but_flagged_rate": 0.0588,
-      "mean_confidence": 0.8239,
+      "mean_confidence": 0.8248,
       "n": 20,
       "pass_rate": 0.9,
       "validated_but_wrong_rate": 0.1111,

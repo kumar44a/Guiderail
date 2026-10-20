@@ -673,40 +673,40 @@
   "rerank_weight": 0.5,
   "retrieval": {
     "capped_precision@1": 0.95,
-    "capped_precision@10": 0.7839,
-    "capped_precision@5": 0.7433,
+    "capped_precision@10": 0.8494,
+    "capped_precision@5": 0.8075,
     "hit@1": 0.7,
     "hit@10": 1.0,
     "hit@5": 1.0,
     "mrr": 0.825,
     "n": 20,
     "precision@1": 0.95,
-    "precision@10": 0.305,
-    "precision@5": 0.55,
+    "precision@10": 0.335,
+    "precision@5": 0.6,
     "rows": [
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.7777777777777778,
-        "capped_precision@5": 0.8,
+        "capped_precision@10": 0.8888888888888888,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S01",
         "precision@1": 1.0,
-        "precision@10": 0.7,
-        "precision@5": 0.8,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
         "question": "How long should I rub alcohol-based hand sanitizer on my hands?",
         "rr": 1.0,
         "top_docs": [
           "cdc-hand-hygiene-2021",
           "who-hand-hygiene-2023",
-          "nih-grading-2021"
+          "cdc-hand-hygiene-2021"
         ]
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.4,
+        "capped_precision@10": 0.6,
         "capped_precision@5": 0.4,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -714,7 +714,7 @@
         "hit@5": true,
         "id": "S03",
         "precision@1": 1.0,
-        "precision@10": 0.2,
+        "precision@10": 0.3,
         "precision@5": 0.4,
         "question": "At what moments should healthcare workers clean their hands during patient care?",
         "rr": 1.0,
@@ -726,16 +726,16 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.5,
-        "capped_precision@5": 0.25,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 0.5,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S05",
         "precision@1": 1.0,
-        "precision@10": 0.2,
-        "precision@5": 0.2,
+        "precision@10": 0.4,
+        "precision@5": 0.4,
         "question": "Which infections require soap and water instead of hand rub?",
         "rr": 1.0,
         "top_docs": [
@@ -766,22 +766,22 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.25,
-        "capped_precision@5": 0.25,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.5,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "S09",
         "precision@1": 1.0,
-        "precision@10": 0.1,
-        "precision@5": 0.2,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
         "question": "Can one gown be worn between different patients?",
         "rr": 1.0,
         "top_docs": [
           "cdc-ppe-2022",
-          "who-respiratory-etiquette-2021",
-          "cdc-outbreak-reporting-2022"
+          "cdc-ppe-2022",
+          "who-respiratory-etiquette-2021"
         ]
       },
       {
@@ -807,7 +807,7 @@
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 1.0,
-        "capped_precision@5": 0.6666666666666666,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -815,13 +815,13 @@
         "id": "S13",
         "precision@1": 1.0,
         "precision@10": 0.3,
-        "precision@5": 0.4,
+        "precision@5": 0.6,
         "question": "How should someone cough when no tissue is available?",
         "rr": 1.0,
         "top_docs": [
           "who-respiratory-etiquette-2021",
           "who-respiratory-etiquette-2021",
-          "who-ppe-2024"
+          "who-respiratory-etiquette-2021"
         ]
       },
       {
@@ -880,7 +880,7 @@
         "rr": 1.0,
         "top_docs": [
           "who-grading-2020",
-          "nih-evidence-hierarchy-2022",
+          "who-grading-2020",
           "who-grading-2020"
         ]
       },
@@ -966,7 +966,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.25,
+        "capped_precision@10": 0.5,
         "capped_precision@5": 0.25,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -974,7 +974,7 @@
         "hit@5": true,
         "id": "S29",
         "precision@1": 1.0,
-        "precision@10": 0.1,
+        "precision@10": 0.2,
         "precision@5": 0.2,
         "question": "Which vaccine needs a booster every ten years?",
         "rr": 1.0,
@@ -1007,7 +1007,7 @@
       {
         "capped_precision@1": 1.0,
         "capped_precision@10": 1.0,
-        "capped_precision@5": 0.75,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
@@ -1015,7 +1015,7 @@
         "id": "S33",
         "precision@1": 1.0,
         "precision@10": 0.4,
-        "precision@5": 0.6,
+        "precision@5": 0.8,
         "question": "When should a sharps container be swapped for a new one?",
         "rr": 1.0,
         "top_docs": [
@@ -1041,7 +1041,7 @@
         "top_docs": [
           "who-waste-management-2021",
           "who-waste-management-2021",
-          "cdc-ppe-2022"
+          "who-waste-management-2021"
         ]
       },
       {
@@ -1081,7 +1081,7 @@
         "top_docs": [
           "who-linen-laundry-2022",
           "who-hand-hygiene-2023",
-          "cdc-vaccination-cold-chain-2024"
+          "who-hand-hygiene-2023"
         ]
       }
     ]

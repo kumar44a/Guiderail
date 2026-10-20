@@ -203,11 +203,11 @@
     },
     {
       "abstained": false,
-      "answer": "Never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations. Avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Never store food and beverages in the unit with vaccines. Frequent opening of the refrigerator door to retrieve food items can adversely affect the internal temperature of the unit and potentially damage the vaccines. Never use dormitory- or bar-style combined refrigerator/freezer units for vaccine storage. These units have a single exterior door and an evaporator plate/cooling coil, usually located in an icemaker/freezer compartment.",
+      "answer": "Never store vaccines in the freezer compartment of household-grade combination refrigerator/freezer units because they have cold spots and temperature fluctuations. Avoid placing or storing any items other than vaccines, diluents, and water bottles inside storage units. Never store food and beverages in the unit with vaccines. Frequent opening of the refrigerator door to retrieve food items can adversely affect the internal temperature of the unit and potentially damage the vaccines. Whenever possible, store diluent with its corresponding refrigerated vaccine. Never store diluent in a freezer.",
       "citations": [
         "cdc-vaccine-storage-toolkit-2026#4-household-grade-units-for-vaccine-refrigeration-only-p-11-0",
         "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-3",
-        "cdc-vaccine-storage-toolkit-2026#dormitory-style-combined-units-p-11-0"
+        "cdc-vaccine-storage-toolkit-2026#best-practices-for-vaccine-organization-and-storage-p-18-2"
       ],
       "cited": true,
       "confidence": 1.0,
@@ -763,13 +763,13 @@
     },
     {
       "abstained": false,
-      "answer": "Store predrawn syringes at manufacturer-recommended temperatures. Discard any doses that were stored improperly. Monitor patient flow to avoid drawing up unnecessary doses. Once each predrawn dose is prepared, label the syringe with the vaccine name and dosage, the beyond-use date and time, lot number, and the preparer’s initials. Additional pertinent information can be added, such as age range or if the dose is intended for use as primary or booster dose.",
+      "answer": "Store predrawn syringes at manufacturer-recommended temperatures. Discard any doses that were stored improperly. be used through the expiration date printed on the vial, unless the vaccine is contaminated or compromised in some way or there is a BUD noted in the package insert. The BUD should be noted on the vaccine vial along with the initials of the person making the calculation. Never use partial doses from two or more vials to obtain a dose of vaccine. Based on safe injection practices, CDC does not recommend using vial adapters, spikes, or other vial Monitor patient flow to avoid drawing up unnecessary doses.",
       "citations": [
         "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-4",
-        "cdc-vaccine-storage-toolkit-2026#predrawing-vaccine-p-30-2"
+        "cdc-vaccine-storage-toolkit-2026#types-of-vaccine-presentations-p-28-3"
       ],
       "cited": true,
-      "confidence": 0.378,
+      "confidence": 0.374,
       "correct": null,
       "generator_error": null,
       "id": "RO10",
@@ -777,13 +777,13 @@
       "question": "What is the recommended dose of insulin for diabetic ketoacidosis?",
       "split": "test",
       "validation": {
-        "confidence": 0.378,
+        "confidence": 0.374,
         "coverage": 1.0,
         "question_support": 0.257,
         "reasons": [
-          "weak relevance to the question (0.38)"
+          "weak relevance to the question (0.37)"
         ],
-        "retrieval_relevance": 0.498,
+        "retrieval_relevance": 0.491,
         "status": "needs_review",
         "unsupported_numbers": [],
         "unsupported_terms": []
@@ -793,16 +793,16 @@
   "rerank_weight": 0.5,
   "retrieval": {
     "capped_precision@1": 0.9583,
-    "capped_precision@10": 0.8542,
-    "capped_precision@5": 0.9083,
+    "capped_precision@10": 0.9042,
+    "capped_precision@5": 0.925,
     "hit@1": 0.625,
     "hit@10": 0.9167,
     "hit@5": 0.8333,
     "mrr": 0.7105,
     "n": 24,
     "precision@1": 0.9583,
-    "precision@10": 0.8542,
-    "precision@5": 0.9083,
+    "precision@10": 0.9042,
+    "precision@5": 0.925,
     "rows": [
       {
         "capped_precision@1": 1.0,
@@ -826,7 +826,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.8,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -834,7 +834,7 @@
         "hit@5": true,
         "id": "R04",
         "precision@1": 1.0,
-        "precision@10": 0.8,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "Within what distance of the patient has the droplet risk area historically been defined?",
         "rr": 1.0,
@@ -946,16 +946,16 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.8,
-        "capped_precision@5": 0.8,
+        "capped_precision@10": 0.9,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 2,
         "hit@1": false,
         "hit@10": true,
         "hit@5": true,
         "id": "T06",
         "precision@1": 1.0,
-        "precision@10": 0.8,
-        "precision@5": 0.8,
+        "precision@10": 0.9,
+        "precision@5": 1.0,
         "question": "What should never be stored in the unit with vaccines?",
         "rr": 0.5,
         "top_docs": [
@@ -966,7 +966,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.7,
+        "capped_precision@10": 0.8,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": null,
         "hit@1": false,
@@ -974,7 +974,7 @@
         "hit@5": false,
         "id": "R19",
         "precision@1": 1.0,
-        "precision@10": 0.7,
+        "precision@10": 0.8,
         "precision@5": 1.0,
         "question": "How long does the full procedure of washing hands with soap and water take?",
         "rr": 0.0,
@@ -986,7 +986,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.5,
+        "capped_precision@10": 0.6,
         "capped_precision@5": 0.6,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -994,7 +994,7 @@
         "hit@5": true,
         "id": "R21",
         "precision@1": 1.0,
-        "precision@10": 0.5,
+        "precision@10": 0.6,
         "precision@5": 0.6,
         "question": "What should staff do when their hands are visibly soiled with blood?",
         "rr": 1.0,
@@ -1086,7 +1086,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.9,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -1094,7 +1094,7 @@
         "hit@5": true,
         "id": "R31",
         "precision@1": 1.0,
-        "precision@10": 0.9,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "On what date is World Hand Hygiene Day in 2026?",
         "rr": 1.0,
@@ -1126,7 +1126,7 @@
       },
       {
         "capped_precision@1": 0.0,
-        "capped_precision@10": 0.3,
+        "capped_precision@10": 0.2,
         "capped_precision@5": 0.4,
         "first_answer_bearing_rank": 2,
         "hit@1": false,
@@ -1134,7 +1134,7 @@
         "hit@5": true,
         "id": "R41",
         "precision@1": 0.0,
-        "precision@10": 0.3,
+        "precision@10": 0.2,
         "precision@5": 0.4,
         "question": "Should artificial fingernails be worn by staff who have direct contact with patients?",
         "rr": 0.5,
@@ -1146,7 +1146,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.9,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -1154,7 +1154,7 @@
         "hit@5": true,
         "id": "R42",
         "precision@1": 1.0,
-        "precision@10": 0.9,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "Is a long surgical scrub of 10 minutes necessary?",
         "rr": 1.0,
@@ -1166,7 +1166,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.9,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -1174,7 +1174,7 @@
         "hit@5": true,
         "id": "R43",
         "precision@1": 1.0,
-        "precision@10": 0.9,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "Are household-grade units the first choice for storing vaccines?",
         "rr": 1.0,
@@ -1206,7 +1206,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.9,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -1214,7 +1214,7 @@
         "hit@5": true,
         "id": "R45",
         "precision@1": 1.0,
-        "precision@10": 0.9,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "Are special air handling and ventilation required to prevent droplet transmission?",
         "rr": 1.0,
@@ -1226,7 +1226,7 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.9,
+        "capped_precision@10": 1.0,
         "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
@@ -1234,7 +1234,7 @@
         "hit@5": true,
         "id": "R46",
         "precision@1": 1.0,
-        "precision@10": 0.9,
+        "precision@10": 1.0,
         "precision@5": 1.0,
         "question": "Are hand lotions or creams recommended for healthcare workers to reduce dermatitis?",
         "rr": 1.0,
@@ -1246,21 +1246,21 @@
       },
       {
         "capped_precision@1": 1.0,
-        "capped_precision@10": 0.7,
-        "capped_precision@5": 0.8,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
         "first_answer_bearing_rank": 1,
         "hit@1": true,
         "hit@10": true,
         "hit@5": true,
         "id": "R47",
         "precision@1": 1.0,
-        "precision@10": 0.7,
-        "precision@5": 0.8,
+        "precision@10": 1.0,
+        "precision@5": 1.0,
         "question": "How much clearance should a vaccine storage unit have from adjacent walls?",
         "rr": 1.0,
         "top_docs": [
           "cdc-vaccine-storage-toolkit-2026",
-          "cdc-vaccine-storage-toolkit-resources-2026",
+          "cdc-vaccine-storage-toolkit-2026",
           "cdc-vaccine-storage-toolkit-2026"
         ]
       },
@@ -1495,7 +1495,7 @@
     },
     "out_of_corpus": {
       "false_accept_rate": 0.6,
-      "mean_confidence": 0.6024,
+      "mean_confidence": 0.6016,
       "n": 5,
       "needs_review_rate": 0.4
     },

@@ -8,11 +8,11 @@
 | Metric | Value |
 |---|---|
 | Precision@1 (document level) | 95.0% |
-| Precision@5 (document level) | 55.0% |
-| Precision@10 (document level) | 32.0% |
+| Precision@5 (document level) | 65.0% |
+| Precision@10 (document level) | 36.0% |
 | Capped Precision@1 (vs. best attainable) | 95.0% |
-| Capped Precision@5 (vs. best attainable) | 71.6% |
-| Capped Precision@10 (vs. best attainable) | 76.1% |
+| Capped Precision@5 (vs. best attainable) | 83.5% |
+| Capped Precision@10 (vs. best attainable) | 83.9% |
 | Hit@1 (a chunk containing the expected fact) | 70.0% |
 | Hit@5 (a chunk containing the expected fact) | 100.0% |
 | Hit@10 (a chunk containing the expected fact) | 100.0% |
@@ -23,7 +23,7 @@
 | Metric | Value |
 |---|---|
 | Pass rate (validated / in-corpus) | 90.0% |
-| Mean confidence (in-corpus) | 0.8239 |
+| Mean confidence (in-corpus) | 0.8248 |
 | Answer correct (expected facts present) | 85.0% |
 | **Validated precision** (correct among validated) | 88.9% |
 | **Validated but wrong** | 11.1% |
@@ -46,7 +46,7 @@ A high pass rate alone is not evidence of quality: an extractive answer is copie
 | 0.55 | 90.0% | 88.9% | 11.1% | 5.9% | 40.0% | 80.0% |
 | 0.6 | 90.0% | 88.9% | 11.1% | 5.9% | 0.0% | 88.0% |
 | 0.65 | 90.0% | 88.9% | 11.1% | 5.9% | 0.0% | 88.0% |
-| 0.7 | 85.0% | 88.2% | 11.8% | 11.8% | 0.0% | 84.0% |
+| 0.7 | 90.0% | 88.9% | 11.1% | 5.9% | 0.0% | 88.0% |
 | 0.75 | 85.0% | 88.2% | 11.8% | 11.8% | 0.0% | 84.0% |
 | 0.8 | 80.0% | 87.5% | 12.5% | 17.6% | 0.0% | 80.0% |
 | 0.85 | 45.0% | 88.9% | 11.1% | 52.9% | 0.0% | 60.0% |
