@@ -39,7 +39,7 @@ class QAService:
         self.loaded = loaded
         self.lexicon = Lexicon(loaded.chunks)
         self.retriever = Retriever(loaded, self.lexicon, config.rerank_weight() if rerank_weight is None else rerank_weight,
-                                   hybrid=config.hybrid())
+                                   hybrid=config.hybrid(), doc_cohesion=config.doc_cohesion())
         self.generator = generator or ExtractiveGenerator(self.lexicon)
         self.threshold = threshold
         self.rewriter = rewriter

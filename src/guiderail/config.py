@@ -50,6 +50,14 @@ def hybrid() -> bool:
     return os.environ.get("GUIDERAIL_HYBRID", "1").lower() not in {"0", "false", "no", "off"}
 
 
+DEFAULT_DOC_COHESION = 0.5   # retrieval round 8: the smallest value that passed its keep rule
+
+
+def doc_cohesion() -> float:
+    """Weight of the document-cohesion re-rank bonus (retrieval round 8). 0 turns it off."""
+    return float(os.environ.get("GUIDERAIL_DOC_COHESION", str(DEFAULT_DOC_COHESION)) or 0)
+
+
 def generator_name() -> str:
     name = os.environ.get("GUIDERAIL_GENERATOR", "extractive").lower()
     if name not in {"extractive", "llm"}:

@@ -29,3 +29,10 @@ If neither lambda passes, the change is reverted, the target is reported as not 
 If one passes: freeze, then run the fresh final set ONCE per generator (extractive and Claude), report document-level Precision@5 against 0.65 (MET only if at least 0.65 on the final set),
 then regenerate the shipped-configuration tables. The sealed question sets are not re-run unless the owner asks; their tables stay tagged with the configuration they were run on, and the report says so.
 Everything is reported as found.
+
+ROUND 8 STEP 1 OUTCOME (dev material; judge output retrieval_round8_r8L05.json and retrieval_round8_r8L10.json)
+  lambda 0.5: R1 to R7 all hold. synthetic2 dev Precision@5 0.653 -> 0.778 (45 answerable dev questions; the baseline was already above 0.65 on dev), Hit@5 43 -> 44, MRR 0.785 -> 0.786;
+  synthetic dev unchanged; real dev Hit@5 51 -> 50 (allowed: one query) and MRR 0.604 -> 0.595 (allowed: 0.01); wrong-but-validated and out-of-scope accepts did not rise. KEPT, default 0.5.
+  lambda 1.0: fails R4 (real MRR 0.604 -> 0.594, a fall of 0.0102 against a limit of 0.01). Not kept; 0.5 is the smaller passing value anyway.
+  Note for the reader: the dev baseline already met 0.65 while the earlier held-out v2 test (T2) scored 0.59; dev and test samples differ by that much, which is why the claim is judged on the fresh final set.
+NEXT: freeze with default lambda 0.5; run the final set (FX) once per generator.

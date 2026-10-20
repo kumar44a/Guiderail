@@ -1,0 +1,80 @@
+{
+ "against": "r8base",
+ "errors": {
+  "real": [
+   {
+    "ooc_accepted": 6,
+    "wrong_validated": 18
+   },
+   {
+    "ooc_accepted": 5,
+    "wrong_validated": 18
+   }
+  ],
+  "synthetic2": [
+   {
+    "ooc_accepted": 3,
+    "wrong_validated": 3
+   },
+   {
+    "ooc_accepted": 3,
+    "wrong_validated": 2
+   }
+  ]
+ },
+ "kept": false,
+ "multi_doc": {
+  "hit5": [
+   3,
+   3
+  ],
+  "n": 3
+ },
+ "p5_synthetic2_dev": [
+  0.6533,
+  0.7956
+ ],
+ "real_dev": {
+  "hit5": [
+   51,
+   50
+  ],
+  "mrr": [
+   0.6038,
+   0.5936
+  ],
+  "n": 65
+ },
+ "rules": {
+  "R1": true,
+  "R2": true,
+  "R3": true,
+  "R4": false,
+  "R5": true,
+  "R6": true,
+  "R7_index_unchanged": true
+ },
+ "step": "r8L10",
+ "synthetic2_dev": {
+  "hit5": [
+   43,
+   44
+  ],
+  "mrr": [
+   0.7847,
+   0.7926
+  ],
+  "n": 45
+ },
+ "synthetic_dev": {
+  "hit5": [
+   20,
+   20
+  ],
+  "mrr": [
+   0.825,
+   0.825
+  ],
+  "n": 20
+ }
+}
