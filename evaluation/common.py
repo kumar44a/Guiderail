@@ -33,7 +33,7 @@ def fresh_index(corpus: str, keep: Path | None = None):
 
 def log_test_split_run(corpus: str, split: str, index_sha: str, what: str) -> None:
     """Every run that touches the held-out test split is recorded, so peeking is visible."""
-    if split not in ("test", "all", "sealed", "sealed2", "sealed3"):
+    if split not in ("test", "all", "sealed", "sealed2", "sealed3", "sealed4"):
         return
     REPORTS.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")

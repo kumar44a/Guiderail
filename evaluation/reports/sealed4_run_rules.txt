@@ -1,0 +1,14 @@
+Third sealed run, part 2: CDC Vaccine Storage and Handling Toolkit (2026). Written and committed BEFORE these questions were run on the system.
+Own split "sealed4" (ids S01-S47) so that it never reruns part 1 (sealed3, CDC isolation).
+
+Set: the owner's 50 storage-toolkit questions, pasted without expected answers. The assistant labelled them from the PDF text before any run, searching several
+phrasings per question; check_labels.py confirms every expected fact exists in the toolkit (0 problems). Nothing was tried on the system first.
+
+Scored: 47 questions, all labelled answerable; 19 carry loose expected facts (marked "weak:" in the record note), so "answer correct" over-credits and the firm rows
+are the better guide. Not scored: 3 the assistant could not classify (no local partner has space; opening the door during a long outage; an unbroken single-dose vial
+frozen for 30 minutes). They are in evaluation/sealed4_unscored_storage.json and are run and shown separately afterwards.
+No question is labelled out of scope, so this part says nothing about out-of-scope false accepts. The doubtful questions were left unscored rather than called out of scope.
+The labels are the assistant's judgement; the owner is asked to check them.
+
+Configuration: frozen, as for every earlier sealed run. One run per generator, logged in test_split_runs.log. Nothing is changed afterwards on the strength of these results.
+Reported as found; not pooled with the other sealed sets.
