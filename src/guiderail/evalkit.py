@@ -29,7 +29,7 @@ from .text import tokenize
 from .service import QAService
 
 KINDS = ("in_corpus", "out_of_corpus")
-SPLITS = ("dev", "test", "sealed")
+SPLITS = ("dev", "test", "sealed", "sealed2")
 DEFAULT_KS = (1, 5, 10)
 DEFAULT_SWEEP = tuple(round(0.3 + 0.05 * i, 2) for i in range(13))   # 0.30 .. 0.90
 
@@ -58,7 +58,7 @@ def load_queries(path: Path | str, split: str | None = None) -> list[Query]:
             facts=tuple(tuple(group) for group in r.get("facts", [])),
             forbidden=tuple(r.get("forbidden", [])), note=r.get("note", "")))
     if split == "all":
-        queries = [q for q in queries if q.split != "sealed"]   # the sealed set is only ever run by asking for it by name
+        queries = [q for q in queries if q.split not in ("sealed", "sealed2")]   # the sealed set is only ever run by asking for it by name
     elif split:
         queries = [q for q in queries if q.split == split]
     return queries

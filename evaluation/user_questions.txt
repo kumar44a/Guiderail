@@ -33,5 +33,55 @@
 9. What are the disadvantages of using hand rub ?
 10. Can we eat by hand after using hand rub?
 
+#Next Set of 50 questions
+What is the overarching purpose and primary goal of the WHO Guidelines on Hand Hygiene in Health Care?
+What are the specific components of the "My 5 Moments for Hand Hygiene" framework?
+In which routine clinical situations is an alcohol-based handrub (ABHR) explicitly recommended over soap and water?
+What is the recommended duration and sequence of steps for performing hand hygiene using an alcohol-based handrub?
+What is the recommended duration and step-by-step technique for washing hands with soap and water?
+When should hand hygiene be performed during patient care even if gloves are worn?
+What are the 5 core elements of the WHO Multimodal Hand Hygiene Improvement Strategy?
+How does proper hand hygiene impact the incidence of health care-associated infections (HCAIs) and cross-transmission?
+What are the validated formulations recommended by WHO for the local production of alcohol-based handrubs?
+What is the optimal concentration range of alcohol (ethanol or isopropanol) required for effective antimicrobial efficacy?
+What is the recommended sink-to-patient bed ratio according to WHO minimum requirements?
+Why are alcohol-based handrubs considered superior to handwashing with plain soap for routine decontamination?
+How should surgical hand preparation be performed using an alcohol-based handrub versus antimicrobial soap?
+What are the criteria for selecting suitable hand hygiene products in health-care facilities?
+What role does performance feedback and direct observation play in improving hand hygiene compliance?
+What step-wise approach should health-care facilities follow when setting up a hand hygiene program from scratch?
+What are the institutional and leadership responsibilities of health-care administrators under these guidelines?
+How can hand lotions or humectant-containing formulations prevent irritant contact dermatitis among health-care workers?
+What are the recommended guidelines regarding the length and maintenance of natural fingernails for healthcare providers?
+In what situations can individual/portable dispensers (such as pocket bottles) enhance hand hygiene compliance?
+What evidence grading categories (e.g., Category IA, IB, IC, II) does WHO use to classify its recommendations?
+How should hand hygiene be promoted at the community level to enhance public health?
+What are the advantages of point-of-care handrub dispensers over centralized hallway sinks?
+How do educational campaigns and visual workplace reminders influence long-term behavioral change?
+How does improving hand hygiene compliance prove cost-effective for hospitals and national health systems?
 
-
+When must an alcohol-based handrub not be used in place of soap and water?
+Why should healthcare workers not use soap and alcohol-based handrub concomitantly?
+What are the limitations of alcohol-based handrubs against bacterial spores, specifically Clostridium difficile?
+Does the widespread adoption of alcohol-based handrubs cause an increase in C. difficile outbreaks?
+Why is the reuse of disposable medical gloves strongly discouraged?
+Why are artificial fingernails or nail extenders strictly prohibited for direct patient care staff?
+What are the primary risk factors observed for poor hand hygiene adherence among healthcare workers?
+Why do physicians and male health-care personnel consistently demonstrate lower baseline compliance rates than nurses?
+What self-reported reasons do health-care workers give for failing to adhere to hand hygiene protocols?
+What is the fire hazard risk associated with alcohol-based handrub dispensers, and what are the actual incident statistics?
+What safety precautions must be taken to prevent intentional or accidental ingestion of alcohol handrubs in psychiatric and pediatric units?
+Does frequent use of alcohol-based handrubs lead to significant dermal absorption of alcohol into the bloodstream?
+Why is washing hands with very hot water considered counterproductive and harmful?
+Why should soap dispensers never be topped up or partially refilled with new soap?
+Why are surgical scrub brushes no longer recommended for routine surgical hand antisepsis?
+What causes irritant contact dermatitis in health-care workers, and which antiseptic agents have the highest risk?
+How does donning gloves on damp or wet hands exacerbate skin damage and irritation?
+Why is prolonged surgical scrubbing (e.g., 10 minutes) considered unnecessary and discouraged?
+Why can wearing gloves create a false sense of security and lead to missed hand hygiene opportunities?
+What are the main obstacles to establishing reliable HCAI surveillance data in developing countries?
+How do automated or sensor sinks occasionally lead to lower compliance or technical issues?
+Which antiseptic agents have poor or non-existent residual persistence on the skin?
+What non-enveloped viruses exhibit reduced susceptibility to standard alcohol concentrations?
+How does high workload, understaffing, and overcrowding negatively impact hand hygiene compliance?
+What institutional barriers prevent health-care facilities from maintaining an effective patient safety culture?

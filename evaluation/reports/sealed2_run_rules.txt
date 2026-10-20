@@ -1,0 +1,18 @@
+Second sealed run. Written and committed BEFORE these 50 questions were run on the system.
+
+Set: real corpus, split "sealed2" = V01-V50, the owner's second batch ("Next Set of 50 questions"), pasted without expected answers.
+The assistant labelled them from the PDF text (data/real, hand hygiene summary 2009) before any run. 48 are labelled answerable, 2 are labelled
+not in the documents (V43 gloves on damp hands; V45 gloves and a false sense of security). check_labels.py confirms every expected fact exists in the
+relevant document (0 problems). Nothing was tried on the system first.
+
+Known weaknesses of this set, stated in advance:
+- The questions are long, formal and often compound ("what is X and which Y"), unlike the short natural wording of the first set. They look machine-written
+  and were probably drawn from the full 2009 guideline, of which the corpus holds only the summary. Several ask for a reason ("why...") where the
+  document states only the rule. Those are labelled weak in the record note and score on the rule.
+- Roughly a third of the expected facts are deliberately loose (one word such as "feedback" or "reduc"), because no single phrase answers the question.
+  "Answer correct" therefore over-credits; validated precision on the weak-labelled questions must be read with that in mind.
+- Only 2 of 50 are out of scope, so the out-of-scope false-accept rate rests on n=2 and says almost nothing.
+
+Configuration: frozen (same as the first sealed run: hybrid retrieval, validator rounds 2 and 3, 80-word chunks, rewriting off).
+Run once with the extractive generator and once with the Claude generator. Both runs are logged in test_split_runs.log.
+Nothing is changed afterwards on the strength of these results. Reported as found, with the first sealed set kept separate (they are not pooled).
