@@ -94,6 +94,12 @@ def stats_block() -> str:
             k = bs.counts(bs.rescored(rep))
             lines.append(f"| {gen} | {k['n_in']} | {bs.ci(k['validated'], k['n_in'])} | {bs.ci(k['correct'], k['n_in'])} | "
                          f"{bs.ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
+    v2 = {(sp, g): bs.load("synthetic2", sp, g, "v2") for sp in ("test",) for g in ("extractive", "llm")}
+    if all(v2.values()):
+        r2 = v2[("test", "extractive")]["retrieval"]
+        lines += ["", "**Synthetic corpus v2 (documents of 7 to 9 chunks; fresh held-out questions; made after the v1 Precision@5 miss, so not independent):**", "",
+                  "| Retrieval (v2 test) | Precision@1 | Precision@5 | Hit@5 | MRR |", "|---|---|---|---|---|",
+                  f"| synthetic v2 | {bs.pct(r2['precision@1'])} | {bs.pct(r2['precision@5'])} | {bs.pct(r2['hit@5'])} | {r2['mrr']:.3f} |"]
     lines.append(END)
     return "\n".join(lines)
 

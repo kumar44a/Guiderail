@@ -130,6 +130,7 @@ Decisions worth knowing:
 - On an independent sealed question set (evaluation report, section 13) the system was far weaker than on its development questions; the development figures are optimistic.
 - Natural questions worded differently from the document often miss the passage that answers them on real PDFs, because matching is lexical. Offline fixes were tried and mostly failed; closing the gap needs semantic matching, which conflicts with the deterministic, API-free design unless a local model is accepted.
 - The LLM generator is nondeterministic and still withholds a share of correct answers on real documents at the default threshold.
+- Document-level Precision@5 stays below the brief's 0.65 on the held-out synthetic questions, including on a larger corpus (v2) where the score is no longer capped by document size; lower ranks fill with unrelated documents.
 - Samples are small and the dev/test discipline has limits (see the evaluation report's limitations section).
 - Docker files and the Windows setup instructions were written but not run on a machine of that kind.
 

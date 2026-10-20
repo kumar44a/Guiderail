@@ -1,0 +1,1244 @@
+{
+  "corpus": "synthetic2",
+  "generator": "llm",
+  "index_sha256": "ffe20683ee85c7315dd68c365f15f56019f729fba4abdd7f26003fb3dcb319a5",
+  "manifest_counts": {
+    "agencies": {
+      "CDC": 9,
+      "NIH": 5,
+      "WHO": 8
+    },
+    "chunks": 164,
+    "documents": 22,
+    "superseded_documents": 2
+  },
+  "records": [
+    {
+      "abstained": false,
+      "answer": "Cover the blood spill with absorbent material, then pour 0.5 percent sodium hypochlorite over it and leave it for 10 minutes. Then, wearing gloves and an apron, remove the material into a yellow bag.",
+      "citations": [
+        "who-environmental-cleaning-2022#spills-0"
+      ],
+      "cited": true,
+      "confidence": 0.345,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-01",
+      "kind": "in_corpus",
+      "question": "How many minutes must a blood spill sit under the bleach solution before it is wiped up?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.345,
+        "coverage": 1.0,
+        "question_support": 0.242,
+        "reasons": [
+          "weak relevance to the question (0.35)"
+        ],
+        "retrieval_relevance": 0.449,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use colour-coded cloths and mops, with yellow for isolation rooms.",
+      "citations": [
+        "who-environmental-cleaning-2022#cleaning-equipment-0"
+      ],
+      "cited": true,
+      "confidence": 0.877,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-02",
+      "kind": "in_corpus",
+      "question": "Which colour of mop goes with isolation rooms?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.877,
+        "coverage": 1.0,
+        "question_support": 0.754,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "If the source patient is known to have HIV, begin antiretroviral prophylaxis within 2 hours if possible and no later than 72 hours.",
+      "citations": [
+        "cdc-sharps-injury-2022#prophylaxis-and-follow-up-0"
+      ],
+      "cited": true,
+      "confidence": 0.564,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-03",
+      "kind": "in_corpus",
+      "question": "When should antiretroviral prophylaxis start after a needlestick from an HIV-positive patient?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.564,
+        "coverage": 1.0,
+        "question_support": 0.512,
+        "reasons": [
+          "weak relevance to the question (0.56)"
+        ],
+        "retrieval_relevance": 0.615,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A hepatitis B series has three doses, given at 0, 1 and 6 months. Test anti-HBs 1 to 2 months after the last dose.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#hepatitis-b-0"
+      ],
+      "cited": true,
+      "confidence": 0.909,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-04",
+      "kind": "in_corpus",
+      "question": "How many doses are in the hepatitis B series for staff, and when are they given?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.909,
+        "coverage": 1.0,
+        "question_support": 0.819,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A worker whose anti-HBs level is below 10 mIU/mL, tested 1 to 2 months after the last dose, should repeat the series once and be tested again. Staff who still do not respond are considered non-responders and need counselling about exposures.",
+      "citations": [
+        "cdc-vaccination-adult-schedule-2024#hepatitis-b-0"
+      ],
+      "cited": true,
+      "confidence": 0.852,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-05",
+      "kind": "in_corpus",
+      "question": "What antibody level means a worker has to repeat the hepatitis B series?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.852,
+        "coverage": 1.0,
+        "question_support": 0.704,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Give prophylactic antibiotic within 60 minutes before the incision.",
+      "citations": [
+        "nih-antimicrobial-stewardship-2022#surgical-prophylaxis-0"
+      ],
+      "cited": true,
+      "confidence": 0.715,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-06",
+      "kind": "in_corpus",
+      "question": "How long before the incision should antibiotics for surgery be given?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.715,
+        "coverage": 1.0,
+        "question_support": 0.678,
+        "reasons": [],
+        "retrieval_relevance": 0.751,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A panel has at least seven members, including a methodologist and a patient representative.",
+      "citations": [
+        "nih-grading-2021#panel-process-0"
+      ],
+      "cited": true,
+      "confidence": 0.814,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-07",
+      "kind": "in_corpus",
+      "question": "What is the minimum number of members on a panel that rates evidence?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.814,
+        "coverage": 1.0,
+        "question_support": 0.629,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Waiting rooms should aim for at least 6 air changes per hour.",
+      "citations": [
+        "who-respiratory-etiquette-2021#ventilation-0"
+      ],
+      "cited": true,
+      "confidence": 0.921,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-08",
+      "kind": "in_corpus",
+      "question": "How many air changes per hour should a waiting room aim for?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.921,
+        "coverage": 1.0,
+        "question_support": 0.841,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "No, the guideline says do not require young children under 2 years to wear a mask, though a carer who accompanies a child with respiratory symptoms should wear a mask. This guideline applies to patients, visitors and staff in any health facility, starting at the entrance.",
+      "citations": [
+        "who-respiratory-etiquette-2021#children-and-carers-0",
+        "who-respiratory-etiquette-2021#scope-0"
+      ],
+      "cited": true,
+      "confidence": 0.886,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-09",
+      "kind": "in_corpus",
+      "question": "Do very young children have to wear masks in a health facility?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.886,
+        "coverage": 0.886,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "say",
+          "though"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "A newly installed unit should run for 2 to 3 days, with stable temperatures recorded, before any vaccine is stocked.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#storage-unit-set-up-0"
+      ],
+      "cited": true,
+      "confidence": 0.682,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-10",
+      "kind": "in_corpus",
+      "question": "How long should a new vaccine fridge run before vaccines go in?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.682,
+        "coverage": 1.0,
+        "question_support": 0.364,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "During a shortage, extended use of the same respirator for repeated contacts with one cohort of patients may be allowed, up to 8 hours. Discard it when it is damaged, soiled, wet or hard to breathe through.",
+      "citations": [
+        "cdc-ppe-2022#extended-use-and-shortages-0"
+      ],
+      "cited": true,
+      "confidence": 0.75,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-11",
+      "kind": "in_corpus",
+      "question": "For how long may one respirator be used during a shortage?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.75,
+        "coverage": 1.0,
+        "question_support": 0.643,
+        "reasons": [],
+        "retrieval_relevance": 0.857,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "When community transmission is high, each patient is limited to two visitors at a time.",
+      "citations": [
+        "cdc-respiratory-seasons-2023#visitor-restrictions-0"
+      ],
+      "cited": true,
+      "confidence": 0.746,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-12",
+      "kind": "in_corpus",
+      "question": "How many visitors may a patient have at once when community spread is high?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.746,
+        "coverage": 1.0,
+        "question_support": 0.492,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Auditors should use direct observation for at least 100 hand hygiene opportunities per unit each quarter.",
+      "citations": [
+        "cdc-hand-hygiene-2021#monitoring-and-feedback-0"
+      ],
+      "cited": true,
+      "confidence": 0.868,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-13",
+      "kind": "in_corpus",
+      "question": "How many hand hygiene opportunities should auditors watch per unit each quarter?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.868,
+        "coverage": 1.0,
+        "question_support": 0.736,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "The chair of the outbreak control team is the infection prevention physician.",
+      "citations": [
+        "cdc-outbreak-reporting-2022#the-outbreak-control-team-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-14",
+      "kind": "in_corpus",
+      "question": "Who leads the outbreak control team?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Vaccines should never be stored in the door of the unit or in produce drawers, and should instead be kept in the centre, away from the walls and the cooling element.",
+      "citations": [
+        "cdc-vaccination-cold-chain-2024#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.687,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-15",
+      "kind": "in_corpus",
+      "question": "Where in the vaccine fridge should vaccines never be kept?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.687,
+        "coverage": 0.832,
+        "question_support": 0.678,
+        "reasons": [],
+        "retrieval_relevance": 0.974,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "instead",
+          "kept"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Use 0.1 percent sodium hypochlorite for routine disinfection, and 0.5 percent for blood and body fluid spills.",
+      "citations": [
+        "who-environmental-cleaning-2022#recommendations-1"
+      ],
+      "cited": true,
+      "confidence": 0.546,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-16",
+      "kind": "in_corpus",
+      "question": "What strength of bleach solution is used for routine disinfection?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.546,
+        "coverage": 1.0,
+        "question_support": 0.316,
+        "reasons": [
+          "weak relevance to the question (0.55)"
+        ],
+        "retrieval_relevance": 0.775,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Store waste in a secure, ventilated area for no longer than 24 hours in hot climates (compared with 48 hours in temperate climates).",
+      "citations": [
+        "who-waste-management-2021#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.736,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-17",
+      "kind": "in_corpus",
+      "question": "How long can infectious waste wait in storage in a hot climate?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.736,
+        "coverage": 0.922,
+        "question_support": 0.597,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "compar"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Report any serious adverse event, such as anaphylaxis, hospitalisation or death, within 24 hours of becoming aware of it.",
+      "citations": [
+        "nih-vaccine-safety-monitoring-2023#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.68,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-18",
+      "kind": "in_corpus",
+      "question": "Within how many hours must a serious reaction after a vaccine be reported?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.68,
+        "coverage": 1.0,
+        "question_support": 0.515,
+        "reasons": [],
+        "retrieval_relevance": 0.845,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "WHO says to take off PPE in this order: gloves, eye protection, gown, mask or respirator, and to perform hand hygiene immediately after removal. CDC says to remove gloves first, then perform hand hygiene, then remove other PPE, with the gown and respirator coming off last.",
+      "citations": [
+        "who-ppe-2024#recommendations-1",
+        "cdc-ppe-2022#recommendations-0"
+      ],
+      "cited": true,
+      "confidence": 0.942,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-19",
+      "kind": "in_corpus",
+      "question": "In what order do you take off PPE?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.942,
+        "coverage": 0.942,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": [
+          "say"
+        ]
+      }
+    },
+    {
+      "abstained": false,
+      "answer": "Shared decision making follows six steps: invite the patient to participate, present the options, discuss benefits and harms, elicit the patient's preferences, reach a decision together, and revisit the decision when circumstances change. Clinicians should offer to revisit the decision at set points such as after test results or at three months.",
+      "citations": [
+        "nih-shared-decision-making-2023#recommendations-0",
+        "nih-shared-decision-making-2023#decisions-that-change-0"
+      ],
+      "cited": true,
+      "confidence": 1.0,
+      "correct": true,
+      "generator_error": null,
+      "id": "T2-20",
+      "kind": "in_corpus",
+      "question": "What are the steps of shared decision making?",
+      "split": "test",
+      "validation": {
+        "confidence": 1.0,
+        "coverage": 1.0,
+        "question_support": 1.0,
+        "reasons": [],
+        "retrieval_relevance": 1.0,
+        "status": "validated",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "T2-O1",
+      "kind": "out_of_corpus",
+      "question": "What is the maximum daily dose of paracetamol for an adult?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "T2-O2",
+      "kind": "out_of_corpus",
+      "question": "How should a dialysis catheter exit site be dressed?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "T2-O3",
+      "kind": "out_of_corpus",
+      "question": "Which antifungal drug is first choice for candidaemia?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "T2-O4",
+      "kind": "out_of_corpus",
+      "question": "What blood pressure target is recommended for people with diabetes?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    },
+    {
+      "abstained": true,
+      "answer": "No supported answer was found in the indexed guidelines.",
+      "citations": [],
+      "cited": false,
+      "confidence": 0.0,
+      "correct": null,
+      "generator_error": null,
+      "id": "T2-O5",
+      "kind": "out_of_corpus",
+      "question": "How often should hospital lifts be inspected?",
+      "split": "test",
+      "validation": {
+        "confidence": 0.0,
+        "coverage": 0.0,
+        "question_support": 0.0,
+        "reasons": [
+          "abstained: no supported answer"
+        ],
+        "retrieval_relevance": 0.0,
+        "status": "needs_review",
+        "unsupported_numbers": [],
+        "unsupported_terms": []
+      }
+    }
+  ],
+  "rerank_weight": 0.5,
+  "retrieval": {
+    "capped_precision@1": 0.95,
+    "capped_precision@10": 0.5497,
+    "capped_precision@5": 0.59,
+    "hit@1": 0.85,
+    "hit@10": 1.0,
+    "hit@5": 1.0,
+    "mrr": 0.9167,
+    "n": 20,
+    "precision@1": 0.95,
+    "precision@10": 0.425,
+    "precision@5": 0.59,
+    "rows": [
+      {
+        "capped_precision@1": 0.0,
+        "capped_precision@10": 0.125,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-01",
+        "precision@1": 0.0,
+        "precision@10": 0.1,
+        "precision@5": 0.2,
+        "question": "How many minutes must a blood spill sit under the bleach solution before it is wiped up?",
+        "rr": 0.5,
+        "top_docs": [
+          "who-grading-2020",
+          "who-environmental-cleaning-2022",
+          "who-respiratory-etiquette-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.625,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-02",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "Which colour of mop goes with isolation rooms?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-03",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "When should antiretroviral prophylaxis start after a needlestick from an HIV-positive patient?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-sharps-injury-2022",
+          "who-hand-hygiene-2023",
+          "cdc-hand-hygiene-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.625,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-04",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.8,
+        "question": "How many doses are in the hepatitis B series for staff, and when are they given?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-05",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "What antibody level means a worker has to repeat the hepatitis B series?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-adult-schedule-2024",
+          "cdc-vaccination-adult-schedule-2024",
+          "who-waste-management-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-06",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "How long before the incision should antibiotics for surgery be given?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-antimicrobial-stewardship-2022",
+          "who-hand-hygiene-2023",
+          "cdc-hand-hygiene-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8571428571428571,
+        "capped_precision@5": 0.8,
+        "first_answer_bearing_rank": 2,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-07",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.8,
+        "question": "What is the minimum number of members on a panel that rates evidence?",
+        "rr": 0.5,
+        "top_docs": [
+          "nih-grading-2021",
+          "nih-grading-2021",
+          "nih-grading-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.2857142857142857,
+        "capped_precision@5": 0.2,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-08",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.2,
+        "question": "How many air changes per hour should a waiting room aim for?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-respiratory-etiquette-2021",
+          "who-environmental-cleaning-2022",
+          "cdc-ppe-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5714285714285714,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-09",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.6,
+        "question": "Do very young children have to wear masks in a health facility?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-respiratory-etiquette-2021",
+          "who-environmental-cleaning-2022",
+          "who-environmental-cleaning-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-10",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "How long should a new vaccine fridge run before vaccines go in?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.375,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-11",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.4,
+        "question": "For how long may one respirator be used during a shortage?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-ppe-2022",
+          "cdc-sharps-injury-2022",
+          "who-ppe-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.25,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-12",
+        "precision@1": 1.0,
+        "precision@10": 0.2,
+        "precision@5": 0.4,
+        "question": "How many visitors may a patient have at once when community spread is high?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-respiratory-seasons-2023",
+          "who-hand-hygiene-2023",
+          "cdc-respiratory-seasons-2023"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.3333333333333333,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-13",
+        "precision@1": 1.0,
+        "precision@10": 0.3,
+        "precision@5": 0.6,
+        "question": "How many hand hygiene opportunities should auditors watch per unit each quarter?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-hand-hygiene-2021",
+          "who-hand-hygiene-2023",
+          "cdc-hand-hygiene-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.875,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-14",
+        "precision@1": 1.0,
+        "precision@10": 0.7,
+        "precision@5": 1.0,
+        "question": "Who leads the outbreak control team?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022",
+          "cdc-outbreak-reporting-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-15",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 1.0,
+        "question": "Where in the vaccine fridge should vaccines never be kept?",
+        "rr": 1.0,
+        "top_docs": [
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024",
+          "cdc-vaccination-cold-chain-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.5,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-16",
+        "precision@1": 1.0,
+        "precision@10": 0.4,
+        "precision@5": 0.4,
+        "question": "What strength of bleach solution is used for routine disinfection?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-environmental-cleaning-2022",
+          "who-grading-2020",
+          "cdc-sharps-injury-2022"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.8571428571428571,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-17",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 1.0,
+        "question": "How long can infectious waste wait in storage in a hot climate?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-waste-management-2021",
+          "who-waste-management-2021",
+          "who-waste-management-2021"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.7142857142857143,
+        "capped_precision@5": 0.4,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-18",
+        "precision@1": 1.0,
+        "precision@10": 0.5,
+        "precision@5": 0.4,
+        "question": "Within how many hours must a serious reaction after a vaccine be reported?",
+        "rr": 1.0,
+        "top_docs": [
+          "nih-vaccine-safety-monitoring-2023",
+          "nih-vaccine-safety-monitoring-2023",
+          "cdc-vaccination-adult-schedule-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 0.75,
+        "capped_precision@5": 0.6,
+        "first_answer_bearing_rank": 1,
+        "hit@1": true,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-19",
+        "precision@1": 1.0,
+        "precision@10": 0.6,
+        "precision@5": 0.6,
+        "question": "In what order do you take off PPE?",
+        "rr": 1.0,
+        "top_docs": [
+          "who-ppe-2024",
+          "who-ppe-2024",
+          "who-ppe-2024"
+        ]
+      },
+      {
+        "capped_precision@1": 1.0,
+        "capped_precision@10": 1.0,
+        "capped_precision@5": 1.0,
+        "first_answer_bearing_rank": 3,
+        "hit@1": false,
+        "hit@10": true,
+        "hit@5": true,
+        "id": "T2-20",
+        "precision@1": 1.0,
+        "precision@10": 0.8,
+        "precision@5": 1.0,
+        "question": "What are the steps of shared decision making?",
+        "rr": 0.3333333333333333,
+        "top_docs": [
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023",
+          "nih-shared-decision-making-2023"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "answer": "Cover the blood spill with absorbent material, then pour 0.5 percent sodium hypochlorite over it and leave it for 10 minutes. Then, wearing gloves and an apron, remove the material into a yellow bag.",
+      "confidence": 0.345,
+      "id": "T2-01",
+      "question": "How many minutes must a blood spill sit under the bleach solution before it is wiped up?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.35)"
+    },
+    {
+      "answer": "If the source patient is known to have HIV, begin antiretroviral prophylaxis within 2 hours if possible and no later than 72 hours.",
+      "confidence": 0.564,
+      "id": "T2-03",
+      "question": "When should antiretroviral prophylaxis start after a needlestick from an HIV-positive patient?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.56)"
+    },
+    {
+      "answer": "Use 0.1 percent sodium hypochlorite for routine disinfection, and 0.5 percent for blood and body fluid spills.",
+      "confidence": 0.546,
+      "id": "T2-16",
+      "question": "What strength of bleach solution is used for routine disinfection?",
+      "reason": "correct answer withheld",
+      "validator_notes": "weak relevance to the question (0.55)"
+    }
+  ],
+  "rewrite": false,
+  "split": "test",
+  "sweep": [
+    {
+      "correct_but_flagged_rate": 0.0,
+      "decision_accuracy": 1.0,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 1.0,
+      "threshold": 0.3,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.05,
+      "decision_accuracy": 0.96,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.95,
+      "threshold": 0.35,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.05,
+      "decision_accuracy": 0.96,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.95,
+      "threshold": 0.4,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.05,
+      "decision_accuracy": 0.96,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.95,
+      "threshold": 0.45,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.05,
+      "decision_accuracy": 0.96,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.95,
+      "threshold": 0.5,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.1,
+      "decision_accuracy": 0.92,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.9,
+      "threshold": 0.55,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.15,
+      "decision_accuracy": 0.88,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.85,
+      "threshold": 0.6,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.15,
+      "decision_accuracy": 0.88,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.85,
+      "threshold": 0.65,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.3,
+      "decision_accuracy": 0.76,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.7,
+      "threshold": 0.7,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.45,
+      "decision_accuracy": 0.64,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.55,
+      "threshold": 0.75,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.5,
+      "decision_accuracy": 0.6,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.5,
+      "threshold": 0.8,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.55,
+      "decision_accuracy": 0.56,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.45,
+      "threshold": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    {
+      "correct_but_flagged_rate": 0.75,
+      "decision_accuracy": 0.4,
+      "ooc_false_accept_rate": 0.0,
+      "pass_rate": 0.25,
+      "threshold": 0.9,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    }
+  ],
+  "threshold": 0.6,
+  "validation": {
+    "decision_accuracy": 0.88,
+    "in_corpus": {
+      "answer_correct_rate": 1.0,
+      "correct_but_flagged_rate": 0.15,
+      "mean_confidence": 0.776,
+      "n": 20,
+      "pass_rate": 0.85,
+      "validated_but_wrong_rate": 0.0,
+      "validated_precision": 1.0
+    },
+    "out_of_corpus": {
+      "false_accept_rate": 0.0,
+      "mean_confidence": 0.0,
+      "n": 5,
+      "needs_review_rate": 1.0
+    },
+    "threshold": 0.6
+  }
+}

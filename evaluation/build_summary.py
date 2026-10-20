@@ -208,6 +208,7 @@ def build_report() -> str:
     out += section_sealed2()
     out += section_sealed3_iso()
     out += section_sealed4()
+    out += section_v2()
     return "\n".join(out)
 
 
@@ -440,6 +441,38 @@ def section_sealed4() -> list[str]:
                        f"{ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} |")
     r = ext["retrieval"]
     out += ["", f"Retrieval: Hit@5 {pct(r['hit@5'])}, Hit@10 {pct(r['hit@10'])}, MRR {r['mrr']:.3f}, document-level Precision@5 {pct(r['precision@5'])}.", ""]
+    return out
+
+def section_v2() -> list[str]:
+    reps = {(sp, g): load("synthetic2", sp, g, "v2") for sp in ("dev", "test") for g in ("extractive", "llm")}
+    if not all(reps.values()):
+        return []
+    v1 = load("synthetic", "test", "extractive", "cur")
+    t = reps[("test", "extractive")]
+    out = ["## 17. Synthetic corpus v2: testing whether document size explained the Precision@5 miss", "",
+           "On the first synthetic corpus the document-level Precision@5 target (0.65) was missed, and the stated reason was that most documents had only three or four chunks, "
+           "which caps the score. Corpus v2 tests that explanation: every v1 guideline is kept word for word and gets three to five new sections, so each document except the "
+           "deliberate one-chunk linen file has seven to nine chunks and the ceiling for a single relevant document is 1.0. Rules (committed first): "
+           "`evaluation/reports/synthetic2_rules.txt`. The test questions are fresh (20 answerable, 5 out of scope) and were written before the system saw v2. The corpus, "
+           "questions and labels were written by the same AI that wrote the system, and v2 was made **after** the v1 miss was seen, so it is not an independent test.", "",
+           f"Index: {t['manifest_counts']['documents']} documents, {t['manifest_counts']['chunks']} chunks (v1: {v1['manifest_counts']['documents']} documents, "
+           f"{v1['manifest_counts']['chunks']} chunks).", "",
+           "| Corpus / split | Generator | Precision@1 | Precision@5 | Capped Precision@5 | Hit@5 | Pass | Mean confidence | Validated precision | Out-of-scope wrongly validated |",
+           "|---|---|---|---|---|---|---|---|---|---|"]
+    def row(name, rep, gen):
+        k = counts(rescored(rep)); r = rep["retrieval"]
+        mc = rep["validation"]["in_corpus"]["mean_confidence"]
+        mc = f"{mc:.3f}" if mc is not None else "n/a"
+        return (f"| {name} | {gen} | {pct(r['precision@1'])} | {pct(r['precision@5'])} | {pct(r['capped_precision@5'])} | {pct(r['hit@5'])} | "
+                f"{ci(k['validated'], k['n_in'])} | {mc} | {ci(k['val_correct'], k['validated']) if k['validated'] else 'n/a'} | {k['ooc_accepted']} of {k['n_ooc']} |")
+    out.append(row("v1 test", v1, "extractive"))
+    for sp in ("dev", "test"):
+        for g in ("extractive", "llm"):
+            out.append(row(f"v2 {sp}", reps[(sp, g)], g))
+    out += ["", "**Outcome.** The corpus-size explanation is **not supported** as the whole story. With the ceiling lifted to 1.0, the held-out Precision@5 is still below 0.65, so "
+            "the target stays **not met**. The right document is usually first (Precision@1 is high), but places two to five are often filled with chunks from unrelated documents "
+            "that share generic words such as \"how\", \"many\" or \"hand\", because matching is lexical. The development split on v2 is higher than the test split; it was not tuned "
+            "on, and the difference shows how much a 20-question sample moves. Retrieval changes were not made after this result: the rules said the system is frozen.", ""]
     return out
 
 

@@ -20,3 +20,12 @@ Acceptance (stated now, judged mechanically on the single test run, no tuning af
  C. v1 reports and tables are kept untouched. v2 results are added beside them, never in place of them, and the README/report say v1 missed the target and v2 is a corpus change made after
     seeing that.
 Everything is reported as found.
+
+OUTCOME (added after the single test run per generator; nothing was changed afterwards):
+ A. Met: every document except who-linen-laundry-2022 has 7 to 9 chunks (164 chunks in total); the build is deterministic across two builds.
+ B. NOT met: v2 test document-level Precision@5 is 59.0% (extractive and Claude share retrieval), below 0.65, and equals its capped value because the ceiling is now 1.0.
+    The v1 explanation (the corpus is too small per document) is therefore withdrawn as the whole cause: with the ceiling lifted, the target is still missed. Precision@1 is 95%; the
+    right document is first, but ranks 2 to 5 are often filled with chunks from unrelated documents that share generic words (lexical retrieval). The v2 dev split scored 68.0%, which would
+    have met the target; it is not the held-out result and is reported only beside it.
+ C. Done: v1 tables are unchanged; v2 sits beside them as report section 17 and a README line.
+No retrieval change was made after seeing this, per the rules. A fix would be a retrieval experiment under the existing round rules, not a corpus change.

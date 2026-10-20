@@ -18,3 +18,5 @@
 2026-10-20T04:58:11+00:00	split=sealed3	corpus=real	index=9bc2368dd16c	run_eval generator=llm
 2026-10-20T05:05:55+00:00	split=sealed4	corpus=real	index=9bc2368dd16c	run_eval generator=extractive
 2026-10-20T05:06:04+00:00	split=sealed4	corpus=real	index=9bc2368dd16c	run_eval generator=llm
+2026-10-20T06:25:41+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=extractive
+2026-10-20T06:25:41+00:00	split=test	corpus=synthetic2	index=ffe20683ee85	run_eval generator=llm

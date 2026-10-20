@@ -31,10 +31,10 @@ that evidence, and anything weakly supported is sent to review instead of being 
 |---|---|
 | Deterministic indexing, no external API | Met |
 | Stable REST endpoint | Met |
-| Precision@5 of at least 0.65 | **Not met** on the brief's document-level definition for the synthetic corpus; a capped variant is reported separately and labelled as such |
+| Precision@5 of at least 0.65 | **Not met** on the brief's document-level definition. The first explanation (documents too short, so the score is capped) was tested with a larger corpus v2 whose ceiling is 1.0 and was **not confirmed**: the right document is usually first, but lower ranks fill with unrelated documents (report section 17) |
 | Validation pass rate of at least 80% at 0.6 | Met by the extractive generator on the synthetic held-out split; not met by the Claude generator on the real-PDF held-out split |
 
-The current figures are in the README block and report sections 2 to 4. Read the sealed-set sections (13 to 16) before the development tables.
+The current figures are in the README block and report sections 2 to 4. Read the sealed-set sections (13 to 16; section 17 covers the v2 corpus) before the development tables.
 
 ## Limitations (all of them matter)
 
