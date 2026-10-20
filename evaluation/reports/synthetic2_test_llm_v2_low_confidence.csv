@@ -1,4 +1,0 @@
-id,reason,confidence,question,answer,validator_notes
-T2-01,correct answer withheld,0.345,How many minutes must a blood spill sit under the bleach solution before it is wiped up?,"Cover the blood spill with absorbent material, then pour 0.5 percent sodium hypochlorite over it and leave it for 10 minutes. Then, wearing gloves and an apron, remove the material into a yellow bag.",weak relevance to the question (0.35)
-T2-03,correct answer withheld,0.564,When should antiretroviral prophylaxis start after a needlestick from an HIV-positive patient?,"If the source patient is known to have HIV, begin antiretroviral prophylaxis within 2 hours if possible and no later than 72 hours.",weak relevance to the question (0.56)
-T2-16,correct answer withheld,0.546,What strength of bleach solution is used for routine disinfection?,"Use 0.1 percent sodium hypochlorite for routine disinfection, and 0.5 percent for blood and body fluid spills.",weak relevance to the question (0.55)

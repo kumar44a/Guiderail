@@ -1,4 +1,0 @@
-id,reason,confidence,question,answer,validator_notes
-R02,correct answer withheld,0.427,What does cohorting mean?,"Cohorting is the practice of grouping together patients who are colonized or infected with the same organism to confine their care to one area and prevent contact with other patients. Cohorts are created based on clinical diagnosis, microbi",weak relevance to the question (0.44)
-R06,flagged: low confidence,0.0,What should patients wear when they must be moved outside an airborne infection isolation room?,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-T04,correct answer withheld,0.52,How long should temperature logs be kept?,Keep temperature logs for 3 years to track trends and recurring issues. VFC providers and others who administer vaccines purchased with public funds should contact their immunization program for state-specific requirements related to record,weak relevance to the question (0.52)

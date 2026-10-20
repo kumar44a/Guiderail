@@ -1,3 +1,0 @@
-id,reason,confidence,question,answer,validator_notes
-S11,correct answer withheld,0.555,What bleach strength is used for blood spills?,"Use 0.5 percent sodium hypochlorite for blood and body fluid spills, while 0.1 percent is used for routine disinfection.",
-S29,correct answer withheld,0.53,Which vaccine needs a booster every ten years?,"After one dose of Tdap, a Td or Tdap booster is given every 10 years.",

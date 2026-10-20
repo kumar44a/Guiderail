@@ -1,9 +1,0 @@
-id,reason,confidence,question,answer,validator_notes
-N31,flagged: low confidence,0.0,what room temperature suits the vaccine fridge,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-N38,correct answer withheld,0.596,what do i do if a soap dispenser is partly empty,"Do not add soap (IA) or alcohol-based formulations (II) to a partially empty soap dispenser. If soap dispensers are reused, follow recommended procedures for cleansing.",weak relevance to the question (0.60)
-N42,VALIDATED BUT WRONG,0.722,can freezing damage vaccines,"Yes, freezing can harm vaccines: inactivated vaccines, even when exposed to freezing temperatures, may not appear frozen, giving no visual indication of reduced or lost potency. Vaccines stored at inappropriate temperatures should not be ad",
-U01,flagged: low confidence,0.0,What are the benefits of hand rub?,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-U02,flagged: low confidence,0.0,What is the chemical composition / composition of hand rub ?,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-U03,VALIDATED BUT WRONG,0.672,Which alcohol is present in hand rub?,"Isopropyl alcohol is present in at least one commercial hand rub, as reflected in the reference ""Dermal absorption of isopropyl alcohol from a commercial hand rub: implications for its use in hand decontamination"".","low evidence coverage (0.67); unsupported terms: present, least, one, reflect, referenc"
-U04,flagged: low confidence,0.0,Is hand rub safe to drink ?,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-U09,flagged: low confidence,0.0,What are the disadvantages of using hand rub ?,No supported answer was found in the indexed guidelines.,abstained: no supported answer

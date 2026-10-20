@@ -1,3 +1,0 @@
-id,reason,confidence,question,answer,validator_notes
-S15,flagged: low confidence,0.0,By when should staff be offered the flu vaccine?,No supported answer was found in the indexed guidelines.,abstained: no supported answer
-S27,correct answer withheld,0.587,How long are vaccine temperature logs retained?,Temperature logs should be kept for at least three years.,low evidence coverage (0.76); unsupported terms: kept

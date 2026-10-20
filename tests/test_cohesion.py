@@ -1,10 +1,6 @@
-from pathlib import Path
-
 from guiderail import config
 from guiderail.index import load_index
 from guiderail.retriever import Retriever
-
-ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_default_cohesion_is_the_kept_round_8_value(monkeypatch):
@@ -14,8 +10,8 @@ def test_default_cohesion_is_the_kept_round_8_value(monkeypatch):
     assert config.doc_cohesion() == 0.0
 
 
-def test_cohesion_changes_order_only_and_keeps_scores_and_members():
-    loaded = load_index(ROOT / "index")
+def test_cohesion_changes_order_only_and_keeps_scores_and_members(index_path):
+    loaded = load_index(index_path)
     q = "How long should hands be rubbed with hand rub?"
     plain = Retriever(loaded, rerank_weight=0.5, hybrid=True, doc_cohesion=0.0)
     coherent = Retriever(loaded, rerank_weight=0.5, hybrid=True, doc_cohesion=0.5)
